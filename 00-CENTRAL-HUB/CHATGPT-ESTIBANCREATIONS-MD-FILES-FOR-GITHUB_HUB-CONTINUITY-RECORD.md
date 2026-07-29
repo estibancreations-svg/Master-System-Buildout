@@ -51,7 +51,7 @@ This hub receives append-only checkpoint captures. It remains `CHECKPOINT` and `
 | Sequence | Date | Status | Scope | Integrity | Commit | Notes |
 |---:|---|---|---|---|---|---|
 | 001 | 28-07-2026 | CHECKPOINT | Initial available hub boundary | REVIEW REQUIRED | `e03a5de479f17a2d343e225a62073feb61cbb6c6` | Initially stored as a partial Memory Gem before the hub distinction was ratified. |
-| 002 | 29-07-2026 | CHECKPOINT | Hub classification and operating model ratified | VERIFIED_WITHIN_CAPTURE_BOUNDARY | PENDING | Reclassified as a living append-only Hub Continuity Record. |
+| 002 | 29-07-2026 | CHECKPOINT | Hub classification and operating model ratified | VERIFIED_WITHIN_CAPTURE_BOUNDARY | `fed034b381a38ad26b28c4cbaeb6d4a4fd57f023` | Reclassified as a living append-only Hub Continuity Record. |
 
 ## CURRENT HUB STATUS
 
