@@ -95,3 +95,19 @@ A conversation may have multiple checkpoint captures. Each checkpoint must be da
 5. Generate section indexes and cross-links.
 6. Create implementation-ready system packages from approved source records.
 7. Add validation and quality-control gates before declaring any section complete.
+
+## Conversation Record — CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB
+
+- **Display Name:** `CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB`
+- **Conversation ID:** `CONV-28072026-001`
+- **Status:** `CHECKPOINT`
+- **Canonical Memory Gem:** [28-07-2026_CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB_MEMORY-GEM.md](Memory-Gems/28-07-2026_CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB_MEMORY-GEM.md)
+- **Intake Record:** [28-07-2026_CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB_CHECKPOINT-INTAKE.md](INBOX/28-07-2026_CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB_CHECKPOINT-INTAKE.md)
+- **Registry References:** [Conversation Registry](Registries/CONVERSATION-REGISTRY.md), [Capture Ledger](Registries/CAPTURE-LEDGER.md), [Work Tracker](Registries/WORK-TRACKER.md)
+- **Capture Count:** `1`
+- **Latest Capture Date:** `28-07-2026`
+- **Latest Memory Gem Commit:** `e03a5de479f17a2d343e225a62073feb61cbb6c6`
+- **Integrity Status:** `REVIEW REQUIRED`
+- **Provisional System Relationship:** `UNASSIGNED`
+- **Provisional Division Relationship:** `DIV-008 TECHNOLOGY DIVISION`
+- **Next Action:** Supply the complete earlier conversation export and exact attachment body, then run the next checkpoint capture.
