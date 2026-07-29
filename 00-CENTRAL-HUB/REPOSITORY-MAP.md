@@ -9,6 +9,7 @@
 Master-System-Buildout/
 │
 ├── 00-CENTRAL-HUB/
+│   ├── CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB_HUB-CONTINUITY-RECORD.md
 │   ├── INBOX/
 │   ├── Memory-Gems/
 │   ├── Registries/
@@ -38,8 +39,9 @@ GitHub represents folders through file paths. Empty folders do not exist until a
 
 The Central Hub governs:
 
+- living hub continuity and checkpoint control
 - raw conversation intake
-- exact Memory Gem capture
+- exact individual-feed Memory Gem capture
 - artifact status tracking
 - classification queues
 - system and division assignment
@@ -57,6 +59,8 @@ The Central Hub governs:
 4. Every artifact receives a status and destination.
 5. Superseded artifacts remain accessible and point to the replacement.
 6. Classification can occur later; lossless intake happens first.
+7. The Central Hub feed is a living append-only control record, not a bounded individual-feed Memory Gem.
+8. Individual conversation feeds receive their own exact Memory Gems.
 
 ## Planned Registries
 
@@ -68,14 +72,14 @@ The Central Hub governs:
 - `SUPERSESSION-REGISTRY.md`
 - `BUILD-PACKAGE-REGISTRY.md`
 
-## Conversation Capture Status Model
+## Record Status Models
+
+### Individual Conversation Feed
 
 ```text
-ACTIVE
+CHECKPOINT while growing
   ↓
-CHECKPOINT
-  ↓
-COMPLETE
+COMPLETE only when explicitly closed
   ↓
 CLASSIFIED
   ↓
@@ -84,30 +88,44 @@ INTEGRATED
 ARCHIVED or SUPERSEDED
 ```
 
-A conversation may have multiple checkpoint captures. Each checkpoint must be dated and must not replace earlier captures.
+### Central Hub Feed
+
+```text
+CHECKPOINT
++
+ONGOING
++
+APPEND-ONLY
+```
+
+The Central Hub is never marked complete unless The Architect explicitly closes or supersedes it. Each checkpoint preserves newly verified activity and commit evidence.
 
 ## Immediate Build Sequence
 
-1. Capture existing conversations as exact Memory Gems.
-2. Place uncertain items in `00-CENTRAL-HUB/INBOX`.
-3. Create the conversation and artifact registries.
-4. Classify artifacts against the established enterprise architecture.
-5. Generate section indexes and cross-links.
-6. Create implementation-ready system packages from approved source records.
-7. Add validation and quality-control gates before declaring any section complete.
+1. Maintain the Hub Continuity Record as the central control feed.
+2. Capture individual conversations as exact Memory Gems.
+3. Place uncertain items in `00-CENTRAL-HUB/INBOX`.
+4. Maintain conversation, artifact, system, capture, and work registries.
+5. Classify artifacts against the established enterprise architecture.
+6. Generate section indexes and cross-links.
+7. Create implementation-ready system packages from approved source records.
+8. Add validation and quality-control gates before declaring any bounded record complete.
 
-## Conversation Record — CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB
+## Hub Record — CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB
 
 - **Display Name:** `CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB`
 - **Conversation ID:** `CONV-28072026-001`
-- **Status:** `CHECKPOINT`
-- **Canonical Memory Gem:** [28-07-2026_CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB_MEMORY-GEM.md](Memory-Gems/28-07-2026_CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB_MEMORY-GEM.md)
+- **Record Type:** `HUB_CONTINUITY_RECORD`
+- **Record Class:** `LIVING_APPEND_ONLY_CONTROL_RECORD`
+- **Status:** `CHECKPOINT / ONGOING`
+- **Canonical Hub Record:** [CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB_HUB-CONTINUITY-RECORD.md](CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB_HUB-CONTINUITY-RECORD.md)
+- **Historical Partial Memory Gem:** [28-07-2026_CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB_MEMORY-GEM.md](Memory-Gems/28-07-2026_CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB_MEMORY-GEM.md)
 - **Intake Record:** [28-07-2026_CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB_CHECKPOINT-INTAKE.md](INBOX/28-07-2026_CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB_CHECKPOINT-INTAKE.md)
 - **Registry References:** [Conversation Registry](Registries/CONVERSATION-REGISTRY.md), [Capture Ledger](Registries/CAPTURE-LEDGER.md), [Work Tracker](Registries/WORK-TRACKER.md)
-- **Capture Count:** `1`
-- **Latest Capture Date:** `28-07-2026`
-- **Latest Memory Gem Commit:** `e03a5de479f17a2d343e225a62073feb61cbb6c6`
-- **Integrity Status:** `REVIEW REQUIRED`
-- **Provisional System Relationship:** `UNASSIGNED`
-- **Provisional Division Relationship:** `DIV-008 TECHNOLOGY DIVISION`
-- **Next Action:** Supply the complete earlier conversation export and exact attachment body, then run the next checkpoint capture.
+- **Capture Count:** `2`
+- **Latest Capture Date:** `29-07-2026`
+- **Hub Record Commit:** `fed034b381a38ad26b28c4cbaeb6d4a4fd57f023`
+- **Integrity Status:** `VERIFIED_WITHIN_CAPTURE_BOUNDARY`
+- **Primary System:** `MASTER SYSTEMS BUILDOUT`
+- **Primary Division:** `DIV-008 TECHNOLOGY DIVISION`
+- **Next Action:** Continue appending verified hub activity and create exact Memory Gems for each individual feed.
