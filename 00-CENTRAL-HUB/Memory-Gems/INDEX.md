@@ -1,5 +1,6 @@
 # MEMORY GEMS INDEX
 
-| Conversation ID | Display Name | Conversation Title | Status | Capture Date | Memory Gem | Message Count | Latest Commit | Integrity | Next Action |
-|---|---|---|---|---|---|---:|---|---|---|
-| CONV-28072026-001 | CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB | MD Files for GitHub | CHECKPOINT | 28-07-2026 | [Open](28-07-2026_CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB_MEMORY-GEM.md) | 9 | e03a5de479f17a2d343e225a62073feb61cbb6c6 | REVIEW REQUIRED | Supply complete earlier feed and exact attachment body |
+| Conversation ID | Display Name | Conversation Title | Status | Capture Date | Canonical Checkpoint | Volumes | Message Count | Latest Commit | Integrity | Next Action |
+|---|---|---|---|---|---|---|---:|---|---|---|
+| CONV-28072026-001 | CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB | MD Files for GitHub | CHECKPOINT / ONGOING | 31-07-2026 | [Manifest](31-07-2026_CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB_MEMORY-GEM-MANIFEST.md) | [01](31-07-2026_CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB_MEMORY-GEM_VOL-01.md) · [02](31-07-2026_CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB_MEMORY-GEM_VOL-02.md) · [03](31-07-2026_CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB_MEMORY-GEM_VOL-03.md) · [04](31-07-2026_CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB_MEMORY-GEM_VOL-04.md) | 24 | 43cc699d632737301f1908d6d1464b5f56b16186 | VERIFIED_WITHIN_CAPTURE_BOUNDARY | Append the next checkpoint without modifying Messages 001–024 |
+| CONV-28072026-001 | CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB | MD Files for GitHub | HISTORICAL CHECKPOINT | 28-07-2026 | [Initial Partial Memory Gem](28-07-2026_CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB_MEMORY-GEM.md) | NOT APPLICABLE | 9 | e03a5de479f17a2d343e225a62073feb61cbb6c6 | REVIEW REQUIRED / PRESERVED | Retain as historical evidence |
