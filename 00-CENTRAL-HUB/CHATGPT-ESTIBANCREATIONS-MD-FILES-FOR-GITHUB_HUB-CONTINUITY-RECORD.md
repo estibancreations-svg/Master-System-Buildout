@@ -15,6 +15,8 @@ primary_system: "MASTER SYSTEMS BUILDOUT"
 primary_division: "DIV-008 TECHNOLOGY DIVISION"
 capture_scope: "VISIBLE_CHECKPOINT"
 integrity_status: "VERIFIED_WITHIN_CAPTURE_BOUNDARY"
+latest_checkpoint_date: "31-07-2026"
+latest_checkpoint_manifest: "Memory-Gems/31-07-2026_CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB_MEMORY-GEM-MANIFEST.md"
 previous_record: "Memory-Gems/28-07-2026_CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB_MEMORY-GEM.md"
 append_policy: "Append newly visible hub activity at each checkpoint; never mark complete unless The Architect explicitly closes or supersedes the hub."
 ---
@@ -45,6 +47,7 @@ This hub receives append-only checkpoint captures. It remains `CHECKPOINT` and `
 6. Register every uploaded artifact according to its actual class: Memory Gem, System of Record, amendment, system directive, specification, reference, or other verified type.
 7. Use `VERIFIED_WITHIN_CAPTURE_BOUNDARY` when the checkpoint content and repository writes are verified.
 8. Preserve the prior partial Memory Gem as historical evidence; do not delete it.
+9. Use a manifest and numbered volumes when a checkpoint is too large for one safe GitHub write.
 
 ## CHECKPOINT HISTORY
 
@@ -52,6 +55,7 @@ This hub receives append-only checkpoint captures. It remains `CHECKPOINT` and `
 |---:|---|---|---|---|---|---|
 | 001 | 28-07-2026 | CHECKPOINT | Initial available hub boundary | REVIEW REQUIRED | `e03a5de479f17a2d343e225a62073feb61cbb6c6` | Initially stored as a partial Memory Gem before the hub distinction was ratified. |
 | 002 | 29-07-2026 | CHECKPOINT | Hub classification and operating model ratified | VERIFIED_WITHIN_CAPTURE_BOUNDARY | `fed034b381a38ad26b28c4cbaeb6d4a4fd57f023` | Reclassified as a living append-only Hub Continuity Record. |
+| 003 | 31-07-2026 | CHECKPOINT | Uploaded DOCX transcript imported as Messages 001–022; Messages 023–024 appended; manifest plus four volumes created | VERIFIED_WITHIN_CAPTURE_BOUNDARY | `43cc699d632737301f1908d6d1464b5f56b16186` | [Open checkpoint manifest](Memory-Gems/31-07-2026_CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB_MEMORY-GEM-MANIFEST.md). |
 
 ## CURRENT HUB STATUS
 
@@ -60,4 +64,7 @@ This hub receives append-only checkpoint captures. It remains `CHECKPOINT` and `
 - **Canonical Role:** Central control and continuity feed
 - **Primary System:** MASTER SYSTEMS BUILDOUT
 - **Primary Division:** DIV-008 TECHNOLOGY DIVISION
-- **Next Action:** Continue appending verified hub activity and capture individual conversation feeds as separate exact Memory Gems.
+- **Latest Checkpoint:** 31-07-2026
+- **Latest Manifest:** [31-07-2026 Memory Gem Manifest](Memory-Gems/31-07-2026_CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB_MEMORY-GEM-MANIFEST.md)
+- **Captured Messages:** 24
+- **Next Action:** Continue appending verified hub activity, capture individual conversation feeds separately, and reconcile the missing canonical master-directive repository path.
