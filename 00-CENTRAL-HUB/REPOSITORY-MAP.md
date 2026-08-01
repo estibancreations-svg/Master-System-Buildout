@@ -3,38 +3,71 @@
 **Repository:** `estibancreations-svg/Master-System-Buildout`  
 **Role:** Central system of record for architecture, conversations, specifications, decisions, implementation packages, and operational memory.
 
-## Initial Structure
+## Verified Live Structure
 
 ```text
 Master-System-Buildout/
 │
 ├── 00-CENTRAL-HUB/
-│   ├── CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB_HUB-CONTINUITY-RECORD.md
-│   ├── Directives/                         [canonical master directive path pending reconciliation]
+│   ├── Directives/
 │   ├── INBOX/
+│   │   └── Source-Transcripts/
 │   ├── Memory-Gems/
 │   ├── Registries/
-│   ├── Indexes/
-│   └── REPOSITORY-MAP.md
+│   ├── INDEX.md
+│   ├── REPOSITORY-MAP.md
+│   └── REPOSITORY-STRUCTURE-RECONCILIATION.md
 │
-├── 01-ENTERPRISE-FOUNDATION/
-├── 02-GOVERNANCE/
-├── 03-ENTERPRISE-STANDARDS/
-├── 04-INFRASTRUCTURE/
-├── 05-INTELLIGENCE-SYSTEMS/
-├── 06-AGENTS-AND-AUTOMATION/
-├── 07-QUALITY-CONTROL/
-├── 08-SYSTEM-LIBRARY/
-├── 09-DIVISIONS/
-├── 10-WORKFLOWS/
-├── 11-IMPLEMENTATION/
-├── 12-OPERATIONS/
-├── 13-RESEARCH-AND-REFERENCES/
-├── 14-ARCHIVE/
+├── 00-GOVERNANCE/
+├── 01-ARCHITECTURE/
+├── 02-SYSTEM-SPECIFICATIONS/
+├── 03-AI-PROMPTS/
+├── 04-DATABASE-DESIGN/
+├── 05-AUTOMATION/
+├── 06-DEPLOYMENT/
+├── 07-DOCUMENTATION/
+├── 08-CHAT-LOGS/
+├── 09-MEMORY-GEMS/
+├── 99-ARCHIVE/
 └── README.md
 ```
 
-GitHub represents folders through file paths. Empty folders do not exist until a file is committed inside them. Each section will therefore receive an index or README as content is added.
+GitHub represents folders through file paths. Empty folders do not exist until a file is committed inside them.
+
+## Controlling Routing Rule
+
+Do not create or use a competing top-level `06-AGENTS-AND-AUTOMATION/` directory.
+
+Conversation Capture Agent materials are routed by function:
+
+| Work Type | Canonical Location |
+|---|---|
+| Master directive | `00-CENTRAL-HUB/Directives/` |
+| Raw source transcript | `00-CENTRAL-HUB/INBOX/Source-Transcripts/` |
+| Canonical governed Memory Gem | `00-CENTRAL-HUB/Memory-Gems/` |
+| Agent specification | `02-SYSTEM-SPECIFICATIONS/Conversation-Capture-Agent/` |
+| Executable agent prompt | `03-AI-PROMPTS/Agent-Prompts/` |
+| Future validator and automation code | `05-AUTOMATION/Conversation-Capture-Agent/` |
+| Future deployment configuration | `06-DEPLOYMENT/Conversation-Capture-Agent/` |
+| Future operator documentation | `07-DOCUMENTATION/Conversation-Capture-Agent/` |
+
+## Conversation-Record Areas
+
+The repository currently contains:
+
+```text
+00-CENTRAL-HUB/Memory-Gems/
+08-CHAT-LOGS/
+09-MEMORY-GEMS/
+```
+
+Until The Architect approves a final consolidation rule:
+
+1. `00-CENTRAL-HUB/Memory-Gems/` is canonical for captures governed by the Central Hub directive.
+2. `00-CENTRAL-HUB/INBOX/Source-Transcripts/` stores raw text sources used for processing.
+3. `08-CHAT-LOGS/` is an optional verbatim archive and is written only when The Architect explicitly requests an archive mirror.
+4. `09-MEMORY-GEMS/` remains a no-write location for the Conversation Capture workflow.
+5. Never duplicate one canonical record across all three areas.
 
 ## Central Hub Responsibilities
 
@@ -48,10 +81,12 @@ The Central Hub governs:
 - classification queues
 - system and division assignment
 - master indexing
-- duplicate detection
+- duplicate and collision prevention
 - supersession tracking
 - source provenance
 - repository navigation
+- capture verification
+- Architect accountability review
 
 ## Sorting Rules
 
@@ -63,14 +98,59 @@ The Central Hub governs:
 6. Classification can occur later; lossless intake happens first.
 7. The Central Hub feed is a living append-only control record, not a bounded individual-feed Memory Gem.
 8. Individual conversation feeds receive their own exact Memory Gems.
-9. Oversized checkpoint captures use a manifest and numbered volumes with continuous message numbering.
-10. A missing canonical directive path must be recorded as a correction and must not be falsely reported as present.
+9. Oversized captures use a manifest and numbered volumes with continuous message numbering.
+10. Use verified live paths rather than proposed or outdated folder maps.
+11. Do not report files, commits, validators, agents, or deployments as complete without evidence.
+12. Materially improvable work must be recreated before deployment unless a documented source or technical constraint prevents it.
 
-## Planned Registries
+## Installed Conversation Capture Control Files
+
+### Canonical directive
+
+```text
+00-CENTRAL-HUB/Directives/MASTER-CONVERSATION-CAPTURE-ACCOUNTABILITY-AND-GITHUB-DEPLOYMENT-DIRECTIVE.md
+```
+
+**Version:** `1.1`  
+**Operating Status:** `CHECKPOINT / MANUAL-PILOT`
+
+### Agent specification
+
+```text
+02-SYSTEM-SPECIFICATIONS/Conversation-Capture-Agent/CONVERSATION-CAPTURE-AND-ARCHITECT-ACCOUNTABILITY-AGENT-SPECIFICATION.md
+```
+
+### Executable agent prompt
+
+```text
+03-AI-PROMPTS/Agent-Prompts/CONVERSATION-CAPTURE-AND-ARCHITECT-ACCOUNTABILITY-AGENT.md
+```
+
+### Current maturity
+
+```text
+Directive: INSTALLED
+Agent Specification: INSTALLED
+Executable Prompt: INSTALLED
+Manual Pilot: AVAILABLE
+Deterministic Validator Code: NOT BUILT
+GitHub Action: NOT BUILT
+Production Bot: NOT BUILT
+Deployment Package: NOT BUILT
+```
+
+## Registries
+
+Verified Central Hub registries and tracking files include:
 
 - `CONVERSATION-REGISTRY.md`
 - `ARTIFACT-REGISTRY.md`
 - `SYSTEM-REGISTRY.md`
+- `CAPTURE-LEDGER.md`
+- `WORK-TRACKER.md`
+
+Additional planned registries may include:
+
 - `DIVISION-REGISTRY.md`
 - `DECISION-REGISTRY.md`
 - `SUPERSESSION-REGISTRY.md`
@@ -102,20 +182,23 @@ ONGOING
 APPEND-ONLY
 ```
 
-The Central Hub is never marked complete unless The Architect explicitly closes or supersedes it. Each checkpoint preserves newly verified activity and commit evidence.
+The Central Hub is never marked complete unless The Architect explicitly closes or supersedes it.
 
 ## Immediate Build Sequence
 
 1. Maintain the Hub Continuity Record as the central control feed.
-2. Capture individual conversations as exact Memory Gems.
-3. Use manifests and volumes when a capture exceeds one safe file operation.
-4. Place uncertain items in `00-CENTRAL-HUB/INBOX`.
-5. Maintain conversation, artifact, system, capture, and work registries.
-6. Classify artifacts against the established enterprise architecture.
-7. Generate section indexes and cross-links.
-8. Create implementation-ready system packages from approved source records.
-9. Add validation and quality-control gates before declaring any bounded record complete.
-10. Reconcile the approved master Memory Gem directive into its canonical repository path.
+2. Run the Version 1.1 directive manually on representative complete transcript sources.
+3. Capture individual conversations as exact Memory Gems.
+4. Use manifests and volumes when a capture exceeds one safe file operation.
+5. Place uncertain items in `00-CENTRAL-HUB/INBOX/`.
+6. Maintain conversation, artifact, system, capture, and work registries.
+7. Apply deterministic or tool-assisted verification and record the actual method.
+8. Apply the Architect Accountability Gate before deployment.
+9. Update indexes and cross-links only after fetch-back verification.
+10. Build the deterministic validator under `05-AUTOMATION/Conversation-Capture-Agent/`.
+11. Build deployment configuration under `06-DEPLOYMENT/Conversation-Capture-Agent/`.
+12. Build operator documentation under `07-DOCUMENTATION/Conversation-Capture-Agent/`.
+13. Obtain independent Quality Control certification before declaring a production bot complete.
 
 ## Hub Record — CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB
 
@@ -138,5 +221,5 @@ The Central Hub is never marked complete unless The Architect explicitly closes 
 - **Integrity Status:** `VERIFIED_WITHIN_CAPTURE_BOUNDARY`
 - **Primary System:** `MASTER SYSTEMS BUILDOUT`
 - **Primary Division:** `DIV-008 TECHNOLOGY DIVISION`
-- **Known Correction:** The live repository returned `404 Not Found` for `00-CENTRAL-HUB/Directives/MASTER-MEMORY-GEM-CAPTURE-DIRECTIVE.md`; the uploaded directive governed Capture `CAP-31072026-001`.
-- **Next Action:** Continue appending verified hub activity and reconcile the approved master directive at its canonical repository path.
+- **Correction Status:** The canonical Version 1.1 directive is installed and the live routing conflict has been reconciled.
+- **Next Action:** Pilot the Version 1.1 capture workflow and build the deterministic validator without creating unsupported paths.
