@@ -1,168 +1,329 @@
 # CONVERSATION CAPTURE AND ARCHITECT ACCOUNTABILITY AGENT SPECIFICATION
 
 **Agent ID:** AGENT-CAPTURE-001  
+**Version:** 1.1  
 **Status:** PROPOSED / MANUAL-PILOT  
-**Governing Directive:** `00-CENTRAL-HUB/Directives/MASTER-CONVERSATION-CAPTURE-ACCOUNTABILITY-AND-GITHUB-DEPLOYMENT-DIRECTIVE.md`
+**Repository:** `estibancreations-svg/Master-System-Buildout`  
+**Governing Directive:** `00-CENTRAL-HUB/Directives/MASTER-CONVERSATION-CAPTURE-ACCOUNTABILITY-AND-GITHUB-DEPLOYMENT-DIRECTIVE.md`  
+**Executable Prompt:** `03-AI-PROMPTS/Agent-Prompts/CONVERSATION-CAPTURE-AND-ARCHITECT-ACCOUNTABILITY-AGENT.md`
 
-## Mission
+---
 
-Execute complete, lossless conversation capture; deterministic verification; Architect accountability review; GitHub deployment; post-upload audit; and Central Hub registration without shortening, reconstructing, or falsely reporting completion.
+# MISSION
 
-## Operating Principle
+Create a complete source-backed conversation record; preserve it without alteration; validate it; challenge the result against The Architect's request; deploy it to the verified live GitHub structure; fetch it back; and integrate it into Central Hub tracking without false completion.
 
-The agent does not decide what The Architect wanted. It extracts the request, tests its output against that request, challenges its own work, and blocks deployment when the result is incomplete or materially improvable.
+---
 
-## Components
-
-### Intake Controller
-Collects email username, exact conversation title, complete source, capture boundary, status, repository, and branch.
-
-### Capture Processor
-Creates the raw transcript, Memory Gem, manifest, and numbered volumes.
-
-### Deterministic Validator
-Calculates hashes and counts; checks speaker order, continuous numbering, duplicates, placeholders, omissions, and volume continuity.
-
-### Architect Accountability Reviewer
-Runs the mandatory questions:
-- Is this what The Architect wanted?
-- Did the output match the request?
-- Was anything omitted, altered, assumed, or substituted?
-- Is this the best work available?
-- Can it be improved?
-- If improvement is possible, why was it not already applied?
-- Must the work be recreated before delivery?
-
-### GitHub Deployment Controller
-Uses safe GitHub writes, preserves existing repository state, records commit evidence, and refuses unsupported completion claims.
-
-### Post-Deployment Auditor
-Fetches files back, compares hashes and counts, checks registry links, and issues the final disposition.
-
-## Required States
+# CURRENT MATURITY
 
 ```text
-INTAKE
-SOURCE_VALIDATION
-MIRROR_CREATION
-CREATOR_REVIEW
-DETERMINISTIC_VALIDATION
-ARCHITECT_REVIEW
-READY_TO_DEPLOY
-DEPLOYING
-POST_UPLOAD_AUDIT
-CENTRAL_HUB_INTEGRATION
+Directive: INSTALLED
+Agent Specification: INSTALLED
+Executable Prompt: INSTALLED
+Manual Pilot: AVAILABLE
+Deterministic Validator Code: NOT BUILT
+GitHub Action: NOT BUILT
+Production Bot: NOT BUILT
+Deployment Package: NOT BUILT
+```
+
+The agent must not claim autonomous production capability until implementation files are verified under:
+
+```text
+05-AUTOMATION/Conversation-Capture-Agent/
+06-DEPLOYMENT/Conversation-Capture-Agent/
+07-DOCUMENTATION/Conversation-Capture-Agent/
+```
+
+---
+
+# LIVE ROUTING
+
+| Artifact | Location |
+|---|---|
+| Master directive | `00-CENTRAL-HUB/Directives/` |
+| Raw source transcript | `00-CENTRAL-HUB/INBOX/Source-Transcripts/` |
+| Intake record | `00-CENTRAL-HUB/INBOX/` |
+| Canonical Memory Gem | `00-CENTRAL-HUB/Memory-Gems/` |
+| Registries | `00-CENTRAL-HUB/Registries/` |
+| Agent specification | `02-SYSTEM-SPECIFICATIONS/Conversation-Capture-Agent/` |
+| Agent prompt | `03-AI-PROMPTS/Agent-Prompts/` |
+| Future code | `05-AUTOMATION/Conversation-Capture-Agent/` |
+| Future deployment | `06-DEPLOYMENT/Conversation-Capture-Agent/` |
+| Future documentation | `07-DOCUMENTATION/Conversation-Capture-Agent/` |
+
+Never use:
+
+```text
+06-AGENTS-AND-AUTOMATION/
+```
+
+Do not write to:
+
+```text
+09-MEMORY-GEMS/
+```
+
+Use `08-CHAT-LOGS/` only when The Architect explicitly requests an archive mirror.
+
+---
+
+# COMPONENTS
+
+## Intake Controller
+
+- Collects email username, exact title, complete source, completeness claim, capture boundary, status, and archive-mirror choice.
+- Does not ask again for values already supplied.
+- Stops on missing required inputs.
+
+## Repository Preflight Controller
+
+- Verifies repository and `main`.
+- Reads the live routing records.
+- Blocks unsupported paths.
+- Confirms no-write areas.
+
+## Capture Processor
+
+- Parses the source.
+- Preserves exact message bodies.
+- Includes assistant progress messages.
+- Creates raw transcript, Memory Gem, manifest, and volumes.
+
+## Deterministic Validator
+
+- Calculates hashes and counts when tools permit.
+- Checks sequence, duplicates, placeholders, missing content, and volume continuity.
+- Records whether validation was automated, tool-assisted, or manual.
+- Never claims validator automation was used unless verified code ran.
+
+## Architect Accountability Reviewer
+
+Asks:
+
+- Is this what The Architect requested?
+- Does the output match the request?
+- Was anything omitted, altered, assumed, substituted, or mislabeled?
+- Is this the best work available?
+- Can it be materially improved?
+- If so, why was it not already improved?
+- Must it be recreated?
+- Is any completion claim unsupported?
+
+May return:
+
+```text
 APPROVED
 RECREATE
 BLOCKED
 ```
 
-## Gate Rules
+## GitHub Deployment Controller
 
-No transition to `READY_TO_DEPLOY` unless:
+- Uses coherent Git object operations when available.
+- Uses safe file operations as fallback.
+- Preserves current repository content.
+- Records every real commit.
+- Never invents a path or SHA.
 
-- Source Gate = PASS
-- Creator Review = PASS
-- Deterministic Validation = PASS
-- Architect Accountability Disposition = APPROVED
+## Post-Deployment Auditor
 
-No transition to `APPROVED` unless:
+- Fetches every created file.
+- Verifies counts, hashes, first/last messages, volume continuity, and links.
+- Blocks Central Hub integration when deployment verification fails.
 
-- GitHub writes succeeded
-- Files were fetched back
-- Hashes and counts were verified
-- Central Hub tracking was updated
-- Final accountability audit passed
+## Central Hub Registrar
 
-## Manual Pilot
+- Updates intake, registries, indexes, ledger, tracker, and Repository Map.
+- Preserves existing entries.
+- Uses `UNASSIGNED` or `REVIEW REQUIRED` for uncertain classification.
 
-Run the master directive manually against several conversations before automation.
+---
 
-Pilot goals:
-
-1. Validate source parsing.
-2. Validate long-volume handling.
-3. Validate GitHub write limits.
-4. Validate deterministic checks.
-5. Validate accountability rework loops.
-6. Validate registry and index updates.
-7. Record failure patterns.
-
-## Automation Build
-
-After the pilot:
-
-1. Freeze the directive as Version 1.0.
-2. Implement deterministic validation as code.
-3. Create the agent state machine.
-4. Connect GitHub operations.
-5. Add retry and rollback rules.
-6. Add Quality Control logging.
-7. Add usage, credit, workload, time, cost, and failure monitoring.
-8. Add test fixtures for complete, incomplete, duplicate, oversized, corrupted, and DOCX-derived transcripts.
-9. Require human approval before the first production deployments.
-10. Promote only after Quality Control certification.
-
-## Repository Placement
-
-This specification belongs in:
+# STATE MACHINE
 
 ```text
-02-SYSTEM-SPECIFICATIONS/Conversation-Capture-Agent/
+AWAITING_INPUT
+    ↓
+REPOSITORY_PREFLIGHT
+    ↓
+SOURCE_VALIDATION
+    ↓
+MIRROR_CREATION
+    ↓
+CREATOR_REVIEW
+    ↓
+DETERMINISTIC_VALIDATION
+    ↓
+ARCHITECT_ACCOUNTABILITY_REVIEW
+    ↓
+READY_FOR_DEPLOYMENT
+    ↓
+GITHUB_DEPLOYMENT
+    ↓
+POST_UPLOAD_VERIFICATION
+    ↓
+CENTRAL_HUB_INTEGRATION
+    ↓
+FINAL_ACCOUNTABILITY_AUDIT
+    ↓
+COMPLETE
 ```
 
-The executable agent prompt belongs in:
+Failure states:
 
 ```text
-03-AI-PROMPTS/Agent-Prompts/
+BLOCKED_SOURCE
+BLOCKED_REPOSITORY
+RECREATE_REQUIRED
+BLOCKED_DEPLOYMENT
+BLOCKED_VERIFICATION
+BLOCKED_INTEGRATION
 ```
 
-Future implementation code belongs in:
+No phase may be skipped.
+
+---
+
+# INPUT CONTRACT
+
+```yaml
+email_username: required
+conversation_title: required
+source_transcript: required
+source_claimed_complete: required
+first_intended_message: required
+last_intended_message: required
+status: CHECKPOINT
+creation_mode: NEW_CONVERSATION_RECORD
+archive_mirror: NO
+repository: estibancreations-svg/Master-System-Buildout
+branch: main
+```
+
+---
+
+# OUTPUT CONTRACT
+
+The agent produces, when approved:
+
+- Raw text transcript.
+- Canonical Memory Gem or manifest and volumes.
+- Verification manifest.
+- Architect Accountability Review.
+- Intake record.
+- Registry updates.
+- Index updates.
+- Repository Map update.
+- Final report with real paths and commit SHAs.
+
+Optional:
+
+- Exact archive mirror under `08-CHAT-LOGS/` only when requested.
+
+Never:
+
+- Write to `09-MEMORY-GEMS/`.
+- Create `06-AGENTS-AND-AUTOMATION/`.
+- Replace complete messages with summaries.
+- Claim production automation that does not exist.
+- Mark a failed write complete.
+
+---
+
+# APPROVAL POLICY
+
+Deployment requires:
+
+```text
+Repository Preflight: PASS
+Source Gate: PASS or explicitly accepted REVIEW REQUIRED
+Creator Review: PASS
+Deterministic Validation: PASS or explicitly documented REVIEW REQUIRED
+Architect Final Disposition: APPROVED
+```
+
+A source with missing or summarized content cannot be approved as a complete mirrored record.
+
+---
+
+# QUALITY AND ACCOUNTABILITY RECORD
+
+Every run must record:
+
+```text
+Architect Intent Match:
+Request-to-Output Match:
+Completeness:
+Source Fidelity:
+Repository Compliance:
+Best-Work Challenge:
+Improvement Available:
+Improvement Applied:
+Reason Improvement Was Not Applied:
+False-Completion Risk:
+Final Disposition:
+```
+
+If material improvement is possible and no legitimate constraint prevents it, return `RECREATE`.
+
+---
+
+# IMPLEMENTATION ROADMAP
+
+## Stage 1 — Manual pilot
+
+Use the directive and prompt manually on representative transcripts.
+
+## Stage 2 — Deterministic validator
+
+Build under:
 
 ```text
 05-AUTOMATION/Conversation-Capture-Agent/
 ```
 
-Deployment files belong in:
+Minimum functions:
+
+- Transcript parser.
+- Hash generator.
+- Message counter.
+- Sequence validator.
+- Duplicate detector.
+- Placeholder detector.
+- Volume splitter.
+- Manifest builder.
+- Fetch-back comparator.
+
+## Stage 3 — Tests
+
+Add fixtures for:
+
+- Large conversations.
+- Missing prompts.
+- Repeated messages.
+- Corrupt exports.
+- DOCX-derived transcripts.
+- Failed GitHub writes.
+- Filename collisions.
+
+## Stage 4 — Deployment package
+
+Build under:
 
 ```text
 06-DEPLOYMENT/Conversation-Capture-Agent/
 ```
 
-Operator documentation belongs in:
+## Stage 5 — Operator documentation
+
+Build under:
 
 ```text
 07-DOCUMENTATION/Conversation-Capture-Agent/
 ```
 
-## Invocation
+## Stage 6 — Quality Control certification
 
-```text
-@Conversation-Capture-Agent
-
-Execute the canonical master directive.
-
-Email Username: [USERNAME BEFORE @]
-Conversation Title: [EXACT TITLE]
-Source Transcript: [ATTACHED SOURCE]
-Status: CHECKPOINT
-Creation Mode: NEW CONVERSATION RECORD
-```
-
-## Final Output
-
-The agent must return:
-
-- Source validation result
-- Message counts
-- File paths
-- Hashes
-- Creator review
-- Deterministic validation
-- Architect Accountability Review
-- GitHub commit SHAs
-- Post-upload verification
-- Registry and index status
-- Remaining work
-- Blockers
-- One next action
+The production agent cannot be declared complete until independent Quality Control verifies source fidelity, repository routing, error handling, and false-completion prevention.
