@@ -1,108 +1,93 @@
-# CONVERSATION CAPTURE AND ARCHITECT ACCOUNTABILITY AGENT
+# CONVERSATION CAPTURE AND ARCHITECT ACCOUNTABILITY AGENT — EXECUTABLE PROMPT
 
 **Agent ID:** AGENT-CAPTURE-001  
-**Status:** PROPOSED / MANUAL-PILOT  
+**Version:** 1.1  
+**Status:** MANUAL-PILOT  
 **Canonical Directive:** `00-CENTRAL-HUB/Directives/MASTER-CONVERSATION-CAPTURE-ACCOUNTABILITY-AND-GITHUB-DEPLOYMENT-DIRECTIVE.md`  
 **System Specification:** `02-SYSTEM-SPECIFICATIONS/Conversation-Capture-Agent/CONVERSATION-CAPTURE-AND-ARCHITECT-ACCOUNTABILITY-AGENT-SPECIFICATION.md`
 
-## Purpose
+---
 
-Create a complete mirrored conversation record from a supplied source transcript, validate it, challenge it against The Architect's request, upload it to GitHub, verify the upload, and update the Central Hub tracking records.
+@GitHub
 
-## Required Inputs
+Execute the canonical directive at:
 
-Ask for and verify all of the following before execution:
+```text
+00-CENTRAL-HUB/Directives/MASTER-CONVERSATION-CAPTURE-ACCOUNTABILITY-AND-GITHUB-DEPLOYMENT-DIRECTIVE.md
+```
+
+Repository:
+
+```text
+estibancreations-svg/Master-System-Buildout
+```
+
+Branch:
+
+```text
+main
+```
+
+Creation Mode:
+
+```text
+NEW CONVERSATION RECORD
+```
+
+Status:
+
+```text
+CHECKPOINT
+```
+
+Archive Mirror:
+
+```text
+NO
+```
+
+## Required intake
+
+Use values already supplied in this request or attachment. Ask only for missing values.
 
 ```text
 Email Username: [NAME BEFORE @]
-Conversation Title: [EXACT TITLE]
-Source Transcript: [ATTACHED COMPLETE SOURCE]
-Status: CHECKPOINT
-Creation Mode: NEW CONVERSATION RECORD
+Conversation Title: [EXACT FEED TITLE]
+Source Transcript: [COMPLETE ATTACHED OR PASTED SOURCE]
+Source Claimed Complete: [YES / NO]
+First Intended Message: [IDENTIFIER OR OPENING WORDS]
+Last Intended Message: [IDENTIFIER OR OPENING WORDS]
 ```
 
-Do not request or store the full email address.
+## Mandatory execution rules
 
-## Operating Command
+1. Run repository preflight against the live root structure.
+2. Do not create or use `06-AGENTS-AND-AUTOMATION/`.
+3. Use `00-CENTRAL-HUB/Memory-Gems/` as the canonical Memory Gem destination.
+4. Use `00-CENTRAL-HUB/INBOX/Source-Transcripts/` for raw text source.
+5. Do not write to `09-MEMORY-GEMS/`.
+6. Do not write to `08-CHAT-LOGS/` unless `Archive Mirror: YES`.
+7. Do not search for a matching conversation in order to merge or update it.
+8. Inspect registries only for unused IDs, filename collision prevention, and safe updates.
+9. Use the supplied source—not model memory.
+10. Preserve every message, typo, code block, link, file reference, repeated statement, and visible progress update.
+11. Do not summarize, shorten, rewrite, clean, reconstruct, or omit the conversation.
+12. Split large captures into numbered volumes.
+13. Run Creator Self-Review.
+14. Run Deterministic Validation and state whether it was automated, tool-assisted, or manual.
+15. Run the Architect Accountability Gate.
+16. Recreate materially improvable work before deployment.
+17. Deploy only after approval.
+18. Fetch every created file back from GitHub.
+19. Verify content, message counts, first/last messages, volumes, links, and commits.
+20. Update Central Hub intake, registries, indexes, ledger, tracker, and Repository Map only after transcript verification passes.
+21. Return the complete accountability report with real paths and GitHub-returned commit SHAs.
+22. Do not claim that validator code, a GitHub Action, or a production bot exists unless verified in the repository.
 
-```text
-@Conversation-Capture-Agent
+## Required disposition
 
-Execute the canonical directive stored at:
+If any mandatory gate fails, stop and report the exact failure state.
 
-00-CENTRAL-HUB/Directives/MASTER-CONVERSATION-CAPTURE-ACCOUNTABILITY-AND-GITHUB-DEPLOYMENT-DIRECTIVE.md
+Do not convert a blocked result into a summary.
 
-Creation Mode: NEW CONVERSATION RECORD
-Status: CHECKPOINT
-Email Username: [USERNAME BEFORE @]
-Conversation Title: [EXACT TITLE]
-Source Transcript: [ATTACHED FILE]
-
-Run every phase in order.
-Do not skip source validation.
-Do not use model memory as the source.
-Do not summarize, shorten, rewrite, clean, or reconstruct the conversation.
-Split long captures into numbered volumes instead of omitting content.
-Run Creator Self-Review.
-Run Deterministic Validation.
-Run Architect Accountability Review.
-Do not deploy materially improvable work.
-Upload only after all approval gates pass.
-Fetch every created file back from GitHub.
-Verify hashes, counts, first and last messages, volume continuity, paths, and commit evidence.
-Update the intake record, registries, indexes, Capture Ledger, Work Tracker, and Repository Map.
-Return the complete capture and accountability report with real GitHub paths and commit SHAs.
-```
-
-## Mandatory Architect Accountability Questions
-
-Before deployment, answer:
-
-1. Is this what The Architect actually requested?
-2. Does the output match the exact request?
-3. Did the system produce what it said it produced?
-4. Is anything missing, altered, assumed, substituted, or mislabeled?
-5. Is this the best work the system can currently produce?
-6. Can it be materially improved?
-7. If it can be improved, why was the improvement not already made?
-8. Should the work be recreated before deployment?
-
-Use:
-
-```text
-Architect Intent Match: PASS / FAIL
-Request-to-Output Match: PASS / FAIL
-Completeness: PASS / FAIL
-Source Fidelity: PASS / FAIL
-Repository Compliance: PASS / FAIL
-Best-Work Challenge: PASS / FAIL
-Improvement Available: YES / NO
-Improvement Applied: YES / NO / NOT APPLICABLE
-Reason Improvement Was Not Applied: [REQUIRED]
-Final Disposition: APPROVED / RECREATE / BLOCKED
-```
-
-## Failure Rule
-
-If any required source section is missing or summarized, stop with:
-
-```text
-BLOCKED — SOURCE TRANSCRIPT CONTAINS MISSING OR SUMMARIZED CONTENT
-```
-
-Do not create or report a complete Memory Gem from an incomplete source.
-
-## Final Report Requirement
-
-The final report must identify:
-
-- What was created
-- Exact GitHub paths
-- Message counts
-- Source and output hashes
-- Review results
-- Registry and index updates
-- Real commit SHAs
-- Remaining work
-- Blockers
-- One precise next action
+Do not mark partial work complete.
