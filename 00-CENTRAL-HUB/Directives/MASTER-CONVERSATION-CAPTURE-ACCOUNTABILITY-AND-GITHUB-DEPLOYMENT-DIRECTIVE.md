@@ -1,52 +1,123 @@
 # MASTER CONVERSATION CAPTURE, ARCHITECT ACCOUNTABILITY, AND GITHUB DEPLOYMENT DIRECTIVE
 
 **Directive ID:** DIR-CONVERSATION-CAPTURE-001  
-**Version:** 1.0  
-**Status:** CHECKPOINT  
+**Version:** 1.1  
+**Status:** CHECKPOINT / MANUAL-PILOT  
 **Repository:** `estibancreations-svg/Master-System-Buildout`  
 **Branch:** `main`  
 **Canonical Directive Path:** `00-CENTRAL-HUB/Directives/MASTER-CONVERSATION-CAPTURE-ACCOUNTABILITY-AND-GITHUB-DEPLOYMENT-DIRECTIVE.md`
 
 ---
 
-# PLAIN-LANGUAGE OPERATOR SUMMARY
+# PURPOSE
 
-This directive performs one controlled workflow:
+Create one new, complete, source-backed conversation record; validate it; challenge it against The Architect's request; deploy it into the live GitHub structure; fetch it back; verify it; and register the work without summaries, omissions, false completion, or unsupported folder creation.
 
-1. Collect the email username, exact conversation title, and complete transcript source.
-2. Validate the source before creating anything.
-3. Preserve the complete supplied conversation as an untouched raw transcript.
-4. Create a GitHub-readable Memory Gem without shortening or rewriting the conversation.
-5. Split long captures into numbered volumes instead of omitting content.
-6. Run deterministic checks for counts, sequence, hashes, missing messages, placeholders, and duplicates.
-7. Run an independent Architect Accountability Review.
-8. Reject and recreate deficient work before deployment.
-9. Upload approved files into GitHub.
-10. Fetch the files back and verify the upload.
-11. Update Central Hub intake records, registries, indexes, ledger, tracker, and Repository Map.
-12. Report exactly what was created, where it was stored, what passed, what failed, and the real GitHub commit evidence.
+This directive controls the complete process. It must be executed in phases and must stop at any failed gate.
 
-This directive creates a **new conversation record**. It does not search for or merge with an older Memory Gem, except to assign unused identifiers and avoid overwriting an existing filename.
+---
+
+# LIVE REPOSITORY ROUTING — CONTROLLING PATHS
+
+Use the verified live repository structure below.
+
+| Work Type | Canonical Location |
+|---|---|
+| Master governing directive | `00-CENTRAL-HUB/Directives/` |
+| Source intake and intake records | `00-CENTRAL-HUB/INBOX/` |
+| Raw text source transcripts | `00-CENTRAL-HUB/INBOX/Source-Transcripts/` |
+| Canonical Central Hub Memory Gems | `00-CENTRAL-HUB/Memory-Gems/` |
+| Central Hub registries | `00-CENTRAL-HUB/Registries/` |
+| Central Hub primary index | `00-CENTRAL-HUB/INDEX.md` |
+| Memory Gem index | `00-CENTRAL-HUB/Memory-Gems/INDEX.md` |
+| Inbox index | `00-CENTRAL-HUB/INBOX/INDEX.md` |
+| Registry index | `00-CENTRAL-HUB/Registries/INDEX.md` |
+| Repository map | `00-CENTRAL-HUB/REPOSITORY-MAP.md` |
+| Repository structure correction | `00-CENTRAL-HUB/REPOSITORY-STRUCTURE-RECONCILIATION.md` |
+| Agent/system specification | `02-SYSTEM-SPECIFICATIONS/Conversation-Capture-Agent/` |
+| Executable agent prompt | `03-AI-PROMPTS/Agent-Prompts/` |
+| Future validator and automation code | `05-AUTOMATION/Conversation-Capture-Agent/` |
+| Future deployment configuration | `06-DEPLOYMENT/Conversation-Capture-Agent/` |
+| Future operator documentation | `07-DOCUMENTATION/Conversation-Capture-Agent/` |
+| Existing verbatim chat-log archive | `08-CHAT-LOGS/` |
+| Existing top-level Memory Gem area | `09-MEMORY-GEMS/` |
+
+## Prohibited path
+
+Do not create or route work to:
+
+```text
+06-AGENTS-AND-AUTOMATION/
+```
+
+That is not part of the live repository.
+
+## Conversation-storage authority
+
+Until The Architect approves a final consolidation rule:
+
+1. `00-CENTRAL-HUB/Memory-Gems/` is the canonical destination for captures governed by this directive.
+2. `00-CENTRAL-HUB/INBOX/Source-Transcripts/` stores the raw text source used for processing.
+3. `08-CHAT-LOGS/` is an existing verbatim archive, but this directive must not duplicate a record there unless The Architect explicitly sets `Archive Mirror: YES`.
+4. `09-MEMORY-GEMS/` is unresolved and is a **NO-WRITE LOCATION** for this workflow.
+5. Never write one canonical record into all three locations.
+6. Never delete, merge, or repurpose existing records without explicit authorization.
 
 ---
 
 # CONTROLLING AUTHORITY
 
-The user is identified as:
+The user is:
 
 ```text
 THE ARCHITECT
 ```
 
-The Architect's exact request is the controlling requirement. No system, agent, tool, workflow, repository convention, prior prompt, inferred preference, or efficiency decision may silently override it.
+The Architect's exact request is the controlling requirement.
 
-When a conflict exists:
+No model preference, repository assumption, prior prompt, convenience decision, or automation shortcut may silently override it.
 
-1. Preserve source records.
-2. Do not invent a resolution.
-3. Mark the conflict.
-4. Ask The Architect only when execution cannot proceed safely.
-5. Never claim completion while the conflict remains unresolved.
+When instructions conflict:
+
+1. Preserve the source.
+2. Identify the conflict.
+3. Do not invent a resolution.
+4. Ask The Architect only when the conflict prevents safe execution.
+5. Do not claim completion while the conflict remains unresolved.
+
+---
+
+# OPERATING MODE
+
+Use:
+
+```text
+Creation Mode: NEW CONVERSATION RECORD
+Status: CHECKPOINT
+Archive Mirror: NO
+```
+
+This workflow creates a new record.
+
+Do not search for a matching conversation in order to merge, append, supersede, or update it.
+
+Repository inspection is allowed only to:
+
+- Verify repository access and branch.
+- Verify the live structure.
+- Assign the next unused IDs.
+- Avoid overwriting an existing filename.
+- Fetch existing registries and indexes before updating them.
+- Verify that required paths and links exist.
+
+If the intended filename already exists, create a separately sequenced filename:
+
+```text
+_MEMORY-GEM_002.md
+_MEMORY-GEM_003.md
+```
+
+Do not overwrite the earlier record.
 
 ---
 
@@ -54,133 +125,123 @@ When a conflict exists:
 
 ## Source before transformation
 
-The complete supplied transcript is the source of truth. Do not use model memory as the authoritative source. Do not reconstruct unavailable messages. Do not replace missing content with summaries.
+The complete user-supplied transcript is the source of truth.
 
-## The mirror is immutable
+Do not use model memory as the authoritative transcript.
 
-The raw transcript and complete conversation body must not be improved, corrected, rewritten, cleaned, shortened, or reorganized.
+Do not reconstruct unavailable messages.
 
-The improvement requirement applies to the capture process, file structure, metadata, verification, repository integration, and derivative system artifacts. It does not authorize changing the original conversation.
+Do not replace missing content with summaries or descriptions.
 
-## Length is not permission to omit
+## The conversation mirror is immutable
 
-When the conversation is too large, split it into numbered volumes, preserve continuous numbering, preserve every message body, and create a manifest.
+Do not improve, correct, clean, rewrite, shorten, or reorganize the original conversation.
+
+Improvement applies to the processing method, metadata, validation, repository integration, prompt design, and derivative system work—not the source conversation.
+
+## Length is never permission to omit
+
+If a record is large, split it into numbered volumes.
+
+Preserve every message and continuous numbering.
 
 ## No false completion
 
-Do not report success unless required files exist, GitHub returned real commit evidence, files were fetched back, and post-upload verification passed or limitations were explicitly reported.
+Do not report success unless:
 
-## Independent review is mandatory
+- Required files exist.
+- GitHub returned real commit evidence.
+- Created files were fetched back.
+- Post-upload checks were performed.
+- Limitations are explicitly reported.
+- No failed action is marked complete.
 
-Every run must include:
+## Manual-pilot limitation
 
-- Creator Self-Review
-- Deterministic Validation
-- Independent Architect Accountability Review
-- Post-Deployment Audit
+The repository currently contains the directive, specification, and executable prompt.
 
-## Materially improvable work must not be submitted
+Do not claim that the deterministic validator, production bot, GitHub Action, automation code, or deployment package already exists unless those files are verified in the live repository.
 
-If the system determines that the work can be materially improved, it must improve or recreate it before submission. When it cannot, it must state the real limiting reason.
+Until implementation exists, use:
+
+```text
+Operating Status: MANUAL-PILOT
+Deterministic Validation Mode: MANUAL OR TOOL-ASSISTED
+Production Automation Status: NOT BUILT
+```
 
 ---
 
 # OPERATING ROLES
 
-## Intake Controller
+## 1. Intake Controller
 
-Collects required inputs, confirms capture boundary and creation mode, and refuses to start with missing source information.
+Collects required inputs and confirms the capture boundary.
 
-## Capture Processor
+## 2. Capture Processor
 
-Reads the complete source, identifies message boundaries, preserves exact message bodies, and creates raw and Markdown records.
+Creates the raw transcript, Memory Gem, manifest, and volumes.
 
-## Deterministic Validator
+## 3. Deterministic Validator
 
-Handles SHA-256 hashes, counts, speaker sequence, continuous numbering, duplicate detection, placeholder detection, volume continuity, and pre/post-upload comparisons.
+Checks hashes, counts, sequence, duplicates, placeholders, omissions, and volume continuity.
 
-## Architect Accountability Reviewer
+Use deterministic code from `05-AUTOMATION/Conversation-Capture-Agent/` only after that implementation is verified to exist. Until then, record the actual method used.
 
-Independently challenges the work against The Architect's request and may reject, require correction, require recreation, or block deployment.
+## 4. Architect Accountability Reviewer
 
-## GitHub Deployment Controller
+Independently tests the result against The Architect's request and may reject, return, recreate, or block it.
 
-Verifies repository and paths, creates files and commits safely, and returns real paths and commit SHAs.
+## 5. GitHub Deployment Controller
 
-## Post-Deployment Auditor
+Uses safe GitHub writes and returns real paths and commit evidence.
 
-Fetches created files, verifies content and hashes, checks registry links, and issues the final disposition.
+## 6. Post-Deployment Auditor
 
----
+Fetches the created files and confirms that the deployed result matches the approved package.
 
-# CREATION MODE
-
-Use:
-
-```text
-NEW CONVERSATION RECORD
-```
-
-This run creates a new record.
-
-Do not:
-
-- Search for a matching existing Memory Gem
-- Append to an existing Memory Gem
-- Merge this transcript into another conversation
-- Replace or overwrite an existing conversation record
-- Treat a similar title as the same conversation
-
-Existing repository records may be inspected only to assign unused IDs, avoid filename collisions, and verify repository structure.
-
-When the intended filename already exists, add a sequence:
-
-```text
-_MEMORY-GEM_002.md
-_MEMORY-GEM_003.md
-```
+The same model may perform multiple roles during manual-pilot runs, but it must issue separate review results for each role.
 
 ---
 
 # PHASE 0 — REQUIRED INTAKE
 
-Before any processing, ask The Architect for:
+Ask for any missing item below. Do not ask again for information already supplied in the current request or attached source.
 
 ```text
-1. Email username before the @ sign
-2. Exact conversation-feed title
-3. Complete source transcript file
+Email Username: [NAME BEFORE @]
+Conversation Title: [EXACT FEED TITLE]
+Source Transcript: [COMPLETE ATTACHED OR PASTED SOURCE]
+Source Claimed Complete: [YES / NO]
+First Intended Message: [IDENTIFIER OR OPENING WORDS]
+Last Intended Message: [IDENTIFIER OR OPENING WORDS]
+Status: CHECKPOINT
+Archive Mirror: NO
 ```
 
-## Email username
+## Email rule
 
-Ask:
+Request only the portion before `@`.
 
-```text
-Enter the name from your email address before the @ sign.
-```
+Do not request or store the full email address.
 
-Do not request or store the full email address. Preserve the capitalization provided.
+Preserve the capitalization supplied by The Architect.
 
-## Conversation title
+## Title rule
 
-Ask:
+Use the exact conversation-feed title.
 
-```text
-Enter the exact conversation-feed title.
-```
+Remove only:
 
-Remove only emojis, decorative outer asterisks, and leading or trailing blank spaces. Do not summarize, improve, shorten, or reinterpret the title.
+- Emojis.
+- Decorative outer asterisks.
+- Leading or trailing blank spaces.
 
-## Source transcript
+Do not summarize, shorten, improve, or reinterpret the title.
 
-Ask:
+## Accepted source formats
 
-```text
-Upload the complete source transcript for the conversation.
-```
-
-Preferred formats:
+Preferred:
 
 ```text
 .json
@@ -189,54 +250,76 @@ Preferred formats:
 .txt
 ```
 
-A `.docx` may be used as a secondary source, but a DOCX-derived record must remain `REVIEW REQUIRED` unless compared against a complete text, HTML, or JSON source.
+Also accepted:
 
-## Capture boundary
+- Pasted complete transcript.
+- `.docx` as a secondary or derived source.
 
-Confirm:
-
-- First intended message
-- Last intended message
-- Whether the source is claimed complete by The Architect
-- Whether this is a checkpoint or closed conversation
-
-Default status:
+A DOCX-only source must be marked:
 
 ```text
-CHECKPOINT
+Source Type: DOCX-DERIVED
+Integrity Ceiling: REVIEW REQUIRED
 ```
 
-Do not proceed when required inputs are missing.
+unless it is compared against a complete text, HTML, JSON, or platform export.
 
 ---
 
-# PHASE 1 — SOURCE VALIDATION GATE
+# PHASE 1 — REPOSITORY PREFLIGHT
 
-Before creating any output:
+Before processing the transcript:
 
-1. Read the full source.
-2. Record the source filename and format.
-3. Calculate the source SHA-256.
-4. Identify every visible user and assistant message.
-5. Count all messages.
-6. Record the speaker sequence.
-7. Record the first message opening.
-8. Record the last message opening.
-9. Detect unverified speaker labels.
-10. Search for summaries replacing complete messages, placeholders, missing message bodies, broken numbering, corrupt sections, and duplicate messages.
-11. Compare the source boundary with The Architect's stated boundary.
+1. Verify repository: `estibancreations-svg/Master-System-Buildout`.
+2. Verify branch: `main`.
+3. Fetch the root `README.md`.
+4. Fetch `00-CENTRAL-HUB/REPOSITORY-STRUCTURE-RECONCILIATION.md`.
+5. Fetch this canonical directive.
+6. Verify the canonical record and index paths.
+7. Confirm that no write will be made to `06-AGENTS-AND-AUTOMATION/`.
+8. Confirm that `09-MEMORY-GEMS/` remains untouched.
+9. Record the current branch head when the tool supports it.
 
-## Source Gate disposition
-
-Use one:
+Use:
 
 ```text
-PASS
-REVIEW REQUIRED
-BLOCKED
+Repository Preflight: PASS / REVIEW REQUIRED / BLOCKED
 ```
 
-Block immediately when the source contains missing or summarized content and The Architect requires a complete mirrored record.
+Do not continue after a blocked preflight.
+
+---
+
+# PHASE 2 — SOURCE VALIDATION GATE
+
+Before creating files:
+
+1. Read the complete source.
+2. Record source filename and format.
+3. Calculate SHA-256 when the execution environment supports it.
+4. Identify every visible user and assistant message.
+5. Include visible assistant progress messages.
+6. Count all messages.
+7. Record the speaker sequence.
+8. Record first-message opening text.
+9. Record last-message opening text.
+10. Detect unverified speakers.
+11. Detect:
+    - Summaries replacing full messages.
+    - Placeholders.
+    - “Full prompt omitted.”
+    - “Provided earlier.”
+    - Missing message bodies.
+    - Broken numbering.
+    - Corrupt text.
+    - Duplicate messages caused by export processing.
+12. Compare the source boundary with The Architect's requested boundary.
+
+Use:
+
+```text
+Source Gate: PASS / REVIEW REQUIRED / BLOCKED
+```
 
 Required block states:
 
@@ -249,16 +332,16 @@ BLOCKED — SOURCE FILE COULD NOT BE READ
 BLOCKED — CAPTURE BOUNDARY CANNOT BE VERIFIED
 ```
 
-Do not continue after a blocked source gate.
+Do not create a “complete” record from a blocked source.
 
 ---
 
-# PHASE 2 — IDENTITY, IDS, AND FILENAMES
+# PHASE 3 — IDENTITY, IDS, AND FILENAMES
 
-## Identity standard
+## Display identity
 
 ```text
-((Platform Name))-((Email Username))-((Conversation Feed Title))
+ChatGPT-((Email Username))-((Conversation Feed Title))
 ```
 
 Platform:
@@ -267,21 +350,19 @@ Platform:
 ChatGPT
 ```
 
-Model identity when verified:
+Model identity, when verified for the active system:
 
 ```text
 GPT-5.6 Thinking
 ```
 
-## Date standard
-
-Use the true execution date:
+## Date format
 
 ```text
 DD-MM-YYYY
 ```
 
-## Identifiers
+## IDs
 
 ```text
 Conversation ID: CONV-DDMMYYYY-###
@@ -291,17 +372,11 @@ Work ID: WORK-DDMMYYYY-###
 Review ID: REVIEW-DDMMYYYY-###
 ```
 
-Inspect registries only to assign unused IDs.
+Inspect the applicable registry only to assign the next unused sequence.
 
-## Required filenames
+## Filenames
 
-Original source copy when supported:
-
-```text
-DD-MM-YYYY_CHATGPT-((EMAIL-USERNAME))-((CONVERSATION-TITLE))_ORIGINAL-SOURCE.((EXT))
-```
-
-Raw transcript:
+Raw source transcript:
 
 ```text
 DD-MM-YYYY_CHATGPT-((EMAIL-USERNAME))-((CONVERSATION-TITLE))_RAW-VISIBLE-CONVERSATION.txt
@@ -313,25 +388,7 @@ Memory Gem:
 DD-MM-YYYY_CHATGPT-((EMAIL-USERNAME))-((CONVERSATION-TITLE))_MEMORY-GEM.md
 ```
 
-Verification manifest:
-
-```text
-DD-MM-YYYY_CHATGPT-((EMAIL-USERNAME))-((CONVERSATION-TITLE))_VERIFICATION-MANIFEST.md
-```
-
-Architect Accountability Review:
-
-```text
-DD-MM-YYYY_CHATGPT-((EMAIL-USERNAME))-((CONVERSATION-TITLE))_ARCHITECT-ACCOUNTABILITY-REVIEW.md
-```
-
-Intake record:
-
-```text
-DD-MM-YYYY_CHATGPT-((EMAIL-USERNAME))-((CONVERSATION-TITLE))_CHECKPOINT-INTAKE.md
-```
-
-Large-capture manifest:
+Large-record manifest:
 
 ```text
 DD-MM-YYYY_CHATGPT-((EMAIL-USERNAME))-((CONVERSATION-TITLE))_MEMORY-GEM-MANIFEST.md
@@ -344,33 +401,80 @@ DD-MM-YYYY_CHATGPT-((EMAIL-USERNAME))-((CONVERSATION-TITLE))_MEMORY-GEM_VOL-01.m
 DD-MM-YYYY_CHATGPT-((EMAIL-USERNAME))-((CONVERSATION-TITLE))_MEMORY-GEM_VOL-02.md
 ```
 
+Verification manifest:
+
+```text
+DD-MM-YYYY_CHATGPT-((EMAIL-USERNAME))-((CONVERSATION-TITLE))_VERIFICATION-MANIFEST.md
+```
+
+Architect review:
+
+```text
+DD-MM-YYYY_CHATGPT-((EMAIL-USERNAME))-((CONVERSATION-TITLE))_ARCHITECT-ACCOUNTABILITY-REVIEW.md
+```
+
+Intake record:
+
+```text
+DD-MM-YYYY_CHATGPT-((EMAIL-USERNAME))-((CONVERSATION-TITLE))_CHECKPOINT-INTAKE.md
+```
+
+Filename normalization:
+
+- Remove emojis.
+- Remove decorative outer asterisks.
+- Replace unsupported filename characters with hyphens.
+- Replace spaces with hyphens.
+- Collapse repeated hyphens.
+- Preserve meaningful numbers.
+- Do not abbreviate unless a verified technical limit requires it.
+
 ---
 
-# PHASE 3 — MIRROR CREATION
+# PHASE 4 — RAW TRANSCRIPT CREATION
 
-Create two authoritative records.
-
-## Record A — Raw transcript
-
-Repository destination:
+Create the raw textual mirror at:
 
 ```text
 00-CENTRAL-HUB/INBOX/Source-Transcripts/
 ```
 
-The raw record must preserve every supplied message, progress message, heading, paragraph, list, table, code block, writing block, link, file reference, repetition, typo, correction, disagreement, incomplete instruction, and visible status report.
+Preserve every supplied:
 
-Do not add explanations inside the raw conversation body.
+- User message.
+- Assistant message.
+- Assistant progress message.
+- Heading.
+- Paragraph.
+- List.
+- Table.
+- Code block.
+- Writing block.
+- Link.
+- File reference.
+- Repeated message.
+- Typo.
+- Correction.
+- Disagreement.
+- Approval.
+- Incomplete instruction.
+- Status report.
 
-## Record B — Markdown Memory Gem
+Do not add interpretations inside the raw conversation body.
 
-Repository destination:
+When the original source is binary and the active GitHub operation cannot safely preserve the original binary bytes, do not claim that the original file was committed. Commit the verified raw text extraction and record the binary-source limitation in the verification manifest.
+
+---
+
+# PHASE 5 — MEMORY GEM CREATION
+
+Create the canonical Memory Gem at:
 
 ```text
 00-CENTRAL-HUB/Memory-Gems/
 ```
 
-Use continuous message numbering:
+Use:
 
 ```markdown
 ## MESSAGE 001 — USER
@@ -386,6 +490,8 @@ Use continuous message numbering:
 ---
 ```
 
+Continue through the complete source.
+
 If a speaker cannot be verified:
 
 ```markdown
@@ -394,101 +500,146 @@ If a speaker cannot be verified:
 
 Do not guess.
 
-## Lossless rules
+## Prohibited transformations
 
-Do not summarize, shorten, rewrite, paraphrase, correct, improve, remove repetition, remove mistakes, merge messages, reorder messages, replace prompts with descriptions, remove code, remove links, remove progress messages, infer unavailable text, or omit content because it is long.
+Do not:
+
+- Summarize.
+- Shorten.
+- Rewrite.
+- Paraphrase.
+- Correct spelling.
+- Correct grammar.
+- Correct punctuation.
+- Improve wording.
+- Remove repetition.
+- Remove emotional wording.
+- Remove mistakes.
+- Merge messages.
+- Reorder messages.
+- Replace full prompts with descriptions.
+- Remove code, links, or progress messages.
+- Infer missing text.
+- Omit content because it is long.
 
 ---
 
-# PHASE 4 — LARGE-CAPTURE CONTROL
+# PHASE 6 — LARGE-CAPTURE CONTROL
 
-Estimate UTF-8 size before writing to GitHub.
+Estimate UTF-8 size before GitHub writes.
 
-When the capture is large:
+When large:
 
-1. Split only between complete messages where possible.
-2. Keep volume payloads conservative.
-3. Start with approximately 75,000–100,000 UTF-8 characters per volume.
-4. Preserve continuous message numbering.
-5. Record message ranges and character counts.
-6. Calculate SHA-256 for every volume.
+1. Split between complete messages whenever possible.
+2. Start with approximately 75,000–100,000 UTF-8 characters per volume.
+3. Preserve continuous message numbering.
+4. Record message range for every volume.
+5. Record character count for every volume.
+6. Calculate volume hashes when supported.
 7. Link every volume from the manifest.
-8. Do not write transition summaries.
-9. Do not omit content between volumes.
+8. Do not insert transition summaries.
+9. Do not omit content.
 
-If a write fails, split the affected volume in half and retry. Never replace failed content with a summary.
+If a write fails:
+
+1. Split the affected volume in half.
+2. Retry with smaller volumes.
+3. Continue until accepted or a confirmed tool limitation is reached.
+4. Never replace failed content with a summary.
+5. Report partial commits accurately.
 
 ---
 
-# PHASE 5 — CREATOR SELF-REVIEW
+# PHASE 7 — CREATOR SELF-REVIEW
 
-The Capture Processor must answer:
+Answer:
 
-1. Did I use the complete supplied source rather than memory?
+1. Did I use the complete supplied source rather than model memory?
 2. Did I include every source message?
-3. Did I preserve exact chronological order?
-4. Did I alter any message body?
-5. Did I replace any full message with a summary?
-6. Did I omit any progress message, code block, link, or file reference?
-7. Did I create all required files?
-8. Did I split the capture safely without gaps?
-9. Did I introduce unsupported assumptions?
-10. Is any part of this work weaker than I know how to produce?
+3. Did I include visible progress messages?
+4. Did I preserve chronological order?
+5. Did I alter any message body?
+6. Did I replace any full message with a summary?
+7. Did I omit code, links, files, or repeated messages?
+8. Did I create every required file?
+9. Did I split the capture without gaps?
+10. Did I use only verified live repository paths?
+11. Did I avoid `06-AGENTS-AND-AUTOMATION/`?
+12. Did I avoid writing to `09-MEMORY-GEMS/`?
+13. Is any part weaker than I know how to produce?
+14. Can it be materially improved before review?
 
-Use:
+Record:
 
 ```text
 Creator Review: PASS / FAIL
 Material Improvement Available: YES / NO
 Improvement Applied: YES / NO / NOT APPLICABLE
-Reason Improvement Was Not Applied: [Required when applicable]
+Reason Improvement Was Not Applied: [REQUIRED WHEN APPLICABLE]
 Creator Disposition: SUBMIT FOR VALIDATION / RECREATE / BLOCK
 ```
 
-If material improvement is available, apply it before moving forward.
+If material improvement is available without a legitimate constraint, recreate before continuing.
 
 ---
 
-# PHASE 6 — DETERMINISTIC VALIDATION
+# PHASE 8 — DETERMINISTIC VALIDATION
 
-Verify hashes, source and mirror counts, speaker sequence, first and last message, continuous numbering, exact-once representation, absence of placeholders and summary replacements, volume presence, volume continuity, manifest links, collision avoidance, and metadata counts.
+Verify:
 
-Use:
+- Source hash when supported.
+- Raw transcript hash when supported.
+- Memory Gem or volume hashes when supported.
+- Source message count equals mirror message count.
+- User count matches.
+- Assistant count matches.
+- Speaker sequence matches.
+- First message matches.
+- Last message matches.
+- Numbering is continuous.
+- Every source message appears exactly once.
+- No placeholder message bodies exist.
+- No summary replacements exist.
+- All volumes are present.
+- Volume ranges are continuous.
+- Manifest links all volumes.
+- Metadata counts match the body.
+- No filename collision caused an overwrite.
+
+Record the actual method:
 
 ```text
+Validation Method: AUTOMATED / TOOL-ASSISTED / MANUAL
 Deterministic Validation: PASS / FAIL / REVIEW REQUIRED
 ```
 
-Any failure must be corrected before deployment or explicitly blocked.
+Do not label validation “AUTOMATED” unless verified validator code was actually executed.
 
 ---
 
-# PHASE 7 — ARCHITECT ACCOUNTABILITY GATE
+# PHASE 9 — ARCHITECT ACCOUNTABILITY GATE
 
-The Architect Accountability Reviewer must independently answer:
+The reviewer must independently answer:
 
 1. Is this what The Architect actually requested?
-2. Does the output match the exact request?
-3. Did the system produce what it said it produced?
+2. Does the output match the request exactly?
+3. Did the system produce what it claimed?
 4. Is anything missing, altered, assumed, substituted, or mislabeled?
-5. Did any convenience decision override The Architect's instructions?
-6. Is this the best work the system can currently produce?
+5. Did convenience override instructions?
+6. Is this the best work currently available?
 7. Can accuracy, completeness, reliability, usability, structure, or verification be improved?
 8. If improvement is possible, why was it not already applied?
-9. Should the current result be rejected and recreated before deployment?
-10. Would The Architect reasonably believe something was completed that was not actually completed?
-11. Are files placed where the live repository architecture requires?
-12. Are IDs, status, naming, paths, links, and metadata consistent?
-13. Are raw source and Memory Gem clearly distinguished?
-14. Is immutable source protected from derivative edits?
-15. Are tracking actions supported by real evidence?
-16. Does the workflow expose failures rather than conceal them?
-17. Can another system reproduce, audit, and continue the work?
-18. Has Quality Control challenged both content and process?
-19. Did the system recreate deficient work where appropriate?
-20. Is deployment justified?
+9. Should the work be rejected and recreated before deployment?
+10. Could The Architect reasonably believe an incomplete action was complete?
+11. Are all files routed through the verified live structure?
+12. Are source and derivative records clearly separated?
+13. Are IDs, names, dates, paths, links, and status consistent?
+14. Are registry actions backed by commit evidence?
+15. Can another system reproduce and audit the work?
+16. Did Quality Control challenge both content and process?
+17. Is GitHub deployment justified?
 
-Required review record:
+Record:
 
 ```text
 Architect Intent Match: PASS / FAIL
@@ -499,68 +650,56 @@ Repository Compliance: PASS / FAIL
 Best-Work Challenge: PASS / FAIL
 Improvement Available: YES / NO
 Improvement Applied: YES / NO / NOT APPLICABLE
-Reason Improvement Was Not Applied: [Required]
+Reason Improvement Was Not Applied: [REQUIRED]
 False-Completion Risk: NONE / LOW / MEDIUM / HIGH
 Final Disposition: APPROVED / RECREATE / BLOCKED
 ```
 
-If work can be materially improved and no legitimate technical or source constraint prevents it, use:
+If material improvement is available and no legitimate source or technical constraint prevents it:
 
 ```text
 Final Disposition: RECREATE
 ```
 
-GitHub deployment is blocked until the improved version passes review.
+Do not deploy until the gate is approved.
 
 ---
 
-# PHASE 8 — PRE-DEPLOYMENT PACKAGE
+# PHASE 10 — PRE-DEPLOYMENT PACKAGE
 
 The approved package must include:
 
-1. Original source copy when supported
-2. Raw transcript
-3. Memory Gem or manifest and all volumes
-4. Verification manifest
-5. Architect Accountability Review
-6. Intake record draft
-7. Registry update plan
-8. Index update plan
-9. Repository Map update plan
+1. Raw transcript.
+2. Memory Gem or manifest and all volumes.
+3. Verification manifest.
+4. Architect Accountability Review.
+5. Intake record draft.
+6. Registry update plan.
+7. Index update plan.
+8. Repository Map update plan.
+9. Original source copy only when it can be preserved accurately.
 
-No deployment may begin while the accountability disposition is `RECREATE` or `BLOCKED`.
+Do not deploy while any gate is `RECREATE` or `BLOCKED`.
 
 ---
 
-# PHASE 9 — GITHUB DEPLOYMENT
+# PHASE 11 — GITHUB DEPLOYMENT
 
-## Repository
+Repository:
 
 ```text
 estibancreations-svg/Master-System-Buildout
 ```
 
-## Branch
+Branch:
 
 ```text
 main
 ```
 
-## Primary paths
+## Preferred coherent write
 
-```text
-00-CENTRAL-HUB/Directives/
-00-CENTRAL-HUB/INBOX/
-00-CENTRAL-HUB/INBOX/Source-Transcripts/
-00-CENTRAL-HUB/Memory-Gems/
-00-CENTRAL-HUB/Registries/
-00-CENTRAL-HUB/Indexes/
-00-CENTRAL-HUB/REPOSITORY-MAP.md
-```
-
-## Preferred write strategy
-
-When supported:
+When the available GitHub connector supports it:
 
 ```text
 create_blob
@@ -572,36 +711,54 @@ create_commit
 update_ref
 ```
 
-Build on the current `main` head, preserve existing content, create one coherent commit where practical, and never force-update unless explicitly authorized.
+Requirements:
 
-## Fallback strategy
+- Build on the current `main` head.
+- Preserve the existing tree.
+- Create a single coherent commit when practical.
+- Do not force-update the branch.
+- Do not create a branch unless The Architect requests one.
+
+## Fallback contents workflow
 
 When low-level Git operations are unavailable:
 
-- Use `create_file` for new files.
-- Use `fetch_file` before `update_file`.
-- Use the current file SHA for every update.
+- Use `create_file` for new text files.
+- Fetch existing files before `update_file`.
+- Use the current content SHA.
 - Do not update the same path in parallel.
 - Record every commit SHA.
-- Keep volume writes small enough for reliable operation.
+- Keep large transcript writes conservatively sized.
+
+## Commit messages
+
+```text
+capture(source): add verified raw conversation transcript
+capture(memory-gem): add verified mirrored conversation record
+docs(verification): add capture and accountability records
+chore(registry): register conversation capture
+docs(index): update central hub indexes and repository map
+```
+
+Do not report a commit that GitHub did not return.
 
 ---
 
-# PHASE 10 — POST-UPLOAD VERIFICATION
+# PHASE 12 — POST-UPLOAD VERIFICATION
 
-After GitHub writes:
+After writes:
 
-1. Fetch every created source and Memory Gem file.
-2. Verify every expected path exists.
-3. Recalculate hashes from fetched content.
-4. Compare fetched hashes with approved local hashes.
+1. Fetch every created transcript, Memory Gem, manifest, volume, verification record, and accountability record.
+2. Confirm each expected path exists.
+3. Recalculate hashes when supported.
+4. Compare fetched content with the approved package.
 5. Verify first and last messages.
-6. Verify message count.
-7. Verify volume continuity.
-8. Verify manifest links.
-9. Verify accountability review exists.
-10. Verify real commit evidence.
-11. Verify no partial file was falsely reported as complete.
+6. Verify total message count.
+7. Verify continuous numbering.
+8. Verify volume continuity.
+9. Verify manifest links.
+10. Verify no partial file is labeled complete.
+11. Record every real commit SHA.
 
 Use:
 
@@ -609,15 +766,17 @@ Use:
 Post-Upload Verification: PASS / FAIL
 ```
 
-When verification fails:
+If it fails:
 
 ```text
 BLOCKED — POST-UPLOAD VERIFICATION FAILED
 ```
 
+Do not continue to tracking integration until corrected.
+
 ---
 
-# PHASE 11 — CENTRAL HUB INTEGRATION
+# PHASE 13 — CENTRAL HUB INTEGRATION
 
 After conversation files pass post-upload verification, create or update:
 
@@ -634,24 +793,54 @@ After conversation files pass post-upload verification, create or update:
 00-CENTRAL-HUB/REPOSITORY-MAP.md
 ```
 
-Fetch every existing file before updating it. Preserve existing entries. Do not overwrite unrelated records. Use `UNASSIGNED` or `REVIEW REQUIRED` when classification is not confirmed. Every registry entry must include real path and commit evidence.
+Fetch every existing file before updating it.
+
+Preserve all existing records.
+
+Do not overwrite unrelated entries.
+
+Register:
+
+- Raw transcript.
+- Memory Gem.
+- Manifest.
+- Volumes.
+- Verification manifest.
+- Architect Accountability Review.
+- Intake record.
+
+Use `UNASSIGNED` or `REVIEW REQUIRED` when system or division classification is not confirmed.
+
+## Optional archive mirror
+
+Only when:
+
+```text
+Archive Mirror: YES
+```
+
+may the exact raw transcript be additionally stored in the established `08-CHAT-LOGS/` hierarchy.
+
+The optional mirror must link back to the canonical Central Hub record and must not be presented as a second canonical Memory Gem.
+
+Do not write to `09-MEMORY-GEMS/`.
 
 ---
 
-# PHASE 12 — FINAL ACCOUNTABILITY AUDIT
+# PHASE 14 — FINAL ACCOUNTABILITY AUDIT
 
-The Post-Deployment Auditor must answer:
+Answer:
 
 1. Did GitHub receive every approved file?
-2. Do fetched files match approved files?
-3. Are the reported paths real?
-4. Are the reported commits real?
+2. Do fetched files match the approved package?
+3. Are all reported paths real?
+4. Are all reported commits real?
 5. Are tracking records accurate?
 6. Was any failed action reported as complete?
 7. Is this what The Architect requested?
-8. Can the deployed package be materially improved?
-9. If so, why was that not completed before deployment?
-10. Should the deployment be accepted, corrected, or rolled forward with a documented correction?
+8. Can the deployed package still be materially improved?
+9. If so, why was that improvement not completed before deployment?
+10. Should the deployment be accepted, corrected, or blocked?
 
 Use:
 
@@ -663,9 +852,131 @@ Final Architect Accountability Status: APPROVED / CORRECTION REQUIRED / BLOCKED
 
 # REQUIRED FINAL REPORT
 
-Return a report containing repository, branch, access, identity, IDs, source validation, message counts, every created path, every hash, every real commit SHA, creator review, deterministic validation, Architect review, tracking updates, post-upload verification, remaining work, blockers, and one precise next action.
+```markdown
+# COMPLETE CONVERSATION CAPTURE AND ACCOUNTABILITY REPORT
 
-Do not report success without real GitHub paths and GitHub-returned commit SHAs.
+## Repository
+- Repository:
+- Branch:
+- Access Verified:
+- Repository Preflight:
+- Main Head Before Deployment:
+- Final Commit or Commits:
+
+## Conversation Identity
+- Display Name:
+- Email Username:
+- Conversation Title:
+- Conversation ID:
+- Capture ID:
+- Review ID:
+- Status:
+- Capture Date:
+- Creation Mode:
+- Archive Mirror:
+
+## Source Validation
+- Source Filename:
+- Source Type:
+- Source Claimed Complete:
+- Source SHA-256:
+- Source Gate:
+- First Source Message:
+- Last Source Message:
+- Missing or Summarized Sections:
+- Source Limitations:
+
+## Message Verification
+- Total Messages:
+- User Messages:
+- Assistant Messages:
+- Unverified Messages:
+- Continuous Numbering:
+- Speaker Sequence Verified:
+- First Message Verified:
+- Last Message Verified:
+- Every Message Represented Once:
+- Summary Replacements Found:
+- Validation Method:
+
+## Files Created
+- Raw Transcript:
+  - Path:
+  - Hash:
+  - Commit:
+- Memory Gem or Manifest:
+  - Path:
+  - Hash:
+  - Commit:
+- Volumes:
+  - Path:
+  - Message Range:
+  - Hash:
+  - Commit:
+- Verification Manifest:
+  - Path:
+  - Commit:
+- Architect Accountability Review:
+  - Path:
+  - Commit:
+- Intake Record:
+  - Path:
+  - Commit:
+- Optional Chat-Log Mirror:
+  - Path or NOT REQUESTED:
+  - Commit or NOT APPLICABLE:
+
+## Review and Accountability
+- Creator Review:
+- Deterministic Validation:
+- Architect Intent Match:
+- Request-to-Output Match:
+- Completeness:
+- Source Fidelity:
+- Repository Compliance:
+- Best-Work Challenge:
+- Improvement Available:
+- Improvement Applied:
+- Reason Improvement Was Not Applied:
+- False-Completion Risk:
+- Pre-Deployment Disposition:
+- Final Accountability Status:
+
+## Tracking Updated
+- Conversation Registry:
+- Artifact Registry:
+- Capture Ledger:
+- Work Tracker:
+- Central Hub Index:
+- Memory Gem Index:
+- Inbox Index:
+- Registry Index:
+- Repository Map:
+
+## Post-Upload Verification
+- Files Fetched Back:
+- Hashes Verified:
+- Missing Files:
+- Missing Messages:
+- Broken Links:
+- Post-Upload Result:
+
+## Unresolved Repository Areas
+- 08-CHAT-LOGS Action:
+- 09-MEMORY-GEMS Action: NO WRITE
+- Other Structural Conflict:
+
+## Remaining Work
+- [NONE OR EXACT REMAINING WORK]
+
+## Blockers
+- [NONE OR EXACT BLOCKER]
+
+## Next Action
+- [ONE PRECISE NEXT ACTION]
+```
+
+Do not report success without real paths, real commit evidence, and fetch-back verification.
 
 ---
 
@@ -678,6 +989,7 @@ BLOCKED — COMPLETE SOURCE TRANSCRIPT NOT PROVIDED
 BLOCKED — SOURCE TRANSCRIPT CONTAINS MISSING OR SUMMARIZED CONTENT
 BLOCKED — SOURCE FILE COULD NOT BE READ
 BLOCKED — CAPTURE BOUNDARY CANNOT BE VERIFIED
+BLOCKED — REPOSITORY PREFLIGHT FAILED
 BLOCKED — CREATOR REVIEW FAILED
 BLOCKED — DETERMINISTIC VALIDATION FAILED
 BLOCKED — ARCHITECT ACCOUNTABILITY REVIEW FAILED
@@ -687,47 +999,28 @@ BLOCKED — POST-UPLOAD VERIFICATION FAILED
 BLOCKED — CENTRAL HUB INTEGRATION FAILED
 ```
 
-When blocked, report the exact failure, affected phase, affected file or message, what was created, what was not created, real commits created before failure, and the exact correction required.
+When blocked, report:
+
+- Exact phase.
+- Exact failure.
+- Affected file or message.
+- What was created.
+- What was not created.
+- Real commits created before failure.
+- Exact correction required.
 
 Never convert a blocked run into a summary.
 
 ---
 
-# CANONICAL AGENT INVOCATION
-
-After this directive is stored in GitHub, future runs should use:
-
-```text
-@Conversation-Capture-Agent
-
-Execute the canonical directive stored at:
-
-00-CENTRAL-HUB/Directives/MASTER-CONVERSATION-CAPTURE-ACCOUNTABILITY-AND-GITHUB-DEPLOYMENT-DIRECTIVE.md
-
-Creation Mode: NEW CONVERSATION RECORD
-Status: CHECKPOINT
-Email Username: [USERNAME BEFORE @]
-Conversation Title: [EXACT TITLE]
-Source Transcript: [ATTACHED FILE]
-
-Run every phase.
-Do not skip validation or Architect Accountability Review.
-Do not deploy a materially improvable result.
-Return the complete capture and accountability report with real GitHub paths and commit SHAs.
-```
-
----
-
 # BEGIN
 
-Ask The Architect for:
+Collect any missing intake values and execute Phases 0 through 14 in order.
 
-```text
-1. Email username before the @ sign
-2. Exact conversation-feed title
-3. Complete source transcript file
-```
+Do not skip gates.
 
-Then execute Phases 0 through 12 in order.
+Do not use unsupported repository paths.
 
-Do not skip phases. Do not deploy before approval gates pass. Do not claim completion without post-upload verification.
+Do not deploy a materially improvable result.
+
+Do not claim production automation exists until its implementation is verified.
