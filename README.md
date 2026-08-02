@@ -32,6 +32,11 @@ Conversation Capture Agent materials are routed as follows:
 
 See [`00-CENTRAL-HUB/REPOSITORY-STRUCTURE-RECONCILIATION.md`](00-CENTRAL-HUB/REPOSITORY-STRUCTURE-RECONCILIATION.md) for the controlling path correction and the unresolved relationship among Central Hub Memory Gems, `08-CHAT-LOGS`, and `09-MEMORY-GEMS`.
 
+## Active Conversation Records
+
+- [Amazon Partnership Strategy — Active Reconstructed Memory Gem](00-CENTRAL-HUB/INBOX/01-08-2026_CHATGPT-ESTIBANCREATIONS-AMAZON-PARTNERSHIP-STRATEGY_ACTIVE-RECONSTRUCTED-MEMORY-GEM.md)
+- [Amazon Partnership Strategy — Reconstruction Exception Disclosure](00-CENTRAL-HUB/INBOX/Reconstruction-Exceptions/01-08-2026_AMAZON-PARTNERSHIP-STRATEGY_RECONSTRUCTION-EXCEPTION.md)
+
 ## Getting Started
 
 Navigate to each directory to find detailed documentation for each system component.
