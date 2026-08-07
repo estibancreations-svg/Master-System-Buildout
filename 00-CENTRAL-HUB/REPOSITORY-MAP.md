@@ -102,6 +102,7 @@ The Central Hub governs:
 10. Use verified live paths rather than proposed or outdated folder maps.
 11. Do not report files, commits, validators, agents, or deployments as complete without evidence.
 12. Materially improvable work must be recreated before deployment unless a documented source or technical constraint prevents it.
+13. When The Architect explicitly authorizes reconstruction, preserve a reconstruction-exception record, retain prior failed-source records, and never relabel reconstructed continuity as verbatim-certified without a successful platform-export comparison.
 
 ## Installed Conversation Capture Control Files
 
@@ -238,3 +239,23 @@ The Central Hub is never marked complete unless The Architect explicitly closes 
 - **Primary Systems:** `MASTER SYSTEMS BUILDOUT / CEO COMMAND CENTER / VISIONWEAVER / LANDWEAVER`
 - **Primary Division:** `DIV-008 TECHNOLOGY DIVISION`
 - **Next Action:** Append subsequent visible messages beginning with Message 022 without altering Messages 001–021.
+
+## Reconstructed Conversation Record — Zillow Integration for Marketing
+
+- **Display Name:** `ChatGPT-ESTIBANCrEATIONS-Zillow Integration for Marketing`
+- **Conversation ID:** `CONV-07082026-001`
+- **Capture ID:** `CAP-07082026-001`
+- **Record Type:** `AUTHORIZED_RECONSTRUCTED_CONVERSATION_CONTINUITY`
+- **Status:** `CHECKPOINT / ACTIVE / RECONSTRUCTED`
+- **Recovered Record:** [07-08-2026 Active Reconstructed Memory Gem](INBOX/07-08-2026_CHATGPT-ESTIBANCrEATIONS-Zillow-Integration-for-Marketing_ACTIVE-RECONSTRUCTED-MEMORY-GEM.md)
+- **Reconstruction Exception:** [07-08-2026 Reconstruction Exception](INBOX/Reconstruction-Exceptions/07-08-2026_ZILLOW-INTEGRATION-FOR-MARKETING_RECONSTRUCTION-EXCEPTION.md)
+- **Prior Source Validation Block:** [07-08-2026 Source Validation Block](INBOX/07-08-2026_CHATGPT-ESTIBANCrEATIONS-Zillow-Integration-for-Marketing_SOURCE-VALIDATION-BLOCK.md)
+- **Submitted Source:** [07-08-2026 Source Submission](INBOX/Source-Transcripts/07-08-2026_CHATGPT-ESTIBANCrEATIONS-Zillow-Integration-for-Marketing_SOURCE-SUBMISSION.txt)
+- **Historical Zillow Directive:** `00-CENTRAL-HUB/INBOX/2026-07-28_ZILLOW-PROPERTY-MARKETING-INTEGRATION_CHECKPOINT-CAPTURE-DIRECTIVE.md` — commit `df9f3dcb311f8f5da7d89cb99e22062416dab352`
+- **Title Correction:** Actual feed title is `Zillow Integration for Marketing`; the July directive's `Zillow Property Marketing Integration` title is retained only as historical provenance.
+- **Recovered Events:** `32`
+- **Exact Platform Message Count:** `NOT CERTIFIED`
+- **Integrity Status:** `RECONSTRUCTED FROM PROJECT MEMORY + ACTIVE MODEL CONTEXT + GITHUB HISTORY — NOT VERBATIM CERTIFIED`
+- **Primary Systems:** `MASTER SYSTEMS BUILDOUT / PROPERTY MARKETING / CONVERSATION CAPTURE`
+- **Primary Divisions:** `DIV-008 TECHNOLOGY DIVISION / MARKETING & MEDIA / PROPERTY INTELLIGENCE`
+- **Next Action:** Use the reconstructed continuity for ongoing work; if a complete platform export becomes available, compare it and preserve all reconstruction provenance before any integrity upgrade.
