@@ -8,6 +8,12 @@
 
 Systems and agents must retrieve `MSB-SCHEMA-001` before creating or revising an Enterprise Build Specification. Repository-local reference files point to the canonical standard and do not redefine it.
 
+## Cross-Source Recovery Checkpoints
+
+- **Sweep 001:** [`08-08-2026_CROSS-SOURCE-EVIDENCE-SWEEP-001.md`](INBOX/Fragment-Recovery/08-08-2026_CROSS-SOURCE-EVIDENCE-SWEEP-001.md) — initial repository recovery; Google Drive was an access gap at that checkpoint.
+- **Architect Identity Correction 001:** [`08-08-2026_ARCHITECT-SYSTEM-IDENTITY-CORRECTION-001.md`](INBOX/Fragment-Recovery/08-08-2026_ARCHITECT-SYSTEM-IDENTITY-CORRECTION-001.md) — Master Dashboard, VisionWeaver, LandWeaver, and CEO Dashboard remain separate systems.
+- **Sweep 002 — HisMajesty + Drive:** [`08-08-2026_CROSS-SOURCE-EVIDENCE-SWEEP-002_HISMAJESTY-AND-DRIVE.md`](INBOX/Fragment-Recovery/08-08-2026_CROSS-SOURCE-EVIDENCE-SWEEP-002_HISMAJESTY-AND-DRIVE.md) — inventories 32 readable `HisMajesty0225` repositories, resolves Google Drive retrieval for this session, upgrades VisionWeaver/LandWeaver/CEO evidence, and registers THELMA, GrantOS, Master Advertising, and ClimateTrack Pro as independent governed systems.
+
 ## Conversation Records
 
 | Conversation ID | Display Name | Conversation Title | Status | Latest Checkpoint | Canonical Record | Latest Checkpoint Manifest | Historical Record | Message Count | Integrity | Primary System | Next Action |
