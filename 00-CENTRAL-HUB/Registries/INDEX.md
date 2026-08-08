@@ -11,8 +11,10 @@
 
 - **Directive:** [Fragmented Data Recovery and Provenance Directive](../Directives/FRAGMENTED-DATA-RECOVERY-AND-PROVENANCE-DIRECTIVE.md)
 - **Recovery Baseline:** [08-08-2026 Master Systems Buildout Fragmented Data Recovery Baseline](../INBOX/Fragment-Recovery/08-08-2026_MASTER-SYSTEMS-BUILDOUT_FRAGMENTED-DATA-RECOVERY-BASELINE.md)
+- **Latest Cross-Source Sweep:** [08-08-2026 Cross-Source Evidence Sweep 001](../INBOX/Fragment-Recovery/08-08-2026_CROSS-SOURCE-EVIDENCE-SWEEP-001.md)
 - **Operating Rule:** Preserve incomplete fragments, classify integrity, link provenance, reconstruct only with disclosure, and upgrade records only when stronger evidence supports the upgrade.
 - **Integrity Classes:** `F0` authoritative exact source; `F1` exact within boundary; `F2` partial/reference fragment; `F3` authorized reconstruction; `F4` inferred/unverified lead; `F5` superseded/historical evidence.
+- **Current Source Access Note:** GitHub repositories were inventoried in Sweep 001; Google Drive remained `NOT REVIEWED` because the discoverable Drive search action failed at invocation; broad current-conversation uploaded-file search returned no new matching file references.
 
 ## Current Checkpoint
 
@@ -23,6 +25,12 @@
 - **Manifest:** [31-07-2026 Memory Gem Manifest](../Memory-Gems/31-07-2026_CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB_MEMORY-GEM-MANIFEST.md)
 - **Integrity:** `VERIFIED_WITHIN_CAPTURE_BOUNDARY`
 - **Known Correction:** `00-CENTRAL-HUB/Directives/MASTER-MEMORY-GEM-CAPTURE-DIRECTIVE.md` was not found in the live repository; the uploaded directive governed this execution.
+
+## Cross-Source Recovery Upgrade — VisionWeaver / Dashboard Repositories
+
+- **Master Dashboard / VisionWeaver:** `SYS-DASH-001` now has repository-backed F1/F2 implementation and rebuild evidence in `estibancreations-svg/Master-dashboard-`, including substantial architecture/reconstruction manifests and application code. Formal identity boundaries and 19-section schema reconciliation remain required.
+- **Master CEO Dashboard:** `SYS-CEO-001` now has strengthened F1/F2 repository design evidence, including three architecture/page-sketch images plus explicit schema/C-Suite/CEO-AI authority links. This is not yet proof of full application implementation.
+- **Historical/Shell Lead:** `estibancreations-svg/-HisMajesty0225-CEO-Dashboard` reports size `0` and is retained only as F4/F5 shell/historical evidence unless future content appears.
 
 ## Authorized Reconstructed Conversation — Zillow Integration for Marketing
 
