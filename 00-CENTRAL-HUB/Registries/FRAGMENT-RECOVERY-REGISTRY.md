@@ -54,14 +54,28 @@ It does not replace the Conversation Registry, Artifact Registry, Capture Ledger
 |---|---|---|---|---|---|
 | `MSB-HUB-001` | Master Systems Buildout Central Hub Continuity and Capture System | System Registry + Central Hub files | F0/F1 | ACTIVE / ONGOING | Strong repository evidence; continue maintaining exact and reconstructed records separately |
 | `MSB-SCHEMA-001` | System Build Schema Standard | Canonical architecture standard v1.0 | F0 | CANONICAL / ACTIVE | Repository authority exists |
-| `SYS-DASH-001` | Master Dashboard | System Registry + linked repository reference | F1/F2 | ACTIVE / REPOSITORY LINKED | Implementation exists outside this repo; needs full 19-section schema reconciliation |
-| `SYS-CEO-001` | Master CEO Dashboard | System Registry + linked repository reference | F1/F2 | ACTIVE / REPOSITORY LINKED | Implementation exists outside this repo; needs full 19-section schema package |
+| `SYS-DASH-001` | Master Dashboard / VisionWeaver repository implementation | System Registry + `estibancreations-svg/Master-dashboard-` + commit `aa9c674f7099f349b2405538068b509d871e858b` | F1/F2 | ACTIVE / REPOSITORY IMPLEMENTATION EVIDENCE VERIFIED | Repository contains a substantial VisionWeaver rebuild/forensics package, Firestore models/rules, server integration, Google Workspace/Drive intake concepts, n8n dispatch architecture, and 14-tab workspace definition; schema reconciliation and identity-boundary decision still required |
+| `SYS-CEO-001` | Master CEO Dashboard | System Registry + `estibancreations-svg/MASTER_CEO_DASHBOARD` + commit `feef4bd7337fc4adaff2e7589c0dfa23b93e1a7f` | F1/F2 | ACTIVE / REPOSITORY DESIGN EVIDENCE VERIFIED | Repository authority links to `MSB-SCHEMA-001`, C-Suite System of Record, and CEO AI Executive Office; three architecture/page sketches are verified, but a full implementation is not yet proven |
+
+---
+
+# CROSS-SOURCE EVIDENCE SWEEP 001 — 08-08-2026
+
+Detailed checkpoint: `../INBOX/Fragment-Recovery/08-08-2026_CROSS-SOURCE-EVIDENCE-SWEEP-001.md`
+
+| Evidence Subject | Source | Prior Class | New Class / Result | Verified Finding | Next Action |
+|---|---|---|---|---|---|
+| VisionWeaver / Master Dashboard implementation | `estibancreations-svg/Master-dashboard-`, commit `aa9c674f7099f349b2405538068b509d871e858b` | F3 project-memory lead + F1 linked conversation evidence | F1/F2 | Substantial repository-backed implementation/rebuild package exists: React/Vite/Tailwind, Firebase/Firestore, server proxy, Google Workspace/Drive intake design, n8n integration, rebuild manifests, and 14-tab console definition | Reconcile against all 19 `MSB-SCHEMA-001` sections and determine whether VisionWeaver is a subsystem, implementation identity, or separate formal system |
+| Master CEO Dashboard | `estibancreations-svg/MASTER_CEO_DASHBOARD`, commit `feef4bd7337fc4adaff2e7589c0dfa23b93e1a7f` | F1/F2 | F1/F2 — evidence strengthened | Schema linkage and three repository-verified architecture/page sketches exist | Reconcile sketches with C-Suite System of Record + CEO AI Executive Office; build 19-section specification; distinguish design from implementation |
+| `-HisMajesty0225-CEO-Dashboard` | GitHub repository metadata | Untracked | F4/F5 | Accessible repository exists but reports size `0`; evidence supports only a shell/historical lead | Preserve as lead; do not count as implementation unless content appears |
+| Google Drive project storage | Google Drive connector | Expected source | ACCESS GAP / NOT REVIEWED | Connector actions are discoverable, but search invocation failed in this session | Retry Drive sweep; search Enterprise, CMGIO, QC, System Library, Technology, C-Suite, VisionWeaver, Zillow, and build-update terms |
+| Current-conversation uploaded-file search | Uploaded-file search surface | Expected source | NO NEW FILE-LEVEL EVIDENCE | Broad searches returned no matching attached-file references in the current conversation | Reattach or re-surface historical uploads where needed; do not infer absence |
 
 ---
 
 # RECOVERED PROJECT WORKSTREAMS NOT YET FULLY RECONCILED
 
-These subjects are known from project context, prior working sessions, user-supplied build updates, and conversation history, but not all are yet represented as complete canonical System Registry entries. Until repository evidence is reconciled, treat them as `F3` or `F2` depending on the supporting file.
+These subjects are known from project context, prior working sessions, user-supplied build updates, conversation history, and—in some cases—external repository evidence, but are not all yet represented as complete canonical System Registry entries. Treat each subject according to its strongest evidence rather than assigning one blanket class.
 
 | Workstream / System Area | Current Recovery Class | What We Know | Required Reconciliation |
 |---|---|---|---|
@@ -75,10 +89,11 @@ These subjects are known from project context, prior working sessions, user-supp
 | Adobe / Photoshop marketing workflow | F3 | Marketing and product-image creation for retail, residence/property, Etsy, and Pinterest were explored | Locate related files and map into Marketing & Media / Property systems |
 | Zillow / Property Marketing | F2/F3/F5 | Working continuity exists; incomplete source preserved; title corrected; reconstruction merged | Continue fragment accretion until an exact source is found |
 | Conversation Capture / Memory Gem system | F0/F1 | Version 1.1 directive, agent specification, executable prompt, reconciliation file, and operator documentation are installed | Build deterministic validator, deployment package, production bot, and QC certification |
-| Master Dashboard / CEO Dashboard / Figma work | F1/F2 | Repositories and conversations are registered; architecture standard exists | Reconcile implementations against all schema sections |
+| VisionWeaver / Master Dashboard | F1/F2 | Exact conversation evidence plus repository-backed implementation/rebuild evidence now exists in `Master-dashboard-`; the repo includes rebuild manifests, Firestore architecture, server code, Google Workspace/Drive intake concepts, n8n dispatch, and the 14-tab workspace model | Reconcile against `MSB-SCHEMA-001`; decide formal identity boundary between VisionWeaver and `SYS-DASH-001`; register any separate system only after that decision |
+| Master CEO Dashboard / Figma work | F1/F2 | Conversation evidence, linked repository, architecture authority, and three page-sketch images are verified | Reconcile design artifacts against C-Suite / CEO AI sources and all schema sections |
+| CEO Command Center / App Builder / LandWeaver | F1/F3 | Exact visible-boundary conversation evidence exists; broader downstream implementation evidence is not yet fully reconciled | Locate related specifications, repositories, files, and implementation records |
 | Lovable / GitHub / Master System migration | F1 | Exact visible conversation record exists | Reconstruct downstream implementation actions and external repository changes |
 | Amazon Partnership Strategy | F1/F3/F5 | Exact current record plus prior reconstruction provenance exists | Add later fragments or export if found |
-| CEO Command Center / App Builder / VisionWeaver / LandWeaver | F1 | Exact visible-boundary conversation record exists | Reconcile related repositories and specifications |
 
 ---
 
@@ -105,18 +120,36 @@ Required action: locate and register the underlying build packages before promot
 
 ---
 
+# SOURCE ACCESS GAPS
+
+## Google Drive
+
+Status: `NOT REVIEWED — CONNECTOR INVOCATION GAP`
+
+The connector exposes Drive search/fetch actions, but search invocation failed in Cross-Source Evidence Sweep 001. No claim is made that Drive has been scanned or that missing Drive files do not exist.
+
+## Current-conversation uploaded files
+
+Status: `NO NEW MATCHES IN CURRENT FILE-SEARCH SURFACE`
+
+This does not prove historical uploads are absent. Previously referenced uploads remain at their existing provenance level until they are reattached, surfaced through Drive/GitHub, or otherwise made accessible.
+
+---
+
 # RECOVERY QUEUE
 
 Priority order:
 
-1. Locate or reconstruct the complete set of Enterprise Standards / Infrastructure documents.
-2. Locate CMGIO and intelligence-piece specifications and agent instructions.
-3. Locate Quality Control Agency specification and reconcile it with the Architect Accountability Gate.
-4. Inventory System Library buildout files.
-5. Reconcile division build packages from the user-supplied Build Program Update against repository files.
-6. Reconcile external system repositories referenced by the System Registry.
-7. Continue adding conversation/source fragments as they are found.
-8. Compare reconstructed records against later exact exports without deleting reconstruction history.
+1. Reconcile `Master-dashboard-` / VisionWeaver against `MSB-SCHEMA-001` and determine the formal system identity boundary.
+2. Reconcile the Master CEO Dashboard architecture sketches against the C-Suite System of Record and CEO AI Executive Office.
+3. Retry Google Drive evidence discovery when connector invocation succeeds.
+4. Re-surface or reattach uploaded Build Program, C-Suite, Enterprise, and other historical documents not reachable through current file search.
+5. Locate or reconstruct the complete set of Enterprise Standards / Infrastructure documents.
+6. Locate CMGIO and intelligence-piece specifications and agent instructions.
+7. Locate Quality Control Agency specification and reconcile it with the Architect Accountability Gate.
+8. Inventory System Library buildout files.
+9. Reconcile division build packages from the user-supplied Build Program Update against repository files.
+10. Continue adding conversation/source fragments and compare reconstructed records against later exact exports without deleting reconstruction history.
 
 ---
 
