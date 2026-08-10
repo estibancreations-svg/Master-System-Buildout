@@ -127,3 +127,6 @@ A page is not complete merely because it visually matches a sketch. It is comple
 7. responsive behavior is verified;
 8. QC confirms the page answers its executive decision question;
 9. no linked system has been collapsed into CEO Dashboard identity.
+
+## Migration / Recovery Note — 2026-08-10
+The Architect explicitly authorized PR #6 to proceed as a setup-stage pass. ChatGPT used connected GitHub, connected Google Drive, available project-memory context, repository history, the uploaded page sketches, and the staged recovery records to reconcile the implementation map before finalization. Memory was used only as a continuity aid; repository/Drive evidence remains authoritative where available. The pass does not convert mockup evidence into proof of implemented runtime behavior, and deployment/QC gates remain active.
