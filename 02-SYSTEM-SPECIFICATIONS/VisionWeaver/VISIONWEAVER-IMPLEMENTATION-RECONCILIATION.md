@@ -58,3 +58,6 @@ Before production promotion:
 
 ## Build Completion Definition
 VisionWeaver is implementation-complete only when its active codebase, canonical 19-section specification, data/API contracts, security model, deployment configuration, telemetry, QC evidence, and independent system identity all agree. Repository code alone is not sufficient evidence of completion.
+
+## Migration / Recovery Note — 2026-08-10
+The Architect authorized this setup-stage migration to proceed. ChatGPT reviewed connected GitHub history, connected Drive recovery material, and available project-memory continuity to identify missing context and preserve the intended system boundary. Memory was not treated as stronger than repository or Drive evidence. The reconciliation performed here preserves VisionWeaver as `SYS-VISION-001`, identifies its current implementation evidence as cross-hosted, and keeps security/runtime hardening as an explicit prerequisite to production promotion.
