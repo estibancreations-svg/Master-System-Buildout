@@ -1,0 +1,55 @@
+{
+  "registry_version": "1.0.0",
+  "updated": "2026-08-11",
+  "runbooks": [
+    {
+      "runbook_id": "PUB-001",
+      "title": "Book / Series Publication & Transmedia",
+      "mode": "SPRINT_OR_FULL",
+      "owner": "Publishing & Media Studio",
+      "doc": "07-DOCUMENTATION/Runbooks/PUB-001-BOOK-SERIES-PUBLICATION-TRANSMEDIA.md",
+      "purpose": "Take a manuscript or existing book through canon extraction, editorial/republication workflow, production, release, and optional audiovisual/marketing derivatives.",
+      "core_roles": [
+        "EC-PUB-CANON-001",
+        "EC-PUB-NARR-001",
+        "EC-PUB-COAUTHOR-001",
+        "EC-QC-REALITY-001"
+      ],
+      "optional_roles": [
+        "EC-PUB-VISUAL-001",
+        "EC-PUB-AUDIO-001",
+        "EC-MEDIA-VIDEOOPT-001",
+        "EC-MKT-DIST-001"
+      ],
+      "required_gates": [
+        "source_integrity",
+        "canon_review",
+        "author_approval",
+        "continuity_quality",
+        "production_quality",
+        "rights_provenance",
+        "release_approval"
+      ]
+    },
+    {
+      "runbook_id": "DISC-001",
+      "title": "External Ecosystem Discovery & Capability Intake",
+      "mode": "MICRO_OR_SPRINT",
+      "owner": "Ecosystem Discovery & Learning Engine",
+      "doc": "07-DOCUMENTATION/Checklists/ECOSYSTEM-DISCOVERY-PROVENANCE-AND-ADOPTION-CHECKLIST.md",
+      "purpose": "Search, verify, attribute, classify, compare, and advise on external repositories/tools/standards before any governed adoption.",
+      "core_roles": [
+        "EC-LEARN-ECO-001",
+        "EC-ARCH-MULTIAGENT-001",
+        "EC-QC-REALITY-001"
+      ],
+      "required_gates": [
+        "license_health_precheck",
+        "capability_gap_comparison",
+        "security_quality_review",
+        "provenance_complete",
+        "advisement_ready"
+      ]
+    }
+  ]
+}
