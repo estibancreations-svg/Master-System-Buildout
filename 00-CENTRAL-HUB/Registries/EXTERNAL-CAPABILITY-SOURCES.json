@@ -1,0 +1,115 @@
+{
+  "registry_version": "1.0.0",
+  "updated": "2026-08-11",
+  "policy": "00-GOVERNANCE/Agent-Governance/EXTERNAL-CAPABILITY-IMPORT-POLICY.md",
+  "sources": [
+    {
+      "source_id": "SRC-GH-AGENCY-AGENTS-001",
+      "type": "github_repository",
+      "repository": "msitarzewski/agency-agents",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "license": "MIT",
+      "reviewed_on": "2026-08-11",
+      "status": "ACTIVE_REFERENCE",
+      "provenance_rule": "Preserve upstream repository, file path, blob/commit when known, license, review date, adaptation decision, and local destination.",
+      "selected_capabilities": [
+        {
+          "upstream_file": "strategy/nexus-strategy.md",
+          "local_disposition": "ADAPT",
+          "local_concept": "Enterprise Mission Execution Framework",
+          "notes": "Use phased orchestration, quality gates, activation modes, parallel execution, evidence-over-claims, and single-source-of-truth concepts under T.H.E.L.M.A. governance."
+        },
+        {
+          "upstream_file": "strategy/runbooks.json",
+          "local_disposition": "ADAPT",
+          "local_concept": "Machine-readable mission runbook registry",
+          "notes": "Dynamic team assembly by mission; do not keep all agents active."
+        },
+        {
+          "upstream_file": "strategy/coordination/handoff-templates.md",
+          "local_disposition": "ADAPT",
+          "local_concept": "Enterprise Information Packet / Air Gap handoff contract",
+          "notes": "Retain structured handoffs, PASS/FAIL/escalation patterns; enforce least-privilege context instead of unrestricted context transfer."
+        },
+        {
+          "upstream_file": "engineering/engineering-multi-agent-systems-architect.md",
+          "local_disposition": "ADAPT",
+          "local_concept": "Multi-Agent Orchestration Architecture",
+          "notes": "Adopt topology discipline, structured state, trace IDs, least privilege, fallbacks, circuit breakers, evals, context budgeting, and prompt-injection isolation."
+        },
+        {
+          "upstream_file": "specialized/agents-orchestrator.md",
+          "local_disposition": "ADAPT",
+          "local_concept": "Mission/workstream orchestrator class subordinate to T.H.E.L.M.A.",
+          "notes": "Use planning/build/QA/integration loops, retry limits, state tracking, and escalation."
+        },
+        {
+          "upstream_file": "testing/testing-reality-checker.md",
+          "local_disposition": "ADOPT_WITH_CONTROLS",
+          "local_concept": "Quality Control Agency Reality Gate",
+          "notes": "Default to NEEDS WORK until evidence proves completion. Extend beyond screenshots to API, data, security, deployment, financial, grant, and publishing evidence."
+        },
+        {
+          "upstream_file": "engineering/engineering-autonomous-optimization-architect.md",
+          "local_disposition": "ADAPT",
+          "local_concept": "Agent Economics & Provider Optimization Intelligence",
+          "notes": "Add cost limits, model/provider routing, shadow evaluation, bounded retries, failover, and anomaly circuit breakers."
+        },
+        {
+          "upstream_file": "engineering/engineering-ai-data-remediation-engineer.md",
+          "local_disposition": "ADAPT",
+          "local_concept": "Air-gapped data remediation capability",
+          "notes": "Keep semantic anomaly clustering, local-model repair proposal, quarantine, reconciliation, and audit trail. Reject direct eval-based execution of model-generated Python; use declarative transformations or sandboxed AST allowlisting."
+        },
+        {
+          "upstream_file": "marketing/marketing-book-co-author.md",
+          "local_disposition": "ADAPT",
+          "local_concept": "Publishing & Media Studio editorial specialist",
+          "notes": "Use voice preservation, narrative/chapter architecture, versioning, source gaps, and explicit revision loops. Expand beyond thought-leadership into appropriate book types."
+        },
+        {
+          "upstream_file": "academic/academic-narratologist.md",
+          "local_disposition": "ADAPT",
+          "local_concept": "Series narrative analysis and continuity intelligence",
+          "notes": "Use structural analysis, character arcs, narrative promises/debts, pacing, thematic consistency, and genre-aware evaluation."
+        },
+        {
+          "upstream_file": "game-development/narrative-designer.md",
+          "local_disposition": "ADAPT",
+          "local_concept": "Series Bible / Canon / Character Voice architecture",
+          "notes": "Apply world bible, character voice pillars, lore tiers, timeline consistency, forbidden retcons, and narrative-debt tracking to books and transmedia."
+        },
+        {
+          "upstream_file": "design/design-visual-storyteller.md",
+          "local_disposition": "ADAPT",
+          "local_concept": "Visual adaptation/storyboard capability",
+          "notes": "Use visual narrative arcs, storyboards, multimedia planning, emotional pacing, and cross-platform adaptation."
+        },
+        {
+          "upstream_file": "marketing/marketing-video-optimization-specialist.md",
+          "local_disposition": "ADAPT",
+          "local_concept": "Video packaging/retention/discovery specialist",
+          "notes": "Use for approved derivative video after source content reaches adaptation gate."
+        },
+        {
+          "upstream_file": "marketing/marketing-short-video-editing-coach.md",
+          "local_disposition": "REFERENCE_ADAPT",
+          "local_concept": "Short-form post-production specialist",
+          "notes": "Retain editing workflow knowledge; validate time-sensitive platform/tool specifics before production use."
+        },
+        {
+          "upstream_file": "marketing/marketing-podcast-strategist.md",
+          "local_disposition": "ADAPT",
+          "local_concept": "Audio/podcast production and distribution specialist",
+          "notes": "Keep show/episode/production/distribution/analytics structure; replace China-specific assumptions with target-market adapters."
+        },
+        {
+          "upstream_file": "marketing/marketing-multi-platform-publisher.md",
+          "local_disposition": "ADAPT",
+          "local_concept": "Draft-first multi-platform distribution pattern",
+          "notes": "Keep platform-native adaptation and draft-first safety; build connectors for our actual target platforms."
+        }
+      ]
+    }
+  ]
+}
