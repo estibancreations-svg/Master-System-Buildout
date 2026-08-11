@@ -1,0 +1,185 @@
+{
+  "registry_version": "1.0.0",
+  "updated": "2026-08-11",
+  "architecture": "01-ARCHITECTURE/AI-Agent-Architecture.md",
+  "capabilities": [
+    {
+      "capability_id": "EC-EXEC-THELMA-001",
+      "name": "T.H.E.L.M.A.",
+      "class": "executive",
+      "owner": "CEO Command",
+      "status": "existing_core",
+      "mission": "Enterprise operations oversight, mission routing, orchestration governance, synthesis, escalation, and executive reporting.",
+      "provenance": {"source": "Estiban Creations internal architecture"}
+    },
+    {
+      "capability_id": "EC-ORCH-MISSION-001",
+      "name": "Mission / Workstream Orchestrator",
+      "class": "orchestrator",
+      "owner": "T.H.E.L.M.A.",
+      "status": "adapted_design",
+      "mission": "Run one bounded mission through planning, delegation, state tracking, quality gates, retry limits, synthesis, and escalation.",
+      "provenance": {
+        "source_id": "SRC-GH-AGENCY-AGENTS-001",
+        "upstream_files": ["specialized/agents-orchestrator.md", "strategy/nexus-strategy.md"]
+      }
+    },
+    {
+      "capability_id": "EC-ARCH-MULTIAGENT-001",
+      "name": "Multi-Agent Systems Architect",
+      "class": "specialist",
+      "owner": "Enterprise Architecture",
+      "status": "adapted_design",
+      "mission": "Design and review multi-agent topologies, contracts, context, failure handling, permissions, observability, evals, and cost/latency tradeoffs.",
+      "provenance": {
+        "source_id": "SRC-GH-AGENCY-AGENTS-001",
+        "upstream_files": ["engineering/engineering-multi-agent-systems-architect.md"]
+      }
+    },
+    {
+      "capability_id": "EC-QC-REALITY-001",
+      "name": "Reality Gate",
+      "class": "evaluator",
+      "owner": "Quality Control Agency",
+      "status": "adapted_design",
+      "mission": "Reject unsupported completion claims and require evidence appropriate to the artifact/system before readiness certification.",
+      "provenance": {
+        "source_id": "SRC-GH-AGENCY-AGENTS-001",
+        "upstream_files": ["testing/testing-reality-checker.md"]
+      }
+    },
+    {
+      "capability_id": "EC-QC-EVIDENCE-001",
+      "name": "Evidence Collector",
+      "class": "evaluator",
+      "owner": "Quality Control Agency",
+      "status": "planned_adaptation",
+      "mission": "Collect reproducible proof that acceptance criteria were met and preserve evidence references in mission state.",
+      "provenance": {
+        "source_id": "SRC-GH-AGENCY-AGENTS-001",
+        "upstream_files": ["testing/testing-evidence-collector.md"]
+      }
+    },
+    {
+      "capability_id": "EC-OPT-ECON-001",
+      "name": "Agent Economics & Provider Optimization Intelligence",
+      "class": "specialist",
+      "owner": "T.H.E.L.M.A. / Finance Intelligence",
+      "status": "adapted_design",
+      "mission": "Track cost, latency, quality, usage, provider health, fallbacks, shadow tests, and circuit breakers for AI/tool execution.",
+      "provenance": {
+        "source_id": "SRC-GH-AGENCY-AGENTS-001",
+        "upstream_files": ["engineering/engineering-autonomous-optimization-architect.md"]
+      }
+    },
+    {
+      "capability_id": "EC-DATA-REMED-001",
+      "name": "AI Data Remediation Specialist",
+      "class": "specialist",
+      "owner": "Data Architecture / Quality Control Agency",
+      "status": "adapted_design",
+      "mission": "Cluster data anomalies, propose deterministic repair rules, stage changes, reconcile all records, and quarantine uncertain cases without silent data loss.",
+      "safety_note": "Do not execute model-generated Python via eval; require declarative transformations or hardened sandbox/AST allowlisting.",
+      "provenance": {
+        "source_id": "SRC-GH-AGENCY-AGENTS-001",
+        "upstream_files": ["engineering/engineering-ai-data-remediation-engineer.md"]
+      }
+    },
+    {
+      "capability_id": "EC-PUB-COAUTHOR-001",
+      "name": "Book Co-Author / Author Support",
+      "class": "specialist",
+      "owner": "Publishing & Media Studio",
+      "status": "adapted_design",
+      "mission": "Develop and revise manuscripts while protecting author voice, structure, versioning, source gaps, and explicit editorial decisions.",
+      "provenance": {
+        "source_id": "SRC-GH-AGENCY-AGENTS-001",
+        "upstream_files": ["marketing/marketing-book-co-author.md"]
+      }
+    },
+    {
+      "capability_id": "EC-PUB-NARR-001",
+      "name": "Narratologist / Narrative Analysis",
+      "class": "specialist",
+      "owner": "Publishing & Media Studio",
+      "status": "adapted_design",
+      "mission": "Analyze story structure, character arcs, pacing, themes, narrative promises/debts, and genre coherence across works.",
+      "provenance": {
+        "source_id": "SRC-GH-AGENCY-AGENTS-001",
+        "upstream_files": ["academic/academic-narratologist.md"]
+      }
+    },
+    {
+      "capability_id": "EC-PUB-CANON-001",
+      "name": "Canon Keeper / Series Bible Steward",
+      "class": "specialist",
+      "owner": "Publishing & Media Studio",
+      "status": "Estiban_extension",
+      "mission": "Maintain canonical facts, chronology, character voices, relationships, locations, unresolved threads, source references, and forbidden retcons across a multi-work IP universe.",
+      "provenance": {
+        "source_id": "SRC-GH-AGENCY-AGENTS-001",
+        "influenced_by": ["game-development/narrative-designer.md"],
+        "adaptation": "Extended game-oriented world-bible concepts into book-series and transmedia canon governance."
+      }
+    },
+    {
+      "capability_id": "EC-PUB-VISUAL-001",
+      "name": "Visual Storyteller / Storyboard Specialist",
+      "class": "specialist",
+      "owner": "Publishing & Media Studio / VisionWeaver",
+      "status": "adapted_design",
+      "mission": "Translate approved narrative source into visual arcs, storyboards, scene direction, visual metaphors, and cross-format production briefs.",
+      "provenance": {
+        "source_id": "SRC-GH-AGENCY-AGENTS-001",
+        "upstream_files": ["design/design-visual-storyteller.md"]
+      }
+    },
+    {
+      "capability_id": "EC-MEDIA-VIDEOOPT-001",
+      "name": "Video Optimization Specialist",
+      "class": "specialist",
+      "owner": "CMGIO with Publishing handoff boundary",
+      "status": "adapted_design",
+      "mission": "Optimize approved video packaging, retention structure, metadata, discoverability, thumbnails, and derivative short-form strategy.",
+      "provenance": {
+        "source_id": "SRC-GH-AGENCY-AGENTS-001",
+        "upstream_files": ["marketing/marketing-video-optimization-specialist.md"]
+      }
+    },
+    {
+      "capability_id": "EC-PUB-AUDIO-001",
+      "name": "Podcast / Audio Production Strategist",
+      "class": "specialist",
+      "owner": "Publishing & Media Studio",
+      "status": "adapted_design",
+      "mission": "Plan and operate audio/podcast derivatives, production standards, episode structures, distribution, repurposing, and analytics using target-market platform adapters.",
+      "provenance": {
+        "source_id": "SRC-GH-AGENCY-AGENTS-001",
+        "upstream_files": ["marketing/marketing-podcast-strategist.md"]
+      }
+    },
+    {
+      "capability_id": "EC-MKT-DIST-001",
+      "name": "Multi-Platform Draft Publisher",
+      "class": "orchestrator",
+      "owner": "CMGIO",
+      "status": "adapted_design",
+      "mission": "Create platform-native release drafts, run preflight validation, preserve approval gates, and report per-platform staging status before production release.",
+      "provenance": {
+        "source_id": "SRC-GH-AGENCY-AGENTS-001",
+        "upstream_files": ["marketing/marketing-multi-platform-publisher.md"]
+      }
+    },
+    {
+      "capability_id": "EC-LEARN-ECO-001",
+      "name": "Ecosystem Discovery & Learning Engine",
+      "class": "orchestrator",
+      "owner": "T.H.E.L.M.A. / Enterprise Architecture",
+      "status": "Estiban_native",
+      "mission": "Discover, score, attribute, compare, monitor, and advise on external repositories/tools/standards without automatic production adoption.",
+      "provenance": {
+        "source": "Estiban Creations requirement emerging from agency-agents integration review on 2026-08-11"
+      }
+    }
+  ]
+}
