@@ -40,3 +40,11 @@ See [`00-CENTRAL-HUB/REPOSITORY-STRUCTURE-RECONCILIATION.md`](00-CENTRAL-HUB/REP
 ## Getting Started
 
 Navigate to each directory to find detailed documentation for each system component.
+
+## Consolidation Checkpoint — 2026-08-12
+
+All pull requests across the four governed `estibancreations-svg` repositories were audited and settled on 2026-08-12. HisMajesty/Drive recovery, Dashboard/Weaver specifications, VisionWeaver v6, CEO Dashboard code, LandWeaver attachment, and provenance/publishing architecture are now on canonical `main` branches.
+
+Start system rework from the [Repository Migration, PR & System Alignment Closeout](07-DOCUMENTATION/Status-Reports/2026-08-12_REPOSITORY-MIGRATION-PR-AND-SYSTEM-ALIGNMENT-CLOSEOUT.md).
+
+The CEO Dashboard Vercel deployment error remains deliberately deferred and is not represented as resolved.
