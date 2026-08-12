@@ -14,6 +14,16 @@ Systems and agents must retrieve `MSB-SCHEMA-001` before creating or revising an
 - **Architect Identity Correction 001:** [`08-08-2026_ARCHITECT-SYSTEM-IDENTITY-CORRECTION-001.md`](INBOX/Fragment-Recovery/08-08-2026_ARCHITECT-SYSTEM-IDENTITY-CORRECTION-001.md) — Master Dashboard, VisionWeaver, LandWeaver, and CEO Dashboard remain separate systems.
 - **Sweep 002 — HisMajesty + Drive:** [`08-08-2026_CROSS-SOURCE-EVIDENCE-SWEEP-002_HISMAJESTY-AND-DRIVE.md`](INBOX/Fragment-Recovery/08-08-2026_CROSS-SOURCE-EVIDENCE-SWEEP-002_HISMAJESTY-AND-DRIVE.md) — inventories 32 readable `HisMajesty0225` repositories, resolves Google Drive retrieval for this session, upgrades VisionWeaver/LandWeaver/CEO evidence, and registers THELMA, GrantOS, Master Advertising, and ClimateTrack Pro as independent governed systems.
 
+
+## Recovered / Reconciled System Packages
+
+- `SYS-DASH-001` — [Master Dashboard Independent System Baseline](../02-SYSTEM-SPECIFICATIONS/Master-Dashboard/MASTER-DASHBOARD-INDEPENDENT-SYSTEM-BASELINE.md)
+- `SYS-VISION-001` — [VisionWeaver Implementation Reconciliation](../02-SYSTEM-SPECIFICATIONS/VisionWeaver/VISIONWEAVER-IMPLEMENTATION-RECONCILIATION.md)
+- `SYS-LAND-001` — [LandWeaver Canonical Recovery Package](../02-SYSTEM-SPECIFICATIONS/LandWeaver/LANDWEAVER-CANONICAL-RECOVERY-PACKAGE.md)
+- `SYS-CEO-001` — [CEO Dashboard Page Implementation Map](../02-SYSTEM-SPECIFICATIONS/CEO-Dashboard/CEO-DASHBOARD-PAGE-IMPLEMENTATION-MAP.md)
+
+These packages preserve separate system identities and promote the recovered Drive/GitHub evidence into canonical, implementation-ready specifications.
+
 ## Conversation Records
 
 | Conversation ID | Display Name | Conversation Title | Status | Latest Checkpoint | Canonical Record | Latest Checkpoint Manifest | Historical Record | Message Count | Integrity | Primary System | Next Action |
