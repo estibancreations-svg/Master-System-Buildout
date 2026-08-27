@@ -1,28 +1,140 @@
 # SYSTEM REGISTRY
 
+**Status:** ACTIVE_CANON  
+**Reconciled:** 2026-08-27  
+**Authority:** The Architect / Base Ten Standard  
 **Identity Rule:** `00-CENTRAL-HUB/Directives/SEPARATE-SYSTEM-IDENTITY-AND-LINKAGE-RULE.md`
 
-Linked systems remain separate governed systems. Dependencies, integrations, shared repositories, shared evidence locations, or shared conversations do not merge system identity unless The Architect explicitly directs otherwise.
+Linked systems remain separate governed systems. Dependencies, integrations, shared repositories, shared evidence locations, agents, providers, or conversations do **not** merge system identity unless The Architect explicitly directs otherwise.
 
-| System ID | System Name | Division | Status | Source Conversations / Recovery | Primary Specification | Repository / Evidence Path | Dependencies / Integrations | Owner | Next Action |
-|---|---|---|---|---|---|---|---|---|---|
-| MSB-HUB-001 | Master Systems Buildout Central Hub Continuity and Capture System | DIV-008 TECHNOLOGY DIVISION | ACTIVE / ONGOING | CONV-28072026-001 | [Hub Continuity Record](../CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB_HUB-CONTINUITY-RECORD.md) | `00-CENTRAL-HUB/` | Memory Gem manifests and volumes; intake; registries; indexes; repository map | The Architect | Maintain append-only checkpoints and continue evidence reconciliation |
-| MSB-SCHEMA-001 | System Build Schema Standard | DIV-008 TECHNOLOGY DIVISION | CANONICAL / ACTIVE | CONV-02082026-001 | [System Build Schema Standard v1.0](../../01-ARCHITECTURE/System-Build-Schema/SYSTEM-BUILD-SCHEMA-STANDARD-v1.0.md) | `01-ARCHITECTURE/System-Build-Schema/` | C-Suite System of Record; Enterprise Standards; repository governance | The Architect | Require every separate system to reference and implement the canonical schema |
-| SYS-DASH-001 | Master Dashboard | DIV-008 TECHNOLOGY DIVISION | ACTIVE / SEPARATE SYSTEM / REPOSITORY EVIDENCE VERIFIED | CONV-02082026-001; Cross-source recovery sweeps 001–002 | [Master Dashboard Independent System Baseline](../../02-SYSTEM-SPECIFICATIONS/Master-Dashboard/MASTER-DASHBOARD-INDEPENDENT-SYSTEM-BASELINE.md) | `estibancreations-svg/Master-dashboard-`; Drive contains related dashboard/hub evidence, but a uniquely identified canonical Master Dashboard Drive package is not yet certified | MSB-SCHEMA-001; may integrate with VisionWeaver, LandWeaver, CEO Dashboard, and other systems without identity merger | The Architect | Reconcile Master Dashboard itself against all 19 schema sections; isolate cross-hosted VisionWeaver evidence and identify the canonical Drive package before upgrading Drive status |
-| SYS-VISION-001 | VisionWeaver | DIV-008 TECHNOLOGY DIVISION | ACTIVE / SEPARATE SYSTEM / V6 MAIN MERGED + MULTI-REPOSITORY/DRIVE LINEAGE / LIVE RE-VERIFICATION REQUIRED | CONV-01082026-008; Cross-source recovery sweeps 001–002 | [VisionWeaver Implementation Reconciliation](../../02-SYSTEM-SPECIFICATIONS/VisionWeaver/VISIONWEAVER-IMPLEMENTATION-RECONCILIATION.md) | `estibancreations-svg/Master-dashboard-` cross-hosted evidence; `HisMajesty0225/VisionWeaver-Revision-Hub`; Vision-Weaver 4.x/5.x/6.x and Dream-Weaver historical family; Drive System Bible, setup, Memory Gem, transcript, and organized-findings material | MSB-SCHEMA-001; Master Dashboard; LandWeaver; CEO Dashboard; Google Drive; Firebase/Firestore; n8n; media-generation providers | The Architect | Use merged v6 implementation and reconciliation package as the rework baseline; re-verify live Supabase runtime, provider credentials, secret rotation, deployment and QC before new production claims |
-| SYS-LAND-001 | LandWeaver | PROPERTY INTELLIGENCE / DIV-008 TECHNOLOGY DIVISION | ACTIVE / SEPARATE SYSTEM / CANONICAL PACKAGE + CONNECTED CEO WORKSPACE MERGED | CONV-01082026-008; Cross-source recovery sweep 002 | [LandWeaver Canonical Recovery Package](../../02-SYSTEM-SPECIFICATIONS/LandWeaver/LANDWEAVER-CANONICAL-RECOVERY-PACKAGE.md) | Exact visible-boundary conversation evidence; Google Drive `LandWeaver System Design.html`, `LandWeaver.html`, LandWeaver folders and supporting files | MSB-SCHEMA-001; Property Intelligence; Master Dashboard; VisionWeaver; CEO Dashboard and other linked systems as explicitly mapped | The Architect | Use the canonical 19-section package and merged 15-view CEO workspace as the rework baseline; verify live adapters, database state, provenance and system/repository boundary |
-| SYS-CEO-001 | Master CEO Dashboard / CEO Dashboard | EXECUTIVE GOVERNANCE / DIV-008 TECHNOLOGY DIVISION | ACTIVE / SEPARATE SYSTEM / CONNECTED MVP + DESIGN SPECS MERGED / VERCEL REVIEW DEFERRED | CONV-02082026-001; Cross-source recovery sweeps 001–002 | [CEO Dashboard Page Implementation Map](../../02-SYSTEM-SPECIFICATIONS/CEO-Dashboard/CEO-DASHBOARD-PAGE-IMPLEMENTATION-MAP.md) | `estibancreations-svg/MASTER_CEO_DASHBOARD`; commit `feef4bd7337fc4adaff2e7589c0dfa23b93e1a7f`; Drive CEO Dashboard build prompt, handoff, command-center, training and design material | MSB-SCHEMA-001; CEO AI Executive Office; C-Suite System of Record; Master Dashboard; VisionWeaver; LandWeaver as linked systems only | The Architect | Use merged design specifications and connected MVP as the rework baseline; verify deployment and Supabase runtime separately; keep the Vercel error open for review |
-| SYS-THELMA-001 | T.H.E.L.M.A. | AI PLATFORM / OPERATIONS / DIV-008 TECHNOLOGY DIVISION | ACTIVE / SEPARATE SYSTEM / MULTI-REPOSITORY + DRIVE EVIDENCE VERIFIED | Cross-source recovery sweep 002 | Specification package to be reconciled under `02-SYSTEM-SPECIFICATIONS/THELMA/` | `HisMajesty0225/T.H.E.LM.A.`; T.H.E.L.M.A. core/modules, post-hackathon, operations-command and related repository family; Drive `T.H.E.L.M.A Directives.docx` and related packages | MSB-SCHEMA-001; n8n; M.I.N.I.M.I.; Google Drive; GitHub; SMTL; IAIL; LILY; HENRY; training/certification architecture | The Architect | Reconcile repository lineage and 12-module Drive architecture into one 19-section record; identify canonical source repo; fix build/integration blockers; validate credentials and production boundaries |
-| SYS-GRANT-001 | GrantOS | GRANT OPERATIONS / DIV-008 TECHNOLOGY DIVISION | ACTIVE / SEPARATE SYSTEM / PROTOTYPE IMPLEMENTATION + DRIVE ENTERPRISE ARCHITECTURE VERIFIED | Cross-source recovery sweep 002 | Specification package to be reconciled under `02-SYSTEM-SPECIFICATIONS/GrantOS/` | `HisMajesty0225/GrantOS-` Android/Kotlin/Room implementation; Drive `GrantOS-v3-Full-System.pdf`, dashboard HTML, upgrade plan and research/handoff material | MSB-SCHEMA-001; grant intelligence; Grants.gov/SAM.gov; Supabase as applicable; workflow orchestration; document intelligence; compliance systems | The Architect | Reconcile Android/Room prototype with enterprise SaaS target; map all 19 sections; harden secrets/security; define canonical backend, multi-tenant, AI-agent and deployment architecture |
-| SYS-ADS-001 | Master Advertising Platform | MARKETING & MEDIA DIVISION | ACTIVE / SEPARATE SYSTEM / DRIVE SPECIFICATION VERIFIED / REPORTED GITHUB SOURCE UNRESOLVED | Cross-source recovery sweep 002 | Specification package to be reconciled under `02-SYSTEM-SPECIFICATIONS/Master-Advertising/` | Drive `Master Advertising System Prompt.docx`, Prompt 2, deployment logs; related readable implementations `HisMajesty0225/Thumbnail-Generator` and `HisMajesty0225/ViralTube-Architect`; exact supplied `HisMajesty0225/Master-Advertising-System` repo name unresolved | MSB-SCHEMA-001; CMGIO; VisionWeaver; YouTube/social publishing; image/audio/video generation; character/content tools | The Architect | Build 19-section specification; locate/verify canonical GitHub source; determine whether Thumbnail Generator and ViralTube are components, linked systems, or historical implementations without silent identity merger |
-| SYS-CLIMATE-001 | ClimateTrack Pro | SUSTAINABILITY / RESEARCH & PRODUCT INTELLIGENCE | ACTIVE / SEPARATE SYSTEM / REPOSITORY IMPLEMENTATION + DRIVE ARCHITECTURE VERIFIED | Cross-source recovery sweep 002 | Specification package to be reconciled under `02-SYSTEM-SPECIFICATIONS/ClimateTrack-Pro/` | `HisMajesty0225/ClimateTracPro` active code/docs; `ClimateTrack-Pro` and `climatetrack-pro1` historical/shell leads; Drive development strategy, government-integration, architecture, n8n, implementation, pitch and business-case materials | MSB-SCHEMA-001; environmental data; government reporting APIs; n8n; authentication; PostgreSQL/Supabase or approved backend | The Architect | Reconcile active implementation with Drive architecture; classify two historical shells; build 19-section record; validate government API claims, security, compliance and deployment readiness |
+This registry distinguishes **canonical system identity** from **implementation state**. A named system may be approved and governed while still being `PARTIAL`, `RECOVERY_REQUIRED`, `SPECIFICATION_ONLY`, or `NOT_IMPLEMENTED`.
+
+## Governing Status Vocabulary
+
+Use these states for current implementation truth:
+
+- `VERIFIED` — end-to-end capability evidence exists.
+- `IMPLEMENTED_UNVERIFIED` — implementation exists but full execution proof is incomplete.
+- `PARTIAL` — meaningful implementation exists but canonical workflow/capability coverage is incomplete.
+- `BLOCKED` — work exists but an identified dependency prevents operation/certification.
+- `RECOVERY_REQUIRED` — canonical/historical evidence exists but current product implementation must be reconstructed/reconciled.
+- `SPECIFICATION_ONLY` — governed design exists without a certified current executable product.
+- `NOT_IMPLEMENTED` — approved system identity exists but no current certified implementation exists.
+- `SUPERSEDED` — historical identity/version is retained for provenance but is not current.
+
+Do not convert route existence, documentation, database tables, provider credentials, builds, or old completion percentages into `VERIFIED` without execution evidence.
+
+---
+
+## Enterprise Standards / Control Records — Not Counted as Business Systems
+
+| Record ID | Record | State | Purpose | Owner |
+|---|---|---|---|---|
+| MSB-HUB-001 | Master Systems Buildout Central Hub | ACTIVE | Continuity, canonical capture, recovery evidence, registries and architectural history | The Architect |
+| MSB-SCHEMA-001 | System Build Schema Standard | ACTIVE_CANON | Common system-definition and evidence standard | The Architect |
+
+These records govern the enterprise but are **not additional members of the approved 17-system operating registry**.
+
+---
+
+# Approved Enterprise Registry — 17 Systems
+
+| # | System ID | System Name | Canonical Purpose | Current State | Current Executable Evidence | Primary Canon / Recovery Evidence | Key Connections | Next Required Proof / Build |
+|---:|---|---|---|---|---|---|---|---|
+| 1 | SYS-DASH-001 | Master Dashboard | Enterprise operational aggregation, navigation, system launcher and everyday overview | PARTIAL | `MASTER_CEO_DASHBOARD` `/dashboard`; global navigation and module shell | `02-SYSTEM-SPECIFICATIONS/Master-Dashboard/MASTER-DASHBOARD-INDEPENDENT-SYSTEM-BASELINE.md`; CEO/Master build capability registry | CEO Command Center, THELMA, all domain systems | Replace remaining generic module clones with real owned workflows; capability-weighted certification |
+| 2 | SYS-CEO-001 | CEO Command Center | Executive governance, decisions, approvals, risk, finance, C-Suite intelligence and THELMA recommendations | PARTIAL | `MASTER_CEO_DASHBOARD` `/c-suite/executive-overview`; Resource/Ecosystem controls released in PR #40 | `02-SYSTEM-SPECIFICATIONS/CEO-Dashboard/`; CEO Command Center recovery/design records | Master Dashboard, THELMA, Resource Intelligence, Ecosystem Intelligence, Finance/QC | Finish distinct CEO-vs-Master contracts; real executive action receipts and evidence-weighted readiness |
+| 3 | SYS-THELMA-001 | T.H.E.L.M.A. | Enterprise operating intelligence: diagnosis, delegation, agents, White Blood Cells, governed repairs, model/resource/tool routing | PARTIAL | `/systems/thelma`; `thelma-ai`; agent profiles; WBC; approvals; Base Ten runtime governance | THELMA recovery family; current `MASTER_CEO_DASHBOARD` THELMA runtime/docs; historical `HisMajesty0225/T.H.E.LM.A.` evidence | EC Fabric, GitHub/Codex, Analyst Memory, Resource Intelligence, Ecosystem Intelligence, all systems | Prove authenticated conversation E2E and one governed repair E2E through deployment + VERITAS/WBC closure |
+| 4 | SYS-FABRIC-001 | EC Integration Fabric | Deterministic authorization, queueing, routing, retry, dead-letter, state and audit infrastructure | PARTIAL | `/systems/integration-fabric`; live queue/worker schema; generic false-success removed | Enterprise infrastructure/reconstruction records; current Fabric migrations/runtime | THELMA, providers, domain handlers, QC | Expand certified domain-handler registry; require explicit completion evidence per workflow |
+| 5 | SYS-VISION-001 | VisionWeaver | Creative-production OS: story/asset continuity, image/video/audio/music/voice, timeline, production, QC and publishing handoff | PARTIAL | `/systems/visionweaver`; Runway generations; generation/billing receipts; orchestrator/studio runtime | `02-SYSTEM-SPECIFICATIONS/VisionWeaver/VISIONWEAVER-IMPLEMENTATION-RECONCILIATION.md`; historical v4/v5/v6/recovery evidence | Runway and approved media providers, Publishing, MAP, Resource Intelligence, QC | Restore full Story Core/locks/timeline/audio/mastering/rights/provenance; certify provider and final-asset workflows |
+| 6 | SYS-LAND-001 | LandWeaver | GIS/property/map-first intelligence, parcel research, spatial evidence, zoning/hazards/utilities/comps and property workflow | PARTIAL | `/systems/landweaver`; connected property MVP/data foundation | `02-SYSTEM-SPECIFICATIONS/LandWeaver/LANDWEAVER-CANONICAL-RECOVERY-PACKAGE.md`; Drive/recovery evidence | CEO, public GIS/property sources, Resource Intelligence, QC | Implement/verify real GIS geometry, spatial search, authoritative-source ingestion, provenance/freshness/conflict handling |
+| 7 | SYS-GRANT-001 | GrantOS | Grant lifecycle: discovery, qualification, evidence, drafting, review, submission, award and compliance | PARTIAL | `/systems/grantos`; operational MVP structures | GrantOS recovery evidence and enterprise architecture; historical Android/Room prototype is reference only | Grants.gov/SAM.gov, document intelligence, THELMA, Fabric, Finance/QC | Complete enterprise lifecycle/domain model, provider discovery, submission authority/receipts, award/post-award compliance |
+| 8 | SYS-CMGIO-001 | CMGIO | Marketing and growth intelligence: trends, campaigns, audience/content intelligence, attribution interpretation and optimization | PARTIAL | `/systems/cmgio-map`; campaign/control-plane foundation | CMGIO constitutional/recovery records; social-commerce doctrine | MAP, AgencyFlow/Socials, CEO, THELMA, Publishing/VisionWeaver, Accounting | Separate fully from MAP; ingest real social/campaign metrics; weekly/monthly forecasting/optimization proof |
+| 9 | SYS-ADS-001 | Master Advertising Platform (MAP) | Advertising strategy, creative, variants, experimentation, spend, boosts, platform execution and ad attribution | RECOVERY_REQUIRED | No certified dedicated current workspace; related historical components exist | Master Advertising recovery materials; Thumbnail Generator/ViralTube historical component evidence | CMGIO, VisionWeaver, AgencyFlow, Social-Commerce, Accounting | Recover canonical product; establish independent workspace/schema; creative→test→publish→spend→conversion evidence pipeline |
+| 10 | SYS-AGENCYFLOW-001 | AgencyFlow | Agency operations: CRM, leads, clients, communications, social accounts/posting, services, workflows and operational agents | RECOVERY_REQUIRED | No certified dedicated current workspace | Canonical capability registry/recovery records including large AgencyFlow requirement family | CMGIO, MAP, Finance, Social-Commerce, THELMA | Recover domain model and agent family; build CRM/social/service workflows and source metrics adapters |
+| 11 | SYS-CLIMATE-001 | ClimateTrack Pro | Climate, sustainability and environmental intelligence with public/scientific data, monitoring and reporting | RECOVERY_REQUIRED | Historical/repository evidence exists; no certified current enterprise workspace | ClimateTrack recovery/repository/Drive evidence | Public climate/environment APIs, LandWeaver where relevant, THELMA, QC | Reconcile historical code to current architecture; verify datasets/provenance/compliance and implement current workspace |
+| 12 | SYS-PUBLISH-001 | Publishing & Media Studio | Books, manuscripts, EPUB/PDF, audiobooks, media packages, canon, accessibility, release and distribution control | SPECIFICATION_ONLY | No certified dedicated current workspace | Publishing/Media recovery and operationalization specifications; book/media project canon | VisionWeaver, MAP/CMGIO, THELMA, QC | Implement catalog/canon/editorial gates, release workflows, accessibility, distribution and rights/provenance |
+| 13 | SYS-IAM-001 | IAM / Self-Help | Identity/access self-service, OAuth/connection health, governed recovery, role/permission assistance and revocation | NOT_IMPLEMENTED | Core Supabase identity exists but no certified IAM product | Enterprise security/IAM requirements and recovery findings | Supabase Auth, THELMA, all systems | Build deterministic identity self-service; prohibit generative exposure of passwords/tokens/recovery codes; audit all changes |
+| 14 | SYS-TELECOM-001 | Telecommunications | Voice/SIP/SMS/call routing, communications history, transcription, QA/coaching and escalation | NOT_IMPLEMENTED | No certified dedicated current product | Enterprise system requirements/recovery records | AgencyFlow, THELMA, CRM, communications providers | Build deterministic telephony core first; add AI transcription/summarization under privacy and reliability gates |
+| 15 | SYS-ASSESS-001 | Assessment Suite | Assessments, instruments, scoring, longitudinal results and capability/skills intelligence | NOT_IMPLEMENTED | No certified dedicated current product | Enterprise assessment requirements/recovery records | Training, IAM, THELMA, QC | Define privacy-sensitive domain model, deterministic scoring authority and longitudinal evidence workflows |
+| 16 | SYS-TRAINING-001 | AI Mastery / Training | Curriculum, tutoring, exercises, mastery, evaluations, certificates and training intelligence | PARTIAL | Existing `/modules/ai-mastery` route/module material; no certified independent full system workspace | AI Mastery/training/certification recovery and capability requirements | Assessment, THELMA/LILY, QC, Certificates | Establish full LMS/mastery domain; deterministic achievement evidence and certificate verification |
+| 17 | SYS-QC-001 | Quality Control Agency | Independent testing, regression, release evidence, model/provider evaluation and system certification | PARTIAL | AUDITOR/VERITAS/WBC regression concepts; GitHub Quality Gate; Analyst evidence | QC Agency doctrine, Quantico reconstruction evidence, release gates | Every system; THELMA; GitHub/Vercel/Supabase | Build system-specific test packs and capability-weighted certification; distinguish infrastructure green from business workflow verified |
+
+---
+
+## Current Cross-System Control Planes
+
+The following are **enterprise capabilities/control planes**, not silently-created additional system identities unless The Architect later promotes them:
+
+- **Resource Intelligence** — daily balances, credits, entitlement state, model/provider usage, cost/billing and manual routing controls. Currently delivered through CEO/THELMA/global control surfaces and shared by all systems.
+- **Ecosystem Scout v3.1 / Ecosystem Intelligence** — Monday/Thursday model/tool/API/repository/pricing/licensing research and advisement. Currently an enterprise intelligence capability coordinated through THELMA/CEO rather than an approved 18th system.
+- **Analyst Memory Bank** — institutional evidence/canon/recovery memory plane.
+- **White Blood Cell System** — enterprise monitoring/repair-detection capability under THELMA/QC.
+- **Model / Tool / Agent Registries** — shared enterprise control-plane registries.
+- **Social-Commerce Intelligence Ledger** — shared cross-system measurement/attribution/forecasting capability serving CMGIO, MAP, AgencyFlow/Socials, CEO and Accounting.
+
+### EDLS Historical Classification
+
+Historical draft work labeled **Ecosystem Discovery & Learning Engine / SYS-EDLS-001** is preserved as recovery/design evidence. Under the current approved architecture, its applicable functions are represented by **Ecosystem Scout v3.1 / Ecosystem Intelligence** as a shared enterprise capability. It is **not counted as an 18th approved operating system** unless The Architect explicitly promotes it in a future decision.
+
+This prevents stale draft PR material from silently expanding the constitutional system registry.
+
+---
+
+## Current Release Evidence
+
+`MASTER_CEO_DASHBOARD` Enterprise Recalibration release:
+
+- PR #40 — Resource Intelligence, Ecosystem v3.1, truthful 17-system registry, Base Ten runtime governance and Social-Commerce reporting foundation.
+- Tested PR head: `65a74341f884c2015e85320ca9345b15538789ff`.
+- Release merge SHA: `6f45c88b8685b05b6faadb41c15430e5cb55d96b`.
+- PR Quality Gate run: `33122543985` — SUCCESS.
+- Main push Quality Gate run: `33122623943` — SUCCESS.
+- Vercel production deployment: `dpl_BZ23ZPWNwiYL2NEZrKUziz5HQx9c` — READY on release merge SHA.
+- Supabase migration: `20260827223009_base_ten_and_social_commerce_runtime` — applied.
+- Evidence closeout PR #41 merged afterward; its post-merge Quality Gate run `33123051533` — SUCCESS.
+
+The detailed executable-repository report is:
+
+`MASTER_CEO_DASHBOARD/docs/verification/GITHUB_ENTERPRISE_RECALIBRATION_REPORT_2026-08-27.md`
+
+---
+
+## Base Ten Enforcement
+
+All systems and enterprise control planes are subordinate to the active Base Ten governance doctrine:
+
+- The Architect retains at least `60/100` controlling authority at full system scope.
+- The Architect is final decision owner within the enterprise's discretionary authority.
+- challenge, dissent and recommendation are encouraged;
+- silent override is prohibited;
+- high/critical THELMA approval is architect-reserved in the current runtime governance migration;
+- legal, binding contractual and non-bypassable security/platform constraints remain above discretionary enterprise action.
+
+---
 
 ## Identity Enforcement
 
-- Every named system receives its own System ID and independent lifecycle.
-- A shared repository or evidence location does not merge identities.
-- Integration links are recorded in Dependencies / Integrations, not by collapsing systems into one registry row.
-- New named systems discovered during recovery must receive a separate record only when evidence supports governed-system status; experiments, utilities, shells, creative IP, and historical variants may remain recovery records until classified.
-- Evidence found in `HisMajesty0225/*` is currently read-only from this connector and is preserved as external implementation/provenance evidence.
-- Google Drive retrieval is now verified for multiple named system packages; the historical Sweep 001 Drive-access failure remains preserved as provenance.
-- No hardcoded credentials or personal-profile material may be copied into canonical specifications during recovery.
+- Every approved named system receives one independent System ID and lifecycle.
+- A shared repository, model, provider, database, agent, evidence location or integration does not merge identities.
+- Master Dashboard is not CEO Command Center.
+- THELMA is not EC Integration Fabric.
+- CMGIO is not MAP.
+- VisionWeaver is not Publishing & Media Studio.
+- Accounting/financial truth is not Resource Intelligence cost telemetry.
+- New system identities require evidence **and The Architect's approval**; discovery engines may recommend candidates but may not silently add systems.
+- Historical variants/components remain provenance unless explicitly promoted.
+- No hardcoded credentials or sensitive personal-profile material may enter canonical specifications.
+
+---
+
+## Registry Maintenance Rule
+
+After each material release/reconstruction cycle:
+
+1. compare current executable evidence against this registry;
+2. update state only where evidence justifies it;
+3. preserve historical claims without allowing them to override current truth;
+4. identify dependencies and blockers;
+5. run QC/adversarial review;
+6. record Architect decisions;
+7. never use a route, build, configuration row, or successful API credential check as sole proof of complete capability.
