@@ -6,7 +6,7 @@ THELMA owns its domain-specific workflows, contracts, and outputs.
 
 ## Orchestration Model
 
-THELMA orchestrates routing/governance and approval checkpoints, but does not collapse THELMA-AI identity ownership.
+This repository retains its own governed identity; orchestration responsibilities do not merge it with dependent system identities.
 
 ## Integration Surface
 

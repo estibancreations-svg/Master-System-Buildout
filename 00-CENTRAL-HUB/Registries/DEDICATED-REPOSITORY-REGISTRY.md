@@ -10,7 +10,7 @@ This registry tracks dedicated-repository boundaries, provisioning status, and r
 
 | System ID | System | Target Repository | Repo Provision Status | Baseline Scaffold Status | Migration Status | Blockers |
 |---|---|---|---|---|---|---|
-| `SYS-THELMA-001` | THELMA | `estibancreations-svg/THELMA-AI` | BLOCKED (permission 403) | READY IN HUB | NOT_STARTED | GitHub integration cannot create repos with current token scope |
+| `SYS-THELMA-001` | THELMA | `estibancreations-svg/-THELMA-AI` | CREATED_BY_ARCHITECT / ACCESS_GAP | READY IN HUB | BLOCKED_AT_PUSH | Repository exists per Architect, but current integration returns `404 Not Found` when reading/writing repo contents |
 | `SYS-GRANT-001` | GrantOS | `estibancreations-svg/GrantOS` | BLOCKED (permission 403) | READY IN HUB | NOT_STARTED | GitHub integration cannot create repos with current token scope |
 | `SYS-LAND-001` | LandWeaver | `estibancreations-svg/LandWeaver` | BLOCKED (permission 403) | READY IN HUB | NOT_STARTED | GitHub integration cannot create repos with current token scope |
 | `SYS-CLIMATE-001` | ClimateTrack Pro | `estibancreations-svg/ClimateTrack` | BLOCKED (permission 403) | READY IN HUB | NOT_STARTED | GitHub integration cannot create repos with current token scope |
@@ -53,7 +53,8 @@ Each dedicated repository must include:
 
 ## Next Actions
 
-1. Re-run repository creation once token scope supports `repo` creation in target owner.
-2. Push baseline seed pack into each dedicated repository.
-3. Start staged content migration from validated hub and `MASTER_CEO_DASHBOARD` artifacts.
-4. Execute 08-OTHER-SYSTEMS classification queue operations with Architect approval gates.
+1. Grant this integration access to `estibancreations-svg/-THELMA-AI` and retry seed-pack push.
+2. Request and provision next repository consecutively (`GrantOS`) per Architect workflow.
+3. Push baseline seed pack into each dedicated repository after access is confirmed.
+4. Start staged content migration from validated hub and `MASTER_CEO_DASHBOARD` artifacts.
+5. Execute 08-OTHER-SYSTEMS classification queue operations with Architect approval gates.
