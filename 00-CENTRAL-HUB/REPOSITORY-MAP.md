@@ -341,3 +341,17 @@ Google Drive was not successfully retrievable during Sweep 001. The Architect no
 All pull requests in `Master-System-Buildout`, `MASTER_CEO_DASHBOARD`, `Master-dashboard-`, and the empty `-HisMajesty0225-CEO-Dashboard` shell were audited. Actionable content is on canonical `main`; PR #6 is closed as superseded after its unique packages were promoted and registries reconciled. See [the closeout record](../07-DOCUMENTATION/Status-Reports/2026-08-12_REPOSITORY-MIGRATION-PR-AND-SYSTEM-ALIGNMENT-CLOSEOUT.md).
 
 The next phase is governed system rework. The CEO Dashboard Vercel deployment error remains deferred for separate diagnosis.
+
+## Dedicated Repositories Expansion (Planned Targets)
+
+Provisioning and reciprocal-link tracking are governed by:
+
+- `00-CENTRAL-HUB/Registries/DEDICATED-REPOSITORY-REGISTRY.md`
+
+Prepared baseline seed packages for remote bootstrap are stored at:
+
+- `00-CENTRAL-HUB/Repository-Seeds/THELMA-AI/`
+- `00-CENTRAL-HUB/Repository-Seeds/GrantOS/`
+- `00-CENTRAL-HUB/Repository-Seeds/LandWeaver/`
+- `00-CENTRAL-HUB/Repository-Seeds/ClimateTrack/`
+- `00-CENTRAL-HUB/Repository-Seeds/08-OTHER-SYSTEMS/`

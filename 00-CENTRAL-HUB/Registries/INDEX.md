@@ -3,6 +3,7 @@
 - [Conversation Registry](CONVERSATION-REGISTRY.md)
 - [Artifact Registry](ARTIFACT-REGISTRY.md)
 - [System Registry](SYSTEM-REGISTRY.md)
+- [Dedicated Repository Registry](DEDICATED-REPOSITORY-REGISTRY.md)
 - [Capture Ledger](CAPTURE-LEDGER.md)
 - [Work Tracker](WORK-TRACKER.md)
 - [Fragment Recovery Registry](FRAGMENT-RECOVERY-REGISTRY.md)
