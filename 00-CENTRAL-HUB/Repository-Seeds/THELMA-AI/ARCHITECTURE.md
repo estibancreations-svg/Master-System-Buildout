@@ -2,7 +2,7 @@
 
 ## Canonical Scope
 
-THELMA owns its domain-specific workflows, contracts, and outputs.
+T.H.E.L.M.A. owns its domain-specific workflows, contracts, and outputs.
 
 ## Orchestration Model
 

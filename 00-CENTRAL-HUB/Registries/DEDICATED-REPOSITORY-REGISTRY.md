@@ -10,7 +10,7 @@ This registry tracks dedicated-repository boundaries, provisioning status, and r
 
 | System ID | System | Target Repository | Repo Provision Status | Baseline Scaffold Status | Migration Status | Blockers |
 |---|---|---|---|---|---|---|
-| `SYS-THELMA-001` | THELMA | `estibancreations-svg/-THELMA-AI` | CREATED_BY_ARCHITECT / ACCESS_GAP | READY IN HUB | BLOCKED_AT_PUSH | Repository exists per Architect, but current integration returns `404 Not Found` when reading/writing repo contents |
+| `SYS-THELMA-001` | T.H.E.L.M.A. | `estibancreations-svg/-THELMA-AI` | CREATED_BY_ARCHITECT / ACCESS_GAP | READY IN HUB | BLOCKED_AT_PUSH | Repository exists per Architect, but current integration returns `404 Not Found` when reading/writing repo contents |
 | `SYS-GRANT-001` | GrantOS | `estibancreations-svg/GrantOS` | BLOCKED (permission 403) | READY IN HUB | NOT_STARTED | GitHub integration cannot create repos with current token scope |
 | `SYS-LAND-001` | LandWeaver | `estibancreations-svg/LandWeaver` | BLOCKED (permission 403) | READY IN HUB | NOT_STARTED | GitHub integration cannot create repos with current token scope |
 | `SYS-CLIMATE-001` | ClimateTrack Pro | `estibancreations-svg/ClimateTrack` | BLOCKED (permission 403) | READY IN HUB | NOT_STARTED | GitHub integration cannot create repos with current token scope |
@@ -34,7 +34,7 @@ Each dedicated repository must include:
 3. deterministic approval gates;
 4. immutable audit trail requirements;
 5. prohibition on implicit cross-system identity merge;
-6. explicit THELMA role as orchestrator/governor rather than identity-collapsing owner.
+6. explicit T.H.E.L.M.A. role as orchestrator/governor rather than identity-collapsing owner.
 
 ## Source Reconciliation Rules
 

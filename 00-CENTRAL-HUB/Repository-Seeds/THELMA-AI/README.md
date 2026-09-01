@@ -1,7 +1,7 @@
 # THELMA-AI
 
 **System ID:** `SYS-THELMA-001`  
-**System Name:** `THELMA`  
+**System Name:** `T.H.E.L.M.A.`  
 **Hub of Record:** `estibancreations-svg/Master-System-Buildout`
 
 ## System Charter
