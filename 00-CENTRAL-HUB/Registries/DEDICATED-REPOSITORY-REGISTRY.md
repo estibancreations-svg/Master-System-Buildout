@@ -10,11 +10,11 @@ This registry tracks dedicated-repository boundaries, provisioning status, and r
 
 | System ID | System | Target Repository | Repo Provision Status | Baseline Scaffold Status | Migration Status | Blockers |
 |---|---|---|---|---|---|---|
-| `SYS-THELMA-001` | T.H.E.L.M.A. | `estibancreations-svg/-THELMA-AI` | CREATED_BY_ARCHITECT / ACCESS_GAP | READY IN HUB | BLOCKED_AT_PUSH | Repository exists per Architect, but current integration returns `404 Not Found` when reading/writing repo contents |
-| `SYS-GRANT-001` | GrantOS | `estibancreations-svg/GrantOS` | BLOCKED (permission 403) | READY IN HUB | NOT_STARTED | GitHub integration cannot create repos with current token scope |
-| `SYS-LAND-001` | LandWeaver | `estibancreations-svg/LandWeaver` | BLOCKED (permission 403) | READY IN HUB | NOT_STARTED | GitHub integration cannot create repos with current token scope |
-| `SYS-CLIMATE-001` | ClimateTrack Pro | `estibancreations-svg/ClimateTrack` | BLOCKED (permission 403) | READY IN HUB | NOT_STARTED | GitHub integration cannot create repos with current token scope |
-| `QUEUE-OTHER-001` | 08-OTHER-SYSTEMS Candidate Queue | `estibancreations-svg/08-OTHER-SYSTEMS` | BLOCKED (permission 403) | READY IN HUB | NOT_STARTED | Queue repo provisioning blocked pending repo-create permission |
+| `SYS-THELMA-001` | T.H.E.L.M.A. | `estibancreations-svg/-THELMA-AI` | CREATED_BY_ARCHITECT / ACCESS_GAP | READY IN HUB | BLOCKED_AT_PUSH | Repository exists per Architect, but integration still returns `404 Not Found` on read/write retry (2026-09-06) |
+| `SYS-GRANT-001` | GrantOS | `estibancreations-svg/GrantOS` | BLOCKED (org repo-create access gap) | READY IN HUB | NOT_STARTED | `POST /orgs/estibancreations-svg/repos` returns `404 Not Found` on retry (2026-09-06) |
+| `SYS-LAND-001` | LandWeaver | `estibancreations-svg/LandWeaver` | BLOCKED (org repo-create access gap) | READY IN HUB | NOT_STARTED | `POST /orgs/estibancreations-svg/repos` returns `404 Not Found` on retry (2026-09-06) |
+| `SYS-CLIMATE-001` | ClimateTrack Pro | `estibancreations-svg/ClimateTrack` | BLOCKED (org repo-create access gap) | READY IN HUB | NOT_STARTED | `POST /orgs/estibancreations-svg/repos` returns `404 Not Found` on retry (2026-09-06) |
+| `QUEUE-OTHER-001` | 08-OTHER-SYSTEMS Candidate Queue | `estibancreations-svg/08-OTHER-SYSTEMS` | BLOCKED (org repo-create access gap) | READY IN HUB | NOT_STARTED | `POST /orgs/estibancreations-svg/repos` returns `404 Not Found` on retry (2026-09-06) |
 
 ## Canonical Hub Linkage Contracts
 
@@ -53,8 +53,21 @@ Each dedicated repository must include:
 
 ## Next Actions
 
-1. Grant this integration access to `estibancreations-svg/-THELMA-AI` and retry seed-pack push.
-2. Request and provision next repository consecutively (`GrantOS`) per Architect workflow.
-3. Push baseline seed pack into each dedicated repository after access is confirmed.
-4. Start staged content migration from validated hub and `MASTER_CEO_DASHBOARD` artifacts.
-5. Execute 08-OTHER-SYSTEMS classification queue operations with Architect approval gates.
+1. Resolve integration visibility for `estibancreations-svg/-THELMA-AI` so API read/write no longer returns `404`.
+2. Enable org-level repository creation access for `estibancreations-svg` to allow consecutive provisioning of remaining repos.
+3. Retry consecutive provisioning in order: `GrantOS` -> `LandWeaver` -> `ClimateTrack` -> `08-OTHER-SYSTEMS`.
+4. Push baseline seed pack into each dedicated repository after access is confirmed.
+5. Start staged content migration from validated hub and `MASTER_CEO_DASHBOARD` artifacts.
+6. Execute 08-OTHER-SYSTEMS classification queue operations with Architect approval gates.
+
+## Ordered Execution Recheck — 2026-09-06
+
+Executed consecutively in required order:
+
+1. Retried `-THELMA-AI` access/read (`GET /repos/estibancreations-svg/-THELMA-AI`) -> `404 Not Found`.
+2. Retried `GrantOS` create (`POST /orgs/estibancreations-svg/repos`) -> `404 Not Found`.
+3. Retried `LandWeaver` create (`POST /orgs/estibancreations-svg/repos`) -> `404 Not Found`.
+4. Retried `ClimateTrack` create (`POST /orgs/estibancreations-svg/repos`) -> `404 Not Found`.
+5. Retried `08-OTHER-SYSTEMS` create (`POST /orgs/estibancreations-svg/repos`) -> `404 Not Found`.
+
+Result: no dedicated repository state advanced beyond prior checkpoint; hub-side scaffolding remains ready.
