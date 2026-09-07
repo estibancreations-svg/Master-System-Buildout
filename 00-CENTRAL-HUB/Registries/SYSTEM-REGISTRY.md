@@ -97,6 +97,28 @@ The detailed executable-repository report is:
 
 `MASTER_CEO_DASHBOARD/docs/verification/GITHUB_ENTERPRISE_RECALIBRATION_REPORT_2026-08-27.md`
 
+### 2026-09-06 Desktop Rebuild + Workspace Flow Addendum (Evidence-Classified)
+
+Evidence-verified from GitHub:
+
+- `Master-dashboard-` PR #4 merged: **Rebuild Master Dashboard as Estiban Systems Desktop**.
+- `Master-dashboard-` main commit: `7cf199bf753b2117bb4c8cb4089c46da4e34144d`.
+- `MASTER_CEO_DASHBOARD` PR #48 merged: **Add durable workspace Request → Work → Review → Return flow**.
+- `MASTER_CEO_DASHBOARD` main commit: `2d1369ffddd9483474d4dcfbb35f6239c158a1f7`.
+- Canonical migration in source control: `supabase/migrations/20260906110000_workspace_request_review_return.sql` (adds `workspace_jobs`, `workspace_job_events`, and organization-scoped RLS policies).
+- Vercel status checks on both PR heads reported deployment completion.
+
+Operator-asserted / pending independent runtime verification from this repository context:
+
+- production Desktop HTTP 200 confirmation on live endpoint;
+- direct route HTTP 200 checks for VisionWeaver, LandWeaver, and GrantOS in production;
+- live synthetic transaction execution + rollback evidence in production database;
+- production Supabase runtime-state confirmation beyond migration-in-source presence.
+
+Reconciliation note:
+
+- PR #48 text explicitly states that at that stage it did **not** claim the separate Systems Desktop UI was fully wired; any stronger end-to-end production claim must be treated as post-merge operational validation evidence.
+
 ---
 
 ## Base Ten Enforcement
