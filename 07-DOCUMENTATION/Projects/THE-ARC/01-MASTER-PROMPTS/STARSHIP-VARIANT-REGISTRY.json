@@ -1,0 +1,67 @@
+{
+  "variant_count": 5,
+  "variants": [
+    {
+      "code": "ARC-01",
+      "name": "PASSOVER-CLASS MASTER ARC",
+      "subtitle": "Canonical Production Base / Interior Artificial-World Starship",
+      "sources": {
+        "WORLD_01_MASTER": "fcafcb09-7fd6-44cb-bdb7-1b753c72c422",
+        "THE_PASSOVER_FIRST_VIDEO": "0ed809d4-69e8-40ae-907d-4c87936566c7",
+        "BRANCH_2_IDENTITY": "8e5de1d9-3607-4a9f-a7b9-3e5c7b9b8eaf",
+        "SHIELD_DOOR_MECHANICS": "a4c998b9-1ab7-4323-9e1b-4e74f9884fa7",
+        "WATER_CIRCULATION": "0e61c782-a883-4ab5-b181-29292b56207d",
+        "ECOLOGY_LIFE_SUPPORT": "ee71c87d-4ccd-47e5-8820-bb76148cfe8d"
+      },
+      "canonical_production_base": true
+    },
+    {
+      "code": "ARC-02",
+      "name": "PENTARCH-CLASS FIVE-BRANCH ARC",
+      "subtitle": "Radial Five-Branch Starship / Reference-Option Configuration",
+      "sources": {
+        "MASTER_WORLD_OVERVIEW": "676a7890-1a9a-45f3-83ce-0556b956698b",
+        "ADDENDUM_A02_CORE_RING_ANTENNA_QUADRANT": "a2032db0-0191-4e74-aa90-702dfc928bf1",
+        "ADDENDUM_A03_FIVE_BRANCH_END_CONTINUITY": "6d6b1bde-3431-46fa-b4bc-3b65a3c23569",
+        "BRANCH_2_IDENTITY": "8e5de1d9-3607-4a9f-a7b9-3e5c7b9b8eaf"
+      },
+      "canonical_production_base": false
+    },
+    {
+      "code": "ARC-03",
+      "name": "SPIREHEART-CLASS CORE-RING ARC",
+      "subtitle": "Ring-Dominant Command / Transit Starship",
+      "sources": {
+        "ADDENDUM_A02_CORE_RING_ANTENNA_QUADRANT": "a2032db0-0191-4e74-aa90-702dfc928bf1",
+        "EXTERIOR_SKELETON": "65ad3193-4443-42cb-a56a-aa4318f24cf1",
+        "WATER_CIRCULATION": "0e61c782-a883-4ab5-b181-29292b56207d"
+      },
+      "canonical_production_base": false
+    },
+    {
+      "code": "ARC-04",
+      "name": "VERDANT-GATE CLASS ECOLOGICAL ARC",
+      "subtitle": "Shield-to-Habitat Transforming Starship",
+      "sources": {
+        "SHIELD_DOOR_MECHANICS": "a4c998b9-1ab7-4323-9e1b-4e74f9884fa7",
+        "KEYFRAME_B_GREEN_LOCK": "65fda270-505e-4bb8-b020-7d0dd828a297",
+        "ADDENDUM_A03_FIVE_BRANCH_END_CONTINUITY": "6d6b1bde-3431-46fa-b4bc-3b65a3c23569",
+        "WORLD_01_MASTER": "fcafcb09-7fd6-44cb-bdb7-1b753c72c422"
+      },
+      "canonical_production_base": false
+    },
+    {
+      "code": "ARC-05",
+      "name": "PELAGIC-CLASS AQUATIC RECLAMATION ARC",
+      "subtitle": "Oceanic / Thermal / Water-Reclamation Starship",
+      "sources": {
+        "WATER_CIRCULATION": "0e61c782-a883-4ab5-b181-29292b56207d",
+        "ECOLOGY_LIFE_SUPPORT": "ee71c87d-4ccd-47e5-8820-bb76148cfe8d",
+        "KEYFRAME_C_AQUATIC_ACTIVATION": "e96a09d1-a434-4c10-8a8d-dc41b4a4a08b",
+        "KEYFRAME_D_STABLE_LIVING_ARC": "67de3f6c-2f30-47db-a116-df8645483b13",
+        "WORLD_01_MASTER": "fcafcb09-7fd6-44cb-bdb7-1b753c72c422"
+      },
+      "canonical_production_base": false
+    }
+  ]
+}

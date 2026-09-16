@@ -1,0 +1,9 @@
+contact_id,contact_name,company,category,relationship_status,permission_status,material_sent,date_sent,response,follow_up_date,meeting_date,notes,next_action
+OUT-001,,,producer,not contacted,unknown,,,,,,,identify target and permission route
+OUT-002,,,literary manager,not contacted,unknown,,,,,,,identify target and permission route
+OUT-003,,,entertainment attorney,not contacted,unknown,,,,,,,identify target and permission route
+OUT-004,,,VFX/virtual production partner,not contacted,unknown,,,,,,,identify target and permission route
+OUT-005,,,independent financier,not contacted,unknown,,,,,,,identify target and permission route
+OUT-006,,,graphic novel publisher,not contacted,unknown,,,,,,,identify target and permission route
+OUT-007,,,game/interactive studio,not contacted,unknown,,,,,,,identify target and permission route
+OUT-008,,,streaming/buyer contact,not contacted,unknown,,,,,,,identify target and permission route

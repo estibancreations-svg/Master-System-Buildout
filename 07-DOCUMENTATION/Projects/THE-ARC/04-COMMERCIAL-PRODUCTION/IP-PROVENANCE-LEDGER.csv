@@ -1,0 +1,6 @@
+record_id,asset_or_document,type,creator/operator,tool/source,source_task_or_file_id,date_created,approval_status,rights_notes,commercial_use_status,next_action
+IP-001,WORLD_01_MASTER,image,Estiban Creations / ChatGPT / Runway,Runway,fcafcb09-7fd6-44cb-bdb7-1b753c72c422,,approved,project-original generated visual; confirm platform/license terms,needs legal review,store source prompt + export
+IP-002,The Passover first video,video,Estiban Creations / ChatGPT / Runway,Runway,0ed809d4-69e8-40ae-907d-4c87936566c7,,approved,project-original generated video; confirm platform/license terms,needs legal review,export and archive
+IP-003,Commercial Production Package v1,document,Estiban Creations / ChatGPT,ChatGPT,local package,,draft,creator-owned written package subject to review,internal draft,register version
+IP-004,Pitch Deck v1,presentation,Estiban Creations / ChatGPT,PPTX,local package,,draft,buyer-facing deck; remove any non-original reference art before submission,internal draft,final art pass
+IP-005,Pilot Treatment v1,document,Estiban Creations / ChatGPT,ChatGPT,local package,,draft,story concept draft,internal draft,screenplay expansion
