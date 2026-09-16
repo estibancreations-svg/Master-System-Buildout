@@ -15,6 +15,8 @@
 - `README.md` — project identity, continuity locks, maturity, commercial bottlenecks, standing QA gate
 - `00-PROJECT-CONTROL/PROJECT-STATUS-2026-09-15.md` — current truth, completed work, commercial gates, QA status
 - `00-PROJECT-CONTROL/SOURCE-MANIFEST.md` — this source/artifact crosswalk
+- `00-PROJECT-CONTROL/THE-ARC-COMPLETE-CHAT-LOG-2026-09-15.md` — best-available session archive: verbatim currently visible turns, exact preserved fragments, reconstructed earlier session history, all recoverable Runway IDs, artifact catalog, GitHub change history, and outstanding-work ledger. Earlier compacted turns are explicitly marked as recovery rather than falsely certified as verbatim.
+- `00-PROJECT-CONTROL/CHAT-LOG-ASSETS/THE_ARC_CHAT_IMAGE_CONTACT_SHEET.webp` — repository-rendered contact sheet of the eight user-provided conversation image references, with original filenames and hashes cataloged in the chat-log document.
 
 ### Master prompt governance
 - `01-MASTER-PROMPTS/MASTER-PROMPT-INDEX.md` — five starship-class master-prompt index and canonical source crosswalk
@@ -101,3 +103,4 @@ The five 125-module master-prompt bibles remain in the generated `ARC_STARSHIP_M
 4. Large binary archives should be moved to a dedicated Arc repository, Git LFS, release artifact, or governed object store when that storage path is available.
 5. Repository text should preserve enough source, IDs, assumptions and continuity rules to reconstruct the production package even when binary artifacts are stored elsewhere.
 6. The Arc remains a governed project, not an 18th enterprise operating system.
+7. The current chat-log archive is a provenance-safe recovery record, not a claim that compacted turns were retrieved verbatim. If a full platform conversation export becomes available later, it should be preserved as the F0/V1 source and compared against the recovery archive.
