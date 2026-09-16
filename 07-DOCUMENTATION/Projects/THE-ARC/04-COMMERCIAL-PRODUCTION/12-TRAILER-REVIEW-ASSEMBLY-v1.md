@@ -2,7 +2,7 @@
 
 **Project:** PRJ-ARC-001  
 **Production authority:** Estiban Creations / The Architect  
-**Status:** SOURCE RENDERS IN PROGRESS  
+**Status:** TWO RENDERS COMPLETE / ONE FINALIZING  
 **Branch:** production/the-arc-trailer-review-v1  
 **Created:** 2026-09-16
 
@@ -27,9 +27,9 @@ A generated source clip is not automatically approved footage. Every clip must p
 
 | Source | Task ID | Target | Status |
 |---|---|---|---|
-| T1 — Five-Location Human World Montage | 04cb4844-8d68-445a-917d-86674388feb4 | 15 s / 1080p / 16:9 | RUNNING |
-| T2 — Character, Archive and Hidden-Ocean Escalation | af665bb6-041c-47d9-abe8-68a14ca79e5f | 15 s / 1080p / 16:9 | RUNNING |
-| T3 — Spire Signal / Title Plate | 8810fd99-fbbf-4906-9fe1-288be2f5e170 | 10 s / 1080p / 21:9 | RUNNING |
+| T1 — Five-Location Human World Montage | 04cb4844-8d68-445a-917d-86674388feb4 | 15 s / 1080p / 16:9 | FINALIZING — 98% |
+| T2 — Character, Archive and Hidden-Ocean Escalation | af665bb6-041c-47d9-abe8-68a14ca79e5f | 15.041 s / 2208×936 / 16:9 | COMPLETE — pending visual approval |
+| T3 — Spire Signal / Title Plate | 8810fd99-fbbf-4906-9fe1-288be2f5e170 | 10 s / 2206×946 / 21:9 | COMPLETE — pending visual approval |
 
 ## Review assembly — 90-second target
 
@@ -150,3 +150,24 @@ Yes. This advances the planned proof of concept from an outline to actual source
 ### Would The Architect consider it done?
 
 Source-generation stage: in progress. Finished trailer: not yet.
+
+
+## Completed render outputs
+
+### T2 — Character, Archive and Hidden-Ocean Escalation
+
+- Task: af665bb6-041c-47d9-abe8-68a14ca79e5f
+- Duration: 15.041 seconds
+- Frame: 2208 × 936
+- Audio: present
+- Review URL: https://dnznrvs05pmza.cloudfront.net/kling-3-0-pro/929008419041452097/untitled.mp4?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiYTk0ZTg0ZTQwNGI3NTIyZCIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc4OTYxMjEzMn0.MPv8636ncZlh0__XvwipU3d1JDwm4jVjcBh_LSxA5uE
+- Approval state: REVIEW REQUIRED
+
+### T3 — Spire Signal / Title Plate
+
+- Task: 8810fd99-fbbf-4906-9fe1-288be2f5e170
+- Duration: 10 seconds
+- Frame: 2206 × 946
+- Audio: present
+- Review URL: https://dnznrvs05pmza.cloudfront.net/seedance_2/cgt-20260916091619-fplkk/Preserve_the_canonical_WORLD_01_MASTER_Arc_interior_geometry_exactly__One_continuous_slow_forward_ci.mp4?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiNWM3YjE4YTRkZWY3MjE2NCIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc4OTY4OTUwOH0.SkhAeR0r4B5v6amApdfQtr2HTg7ICd4fz8dkDt9aOgg
+- Approval state: REVIEW REQUIRED
