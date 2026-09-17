@@ -16,6 +16,8 @@
 - `00-PROJECT-CONTROL/PROJECT-STATUS-2026-09-15.md` — current truth, completed work, commercial gates, QA status
 - `00-PROJECT-CONTROL/SOURCE-MANIFEST.md` — this source/artifact crosswalk
 - `00-PROJECT-CONTROL/THE-ARC-COMPLETE-CHAT-LOG-2026-09-15.md` — best-available session archive: verbatim currently visible turns, exact preserved fragments, reconstructed earlier session history, all recoverable Runway IDs, artifact catalog, GitHub change history, and outstanding-work ledger. Earlier compacted turns are explicitly marked as recovery rather than falsely certified as verbatim.
+- `00-PROJECT-CONTROL/THE-ARC-CONTINUATION-CHAT-LOG-2026-09-16-17.md` — continuation archive covering PR integration, the pilot screenplay build, new trailer generation, production-status review, Architect approval and final GitHub actions.
+- `00-PROJECT-CONTROL/PROJECT-STATUS-2026-09-17.md` — post-approval production truth: merged foundation/screenplay, completed trailer sources, remaining editorial/legal/commercial gates.
 - `00-PROJECT-CONTROL/CHAT-LOG-ASSETS/THE_ARC_CHAT_IMAGE_CONTACT_SHEET.webp` — repository-rendered contact sheet of the eight user-provided conversation image references, with original filenames and hashes cataloged in the chat-log document.
 
 ### Master prompt governance
@@ -94,6 +96,9 @@ The five 125-module master-prompt bibles remain in the generated `ARC_STARSHIP_M
 - B2 Green Lock — `81b297ff-dc9f-4473-94e7-4f18a2c7f6e5`
 - B3 Aquatic Activation — `fca5a298-b887-4289-a744-d734ebd0286e`
 - B4 Stable Living Arc — `f1971a24-f7a4-43c7-a0d9-0588c9b1afe2`
+- T1 Human World / Five Locations — `04cb4844-8d68-445a-917d-86674388feb4`
+- T2 Character / Archive / Hidden Ocean — `af665bb6-041c-47d9-abe8-68a14ca79e5f`
+- T3 Spire Signal / Title Plate — `8810fd99-fbbf-4906-9fe1-288be2f5e170`
 
 ## Repository preservation rules
 
