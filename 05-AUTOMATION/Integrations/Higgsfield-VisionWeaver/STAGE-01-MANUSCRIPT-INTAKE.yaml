@@ -1,0 +1,15 @@
+stage: STAGE-01
+name: manuscript-intake
+owner_system: VisionWeaver
+input_requirements:
+  - manuscript_files
+  - rights_metadata
+approval_gate: intake_approval
+provider_boundary: internal_only
+recovery:
+  strategy: retryable_parse
+  retain_partial: true
+cost_control:
+  preflight_required: false
+  log_event: intake_processing
+next_stage: STAGE-02

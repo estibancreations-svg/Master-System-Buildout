@@ -40,6 +40,13 @@ See [`00-CENTRAL-HUB/REPOSITORY-STRUCTURE-RECONCILIATION.md`](00-CENTRAL-HUB/REP
 - [Crossroads-of-Identity](https://github.com/estibancreations-svg/Crossroads-of-Identity)
 - [This-Is-Your-Life](https://github.com/estibancreations-svg/This-Is-Your-Life)
 - [MASTER_CEO_DASHBOARD](https://github.com/estibancreations-svg/MASTER_CEO_DASHBOARD)
+- [Higgsfield-Integration-Layer](https://github.com/estibancreations-svg/Higgsfield-Integration-Layer) — provider-bound image/video generation integration runtime for VisionWeaver manuscript-to-film workflows
+
+## Higgsfield / VisionWeaver Buildout Status
+
+- **Implemented in this repository:** governance directive, six-stage manuscript-to-film specification package, orchestrator prompt, six automation specification YAMLs, deployment specification YAMLs, operator docs, quick-start docs, and package validator.
+- **Specification-only in this repository:** deployment/runtime definitions and integration boundaries for `Higgsfield-Integration-Layer`.
+- **Pending runtime verification:** authenticated end-to-end manuscript intake through distribution in connected deployment environments with live credentials.
 
 ## Active Conversation Records
 
