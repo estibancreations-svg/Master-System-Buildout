@@ -61,6 +61,16 @@ These records govern the enterprise but are **not additional members of the appr
 
 ---
 
+## Managed Subsystems / Integration Layers
+
+These governed identities remain separately tracked without silently expanding the approved 17 business-system count above.
+
+| System ID | System Name | Class | Repository | Governing Repository | Related Systems | Governing Directive | Implementation Status | Deployed Status | Audit Trail | Notes |
+|---|---|---|---|---|---|---|---|---|---|---|
+| SYS-HGFD-001 | Higgsfield Integration Layer | Managed subsystem / integration layer | `estibancreations-svg/Higgsfield-Integration-Layer` | `estibancreations-svg/Master-System-Buildout` | `SYS-VISION-001`, `SYS-CEO-001` | `00-CENTRAL-HUB/Directives/HIGGSFIELD-INTEGRATION-ACCOUNTABILITY-DIRECTIVE.md` | Phase 2 — Specifications installed | Not yet — awaiting VisionWeaver UI integration | Central Hub Memory Gems, conversation records, and Higgsfield governance/specification package in this repository | Governs manuscript-to-film image/video generation orchestration, provenance, audit logging, credit tracking, and recovery rules for VisionWeaver-driven workflows. |
+
+---
+
 ## Current Cross-System Control Planes
 
 The following are **enterprise capabilities/control planes**, not silently-created additional system identities unless The Architect later promotes them:
