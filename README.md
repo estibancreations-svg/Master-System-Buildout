@@ -32,11 +32,20 @@ Conversation Capture Agent materials are routed as follows:
 
 See [`00-CENTRAL-HUB/REPOSITORY-STRUCTURE-RECONCILIATION.md`](00-CENTRAL-HUB/REPOSITORY-STRUCTURE-RECONCILIATION.md) for the controlling path correction and the unresolved relationship among Central Hub Memory Gems, `08-CHAT-LOGS`, and `09-MEMORY-GEMS`.
 
+## Related Repositories (from the 2026-09-17 GitHub buildout)
+
+- [The-Arc](https://github.com/estibancreations-svg/The-Arc) — original sci-fi franchise, indexed from Drive
+- [52-Books-in-52-Weeks](https://github.com/estibancreations-svg/52-Books-in-52-Weeks) — semi-fiction book-a-week project, outline stage
+- [Crossroads-of-Identity](https://github.com/estibancreations-svg/Crossroads-of-Identity)
+- [This-Is-Your-Life](https://github.com/estibancreations-svg/This-Is-Your-Life)
+- [MASTER_CEO_DASHBOARD](https://github.com/estibancreations-svg/MASTER_CEO_DASHBOARD)
+
 ## Active Conversation Records
 
 - [Amazon Partnership Strategy — Active Reconstructed Memory Gem](00-CENTRAL-HUB/INBOX/01-08-2026_CHATGPT-ESTIBANCREATIONS-AMAZON-PARTNERSHIP-STRATEGY_ACTIVE-RECONSTRUCTED-MEMORY-GEM.md)
 - [Amazon Partnership Strategy — Reconstruction Exception Disclosure](00-CENTRAL-HUB/INBOX/Reconstruction-Exceptions/01-08-2026_AMAZON-PARTNERSHIP-STRATEGY_RECONSTRUCTION-EXCEPTION.md)
 - [Claude — GitHub Repo Audit and Project Setup (In-Progress, 2026-09-17)](08-CHAT-LOGS/Claude/Estibancreations/Claude-Estibancreations-((Master_Systems_Buildout))-GitHub_Repo_Audit_and_Project_Setup.md) — first Claude entry in `08-CHAT-LOGS`; covers the audit of Crossroads of Identity, This Is Your Life, 52 Books in 52 Weeks, The Tub, CEO Master Dashboard, OSIRIS, StarTrek, and TalentLMS, plus the TalentLMS vs. Docebo research and build-priority decisions.
+- [Claude — The Arc and 52 Books Buildout (In-Progress, 2026-09-17)](08-CHAT-LOGS/Claude/Estibancreations/Claude-Estibancreations-((Master_Systems_Buildout))-The_Arc_and_52_Books_Buildout.md) — clarifies The Arc vs. StarTrek, builds The-Arc and 52-Books-in-52-Weeks repos, and records the memory cleanup.
 
 ## Getting Started
 
