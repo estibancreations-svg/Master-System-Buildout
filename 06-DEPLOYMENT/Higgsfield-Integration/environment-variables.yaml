@@ -1,0 +1,37 @@
+system_id: SYS-HGFD-001
+component: environment-variables
+status: specification_installed
+variables:
+  - name: HIGGSFIELD_API_KEY
+    required: true
+    scope: backend_and_edge
+  - name: HIGGSFIELD_API_BASE_URL
+    required: true
+    scope: backend_and_edge
+  - name: SUPABASE_URL
+    required: true
+    scope: backend_and_edge
+  - name: SUPABASE_SERVICE_ROLE_KEY
+    required: true
+    scope: backend_only
+  - name: SUPABASE_ANON_KEY
+    required: true
+    scope: visionweaver_client
+  - name: CEO_DASHBOARD_WEBHOOK_URL
+    required: true
+    scope: backend_only
+  - name: VISIONWEAVER_ORCHESTRATOR_SIGNING_SECRET
+    required: true
+    scope: backend_and_edge
+  - name: MEDIA_LIBRARY_BUCKET
+    required: true
+    scope: backend_only
+  - name: AUDIT_LOG_RETENTION_DAYS
+    required: true
+    scope: backend_only
+  - name: DISTRIBUTION_PROVIDER_KEYS_JSON
+    required: false
+    scope: backend_only
+notes:
+  - secrets must not be committed to this repository
+  - provider credentials require rotation and access logging
