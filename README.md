@@ -36,6 +36,7 @@ See [`00-CENTRAL-HUB/REPOSITORY-STRUCTURE-RECONCILIATION.md`](00-CENTRAL-HUB/REP
 
 - [Amazon Partnership Strategy — Active Reconstructed Memory Gem](00-CENTRAL-HUB/INBOX/01-08-2026_CHATGPT-ESTIBANCREATIONS-AMAZON-PARTNERSHIP-STRATEGY_ACTIVE-RECONSTRUCTED-MEMORY-GEM.md)
 - [Amazon Partnership Strategy — Reconstruction Exception Disclosure](00-CENTRAL-HUB/INBOX/Reconstruction-Exceptions/01-08-2026_AMAZON-PARTNERSHIP-STRATEGY_RECONSTRUCTION-EXCEPTION.md)
+- [Claude — GitHub Repo Audit and Project Setup (In-Progress, 2026-09-17)](08-CHAT-LOGS/Claude/Estibancreations/Claude-Estibancreations-((Master_Systems_Buildout))-GitHub_Repo_Audit_and_Project_Setup.md) — first Claude entry in `08-CHAT-LOGS`; covers the audit of Crossroads of Identity, This Is Your Life, 52 Books in 52 Weeks, The Tub, CEO Master Dashboard, OSIRIS, StarTrek, and TalentLMS, plus the TalentLMS vs. Docebo research and build-priority decisions.
 
 ## Getting Started
 
