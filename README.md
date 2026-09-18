@@ -36,6 +36,7 @@ See [`00-CENTRAL-HUB/REPOSITORY-STRUCTURE-RECONCILIATION.md`](00-CENTRAL-HUB/REP
 
 - [The-Arc](https://github.com/estibancreations-svg/The-Arc) — original sci-fi franchise, indexed from Drive
 - [52-Books-in-52-Weeks](https://github.com/estibancreations-svg/52-Books-in-52-Weeks) — semi-fiction book-a-week project, outline stage
+- [OSIRIS](https://github.com/estibancreations-svg/OSIRIS) — integration plan for the open-source OSIRIS intelligence platform into the (not-yet-located) logistics THELMA system
 - [Crossroads-of-Identity](https://github.com/estibancreations-svg/Crossroads-of-Identity)
 - [This-Is-Your-Life](https://github.com/estibancreations-svg/This-Is-Your-Life)
 - [MASTER_CEO_DASHBOARD](https://github.com/estibancreations-svg/MASTER_CEO_DASHBOARD)
@@ -46,6 +47,7 @@ See [`00-CENTRAL-HUB/REPOSITORY-STRUCTURE-RECONCILIATION.md`](00-CENTRAL-HUB/REP
 - [Amazon Partnership Strategy — Reconstruction Exception Disclosure](00-CENTRAL-HUB/INBOX/Reconstruction-Exceptions/01-08-2026_AMAZON-PARTNERSHIP-STRATEGY_RECONSTRUCTION-EXCEPTION.md)
 - [Claude — GitHub Repo Audit and Project Setup (In-Progress, 2026-09-17)](08-CHAT-LOGS/Claude/Estibancreations/Claude-Estibancreations-((Master_Systems_Buildout))-GitHub_Repo_Audit_and_Project_Setup.md) — first Claude entry in `08-CHAT-LOGS`; covers the audit of Crossroads of Identity, This Is Your Life, 52 Books in 52 Weeks, The Tub, CEO Master Dashboard, OSIRIS, StarTrek, and TalentLMS, plus the TalentLMS vs. Docebo research and build-priority decisions.
 - [Claude — The Arc and 52 Books Buildout (In-Progress, 2026-09-17)](08-CHAT-LOGS/Claude/Estibancreations/Claude-Estibancreations-((Master_Systems_Buildout))-The_Arc_and_52_Books_Buildout.md) — clarifies The Arc vs. StarTrek, builds The-Arc and 52-Books-in-52-Weeks repos, and records the memory cleanup.
+- [OSIRIS Integration Plan](https://github.com/estibancreations-svg/OSIRIS/blob/main/09-source-conversations/2026-09-17_OSIRIS-Integration-Planning-Conversation.md) — full OSIRIS-into-logistics-THELMA planning conversation; confirms `-THELMA-AI` is the production coordinator, not the logistics system, and the logistics THELMA target is still unlocated.
 
 ## Getting Started
 
