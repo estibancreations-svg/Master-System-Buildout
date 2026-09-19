@@ -10,6 +10,7 @@ Central backup record of where authoritative Arc information now lives after rep
 - Stage-2 spec: `06-digital-twin/REALITY-BUILD-DECOMPOSITION-v2.md`
 - Stage-2 schema: `06-digital-twin/REALITY-BUILD-ENTITY-SCHEMA-v2.json`
 - Execution queue: `06-digital-twin/REALITY-BUILD-EXECUTION-QUEUE-v2.csv`
+- Stage-2 seed registry: `06-digital-twin/REALITY-BUILD-SEED-REGISTRY-v2.jsonl` — all 491 mapped entities converted to R0 build records
 
 ## Creative master storage
 - Google Drive root: `EstibanCreations - Creative IP / The Arc`
@@ -46,7 +47,7 @@ Central backup record of where authoritative Arc information now lives after rep
 - rights/provenance/legal
 - Runway master/checksum archive
 - real quotes + named outreach
-- Stage-2 dimensional/mass/composition/dependency population
+- Stage-2 seed registry complete for all 491 entities; dimensional/mass/composition/dependency population remains open
 - exact geometry
 - searchable Digital Twin runtime
 - integrated construction/mission simulation
