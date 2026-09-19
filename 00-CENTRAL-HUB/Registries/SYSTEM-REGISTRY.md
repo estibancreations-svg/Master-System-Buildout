@@ -1,7 +1,7 @@
 # SYSTEM REGISTRY
 
 **Status:** ACTIVE_CANON  
-**Reconciled:** 2026-08-27  
+**Reconciled:** 2026-09-19  
 **Authority:** The Architect / Base Ten Standard  
 **Identity Rule:** `00-CENTRAL-HUB/Directives/SEPARATE-SYSTEM-IDENTITY-AND-LINKAGE-RULE.md`
 
@@ -71,6 +71,7 @@ The following are **enterprise capabilities/control planes**, not silently-creat
 - **White Blood Cell System** — enterprise monitoring/repair-detection capability under THELMA/QC.
 - **Model / Tool / Agent Registries** — shared enterprise control-plane registries.
 - **Social-Commerce Intelligence Ledger** — shared cross-system measurement/attribution/forecasting capability serving CMGIO, MAP, AgencyFlow/Socials, CEO and Accounting.
+- **OSIRIS Logistics Intelligence Adapter (`CAP-OSIRIS-001`)** — corridor-filtered environmental and transportation risk signals for the separate logistics T.H.E.L.M.A. runtime. Executable Supabase schema and authenticated sync function exist in `estibancreations-svg/OSIRIS`; live ingestion and consumer attachment remain unverified. This is a shared capability, not an 18th system.
 
 ### EDLS Historical Classification
 
