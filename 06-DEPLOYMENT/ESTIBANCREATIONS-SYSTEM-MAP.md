@@ -18,6 +18,7 @@ This repository is the enterprise planning and governance source for the Estiban
 | THELMA AI | This repository governance/training material plus dashboard references | n8n or controlled serverless runtime | Staged; separate runtime not verified |
 | GrantOS | This repository specifications and system library | Supabase + future app runtime | Staged; runtime mapping required |
 | LandWeaver | This repository specifications and dashboard registry references | Supabase + future app runtime | Staged; runtime mapping required |
+| OSIRIS Logistics Intelligence | estibancreations-svg/OSIRIS | Supabase `sync-world-signals` + `osiris_*` tables | Integration foundation active; schema/RLS/auth boundary verified; live authorized sync and logistics target attachment pending |
 
 ## Connected Accounts
 
@@ -34,6 +35,8 @@ This repository is the enterprise planning and governance source for the Estiban
 - Configure and verify Apple OAuth.
 - Attach and catalog Figma source files.
 - Assign real deployment targets to THELMA, GrantOS, and LandWeaver.
+- Locate or designate the separate logistics T.H.E.L.M.A. runtime, then attach it to the OSIRIS normalized-signal contract.
+- Configure an authorized 30–60 minute OSIRIS sync only after the first live invocation passes.
 - Run authenticated end-to-end smoke tests before declaring each system live.
 
-_Last verified: 2026-08-30._
+_Last verified: 2026-09-19._
