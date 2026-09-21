@@ -37,7 +37,8 @@ See [`00-CENTRAL-HUB/REPOSITORY-STRUCTURE-RECONCILIATION.md`](00-CENTRAL-HUB/REP
 - [The-Arc](https://github.com/estibancreations-svg/The-Arc) — original sci-fi franchise, indexed from Drive
 - [52-Books-in-52-Weeks](https://github.com/estibancreations-svg/52-Books-in-52-Weeks) — semi-fiction book-a-week project, outline stage
 - [OSIRIS](https://github.com/estibancreations-svg/OSIRIS) — integration plan bringing the open-source OSIRIS intelligence platform into logistics THELMA as a risk overlay
-- [THELMA-Global-Link-Logistics](https://github.com/estibancreations-svg/THELMA-Global-Link-Logistics) — the logistics THELMA system itself (Land/Air/Sea/Orbital fleet command), located 2026-09-18 from a Gemini 3 hackathon submission, formerly referred to as "Motive Next"
+- [THELMA-Global-Link-Logistics](https://github.com/estibancreations-svg/THELMA-Global-Link-Logistics) — the logistics THELMA system itself (Land/Air/Sea/Orbital fleet command), located 2026-09-18 from a Gemini 3 hackathon submission, formerly referred to as "Motive Next"; full source mirror completed 2026-09-21 (see repo's own `SOURCE_MANIFEST.md`)
+- [motive-next-deployment](https://github.com/estibancreations-svg/motive-next-deployment) — recovered 2026-09-21: a small Netlify deployment bundle (placeholder landing page + a Stripe billing serverless function) found in Google Drive under a folder literally named "Motive Next." Its relationship to `THELMA-Global-Link-Logistics` (which itself carries a "formerly Motive Next" note, above) is unresolved — the bundle's content does not resemble THELMA's codebase. See the repo's own `SOURCE_MANIFEST.md` for details.
 - [Crossroads-of-Identity](https://github.com/estibancreations-svg/Crossroads-of-Identity)
 - [This-Is-Your-Life](https://github.com/estibancreations-svg/This-Is-Your-Life)
 - [MASTER_CEO_DASHBOARD](https://github.com/estibancreations-svg/MASTER_CEO_DASHBOARD)
@@ -62,3 +63,11 @@ All pull requests across the four governed `estibancreations-svg` repositories w
 Start system rework from the [Repository Migration, PR & System Alignment Closeout](07-DOCUMENTATION/Status-Reports/2026-08-12_REPOSITORY-MIGRATION-PR-AND-SYSTEM-ALIGNMENT-CLOSEOUT.md).
 
 The CEO Dashboard Vercel deployment error remains deliberately deferred and is not represented as resolved.
+
+## Upload Completion Checkpoint — 2026-09-21
+
+Per Sire's standing instruction ("upload everything to the respected GitHub's for now, await directions from that point"), the remaining THELMA-Global-Link-Logistics source mirror was finished: all 8 UI-shell components and all 30 dashboard modules are now in the repo, alongside the previously-mirrored architecture files. Six `.docx` planning-doc duplicates, six Expo app-icon PNGs, and two `package-lock.json` files were deliberately not mirrored — the GitHub write tools available in this workflow only accept text content, so true binary files can't be round-tripped safely, and the lockfiles are both large and deterministically regenerable via `npm install`. All three exclusions are disclosed in THELMA-Global-Link-Logistics's own `SOURCE_MANIFEST.md`.
+
+Separately, the "Motive Next" Netlify bundle referenced in earlier session notes was located in Drive and mirrored to the new `motive-next-deployment` repo. Two candidate Drive folders existed; one (`Sep 5`) was corrupted (files mangled into empty folders during an earlier upload) and unusable, the other (`Nov 4`) had real, complete content — a placeholder landing page plus a Stripe billing serverless function. Whether this is the same system THELMA-Global-Link-Logistics's description calls "formerly Motive Next," an unrelated earlier prototype, or a separate billing microservice was not determined and is left open per instruction not to make that judgment call.
+
+No other decisions were made this session — OSIRIS-vs-backend-stabilization prioritization, THELMA/MOTHER naming, and other open threads from prior sessions remain untouched, awaiting direction.
