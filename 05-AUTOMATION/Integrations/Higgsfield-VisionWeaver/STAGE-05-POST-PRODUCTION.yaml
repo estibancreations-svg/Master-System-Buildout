@@ -1,0 +1,15 @@
+stage: STAGE-05
+name: post-production
+owner_system: VisionWeaver
+input_requirements:
+  - approved_generated_scenes
+  - post_processing_profile
+approval_gate: post_production_approval
+provider_boundary: internal_assembly_and_qc
+recovery:
+  strategy: rerender_failed_outputs
+  retain_partial: true
+cost_control:
+  preflight_required: false
+  log_event: post_processing_compute
+next_stage: STAGE-06

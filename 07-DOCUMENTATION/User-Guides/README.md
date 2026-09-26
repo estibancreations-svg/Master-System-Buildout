@@ -4,11 +4,11 @@ End-user documentation and how-to guides.
 
 ## Quick Start
 
-- [Add quick start guide here]
+- [Higgsfield / VisionWeaver Quick Start](Higgsfield-VisionWeaver-Quick-Start.md)
 
 ## Feature Documentation
 
-- [Add feature-specific guides here]
+- Six-stage manuscript-to-film workflow package and validation instructions
 
 ## FAQ
 

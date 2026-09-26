@@ -19,10 +19,19 @@ Systems and agents must retrieve `MSB-SCHEMA-001` before creating or revising an
 
 - `SYS-DASH-001` — [Master Dashboard Independent System Baseline](../02-SYSTEM-SPECIFICATIONS/Master-Dashboard/MASTER-DASHBOARD-INDEPENDENT-SYSTEM-BASELINE.md)
 - `SYS-VISION-001` — [VisionWeaver Implementation Reconciliation](../02-SYSTEM-SPECIFICATIONS/VisionWeaver/VISIONWEAVER-IMPLEMENTATION-RECONCILIATION.md)
+- `SYS-VISION-001` — [Higgsfield / VisionWeaver Manuscript-to-Film Production Package](../02-SYSTEM-SPECIFICATIONS/Higgsfield-Manuscript-to-Film-Production/INDEX.md)
 - `SYS-LAND-001` — [LandWeaver Canonical Recovery Package](../02-SYSTEM-SPECIFICATIONS/LandWeaver/LANDWEAVER-CANONICAL-RECOVERY-PACKAGE.md)
 - `SYS-CEO-001` — [CEO Dashboard Page Implementation Map](../02-SYSTEM-SPECIFICATIONS/CEO-Dashboard/CEO-DASHBOARD-PAGE-IMPLEMENTATION-MAP.md)
 
 These packages preserve separate system identities and promote the recovered Drive/GitHub evidence into canonical, implementation-ready specifications.
+
+## Higgsfield / VisionWeaver Integration References
+
+- Accountability Directive: [`Directives/HIGGSFIELD-INTEGRATION-ACCOUNTABILITY-DIRECTIVE.md`](Directives/HIGGSFIELD-INTEGRATION-ACCOUNTABILITY-DIRECTIVE.md)
+- Orchestrator Prompt: [`../03-AI-PROMPTS/Agent-Prompts/VISIONWEAVER-HIGGSFIELD-MANUSCRIPT-TO-FILM-ORCHESTRATOR.md`](../03-AI-PROMPTS/Agent-Prompts/VISIONWEAVER-HIGGSFIELD-MANUSCRIPT-TO-FILM-ORCHESTRATOR.md)
+- Automation Specs: [`../05-AUTOMATION/Integrations/Higgsfield-VisionWeaver/`](../05-AUTOMATION/Integrations/Higgsfield-VisionWeaver/)
+- Deployment Specs: [`../06-DEPLOYMENT/Cloud/Higgsfield-VisionWeaver/`](../06-DEPLOYMENT/Cloud/Higgsfield-VisionWeaver/)
+- Runtime integration repository: `estibancreations-svg/Higgsfield-Integration-Layer`
 
 ## Current Consolidation Checkpoint
 
