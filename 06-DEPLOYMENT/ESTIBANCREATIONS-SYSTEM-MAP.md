@@ -15,6 +15,7 @@ This repository is the enterprise planning and governance source for the Estiban
 |---|---|---|---|
 | CEO Dashboard | estibancreations-svg/MASTER_CEO_DASHBOARD | Vercel master-ceo-dashboard.vercel.app | Live deployment verified; Supabase OTP blocks unprovisioned email |
 | VisionWeaver | MASTER_CEO_DASHBOARD production source and release docs | Shared Vercel/Supabase path | Source present; authenticated workflow still needs smoke test |
+| Higgsfield Integration Layer | estibancreations-svg/Higgsfield-Integration-Layer | Hybrid Vercel edge + dedicated backend microservice + Supabase | Specifications installed in Master-System-Buildout; deployed runtime awaiting VisionWeaver UI integration |
 | THELMA AI | This repository governance/training material plus dashboard references | n8n or controlled serverless runtime | Staged; separate runtime not verified |
 | GrantOS | This repository specifications and system library | Supabase + future app runtime | Staged; runtime mapping required |
 | LandWeaver | This repository specifications and dashboard registry references | Supabase + future app runtime | Staged; runtime mapping required |

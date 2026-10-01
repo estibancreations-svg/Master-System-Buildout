@@ -1,0 +1,20 @@
+system_id: SYS-HGFD-001
+component: backend-microservice
+role: stateful job orchestration and ledger service
+status: specification_installed
+responsibilities:
+  - maintain job state for long-running image and video renders
+  - store audit logs and provenance chain records
+  - maintain credit ledger and budget thresholds
+  - manage media library metadata and version history
+  - coordinate distribution queues and analytics ingestion
+interfaces:
+  - supabase
+  - CEO Dashboard reporting
+  - VisionWeaver orchestration API
+  - Higgsfield provider wrapper
+operational_requirements:
+  - durable queueing for asynchronous jobs
+  - resumable workflows after interruption
+  - signed access to private media assets
+  - structured alerting on failures and budget variance
