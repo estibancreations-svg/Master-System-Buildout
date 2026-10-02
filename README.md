@@ -74,3 +74,7 @@ Separately, the "Motive Next" Netlify bundle referenced in earlier session notes
 No other decisions were made this session — OSIRIS-vs-backend-stabilization prioritization, THELMA/MOTHER naming, and other open threads from prior sessions remain untouched, awaiting direction.
 
 The full session transcript is logged in [`08-CHAT-LOGS/Claude/Estibancreations`](08-CHAT-LOGS/Claude/Estibancreations/Claude-Estibancreations-((Master_Systems_Buildout))-THELMA_Source_Mirror_Completion_and_Motive_Next_Recovery.md).
+
+## Representation and historical locations
+
+The authorized [Representation and Place-Time Standard v1](00-GOVERNANCE/REPRESENTATION-AND-PLACE-TIME-STANDARD-v1.md) governs new character defaults: intentional inclusive casting, normal representation of Black and fat people, preservation of approved appearance, and evidence-backed scene location/date accuracy. The current balloon-film boy is Black and fat. Runtime enforcement and end-to-end verification remain open release gates.
