@@ -53,6 +53,8 @@ See [`00-CENTRAL-HUB/REPOSITORY-STRUCTURE-RECONCILIATION.md`](00-CENTRAL-HUB/REP
 - [Claude — Locating Logistics THELMA / Motive Next (2026-09-17/18)](08-CHAT-LOGS/Claude/Estibancreations/Claude-Estibancreations-((Master_Systems_Buildout))-Locating_Logistics_THELMA_Motive_Next.md) — resolves the previously-unlocated logistics THELMA target: found via a Gemini 3 hackathon submission in Drive, scaffolded as `THELMA-Global-Link-Logistics`, and cross-linked into OSIRIS.
 - [Claude — THELMA Source Mirror Completion and Motive Next Recovery (2026-09-21)](08-CHAT-LOGS/Claude/Estibancreations/Claude-Estibancreations-((Master_Systems_Buildout))-THELMA_Source_Mirror_Completion_and_Motive_Next_Recovery.md) — finishes the THELMA-Global-Link-Logistics source mirror (all UI-shell and dashboard-module files), recovers and mirrors the "Motive Next" Netlify bundle into the new `motive-next-deployment` repo, and flags the unresolved relationship between the two.
 
+- [ChatGPT — October 4 Current Workstate Reconciliation](00-CENTRAL-HUB/INBOX/2026-10-04_CHATGPT-CURRENT-WORKSTATE-RECONCILIATION.md) — Avatar State-first sequence, Boy/Red Balloon continuation/stitching, Global Place + People rights/provenance model, Design Studio green gate evidence, and current Dashboard gate status.
+
 ## Getting Started
 
 Navigate to each directory to find detailed documentation for each system component.
@@ -63,7 +65,7 @@ All pull requests across the four governed `estibancreations-svg` repositories w
 
 Start system rework from the [Repository Migration, PR & System Alignment Closeout](07-DOCUMENTATION/Status-Reports/2026-08-12_REPOSITORY-MIGRATION-PR-AND-SYSTEM-ALIGNMENT-CLOSEOUT.md).
 
-The CEO Dashboard Vercel deployment error remains deliberately deferred and is not represented as resolved.
+Historical note: the CEO Dashboard Vercel deployment error referenced at this August checkpoint was later superseded. As of October 4, 2026, the current Dashboard head deploys successfully to both Vercel contexts; its current blocker is a failed GitHub Actions Quality Gate, not Vercel deployment.
 
 ## Upload Completion Checkpoint — 2026-09-21
 
