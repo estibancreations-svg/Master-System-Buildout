@@ -1,0 +1,15 @@
+{
+  "repository": "estibancreations-svg/Master-System-Buildout",
+  "scope": "documentation/catalog integrity; live production remains unverified",
+  "required_files": [
+    "README.md",
+    "00_CONTINUITY/01_CURRENT_BUILD_POSITION.md",
+    "00-CENTRAL-HUB/Registries/SCHEMA-REGISTRY.md"
+  ],
+  "jsonc_files": [
+    "tsconfig.json",
+    "tsconfig.app.json",
+    "tsconfig.node.json",
+    "deno.json"
+  ]
+}
