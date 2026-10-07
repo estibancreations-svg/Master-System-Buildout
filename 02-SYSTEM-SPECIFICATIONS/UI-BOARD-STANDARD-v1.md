@@ -117,3 +117,21 @@ Do not replace an approved primary with an older shell or mockup. New boards inh
 - Version 1 — retained selectable alternate in Settings > Visual Views.
 - Version 3 — retained selectable alternate in Settings > Visual Views.
 - All versions inherit the persistent sidebar, sidebar account placement, Search / Create / notification command bar, system color-scheme settings, and no-notebook-theme rules.
+
+
+## VisionWeaver navigation completion lock — 2026-10-07
+The Architect authorized completion of the remaining VisionWeaver navigation layouts using the established review pattern. These defaults are canonical; V1/V2/V3 alternates remain selectable in Settings > Visual Views.
+
+- Reports & Insights — V2 Interactive Intelligence.
+- Programs & Projects — V2 Program & Project Workspace.
+- Strategic Planner — V1 Strategic Command Center.
+- Initiatives — V2 Initiative Pipeline.
+- AI Co-Pilot — V2 Agent Workflow.
+- CMI — V1 Creative & Market Intelligence.
+- Directors Guild — V2 Review & Decision Queue.
+- Teams & C-Suite — V1 Organization Command.
+- Settings — V2 Visual & System Control.
+- Vision Builder — V1 Creative Command Canvas.
+
+VisionWeaver navigation UI review status: COMPLETE.
+Notebook/legal-pad styling remains retired globally.
