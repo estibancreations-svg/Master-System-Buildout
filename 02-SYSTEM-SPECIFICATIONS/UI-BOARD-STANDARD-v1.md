@@ -68,8 +68,8 @@ Do not replace an approved primary with an older shell or mockup. New boards inh
 - Global command label is Create (no decorative plus symbol).
 
 
-## Post Production board lock
-- Version 1 — PRIMARY / active.
-- Version 2 — retained selectable alternate.
-- Version 3 — retained selectable alternate.
-- All versions inherit the persistent sidebar, sidebar account placement, Search / Create / notification command bar, system color-scheme settings, and no-notebook-theme rules.
+## Post Production board status
+- Version 1 / Version 2 / Version 3 — DESIGN OPTIONS PENDING ARCHITECT SELECTION.
+- No Post Production primary is locked until explicit review/selection.
+- All options must retain the persistent sidebar and global shell requirements.
+
