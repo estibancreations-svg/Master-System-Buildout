@@ -1,0 +1,16 @@
+system_id: SYS-HGFD-001
+component: vercel-edge-functions
+role: stateless generation entrypoints
+status: specification_installed
+functions:
+  - name: manuscript-reference-generation
+    purpose: trigger reference image generation for missing character/location/object assets
+  - name: storyboard-batch-generation
+    purpose: submit approved storyboard frame batches
+  - name: clip-generation-dispatch
+    purpose: submit scene clip requests and return job receipts
+requirements:
+  - route requests through authenticated VisionWeaver sessions
+  - emit audit events to backend microservice
+  - avoid storing long-lived state in the edge layer
+  - enforce idempotency keys for retries

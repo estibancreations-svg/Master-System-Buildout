@@ -136,6 +136,58 @@ These systems may integrate, exchange data, share infrastructure, or have eviden
 
 Google Drive retrieval was subsequently verified through Cross-Source Evidence Sweep 002 for VisionWeaver, LandWeaver, CEO Dashboard and multiple additional named systems. Master Dashboard Drive identity remains evidence-sensitive: related dashboard/hub material exists, but a uniquely certified canonical Master Dashboard Drive package must not be inferred without explicit identity evidence.
 
+## Higgsfield Integration Routing
+
+The Higgsfield Integration Layer is governed in this repository as managed subsystem `SYS-HGFD-001`.
+
+### Canonical package locations
+
+| Artifact Type | Canonical Location |
+|---|---|
+| Governing directive | `00-CENTRAL-HUB/Directives/HIGGSFIELD-INTEGRATION-ACCOUNTABILITY-DIRECTIVE.md` |
+| Manuscript-to-film stage specifications | `02-SYSTEM-SPECIFICATIONS/Higgsfield-Manuscript-to-Film-Production/` |
+| Executable orchestrator prompt | `03-AI-PROMPTS/Agent-Prompts/MANUSCRIPT-TO-FILM-ORCHESTRATOR-AGENT.md` |
+| Automation implementation specs | `05-AUTOMATION/Higgsfield-Integration/` |
+| Deployment configuration specs | `06-DEPLOYMENT/Higgsfield-Integration/` |
+| Operator documentation | `07-DOCUMENTATION/Higgsfield-Integration/` |
+
+### Related repository structure
+
+```text
+estibancreations-svg/Higgsfield-Integration-Layer
+├── api/
+│   ├── routes/
+│   ├── middleware/
+│   └── utils/
+├── workflows/
+├── schemas/
+└── docs/
+```
+
+### Master-System-Buildout routing rule
+
+This repository governs the Higgsfield manuscript-to-film workflow for VisionWeaver rather than hosting the production runtime. Route manuscript intake, storyboarding, production planning, movie creation, post-production, distribution, audit, provenance, and recovery specifications into the canonical folders above.
+
+### Cross-repository dependencies
+
+- `SYS-VISION-001` VisionWeaver — manuscript upload surface, approvals, user-facing production workflow
+- `SYS-CEO-001` CEO Dashboard — budget reporting, oversight, audit consumption
+- `SYS-HGFD-001` Higgsfield Integration Layer — generation orchestration, credit ledger, asset provenance, job recovery
+
+### Deployed artifact locations
+
+- Edge dispatch and stateless generation entrypoints: `06-DEPLOYMENT/Higgsfield-Integration/vercel-edge-functions.yaml`
+- Stateful orchestration and ledger service: `06-DEPLOYMENT/Higgsfield-Integration/backend-microservice.yaml`
+- Database initialization and pooling: `06-DEPLOYMENT/Higgsfield-Integration/supabase-migrations.yaml`
+- Monitoring and alerts: `06-DEPLOYMENT/Higgsfield-Integration/monitoring-and-alerts.yaml`
+
+### Governance checkpoint links
+
+- Directive: `00-CENTRAL-HUB/Directives/HIGGSFIELD-INTEGRATION-ACCOUNTABILITY-DIRECTIVE.md`
+- System package index: `02-SYSTEM-SPECIFICATIONS/Higgsfield-Manuscript-to-Film-Production/INDEX.md`
+- Prompt: `03-AI-PROMPTS/Agent-Prompts/MANUSCRIPT-TO-FILM-ORCHESTRATOR-AGENT.md`
+- Registry entry: `00-CENTRAL-HUB/Registries/SYSTEM-REGISTRY.md`
+
 ## Installed Conversation Capture Control Files
 
 ### Canonical directive

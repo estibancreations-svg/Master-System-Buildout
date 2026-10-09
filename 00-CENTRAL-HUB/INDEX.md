@@ -21,6 +21,7 @@ Systems and agents must retrieve `MSB-SCHEMA-001` before creating or revising an
 - `SYS-VISION-001` — [VisionWeaver Implementation Reconciliation](../02-SYSTEM-SPECIFICATIONS/VisionWeaver/VISIONWEAVER-IMPLEMENTATION-RECONCILIATION.md)
 - `SYS-LAND-001` — [LandWeaver Canonical Recovery Package](../02-SYSTEM-SPECIFICATIONS/LandWeaver/LANDWEAVER-CANONICAL-RECOVERY-PACKAGE.md)
 - `SYS-CEO-001` — [CEO Dashboard Page Implementation Map](../02-SYSTEM-SPECIFICATIONS/CEO-Dashboard/CEO-DASHBOARD-PAGE-IMPLEMENTATION-MAP.md)
+- `SYS-HGFD-001` — [Higgsfield Manuscript-to-Film Production Index](../02-SYSTEM-SPECIFICATIONS/Higgsfield-Manuscript-to-Film-Production/INDEX.md)
 
 These packages preserve separate system identities and promote the recovered Drive/GitHub evidence into canonical, implementation-ready specifications.
 
