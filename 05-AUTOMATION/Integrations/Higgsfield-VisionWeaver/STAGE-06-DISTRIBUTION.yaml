@@ -1,0 +1,15 @@
+stage: STAGE-06
+name: distribution
+owner_system: Publishing-Media-Studio
+input_requirements:
+  - approved_master_outputs
+  - channel_release_profile
+approval_gate: distribution_approval
+provider_boundary: downstream_distribution_connectors
+recovery:
+  strategy: idempotent_publish_retry
+  retain_partial: true
+cost_control:
+  preflight_required: false
+  log_event: channel_release_fees
+next_stage: COMPLETE

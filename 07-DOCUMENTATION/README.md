@@ -14,3 +14,9 @@ User guides, administrative documentation, and training materials.
 - [Operator documentation](Conversation-Capture-Agent/README.md)
 - [Version 1.1 update report](Conversation-Capture-Agent/01-08-2026_PROMPT-SYSTEM-v1.1-UPDATE-REPORT.md)
 - [Version 1.1 package manifest](Conversation-Capture-Agent/PROMPT-PACKAGE-v1.1-MANIFEST.txt)
+
+## Higgsfield / VisionWeaver
+
+- [Operator runbook](Admin-Guides/Higgsfield-VisionWeaver-Operator-Runbook.md)
+- [Cost, audit, and troubleshooting](Admin-Guides/Higgsfield-VisionWeaver-Cost-Audit-Troubleshooting.md)
+- [Quick start](User-Guides/Higgsfield-VisionWeaver-Quick-Start.md)

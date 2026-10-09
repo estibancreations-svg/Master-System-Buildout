@@ -1,0 +1,21 @@
+service: higgsfield-visionweaver-api
+runtime: nodejs20
+source_repository: estibancreations-svg/Higgsfield-Integration-Layer
+entrypoints:
+  - method: POST
+    path: /v1/generation/image
+  - method: POST
+    path: /v1/generation/video
+  - method: GET
+    path: /v1/jobs/{jobId}
+environment:
+  required:
+    - SUPABASE_URL
+    - SUPABASE_SERVICE_ROLE_KEY
+    - HIGGSFIELD_API_KEY
+    - JWT_SECRET
+  optional:
+    - HIGGSFIELD_MONTHLY_BUDGET_USD
+    - HIGGSFIELD_CREDIT_ALERT_THRESHOLD
+notes:
+  - This is a deployment specification artifact, not a runtime deployment confirmation.
