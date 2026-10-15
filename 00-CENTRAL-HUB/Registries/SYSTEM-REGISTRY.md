@@ -1,7 +1,7 @@
 # SYSTEM REGISTRY
 
 **Status:** ACTIVE_CANON  
-**Reconciled:** 2026-09-19  
+**Reconciled:** 2026-10-14  
 **Authority:** The Architect / Base Ten Standard  
 **Identity Rule:** `00-CENTRAL-HUB/Directives/SEPARATE-SYSTEM-IDENTITY-AND-LINKAGE-RULE.md`
 
@@ -33,11 +33,11 @@ Do not convert route existence, documentation, database tables, provider credent
 | MSB-HUB-001 | Master Systems Buildout Central Hub | ACTIVE | Continuity, canonical capture, recovery evidence, registries and architectural history | The Architect |
 | MSB-SCHEMA-001 | System Build Schema Standard | ACTIVE_CANON | Common system-definition and evidence standard | The Architect |
 
-These records govern the enterprise but are **not additional members of the approved 17-system operating registry**.
+These records govern the enterprise but are **not additional members of the approved 18-system operating registry**.
 
 ---
 
-# Approved Enterprise Registry — 17 Systems
+# Approved Enterprise Registry — 18 Systems
 
 | # | System ID | System Name | Canonical Purpose | Current State | Current Executable Evidence | Primary Canon / Recovery Evidence | Key Connections | Next Required Proof / Build |
 |---:|---|---|---|---|---|---|---|---|
@@ -58,6 +58,18 @@ These records govern the enterprise but are **not additional members of the appr
 | 15 | SYS-ASSESS-001 | Assessment Suite | Assessments, instruments, scoring, longitudinal results and capability/skills intelligence | NOT_IMPLEMENTED | No certified dedicated current product | Enterprise assessment requirements/recovery records | Training, IAM, THELMA, QC | Define privacy-sensitive domain model, deterministic scoring authority and longitudinal evidence workflows |
 | 16 | SYS-TRAINING-001 | AI Mastery / Training | Curriculum, tutoring, exercises, mastery, evaluations, certificates and training intelligence | PARTIAL | Existing `/modules/ai-mastery` route/module material; no certified independent full system workspace | AI Mastery/training/certification recovery and capability requirements | Assessment, THELMA/LILY, QC, Certificates | Establish full LMS/mastery domain; deterministic achievement evidence and certificate verification |
 | 17 | SYS-QC-001 | Quality Control Agency | Independent testing, regression, release evidence, model/provider evaluation and system certification | PARTIAL | AUDITOR/VERITAS/WBC regression concepts; GitHub Quality Gate; Analyst evidence | QC Agency doctrine, Quantico reconstruction evidence, release gates | Every system; THELMA; GitHub/Vercel/Supabase | Build system-specific test packs and capability-weighted certification; distinguish infrastructure green from business workflow verified |
+| 18 | SYS-THELMACRM-001 | T.H.E.L.M.A. CRM Complete | Multi-tenant agency CRM (Trusted Hub for Engagement, Leads, Marketing & Automation): one agency, up to 75 sub-accounts, inbox and business mail (3 addresses per sub-account), marketing with compliance checks, industry kits (bail bonds, insurance, financial), websites, courses/communities, tiered payments and the Owner-approved T.H.E.L.M.A. gate | PARTIAL | `estibancreations-svg/standalone-crm` Version 2.0: migration `20261014000008_v4_platform.sql`, `thelma-gateway` and `payments` Edge Functions; local SQL suites 92/92 + 54/54 and unit tests 13/13 pass. Version 1 runs at `standalone-crm-nine.vercel.app`. Version 2.0 is not yet deployed and the Next.js build is not yet verified | `standalone-crm` `DEPLOYMENT_HANDBOOK.md` §12, `docs/decisions/DECISION_LOG.md`, `docs/thelma/THELMA_PROFILE_AND_DUTIES.md`; v3.1 retained in `docs/archive/` | T.H.E.L.M.A. (SYS-THELMA-001) via signed gateway only, AgencyFlow, CMGIO, MAP, Telecommunications, Stripe, Supabase, Vercel | Push Version 2.0; pass Vercel preview build; apply migration to the live project; prove one sub-account flow end to end (mail, campaign approval, invoice); then delivery workers, OAuth connectors and website publishing |
+
+---
+
+### Architect Decision — 2026-10-14: System #18 Promoted
+
+The Architect approved adding **T.H.E.L.M.A. CRM Complete (SYS-THELMACRM-001)** as the 18th approved system, separate from AgencyFlow (option B).
+
+- It is its own governed identity. Sharing the T.H.E.L.M.A. name does **not** merge it with SYS-THELMA-001; it reaches T.H.E.L.M.A. only through its signed, Owner-approved gateway.
+- AgencyFlow (#10) stays `RECOVERY_REQUIRED` and keeps its own identity. Any later merge needs a new Architect decision.
+- State is `PARTIAL`, not `VERIFIED`: no Version 2.0 deployment or live end-to-end proof exists yet.
+- Evidence: `estibancreations-svg/standalone-crm` Version 2.0 commits and its handbook, decision log and test suites. No credentials are recorded here.
 
 ---
 
