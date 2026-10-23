@@ -4,7 +4,7 @@
 
 ## Scope and evidence rule
 
-The connected GitHub account exposes **23 private repositories**. I enumerated the tracked `main` tree of each: **1,592 files** and their blob SHA fingerprints are preserved in [the complete file inventory](2026-10-23-repository-file-inventory.json). I read the repositories' README files, the canonical registry, identity rule, key architecture and workstate records, GrantOS source and migration, CRM and Prime handoffs, and current GitHub/Vercel release evidence. File-tree coverage is exhaustive for these 23 `main` branches; content-level and runtime investigation is ongoing. Other accounts, uncommitted branches, live Supabase data/policies, provider accounts, Drive assets, authenticated user journeys and physical devices are outside this evidence boundary.
+The connected GitHub account exposes **23 private repositories**. I enumerated the tracked `main` tree of each: **1,592 files** and their blob SHA fingerprints are preserved in [the complete file inventory](2026-10-23-repository-file-inventory.json). I read the repositories' README files, the canonical registry, identity rule, key architecture and workstate records, GrantOS source and migration, CRM and Prime handoffs, and current GitHub/Vercel release evidence. File-tree coverage is exhaustive for these 23 `main` branches; content-level and runtime investigation is ongoing. Other accounts, uncommitted branches, complete live Supabase data/policies, provider accounts, Drive assets, authenticated user journeys and physical devices are outside this evidence boundary. The live Supabase project inventory and one active project's migration/table metadata were inspected in the addendum below; production environment binding remains unproven.
 
 A name, route, database table, READY deployment or successful static check does not prove a domain workflow works. The governing [identity rule](../../00-CENTRAL-HUB/Directives/SEPARATE-SYSTEM-IDENTITY-AND-LINKAGE-RULE.md) keeps linked systems separate.
 
@@ -87,11 +87,25 @@ Resource Intelligence, Ecosystem Intelligence, Analyst Memory, White Blood Cells
 | F-08 | The [historical archive README](https://github.com/estibancreations-svg/Archive-HisMajesty0225-Shenry60/blob/main/README.md) says 39 external-account repositories have only name/file/commit inventory, not source contents. | **Recovery gap.** Treat those sources as inaccessible/unpreserved until contents and history are captured under authorized access; do not claim a complete backup. |
 | F-09 | Two separate THELMA identities and several VisionWeaver surfaces coexist; [logistics README](https://github.com/estibancreations-svg/THELMA-Global-Link-Logistics/blob/main/README.md), [enterprise README](https://github.com/estibancreations-svg/-THELMA-AI/blob/main/README.md), and [Prime handoff](https://github.com/estibancreations-svg/VisionWeaver-Prime/blob/main/docs/HANDOFF-2026-10-11.md) describe distinct roles and incomplete attachment. | **Medium routing risk.** Give each integration an explicit owner, endpoint, auth boundary, data contract, deployment and observed receipt before calling it connected. |
 
+
+## Live Supabase reconciliation — October 23, 2026
+
+Read-only inspection through the connected Supabase account found three projects: `yqealeekngxooyoemfba` (“Master Dashboard”, **INACTIVE**), `azoqszhhmmkyqztubgem` (“MASTER_CEO_DASHBOARD”, **ACTIVE_HEALTHY**) and `csxtrhwzswluismrayen` (“standalone-crm-test”, **ACTIVE_HEALTHY**). These are project statuses at inspection time, not application health certifications. The older dashboard project could not be queried for migrations while inactive.
+
+The active `azoqszhhmmkyqztubgem` project's applied migration list contains six `prime_*` migrations and a read-only `information_schema.tables` query found **zero public `grant_*` tables**. Its identity as the [Prime handoff's dedicated project](https://github.com/estibancreations-svg/VisionWeaver-Prime/blob/main/docs/HANDOFF-2026-10-11.md) is supported by that handoff and the migration names. Current [Prime repository](https://github.com/estibancreations-svg/VisionWeaver-Prime/tree/main/supabase/migrations) source contains `prime_01`–`prime_03`; the applied `prime_04_workflow_memory_voice_qc`, `prime_05_location_editorial_delivery` and `prime_06_approval_provenance` were not present in its tracked `main` tree at this inspection.
+
+| ID | Finding | Impact / next proof |
+| --- | --- | --- |
+| F-10 | The active project is Prime-shaped and lacks the dashboard's four source-defined `grant_*` tables. The separate older “Master Dashboard” project is inactive. Vercel has a sensitive `VITE_SUPABASE_URL` setting for production and preview, but its decrypted target was not exposed by the available read-only response. **Production's actual project binding is unconfirmed.** | **High integration uncertainty.** An authorized operator should inspect the production and preview URL's project ref without sharing the key, compare it to the three project IDs, and verify the intended project's GrantOS migration, RLS and a least-privilege read/write smoke test. Do not infer a live GrantOS outage from names alone. |
+| F-11 | Six Prime migrations are applied in the active project, while only the first three migration files are currently tracked in Prime `main`. The handoff's earlier complaint about missing `prime_01` and `prime_02` is now stale. | **High schema drift.** Recover exact `prime_04`–`prime_06` definitions and checksums from the authorized deployment/change record, review for secrets and policy changes, commit them in order, then compare a fresh clone's schema with the live project. |
+
+This observation is limited to project metadata and one table-name query. It does not prove which database the deployed dashboard calls or the state of grants data, permissions, users or service endpoints.
+
 ## Next forensic pass
 
 1. Unblock the dashboard's three pre-existing VisionWeaver test failures and Vercel preview; validate the GrantOS change against a working preview and keep the main release policy intact.
 2. Compare all 18 registry identities against actual routes, migrations, deployed functions, authorization, data ownership and end-to-end receipts. Record each as defined, implemented, connected, runtime-verified or production-certified separately.
-3. Query live Supabase migration and policy state and run authenticated two-tenant tests, beginning with GrantOS and CRM. Reconcile source-controlled schema with deployed schema.
+3. Resolve the dashboard production/preview Supabase project binding, then inspect the intended GrantOS migrations and RLS and run authenticated two-tenant tests. Reconcile Prime's applied migrations 04–06 and CRM's test versus production project boundaries.
 4. Trace one real request through THELMA → Fabric → domain handler → output/receipt → audit, plus failure/recovery; then expand across domain systems.
 5. Extend the inventory to approved external accounts and Drive once access and source identity are confirmed. Preserve hash and provenance, not just summaries.
 
