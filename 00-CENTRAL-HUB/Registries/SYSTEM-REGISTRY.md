@@ -1,7 +1,7 @@
 # SYSTEM REGISTRY
 
 **Status:** ACTIVE_CANON  
-**Reconciled:** 2026-09-19  
+**Reconciled:** 2026-10-23  
 **Authority:** The Architect / Base Ten Standard  
 **Identity Rule:** `00-CENTRAL-HUB/Directives/SEPARATE-SYSTEM-IDENTITY-AND-LINKAGE-RULE.md`
 
@@ -33,11 +33,11 @@ Do not convert route existence, documentation, database tables, provider credent
 | MSB-HUB-001 | Master Systems Buildout Central Hub | ACTIVE | Continuity, canonical capture, recovery evidence, registries and architectural history | The Architect |
 | MSB-SCHEMA-001 | System Build Schema Standard | ACTIVE_CANON | Common system-definition and evidence standard | The Architect |
 
-These records govern the enterprise but are **not additional members of the approved 17-system operating registry**.
+These records govern the enterprise but are **not additional members of the approved 18-system operating registry**.
 
 ---
 
-# Approved Enterprise Registry — 17 Systems
+# Approved Enterprise Registry — 18 Systems
 
 | # | System ID | System Name | Canonical Purpose | Current State | Current Executable Evidence | Primary Canon / Recovery Evidence | Key Connections | Next Required Proof / Build |
 |---:|---|---|---|---|---|---|---|---|
@@ -58,6 +58,7 @@ These records govern the enterprise but are **not additional members of the appr
 | 15 | SYS-ASSESS-001 | Assessment Suite | Assessments, instruments, scoring, longitudinal results and capability/skills intelligence | NOT_IMPLEMENTED | No certified dedicated current product | Enterprise assessment requirements/recovery records | Training, IAM, THELMA, QC | Define privacy-sensitive domain model, deterministic scoring authority and longitudinal evidence workflows |
 | 16 | SYS-TRAINING-001 | AI Mastery / Training | Curriculum, tutoring, exercises, mastery, evaluations, certificates and training intelligence | PARTIAL | Existing `/modules/ai-mastery` route/module material; no certified independent full system workspace | AI Mastery/training/certification recovery and capability requirements | Assessment, THELMA/LILY, QC, Certificates | Establish full LMS/mastery domain; deterministic achievement evidence and certificate verification |
 | 17 | SYS-QC-001 | Quality Control Agency | Independent testing, regression, release evidence, model/provider evaluation and system certification | PARTIAL | AUDITOR/VERITAS/WBC regression concepts; GitHub Quality Gate; Analyst evidence | QC Agency doctrine, Quantico reconstruction evidence, release gates | Every system; THELMA; GitHub/Vercel/Supabase | Build system-specific test packs and capability-weighted certification; distinguish infrastructure green from business workflow verified |
+| 18 | SYS-THELMACRM-001 | T.H.E.L.M.A. CRM Complete | Separate multi-tenant agency CRM and marketing operations product, with an owner-approved T.H.E.L.M.A. gateway | PARTIAL | `standalone-crm` Version 2.0 source and database/feature tests; Vercel release is documented, but tenant isolation and end-to-end gates remain open | `standalone-crm/START_HERE.md`; Architect decision recorded in `MASTER_CEO_DASHBOARD` PR #65 (2026-10-14) | AgencyFlow as a separate system; THELMA via signed approval gateway; Supabase, Vercel, Leadstack | Confirm live commit and deployment, execute RLS and feature suites plus two-tenant test, verify gateway approval and health; keep distinct from AgencyFlow |
 
 ---
 
@@ -75,7 +76,7 @@ The following are **enterprise capabilities/control planes**, not silently-creat
 
 ### EDLS Historical Classification
 
-Historical draft work labeled **Ecosystem Discovery & Learning Engine / SYS-EDLS-001** is preserved as recovery/design evidence. Under the current approved architecture, its applicable functions are represented by **Ecosystem Scout v3.1 / Ecosystem Intelligence** as a shared enterprise capability. It is **not counted as an 18th approved operating system** unless The Architect explicitly promotes it in a future decision.
+Historical draft work labeled **Ecosystem Discovery & Learning Engine / SYS-EDLS-001** is preserved as recovery/design evidence. Under the current approved architecture, its applicable functions are represented by **Ecosystem Scout v3.1 / Ecosystem Intelligence** as a shared enterprise capability. It is **not counted as an additional approved operating system** unless The Architect explicitly promotes it in a future decision.
 
 This prevents stale draft PR material from silently expanding the constitutional system registry.
 
