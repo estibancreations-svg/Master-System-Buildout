@@ -8097,7 +8097,8 @@
     "inventory_self_reference_excluded": true,
     "changed_paths_in_Master_System_Buildout": [
       "00-CENTRAL-HUB/Registries/SYSTEM-REGISTRY.md",
-      "docs/forensics/2026-10-23-enterprise-system-map.md"
+      "docs/forensics/2026-10-23-enterprise-system-map.md",
+      "docs/forensics/2026-10-23-repository-file-inventory.json"
     ],
     "dashboard_main_tree_sha": "cd58a2b83ab3133300c20ab45bb5da2ca6c0d2bc"
   }
