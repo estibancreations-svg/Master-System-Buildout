@@ -4,7 +4,7 @@
 
 ## Scope and evidence rule
 
-The connected GitHub account exposes **23 private repositories**. I enumerated the tracked `main` tree of each: **1,592 files** and their blob SHA fingerprints are preserved in [the complete file inventory](2026-10-23-repository-file-inventory.json). I read the repositories' README files, the canonical registry, identity rule, key architecture and workstate records, GrantOS source and migration, CRM and Prime handoffs, and current GitHub/Vercel release evidence. File-tree coverage is exhaustive for these 23 `main` branches; content-level and runtime investigation is ongoing. Other accounts, uncommitted branches, complete live Supabase data/policies, provider accounts, Drive assets, authenticated user journeys and physical devices are outside this evidence boundary. The live Supabase project inventory and one active project's migration/table metadata were inspected in the addendum below; production environment binding remains unproven.
+The connected GitHub account exposes **24 accessible repositories** (the 23-repository baseline plus newly discovered `Paypal_Portal`). I enumerated the tracked `main` tree of each: **1,714 files**, excluding the inventory file itself, with blob SHA fingerprints preserved in [the complete file inventory](2026-10-23-repository-file-inventory.json). I read the repositories' README files, the canonical registry, identity rule, key architecture and workstate records, GrantOS source and migration, CRM and Prime handoffs, and current GitHub/Vercel release evidence. File-tree coverage is exhaustive for these 24 `main` branches; content-level and runtime investigation is ongoing. Other accounts, uncommitted branches, complete live Supabase data/policies, provider accounts, Drive assets, authenticated user journeys and physical devices are outside this evidence boundary. The live Supabase project inventory and one active project's migration/table metadata were inspected in the addendum below; production environment binding remains unproven.
 
 A name, route, database table, READY deployment or successful static check does not prove a domain workflow works. The governing [identity rule](../../00-CENTRAL-HUB/Directives/SEPARATE-SYSTEM-IDENTITY-AND-LINKAGE-RULE.md) keeps linked systems separate.
 
@@ -164,3 +164,121 @@ The resolved Login.gov alert was not added as a new ledger event because its las
 4. Continue to the next governed identity only after the GrantOS schema-binding and workflow findings have a recorded owner, disposition, and verification evidence.
 
 This pass improves source-level coverage but does not certify the GrantOS runtime, the enterprise, or any of the 18 systems for production.
+
+
+## Monday forensic pass — November 2, 2026
+
+### Hash comparison and inventory reconciliation
+
+The October 26 inventory baseline contained 23 accessible repositories and 1,593 tracked file entries (inventory file excluded). A fresh recursive main-tree comparison on November 2 found **24 repositories and 1,714 tracked file entries**. Twenty-one previously inventoried repositories have no path or blob-SHA changes. Two existing repositories changed, and one repository is newly visible:
+
+| Repository / evidence | Tree comparison | Result |
+|---|---|---|
+| [Master-System-Buildout main](https://github.com/estibancreations-svg/Master-System-Buildout/commit/010e57efbff0a9ce1ac72c6c273a65132cf9f3c1) | +1 path, no removals or changed prior blobs | `VERCEL-ARCHIVE.md` records two stale Vercel projects as paused, not deleted. Read-only Vercel project inspection confirms both projects have `live=false` and latest production deployments `BLOCKED`; this does not represent a live VisionWeaver product deployment. |
+| [VisionWeaver main](https://github.com/estibancreations-svg/VisionWeaver/commit/48b875415bbd0bdbdc5081dcb3e127bd7b565ef4) | +83 paths, 3 changed blobs, no removals | Added a canonical-system decision, roadmap, 2.0 app, production-loop jobs/manifests, hidden audit records, and a replication kit. Changed `README.md`, `feed/MAPPING.md`, and the Fireside/VisionWeaver conversation record. This is the primary changed high-risk domain inspected below. |
+| [Paypal_Portal main](https://github.com/estibancreations-svg/Paypal_Portal/commit/20c502f56ed40ae22ec5409c4fd3b200711d030c) | New repository, 37 paths | Not present in the 18-system canonical registry. It is recorded as a newly discovered repository only; this audit does **not** create a nineteenth governed identity. |
+
+The refreshed inventory preserves path, blob SHA, and file size for all 24 current main trees. The inventory remains a structural snapshot, not proof that every file was executed or every service was tested.
+
+### F-17 — VisionWeaver's consolidation decision is defined, but end-to-end connection is not proven
+
+**Severity: High — release truth / integration boundary.**
+
+Evidence:
+- [Canonical system decision](https://github.com/estibancreations-svg/VisionWeaver/blob/48b875415bbd0bdbdc5081dcb3e127bd7b565ef4/CANONICAL-SYSTEM.md), blob `6a2612a7d84de846de4be3d160d7643b8803ded8`.
+- [VisionWeaver README](https://github.com/estibancreations-svg/VisionWeaver/blob/48b875415bbd0bdbdc5081dcb3e127bd7b565ef4/README.md), blob `6dbc346a8320694c738170126e4fe446a950fd9b`.
+- [Production loop runner](https://github.com/estibancreations-svg/VisionWeaver/blob/48b875415bbd0bdbdc5081dcb3e127bd7b565ef4/system/loop/run.py), blob `305877ad2090855897b4e74dae1bea8636ae95e4`.
+- [Production loop stages](https://github.com/estibancreations-svg/VisionWeaver/blob/48b875415bbd0bdbdc5081dcb3e127bd7b565ef4/system/loop/stages.py), blob `c1135eeba22a46ddba16c16383fde5005ab460d1`.
+
+The November 1 canonical decision names **Master System Build Out Live** as the single intended system, but its own checklist leaves Vercel review, Supabase data-home wiring, and Drive/Dropbox realignment open. The README says VisionWeaver 2.0's 14/14 render tests passed at build but it is **not hosted** because the Vercel deploy was refused for missing team write access. The production loop is a local-filesystem Python pipeline using workspace-specific paths and custom provider executables. Stored manifests prove bounded prior runs; they do not prove the unified front end, database, provider services, and loop are connected in one current production deployment.
+
+| Evidence dimension | Observed state | Remaining proof |
+|---|---|---|
+| Defined | Consolidated system and integration order recorded | Complete |
+| Implemented | 2.0 front end and local production loop source/jobs exist | Verify exact current build/test commands against a clean checkout; no CI workflow was found in this repository tree |
+| Connected | **Partial / unverified** | The canonical record says data-home wiring is a separate, still-open step; provider/runtime attachment must be evidenced |
+| Runtime-verified | **Limited historical/local evidence only** | No authenticated end-to-end test of the canonical front end → Supabase → provider → artifact/receipt was run in this audit |
+| Production-certified | **No** | No single release SHA, hosted canonical app, authenticated workflow receipts, and recovery proof were established |
+
+Operational note: `system/loop/jobs/fireside-ig-season.json` (blob `476ea996bb977fb9a8385298a33d2aa0aff00879`) has `approved_for_publish: true`, `publish_target: "instagram"`, and 20 configured episodes. A normal invocation can post any not-yet-recorded episode; `--dry-run` suppresses posting. The README says production is paused. No run was executed. Before resuming, verify the done-file and current episode state and obtain current explicit approval for the live publishing batch; a historical boolean in a job file is not a fresh runtime confirmation.
+
+### F-18 — Live Supabase evidence corrects the prior inactive-project observation
+
+**Severity: High — deployment binding remains unknown; database schema is now confirmed in one candidate project.**
+
+Read-only inspection on November 2 shows:
+- Supabase project `yqealeekngxooyoemfba`, named **Master Dashboard**, is now `ACTIVE_HEALTHY` (not inactive as observed on the earlier October 26 check). Its migration history contains 93 applied migrations, including `20260814220921_grantos_operational_mvp_20260814`.
+- The project has 146 public base tables plus 7 public views (153 public table/view objects). Four GrantOS tables exist: `grant_applications`, `grant_budget_items`, `grant_opportunities`, and `grant_requirements`. All four have RLS enabled and a total of nine policies. A read-only query found no RLS-enabled public base table without a policy.
+- Separate project `azoqszhhmmkyqztubgem`, named **MASTER_CEO_DASHBOARD**, is also `ACTIVE_HEALTHY`, but its six applied migrations are Prime migrations and it has no public `grant_*` tables.
+- The production/preview Vercel environment's actual Supabase project reference remains unconfirmed. The database candidate containing GrantOS schema is therefore established, but its binding to the deployed dashboard is not.
+
+The Supabase security advisor also reports 130 RLS-enabled tables without policies in the historical `backup_20261005` schema. The current public schema query found none; treat the backup-schema result as an access/retention review item, not proof of public exposure. Edge Functions `visionweaver-orchestrator` (v20) and `visionweaver-studio` (v28) are ACTIVE with gateway `verify_jwt=false`; source inspection found application-level guards (cron-secret comparison for orchestrator, Supabase user + active organization membership for Studio). These guards were reviewed in source but not exercised with authenticated live requests.
+
+**Correction to earlier finding F-10:** the older “Master Dashboard” project is currently active and has the GrantOS schema. The unresolved issue is which project the deployed dashboard actually uses, not whether a GrantOS schema exists in the account.
+
+### F-19 — Newly discovered PayPortal source has unauthenticated money-administration endpoints
+
+**Severity: Critical before any public deployment; conditional exposure because a Render deployment was not verified.**
+
+Evidence:
+- [PayPortal server](https://github.com/estibancreations-svg/Paypal_Portal/blob/20c502f56ed40ae22ec5409c4fd3b200711d030c/src/server.js), blob `52b14e856fb1e1d968523c6f8b27c3b2743e0ab4`.
+- [PayPortal identity module](https://github.com/estibancreations-svg/Paypal_Portal/blob/20c502f56ed40ae22ec5409c4fd3b200711d030c/src/identity.js), blob `c359a9ca156223ab5e811419a6a23c15183be7bc`.
+- [API contract](https://github.com/estibancreations-svg/Paypal_Portal/blob/20c502f56ed40ae22ec5409c4fd3b200711d030c/docs/api-contract.md).
+
+The HTTP server contains no authentication/authorization middleware or caller-identity check. Endpoints for payout/order capture, issuing/revoking mandates, creating wallets, spending, approving holds, verifying job delivery, and reading the overview/audit state are routed directly to in-memory engines. Owner IDs are supplied by the request rather than bound to an authenticated principal. If this server is publicly reachable with configured PayPal credentials, a caller could invoke administrative or money-related operations without owner authentication. The current audit did not call these endpoints and did not move money.
+
+**Next verification/action:** do not expose the service publicly until authentication and per-owner authorization are enforced on every sensitive route, request-size/rate controls are added, and a negative authorization test suite proves anonymous and cross-owner requests fail. Keep Sandbox-only enforcement server-side; a configurable base URL is not a sufficient safety boundary.
+
+### F-20 — PayPortal's Render credential name does not match runtime configuration
+
+**Severity: High — deployment configuration defect.**
+
+Evidence:
+- [Render blueprint](https://github.com/estibancreations-svg/Paypal_Portal/blob/20c502f56ed40ae22ec5409c4fd3b200711d030c/render.yaml), blob `e530ad0710532fdcdd693a442381d843b3f16359`.
+- [Runtime configuration](https://github.com/estibancreations-svg/Paypal_Portal/blob/20c502f56ed40ae22ec5409c4fd3b200711d030c/src/config.js), blob `0f4b9ec6df22873c39f610bf3ebc4202321fb351`.
+- [.env.example](https://github.com/estibancreations-svg/Paypal_Portal/blob/20c502f56ed40ae22ec5409c4fd3b200711d030c/.env.example), blob `a6067df77e4197dbf768b46782867873d6d054c6`.
+
+The Render blueprint declares `PAYPAL_SECRET`; the application reads `PAYPAL_CLIENT_SECRET`, as does `.env.example`. Therefore a blueprint deployment populated only with the declared variable will report PayPal as unconfigured and return 503 from proof endpoints. The blueprint also declares `PAYPAL_MODE=sandbox`, but the reviewed configuration code does not consume that variable; the base URL defaults to Sandbox but can be overridden. No Render account/deployment was verified in the repository's Phase 5 evidence.
+
+**Next verification/action:** align the environment variable name, add a server-enforced allowlist that rejects non-Sandbox hosts in test builds, and verify `/api/health` reports configured only after the expected credential pair is loaded. Do not add credentials to Git.
+
+### F-21 — PayPortal's advertised wallet/payment model is not yet a durable PayPal-integrated ledger
+
+**Severity: High — functional and financial-control gap.**
+
+Evidence: `src/server.js` blob `52b14e856fb1e1d968523c6f8b27c3b2743e0ab4`, [wallet engine](https://github.com/estibancreations-svg/Paypal_Portal/blob/20c502f56ed40ae22ec5409c4fd3b200711d030c/src/wallets.js) blob `24d8e44c52fcb95dc50c3df4a91b4801a034b18c`, [audit chain](https://github.com/estibancreations-svg/Paypal_Portal/blob/20c502f56ed40ae22ec5409c4fd3b200711d030c/src/audit.js) blob `bf99635799dae31294b8b9322d02febe2e12456d`, and [PayPal client](https://github.com/estibancreations-svg/Paypal_Portal/blob/20c502f56ed40ae22ec5409c4fd3b200711d030c/src/paypal.js) blob `3f0a54b8234dc06c9eb075e854a8ab9207352c05`.
+
+The wallet, mandate, job, hold, and audit state is held in process-local Maps/arrays; it is not persisted across server restarts. The `/api/wallets/:id/spend` route calls the local wallet engine and does not create/capture a PayPal order. The reviewed PayPal calls are in the separate proof endpoints. Consequently, passing a local wallet spend is not evidence that money moved on PayPal, and the in-memory audit chain is not a durable financial ledger. The proof payout endpoint also generates a new batch/idempotency ID when none is supplied, so a repeated request is not guaranteed to reuse the same idempotency key.
+
+**Next verification/action:** label local simulations as simulations; before any real-money claim, implement durable transactional storage, idempotent request keys stable across retries, PayPal order/capture/payout read-backs in the actual wallet flow, and reconciliation tests across restarts and failure recovery.
+
+### F-22 — PayPortal webhook verification and return-page output need hardening
+
+**Severity: High (webhook trust), Medium (reflected HTML injection).**
+
+Evidence: [server source](https://github.com/estibancreations-svg/Paypal_Portal/blob/20c502f56ed40ae22ec5409c4fd3b200711d030c/src/server.js), blob `52b14e856fb1e1d968523c6f8b27c3b2743e0ab4`.
+
+The webhook route returns success with `verification: "skipped-no-webhook-id"` if no webhook ID is configured. If configured, it records the verification result but does not require a success status or reconcile the event into the durable ledger. The `/return` and `/cancel` pages interpolate the `token` query parameter into HTML without escaping. These are source-level defects; no public deployment or exploit was tested.
+
+**Next verification/action:** fail closed on missing/failed webhook verification, validate event types and IDs, reconcile only verified events idempotently, HTML-escape the return token, and add webhook replay/tamper plus reflected-input tests.
+
+### Federal source watch — November 2, 2026
+
+No new qualifying official federal change was found since the November 1 check, so the GrantOS ledger on PR #66 was not edited. Current official pages still list the October 19 Grants.gov security-patch release and the October 28 SAM.gov higher-education certification as the newest relevant notices. Existing API constraints remain: the GSA SAM.gov Opportunities API v2 requires an API key and both posted-date bounds; its results represent the latest active opportunity version, with active notices updated daily and archived notices weekly. These are existing source requirements, not new changes.
+
+Official sources checked:
+- [Grants.gov releases](https://grants.gov/support/grants-gov-releases)
+- [SAM.gov announcements](https://sam.gov/announcements)
+- [GSA Assistance Listings API](https://open.gsa.gov/api/assistance-listings-api/)
+- [GSA SAM.gov Opportunities API](https://open.gsa.gov/api/get-opportunities-public-api/)
+- [Simpler.Grants.gov release notes](https://wiki.simpler.grants.gov/product/release-notes)
+
+### Next forensic actions
+
+1. Keep the 18-system registry unchanged. PayPortal is a newly discovered repository, not an approved nineteenth identity; do not promote it without an explicit Architect decision.
+2. Treat PayPortal as **not safe for public deployment** until F-19–F-22 have an owner-approved remediation plan and authenticated/security tests.
+3. Resolve the production/preview Supabase project binding and run authenticated GrantOS transition, tenant-isolation, and submission-readiness tests. F-12–F-16 remain open; source/schema existence alone is not workflow verification.
+4. Continue VisionWeaver verification from the canonical-system decision: clean-checkout build/test, explicit provider/data-home binding, authenticated end-to-end artifact receipt, and current approval before any Instagram publishing.
+5. Resume the next governed identity after the GrantOS schema-binding and workflow findings have an owner/disposition and recorded verification evidence.
+
+This pass updates the repository inventory and identifies source-level and configuration risks. It does not certify PayPortal, VisionWeaver, GrantOS, the enterprise, or any of the 18 governed systems for production.
