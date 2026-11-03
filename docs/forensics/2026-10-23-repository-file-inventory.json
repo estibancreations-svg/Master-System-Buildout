@@ -8854,12 +8854,13 @@
     "baseline_file_count_excluding_inventory_self": 1593,
     "current_file_count_excluding_inventory_self": 1714,
     "inventory_self_reference_excluded": true,
-    "main_ref_shas": {
+    "reference_shas_at_comparison": {
       "estibancreations-svg/Master-System-Buildout": "010e57efbff0a9ce1ac72c6c273a65132cf9f3c1",
       "estibancreations-svg/MASTER_CEO_DASHBOARD": "cd58a2b83ab3133300c20ab45bb5da2ca6c0d2bc",
       "estibancreations-svg/VisionWeaver": "48b875415bbd0bdbdc5081dcb3e127bd7b565ef4",
       "estibancreations-svg/Paypal_Portal": "20c502f56ed40ae22ec5409c4fd3b200711d030c"
-    }
+    },
+    "note": "The Master-System-Buildout reference SHA is the base main commit before this audit PR; the current map and inventory blobs are staged on the audit branch. After merge, this inventory records the merged map blob; the inventory file itself is excluded."
   },
   "comparison_history": [
     {
