@@ -282,3 +282,101 @@ Official sources checked:
 5. Resume the next governed identity after the GrantOS schema-binding and workflow findings have an owner/disposition and recorded verification evidence.
 
 This pass updates the repository inventory and identifies source-level and configuration risks. It does not certify PayPortal, VisionWeaver, GrantOS, the enterprise, or any of the 18 governed systems for production.
+
+
+---
+
+## Monday forensic pass — CMGIO domain — November 9, 2026
+
+**Audited identity:** `SYS-CMGIO-001` (system #8). CMGIO remains separate from `SYS-ADS-001` Master Advertising Platform (MAP). No system identity was added, removed, or merged. The approved registry remains at 18 identities.
+
+### Evidence boundary and status
+
+| Evidence dimension | Current state | Evidence boundary |
+|---|---|---|
+| Defined | **Yes** | Canonical registry and the [Social Reach, Commerce & Forecasting Measurement Doctrine](https://github.com/estibancreations-svg/Master-System-Buildout/blob/main/00-CENTRAL-HUB/CONSTITUTION/SOCIAL-COMMERCE-MEASUREMENT-DOCTRINE.md) define CMGIO's marketing intelligence and measurement duties. |
+| Implemented | **Partial** | [CmgioWorkspace.tsx](https://github.com/estibancreations-svg/MASTER_CEO_DASHBOARD/blob/cd58a2b83ab3133300c20ab45bb5da2ca6c0d2bc/src/components/CmgioWorkspace.tsx), campaign/signal tables, social measurement tables, and scheduled report functions exist. |
+| Connected | **Not verified** | No live social account rows, metric snapshots, attribution events, or source-adapter implementation were found in the inspected project. No dedicated CMGIO ingestion Edge Function was present in the active function list. |
+| Runtime-verified | **Partial** | Read-only Supabase inspection verified schema, row counts, RLS policies, cron jobs, and an active OAuth callback function. The dashboard's Vercel project reports `live: false` and its latest deployment is `BLOCKED`; the deployed Supabase binding and UI end-to-end behavior remain unverified. |
+| Production-certified | **No** | No authenticated platform ingestion, two-tenant isolation test, source-to-report lineage test, or production UI workflow was demonstrated. |
+
+**Inspected evidence baseline:** dashboard main `cd58a2b83ab3133300c20ab45bb5da2ca6c0d2bc`; Master-System-Buildout main `f5441421584c712cafb083024b70eadc39e40624`; active Supabase project `Master Dashboard` (`yqealeekngxooyoemfba`, status `ACTIVE_HEALTHY`); Vercel project `master-ceo-dashboard` (latest deployment `dpl_2dTav4jk8u3hUbSarVYPYkyJkPG3`, state `BLOCKED`). The repository client reads `VITE_SUPABASE_URL` and `VITE_SUPABASE_PUBLISHABLE_KEY`; no deployed environment-to-project binding was established.
+
+### F-23 — CMGIO dashboard KPIs are seeded campaign values, not verified channel performance
+
+**Severity: High — decision integrity and forecasting.**
+
+Evidence:
+- [CMGIO workspace](https://github.com/estibancreations-svg/MASTER_CEO_DASHBOARD/blob/cd58a2b83ab3133300c20ab45bb5da2ca6c0d2bc/src/components/CmgioWorkspace.tsx), blob `edc2f8bde0efbc08a4a95a871df925a0f9ad57ea`.
+- [CMGIO campaign/control-plane migration](https://github.com/estibancreations-svg/MASTER_CEO_DASHBOARD/blob/cd58a2b83ab3133300c20ab45bb5da2ca6c0d2bc/supabase/migrations/20260814233000_cmgio_map_control_plane.sql), blob `898e3e4e0d254a3c7248245c2cbae9e0d69c28bb`.
+- [Social-Commerce runtime migration](https://github.com/estibancreations-svg/MASTER_CEO_DASHBOARD/blob/cd58a2b83ab3133300c20ab45bb5da2ca6c0d2bc/supabase/migrations/20260827220000_base_ten_and_social_commerce_runtime.sql), blob `57371531926ac4c8a1b275bbce49216ea191bca8`.
+- [August 27 recalibration manifest](https://github.com/estibancreations-svg/MASTER_CEO_DASHBOARD/blob/cd58a2b83ab3133300c20ab45bb5da2ca6c0d2bc/docs/verification/GITHUB_ENTERPRISE_RECALIBRATION_MANIFEST_2026-08-27.json), blob `7b5f6a37aac77aa10ee3deb9b0ea153ebfdfc560`, explicitly records `source_adapters: NOT_IMPLEMENTED`.
+- [Static recalibration tests](https://github.com/estibancreations-svg/MASTER_CEO_DASHBOARD/blob/cd58a2b83ab3133300c20ab45bb5da2ca6c0d2bc/tests/enterprise-recalibration.test.mjs), blob `23e1ec966842ff560f17cb04ffab6fbb95de5d2b`, assert that social ledger tables and cron jobs exist; they do not prove external ingestion or source-to-report lineage.
+
+The workspace loads `marketing_campaigns` and `marketing_signals`, then derives budget, spend, revenue, leads, conversions, and ROAS from the campaign rows. The August 14 migration seeds three campaigns and three signals. The current sample campaign values aggregate to $14,100 budget, $3,640 spend, $85,330 revenue, 572 leads, 65 conversions, and approximately 23.4x ROAS. These are stored seed values, not verified platform measurements. The UI labels the revenue KPI “Attributed revenue,” but the displayed calculation does not read the social attribution ledger or establish an attribution model.
+
+Read-only database evidence for project `yqealeekngxooyoemfba`:
+- `marketing_campaigns`: 3 rows; `marketing_signals`: 3 rows; `marketing_assets`: 0 rows.
+- `social_connections`: 0 rows; `social_post_queue`: 0 rows.
+- `social_metric_snapshots`: 0 rows; `social_attribution_events`: 0 rows.
+- `social_weekly_reports`: 8 rows, each with `source_rows = 0` and zero measured totals; the latest report covers November 9–15 and was generated November 9 at 13:10 UTC.
+- `social_monthly_reports`: 0 rows; `social_forecasts`: 0 rows.
+- Active cron jobs exist for weekly refresh (`10 13 * * 1,4`) and monthly close (`20 13 1 * *`). The jobs generate reports from the snapshot ledger; they do not create source metrics.
+
+The measurement doctrine requires source provenance, retrieval time, attribution method/confidence, and unavailable metrics to be marked unavailable rather than fabricated. The current non-zero campaign cards must therefore be treated as sample campaign records, not evidence of actual channel performance.
+
+**Next verification:** implement approved platform adapters and an idempotent ingestion path; persist source provenance, retrieval timestamps, attribution method, and confidence; reconcile snapshots to weekly/monthly reports; label seed/demo data separately in the UI; and test that forecasts and “attributed revenue” cannot be produced from unverified campaign placeholders.
+
+### F-24 — Social connection and publishing tables are globally accessible to authenticated users
+
+**Severity: High before connecting real accounts or enabling multi-tenant use; no current data exposure was demonstrated.**
+
+Live policy inspection found:
+- `public.social_connections` has the policy `auth_all_social_connections` for `ALL` authenticated operations with `USING (true)` and `WITH CHECK (true)`.
+- `public.social_post_queue` has the policy `auth_all_queue` for `ALL` authenticated operations with `USING (true)` and `WITH CHECK (true)`.
+- Neither table has an `organization_id` or owner column. Current row counts are zero.
+
+The active `oauth-callback` Edge Function is version 11 with `verify_jwt = false`. It uses a service-role client, checks a one-time state token and expiry, consumes the state, exchanges the provider code, and stores token references through Vault RPCs. However, the inspected `oauth_flow_state` shape has no user/organization binding, and the callback's `social_connections` upsert writes no owner or organization. The callback's one-time state/PKCE controls do not supply tenant ownership.
+
+This is a latent authorization and tenant-isolation defect, not evidence of a current breach: the connection and queue tables currently contain no rows, and no completed social-account connection was verified.
+
+**Next verification/action:** before real social credentials or posts are enabled, add explicit organization/owner binding to the connection, OAuth-state, and queue records; bind the callback to the initiating authorized principal; replace global authenticated `true` policies with organization-membership and role policies; keep secret access service-controlled; and add anonymous plus two-tenant negative tests for read, insert, update, delete, callback replay, and cross-owner access.
+
+### F-25 — Redundant permissive SELECT policies on CMGIO assets and signals
+
+**Severity: Low — policy evaluation/performance.**
+
+The live Supabase advisor reports multiple permissive policies on `marketing_assets` and `marketing_signals`. The live policy listing confirms a member-read SELECT policy plus an operators-manage ALL policy on each table; both policies are organization-membership scoped. This is not evidence of cross-organization access, but SELECT policy evaluation is duplicated.
+
+**Next verification:** consolidate overlapping policy logic after preserving the existing organization and role conditions, then run authenticated member/operator/architect tests and the database security/performance advisors again.
+
+### F-26 — CMGIO and MAP remain separate in the registry but are not separate executable workspaces
+
+**Severity: Critical for system-identity integrity; existing recovery finding remains open.**
+
+Evidence:
+- [Canonical system registry](https://github.com/estibancreations-svg/Master-System-Buildout/blob/f5441421584c712cafb083024b70eadc39e40624/00-CENTRAL-HUB/Registries/SYSTEM-REGISTRY.md) keeps CMGIO as `SYS-CMGIO-001` and MAP as `SYS-ADS-001`, with MAP in `RECOVERY_REQUIRED`.
+- [Dashboard routing](https://github.com/estibancreations-svg/MASTER_CEO_DASHBOARD/blob/cd58a2b83ab3133300c20ab45bb5da2ca6c0d2bc/src/routing.ts) exposes `/systems/cmgio-map` for CMGIO; no dedicated `MAPWorkspace` component or MAP route was found in the reviewed source.
+- [Global navigation](https://github.com/estibancreations-svg/MASTER_CEO_DASHBOARD/blob/cd58a2b83ab3133300c20ab45bb5da2ca6c0d2bc/src/components/GlobalNavigation.tsx) lists MAP separately but marks it `RECOVERY_REQUIRED` with no launch path.
+- [Analyst Memory Bank](https://github.com/estibancreations-svg/MASTER_CEO_DASHBOARD/blob/cd58a2b83ab3133300c20ab45bb5da2ca6c0d2bc/docs/analysis/ANALYST-MEMORY-BANK-MONOLITH.md), blob `46e06bb65a113d850cb382473595054b4c4a7d70`, still records the critical open `CMGIO-MAP-BOUNDARY-COLLAPSE` and `RECON-SYS-ADS-001-5` findings.
+
+The CMGIO/MAP migration creates a shared marketing control plane and `marketing_assets.source_system` defaults to `MAP`, but this does not establish an independent advertising product. No dedicated MAP strategy, experiment, spend, platform execution, or ad-attribution workflow was verified.
+
+**Next verification/action:** keep the 18-system registry unchanged; recover MAP as its own workspace/schema and execution contract; define explicit governed handoffs to CMGIO and VisionWeaver; and do not count shared CMGIO campaign tables as MAP implementation.
+
+### Hash comparison and inventory reconciliation — November 9, 2026
+
+The recursive main-branch tree comparison covered all 24 accessible repositories; all tree responses were complete (`truncated = false`). Excluding the inventory file's intentional self-reference, the November 2 baseline and November 9 pre-audit trees had no path or blob-SHA differences across the 24 repositories. The audit addendum in this PR is the only subsequent source-map change. The tracked-file count remains 1,714 excluding the inventory itself.
+
+A prior size-only discrepancy was found for the enterprise-map entry: the inventory recorded 45,756 while GitHub's tree reported 45,868 bytes, but both records had the identical blob SHA `d4c424a1af6fb12dd0856abb542e724d06395039`. This was not a content change. The refreshed inventory uses the GitHub tree byte size and compares content by blob SHA, not size alone. The 18 separately governed identities remain unchanged; `Paypal_Portal` remains a repository, not a nineteenth system.
+
+This comparison is a tracked-tree/hash audit. It does not certify file contents across all repositories or prove runtime/deployment state. Deep file and live-service inspection in this pass was limited to the CMGIO/MAP boundary and the evidence listed above.
+
+### Next forensic pass
+
+1. Continue with the independent `SYS-ADS-001` MAP recovery package and verify its canonical workspace, domain model, experiment/spend execution, and evidence contracts without merging it into CMGIO.
+2. Keep real social-account connections and publishing disabled until F-24 has organization-bound state, RLS, and two-tenant negative-test evidence.
+3. Reconcile the Vercel project and Supabase project binding before any CMGIO production claim.
+4. Revisit the CMGIO sample KPIs only after source adapters and source-to-report lineage are runtime-verified.
+
+This pass records concrete database, policy, UI, Edge Function, CI, and deployment evidence. It does not certify CMGIO, MAP, the dashboard, or any of the 18 governed systems for production.
