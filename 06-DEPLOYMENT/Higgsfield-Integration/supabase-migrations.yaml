@@ -1,0 +1,31 @@
+system_id: SYS-HGFD-001
+component: supabase-migrations
+role: database initialization and pooling specification
+status: specification_installed
+required_tables:
+  - manuscripts
+  - scenes
+  - characters
+  - locations
+  - reference_assets
+  - storyboard_versions
+  - clips
+  - clip_modifications
+  - production_plans
+  - post_production_versions
+  - distribution_packages
+  - audit_logs
+  - credit_ledger
+connection_pooling:
+  strategy: pooled_connections_for_worker_and_api_traffic
+  read_patterns:
+    - VisionWeaver dashboard reads
+    - CEO Dashboard reporting reads
+  write_patterns:
+    - generation receipts
+    - approvals
+    - version checkpoints
+migration_guards:
+  - create indexes for project_id, manuscript_id, scene_id, workflow_id
+  - preserve append-only audit tables
+  - require non-null provenance links on derivative asset tables where applicable

@@ -1,0 +1,29 @@
+system_id: SYS-HGFD-001
+component: monitoring-and-alerts
+status: specification_installed
+providers:
+  - CloudWatch
+  - Datadog
+metrics:
+  - generation_request_count
+  - generation_failure_rate
+  - retry_count
+  - average_render_duration
+  - budget_variance
+  - interrupted_workflow_count
+  - distribution_post_failures
+alerts:
+  - name: repeated_generation_failures
+    threshold: five_failures_in_fifteen_minutes
+  - name: budget_overrun
+    threshold: project_actuals_exceed_estimate_by_configured_percent
+  - name: stalled_long_running_job
+    threshold: no_status_change_within_expected_render_window
+  - name: provenance_gap_detected
+    threshold: derivative_asset_without_parent_link
+  - name: posting_queue_backlog
+    threshold: queued_distribution_jobs_exceed_service_limit
+runbooks:
+  - recover interrupted workflow from last approved checkpoint
+  - reconcile provider receipt with credit ledger
+  - notify VisionWeaver and CEO Dashboard of blocked stage transitions
