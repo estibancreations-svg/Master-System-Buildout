@@ -4,12 +4,12 @@ Cloud infrastructure and deployment management.
 
 ## Cloud Providers
 
-- [Add cloud provider information here]
+- Higgsfield/VisionWeaver deployment specifications are tracked under [`Higgsfield-VisionWeaver/`](Higgsfield-VisionWeaver/)
 
 ## Infrastructure as Code
 
-- [Add IaC definitions here]
+- Cloud package includes API and worker deployment YAML specification artifacts for the `Higgsfield-Integration-Layer` integration boundary.
 
 ## Deployment Pipeline
 
-- [Add deployment pipeline details here]
+- Runtime deployment verification remains a separate authenticated execution step.

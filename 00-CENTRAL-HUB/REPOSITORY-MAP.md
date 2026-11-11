@@ -27,7 +27,7 @@ Master-System-Buildout/
 ├── 06-DEPLOYMENT/
 ├── 07-DOCUMENTATION/
 ├── 08-CHAT-LOGS/
-├── 09-MEMORY-GEMS/
+├── 08-MEMORY-GEMS/
 ├── 99-ARCHIVE/
 └── README.md
 ```
@@ -58,7 +58,7 @@ The repository currently contains:
 ```text
 00-CENTRAL-HUB/Memory-Gems/
 08-CHAT-LOGS/
-09-MEMORY-GEMS/
+08-MEMORY-GEMS/
 ```
 
 Until The Architect approves a final consolidation rule:
@@ -66,7 +66,7 @@ Until The Architect approves a final consolidation rule:
 1. `00-CENTRAL-HUB/Memory-Gems/` is canonical for captures governed by the Central Hub directive.
 2. `00-CENTRAL-HUB/INBOX/Source-Transcripts/` stores raw text sources used for processing.
 3. `08-CHAT-LOGS/` is an optional verbatim archive and is written only when The Architect explicitly requests an archive mirror.
-4. `09-MEMORY-GEMS/` remains a no-write location for the Conversation Capture workflow.
+4. `08-MEMORY-GEMS/` remains a no-write location for the Conversation Capture workflow.
 5. Never duplicate one canonical record across all three areas.
 
 ## Central Hub Responsibilities
@@ -114,6 +114,21 @@ The Central Hub governs:
 17. A link, dependency, integration, shared repository, shared Drive folder, shared conversation, or shared evidence location does not merge system identity.
 18. Every named system receives its own System ID and independent schema/specification record unless The Architect explicitly identifies it as an alias, component, or non-system artifact.
 19. Evidence found inside another system's repository or storage area is recorded as cross-hosted evidence and linked to the correct system without rewriting provenance.
+
+## Higgsfield / VisionWeaver Manuscript-to-Film Routing
+
+Higgsfield manuscript-to-film governance materials route by function:
+
+| Work Type | Canonical Location |
+|---|---|
+| Accountability directive | `00-CENTRAL-HUB/Directives/HIGGSFIELD-INTEGRATION-ACCOUNTABILITY-DIRECTIVE.md` |
+| Six-stage specification package | `02-SYSTEM-SPECIFICATIONS/Higgsfield-Manuscript-to-Film-Production/` |
+| Orchestrator prompt | `03-AI-PROMPTS/Agent-Prompts/VISIONWEAVER-HIGGSFIELD-MANUSCRIPT-TO-FILM-ORCHESTRATOR.md` |
+| Automation specifications + validator | `05-AUTOMATION/Integrations/Higgsfield-VisionWeaver/` |
+| Deployment YAML specifications | `06-DEPLOYMENT/Cloud/Higgsfield-VisionWeaver/` |
+| Operator / quick-start documentation | `07-DOCUMENTATION/Admin-Guides/` and `07-DOCUMENTATION/User-Guides/` |
+
+Cross-repository runtime integration target: `estibancreations-svg/Higgsfield-Integration-Layer`.
 
 ## Separate System Identity Governance
 

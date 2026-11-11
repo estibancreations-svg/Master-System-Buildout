@@ -4,12 +4,12 @@ Administrative and operational documentation.
 
 ## System Administration
 
-- [Add admin procedures here]
+- [Higgsfield / VisionWeaver Operator Runbook](Higgsfield-VisionWeaver-Operator-Runbook.md)
 
 ## Maintenance
 
-- [Add maintenance procedures here]
+- Validate package consistency: `python ../../05-AUTOMATION/Integrations/Higgsfield-VisionWeaver/validate_higgsfield_package.py`
 
 ## Troubleshooting
 
-- [Add troubleshooting guides here]
+- [Higgsfield / VisionWeaver Cost, Audit, and Troubleshooting](Higgsfield-VisionWeaver-Cost-Audit-Troubleshooting.md)

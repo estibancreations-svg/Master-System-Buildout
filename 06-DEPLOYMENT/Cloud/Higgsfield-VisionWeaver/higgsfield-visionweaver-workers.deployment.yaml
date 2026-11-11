@@ -1,0 +1,22 @@
+service: higgsfield-visionweaver-workers
+runtime: nodejs20
+source_repository: estibancreations-svg/Higgsfield-Integration-Layer
+workers:
+  - name: generation-dispatch-worker
+    queue: higgsfield_generation_dispatch
+  - name: generation-status-sync-worker
+    queue: higgsfield_generation_status
+  - name: credit-ledger-reconciliation-worker
+    queue: higgsfield_credit_reconciliation
+scheduling:
+  - name: stalled-job-recovery
+    cron: "*/5 * * * *"
+  - name: cost-and-credit-audit
+    cron: "0 * * * *"
+environment:
+  required:
+    - SUPABASE_URL
+    - SUPABASE_SERVICE_ROLE_KEY
+    - HIGGSFIELD_API_KEY
+notes:
+  - This is a deployment specification artifact, not a runtime deployment confirmation.

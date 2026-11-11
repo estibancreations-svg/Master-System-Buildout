@@ -1,0 +1,15 @@
+stage: STAGE-02
+name: storyboarding
+owner_system: VisionWeaver
+input_requirements:
+  - intake_approved_package
+  - scene_breakdown
+approval_gate: storyboard_approval
+provider_boundary: higgsfield_reference_generation_optional
+recovery:
+  strategy: retry_failed_reference_jobs
+  retain_partial: true
+cost_control:
+  preflight_required: true
+  check_scope: reference_generation
+next_stage: STAGE-03

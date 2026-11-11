@@ -8,6 +8,10 @@ Individual prompts for specific AI agents.
   - Prompt: [`CONVERSATION-CAPTURE-AND-ARCHITECT-ACCOUNTABILITY-AGENT.md`](CONVERSATION-CAPTURE-AND-ARCHITECT-ACCOUNTABILITY-AGENT.md)
   - Governing Directive: [`../../00-CENTRAL-HUB/Directives/MASTER-CONVERSATION-CAPTURE-ACCOUNTABILITY-AND-GITHUB-DEPLOYMENT-DIRECTIVE.md`](../../00-CENTRAL-HUB/Directives/MASTER-CONVERSATION-CAPTURE-ACCOUNTABILITY-AND-GITHUB-DEPLOYMENT-DIRECTIVE.md)
   - System Specification: [`../../02-SYSTEM-SPECIFICATIONS/Conversation-Capture-Agent/CONVERSATION-CAPTURE-AND-ARCHITECT-ACCOUNTABILITY-AGENT-SPECIFICATION.md`](../../02-SYSTEM-SPECIFICATIONS/Conversation-Capture-Agent/CONVERSATION-CAPTURE-AND-ARCHITECT-ACCOUNTABILITY-AGENT-SPECIFICATION.md)
+- **VisionWeaver / Higgsfield Manuscript-to-Film Orchestrator** — Coordinates the six-stage manuscript-to-film flow with approval gates, provenance receipts, provider boundaries, and recovery controls.
+  - Prompt: [`VISIONWEAVER-HIGGSFIELD-MANUSCRIPT-TO-FILM-ORCHESTRATOR.md`](VISIONWEAVER-HIGGSFIELD-MANUSCRIPT-TO-FILM-ORCHESTRATOR.md)
+  - Governing Directive: [`../../00-CENTRAL-HUB/Directives/HIGGSFIELD-INTEGRATION-ACCOUNTABILITY-DIRECTIVE.md`](../../00-CENTRAL-HUB/Directives/HIGGSFIELD-INTEGRATION-ACCOUNTABILITY-DIRECTIVE.md)
+  - System Specification: [`../../02-SYSTEM-SPECIFICATIONS/Higgsfield-Manuscript-to-Film-Production/INDEX.md`](../../02-SYSTEM-SPECIFICATIONS/Higgsfield-Manuscript-to-Film-Production/INDEX.md)
 
 ## Prompt Specifications
 

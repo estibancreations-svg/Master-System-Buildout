@@ -1,0 +1,15 @@
+stage: STAGE-03
+name: production-planning
+owner_system: VisionWeaver
+input_requirements:
+  - storyboard_approved_package
+  - runtime_output_constraints
+approval_gate: production_plan_and_budget_approval
+provider_boundary: pre_generation_planning
+recovery:
+  strategy: revise_plan_and_reapprove
+  retain_partial: true
+cost_control:
+  preflight_required: true
+  check_scope: scene_group_budget
+next_stage: STAGE-04

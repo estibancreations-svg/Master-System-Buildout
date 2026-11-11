@@ -4,12 +4,18 @@ Third-party integrations and system connectors.
 
 ## Connected Systems
 
-- [Add connected system list here]
+- VisionWeaver (`SYS-VISION-001`)
+- Higgsfield Integration Layer (`estibancreations-svg/Higgsfield-Integration-Layer`)
+- Publishing & Media Studio (`SYS-PUBLISH-001`)
 
 ## Integration Patterns
 
-- [Add integration patterns here]
+- Approval-gated stage transitions
+- Provider-boundary dispatch with recoverable job states
+- Budget/credit preflight for generation stages
+- Provenance receipts per stage transition
 
 ## Configuration
 
-- [Add integration configuration details here]
+- Higgsfield/VisionWeaver automation specs: [`Higgsfield-VisionWeaver/`](Higgsfield-VisionWeaver/)
+- Local package validator: `python Higgsfield-VisionWeaver/validate_higgsfield_package.py`

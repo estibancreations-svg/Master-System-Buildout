@@ -1,0 +1,15 @@
+stage: STAGE-04
+name: movie-creation
+owner_system: Higgsfield-Integration-Layer
+input_requirements:
+  - approved_production_plan
+  - locked_prompts
+approval_gate: locked_scene_generation_approval
+provider_boundary: provider_calls_managed_by_higgsfield
+recovery:
+  strategy: resumable_scene_retries
+  retain_partial: true
+cost_control:
+  preflight_required: true
+  check_scope: generation_batches
+next_stage: STAGE-05
