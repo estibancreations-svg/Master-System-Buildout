@@ -372,7 +372,7 @@ A prior size-only discrepancy was found for the enterprise-map entry: the invent
 
 This comparison is a tracked-tree/hash audit. It does not certify file contents across all repositories or prove runtime/deployment state. Deep file and live-service inspection in this pass was limited to the CMGIO/MAP boundary and the evidence listed above.
 
-### Next forensic pass
+### Prior next-pass plan — recorded November 9, 2026
 
 1. Continue with the independent `SYS-ADS-001` MAP recovery package and verify its canonical workspace, domain model, experiment/spend execution, and evidence contracts without merging it into CMGIO.
 2. Keep real social-account connections and publishing disabled until F-24 has organization-bound state, RLS, and two-tenant negative-test evidence.
@@ -380,3 +380,18 @@ This comparison is a tracked-tree/hash audit. It does not certify file contents 
 4. Revisit the CMGIO sample KPIs only after source adapters and source-to-report lineage are runtime-verified.
 
 This pass records concrete database, policy, UI, Edge Function, CI, and deployment evidence. It does not certify CMGIO, MAP, the dashboard, or any of the 18 governed systems for production.
+
+
+### Forensic addendum — November 16, 2026: SYS-ADS-001 MAP
+
+The Monday audit of the independent Master Advertising Platform is recorded in [the November 16 MAP recovery addendum](addenda/2026-11-16-map-recovery-audit.md). MAP remains `RECOVERY_REQUIRED`; CMGIO remains `SYS-CMGIO-001`; the 18-system registry is unchanged. The audit confirms no dedicated MAP route/workspace or provider execution path, identifies dashboard identity/status contradictions, an unresolved Vercel-to-Supabase binding, and a tenant-isolation blocker in the social OAuth/queue path. Findings F-27 through F-29 and their source/runtime evidence are in the addendum. No code, database, credential, or provider activation changes were made.
+
+### Next forensic pass
+
+1. Continue with independent `SYS-AGENCYFLOW-001` AgencyFlow recovery: CRM, lead/contact, communications, social-account, service-delivery, and agent-family evidence.
+2. Keep F-24's tenant-bound OAuth, organization-scoped RLS, and two-tenant negative tests as a hard pre-activation gate for any social connection or publishing workflow.
+3. Reconcile the Vercel-to-Supabase project binding before any CMGIO or MAP production claim.
+4. Revisit CMGIO metrics only after source adapters, attribution provenance, and source-to-report lineage are runtime-verified.
+5. Preserve the 18 governed identities; do not promote the 24th repository, `Paypal_Portal`, into a new system identity.
+
+This addendum records source, schema, RLS, Edge Function, auth, provider, CI, deployment, and recovery findings within the accessible evidence boundary. It does not certify MAP, CMGIO, the dashboard, or any of the 18 governed systems for production.
