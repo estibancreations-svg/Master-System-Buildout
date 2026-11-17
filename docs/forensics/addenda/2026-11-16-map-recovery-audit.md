@@ -143,3 +143,10 @@ The Master-System-Buildout [Quality Gate workflow](https://github.com/estibancre
 ## Audit limitations
 
 This was a deep source/runtime-bounded audit of MAP-related current GitHub source, the two Supabase projects, the listed Edge Functions, RLS policies, Vercel deployment metadata, and the accessible historical recovery records. It was not a full content inspection of all 24 repositories, a full runtime exercise of every service, a provider OAuth smoke test, an external ad-account test, or production certification.
+
+
+### Governance authority gap — preserve the 18-system registry without inferring approval
+
+The current [Separate System Identity and Linkage Rule](https://github.com/estibancreations-svg/Master-System-Buildout/blob/60f4787561dd29671f79bb47687d234fae8eca35/00-CENTRAL-HUB/Directives/SEPARATE-SYSTEM-IDENTITY-AND-LINKAGE-RULE.md) names only four “Current Architect-Confirmed Separate Systems” (Master Dashboard, VisionWeaver, LandWeaver, and CEO Dashboard); it does not list MAP. The current canonical System Registry nevertheless includes MAP as `SYS-ADS-001` among the 18 governed identities, and the user-directed audit explicitly requires all 18 identities to remain separately governed. This audit preserves `SYS-ADS-001` and makes no identity change, but does not infer a new Architect approval from registry presence alone. Reconcile the directive's confirmation list with the current 18-system registry through the Architect approval process.
+
+The historical [PR #10 reconciliation](https://github.com/estibancreations-svg/Master-System-Buildout/pull/10) describes Thumbnail-Generator and ViralTube-Architect as internal MAP components. The source repositories are not accessible through the current GitHub connection, and the current audit did not re-verify their contents or provenance. Retain that statement as historical classification evidence only until the original code and the Architect-approved component relationship are revalidated.
