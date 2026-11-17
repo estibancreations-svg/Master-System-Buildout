@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "inventory_on": "2026-11-09",
-  "scope": "Tracked file paths and blob hashes on default main branches accessible to the connected GitHub account. Compared the November 2, 2026 inventory with all 24 current main trees on November 9, 2026. The inventory excludes its own file to avoid a self-referential hash. Recursive tree responses were complete for all 24 repositories. Blob SHA is the content comparison authority; size is informational UTF-8 byte count. Tree inventory does not certify file contents or runtime behavior.",
+  "inventory_on": "2026-11-16",
+  "scope": "Tracked file paths and blob hashes on the 24 accessible default-main repositories. Main-branch comparison covers November 9 through November 16, 2026; all recursive trees were complete. The Master-System-Buildout repository entry additionally reflects this PR's November 16 forensic addendum and updated enterprise map. The inventory excludes its own file.",
   "repositories": [
     {
       "name": "estibancreations-svg/-Five-Stations-Learning-Serie",
@@ -2317,6 +2317,11 @@
           3802
         ],
         [
+          "docs/reviews-2026-11-09/04-review-advice-2026-11-09.md",
+          "ab90cec750abbdc6dbc09a03fae7f7ca6d1fdcb2",
+          3576
+        ],
+        [
           "docs/run-records/2026-08-10-landweaver-attachment.md",
           "2d8d4dfeceff2a181f043d20d9946fa2c845085d",
           1306
@@ -2415,6 +2420,11 @@
           "docs/ui/MOCKUP-BOARD-REGISTER.md",
           "c5a4485a99b7d6d7f4121757e158dc576645d5a7",
           2380
+        ],
+        [
+          "docs/vercel-deploy-trigger-2026-11-10.md",
+          "e7f6c7bb6c4562758a59198e846d8ecf8f71aa45",
+          575
         ],
         [
           "docs/verification/GITHUB_ENTERPRISE_RECALIBRATION_MANIFEST_2026-08-27.json",
@@ -2598,8 +2608,8 @@
         ],
         [
           "src/components/SystemControls.tsx",
-          "14fc0c9ee31e2d519c1be44c93f54689bb227c90",
-          1928
+          "c9be3fd6c073b6ea494a8bc40c2a63ac28f6c527",
+          1919
         ],
         [
           "src/components/ThelmaAIConsole.tsx",
@@ -2683,8 +2693,8 @@
         ],
         [
           "src/theme.css",
-          "2f7b51271f6ca991a2283817f4c338e5ed862f65",
-          8065
+          "f74a43b5e3406cf7a84cc0724e2f98160a82d05b",
+          3929
         ],
         [
           "src/vision.css",
@@ -4413,8 +4423,13 @@
         ],
         [
           "docs/forensics/2026-10-23-enterprise-system-map.md",
-          "9754cc025656e7af9a94d6dffe6865e24bc0eee0",
-          58235
+          "0613526c4f7ab54d6fe13227e7288b304afe07b9",
+          59943
+        ],
+        [
+          "docs/forensics/addenda/2026-11-16-map-recovery-audit.md",
+          "0d36f499418e69deef6ceae7590f4210497ba933",
+          19121
         ],
         [
           "docs/operations/2026-10-01-CROSS-SYSTEM-SESSION-HANDOFF.md",
@@ -4440,6 +4455,16 @@
           "docs/releases/VISIONWEAVER-v2.02.md",
           "51fef93b450cb8153b615656596ccf7d38cce124",
           3802
+        ],
+        [
+          "docs/vercel-deploy-trigger-2026-11-10-setting-flip.md",
+          "ff64e3cd73fefdadf2b4591d09769a1a12b68ef9",
+          703
+        ],
+        [
+          "docs/vercel-deploy-trigger-2026-11-10.md",
+          "1b5cd632be08fd37744e444dd9cbe65de7b662ba",
+          634
         ],
         [
           "file folder tree",
@@ -7182,6 +7207,36 @@
           3802
         ],
         [
+          "docs/reviews-2026-11-09/01-canonical-build-specification-2026-11-09.md",
+          "311004301c6ca68d31ac4935ab4c988e70aeb7f5",
+          40383
+        ],
+        [
+          "docs/reviews-2026-11-09/02-findings-summary-2026-11-09.md",
+          "1772d805ca6689de80db79c5e554e00aeeec302e",
+          3520
+        ],
+        [
+          "docs/reviews-2026-11-09/03-consolidated-buildout-review-2026-11-09.md",
+          "883bdea2d656613d64fc9a61b559c5939c0540fe",
+          21667
+        ],
+        [
+          "docs/reviews-2026-11-09/04-review-advice-2026-11-09.md",
+          "ab90cec750abbdc6dbc09a03fae7f7ca6d1fdcb2",
+          3576
+        ],
+        [
+          "docs/reviews-2026-11-09/05-gate-0-status-2026-11-09.md",
+          "fb708c4df5b669f3b00bfa1cba32e59a763ba616",
+          3840
+        ],
+        [
+          "docs/reviews-2026-11-09/RETIREMENT-NOTICE-2026-11-09.md",
+          "7f1f1265515063bb06349df02774030eda75a5d7",
+          1865
+        ],
+        [
           "feed/conversations/2026-10-18-to-2026-10-22-fireside-visionweaver-thread.md",
           "af3ec0ae5bff440b65b1d6588eaa79799c5c68b9",
           46655
@@ -8552,6 +8607,11 @@
           6093
         ],
         [
+          "docs/vercel-deploy-trigger-2026-11-10.md",
+          "9b8be72193f8af5a02f31ac6c3f4ff715bf608f1",
+          735
+        ],
+        [
           "index.html",
           "688254ad03585be01a3833bd989d4f9eaa41b217",
           24879
@@ -8565,6 +8625,11 @@
           "package.json",
           "57354851d5cb9b2480f212dcfe9db24c8580bee6",
           362
+        ],
+        [
+          "PRIME-RETIRED-2026-11-09.md",
+          "7f1f1265515063bb06349df02774030eda75a5d7",
+          1865
         ],
         [
           "README.md",
@@ -8695,33 +8760,102 @@
     }
   ],
   "comparison": {
-    "compared_to": "2026-11-02",
-    "compared_on": "2026-11-09",
+    "compared_to": "2026-11-09",
+    "compared_on": "2026-11-16",
     "repositories_compared": 24,
-    "repositories_without_path_or_blob_changes": 23,
+    "repositories_without_path_or_blob_changes": 20,
     "repositories_with_changes": [
       {
-        "repository": "estibancreations-svg/Master-System-Buildout",
-        "added_paths": [],
+        "repository": "estibancreations-svg/MASTER_CEO_DASHBOARD",
+        "added_paths": [
+          "docs/reviews-2026-11-09/04-review-advice-2026-11-09.md",
+          "docs/vercel-deploy-trigger-2026-11-10.md"
+        ],
         "removed_paths": [],
         "changed_paths": [
-          "docs/forensics/2026-10-23-enterprise-system-map.md"
+          "src/components/SystemControls.tsx",
+          "src/theme.css"
         ]
+      },
+      {
+        "repository": "estibancreations-svg/Master-System-Buildout",
+        "added_paths": [
+          "docs/vercel-deploy-trigger-2026-11-10-setting-flip.md",
+          "docs/vercel-deploy-trigger-2026-11-10.md"
+        ],
+        "removed_paths": [],
+        "changed_paths": []
+      },
+      {
+        "repository": "estibancreations-svg/VisionWeaver",
+        "added_paths": [
+          "docs/reviews-2026-11-09/01-canonical-build-specification-2026-11-09.md",
+          "docs/reviews-2026-11-09/02-findings-summary-2026-11-09.md",
+          "docs/reviews-2026-11-09/03-consolidated-buildout-review-2026-11-09.md",
+          "docs/reviews-2026-11-09/04-review-advice-2026-11-09.md",
+          "docs/reviews-2026-11-09/05-gate-0-status-2026-11-09.md",
+          "docs/reviews-2026-11-09/RETIREMENT-NOTICE-2026-11-09.md"
+        ],
+        "removed_paths": [],
+        "changed_paths": []
+      },
+      {
+        "repository": "estibancreations-svg/VisionWeaver-Prime",
+        "added_paths": [
+          "PRIME-RETIRED-2026-11-09.md",
+          "docs/vercel-deploy-trigger-2026-11-10.md"
+        ],
+        "removed_paths": [],
+        "changed_paths": []
       }
     ],
     "baseline_file_count_excluding_inventory_self": 1714,
-    "current_file_count_excluding_inventory_self": 1714,
+    "current_main_file_count_excluding_inventory_self": 1726,
+    "current_file_count_excluding_inventory_self": 1727,
     "inventory_self_reference_excluded": true,
-    "changed_paths_in_Master_System_Buildout": [
-      "docs/forensics/2026-10-23-enterprise-system-map.md"
-    ],
     "reference_shas_at_comparison": {
-      "estibancreations-svg/Master-System-Buildout": "f5441421584c712cafb083024b70eadc39e40624",
-      "estibancreations-svg/MASTER_CEO_DASHBOARD": "cd58a2b83ab3133300c20ab45bb5da2ca6c0d2bc",
-      "estibancreations-svg/VisionWeaver": "48b875415bbd0bdbdc5081dcb3e127bd7b565ef4",
-      "estibancreations-svg/Paypal_Portal": "20c502f56ed40ae22ec5409c4fd3b200711d030c"
+      "estibancreations-svg/-Five-Stations-Learning-Serie": "617c4a952f39bdaf939f4cab6a8a7a27ceb980d5",
+      "estibancreations-svg/-HisMajesty0225-CEO-Dashboard": "c9041b3c51cc2a5df623a40a26be4a7f736c6c76",
+      "estibancreations-svg/-THELMA-AI": "731097cebe9ee05616a07f4859dd47a1851f3d60",
+      "estibancreations-svg/52-Books-in-52-Weeks": "45cc10572eb546dae00fbc4237979a1d9be79cbf",
+      "estibancreations-svg/Archive-HisMajesty0225-Shenry60": "8f8295341e289f11202f0aabf06b8b80f8f17eb1",
+      "estibancreations-svg/content-that-builds": "3691788b93f257085a0e4746ba0a3122add48996",
+      "estibancreations-svg/crm-tour-deck-build-temp": "879e467e05b5b4c2d990e98dcf69cb7bb9284cc2",
+      "estibancreations-svg/Crossroads-of-Identity": "2ca81de75c5f3b07f0e8e21dade66636d1214a46",
+      "estibancreations-svg/DESIGN_STUDIO": "c32e0548a290e630177b93741f7cb84340974d33",
+      "estibancreations-svg/Higgsfield-Integration-Layer": "280fd90e8598c340432f415ed0ac5671ff5f5c46",
+      "estibancreations-svg/Leadstack-Clone": "13c4f44d0da5bbaa458ae67698b257a70de4af21",
+      "estibancreations-svg/MASTER_CEO_DASHBOARD": "5a5d039fb84107db2ecda56489d8193f13cde785",
+      "estibancreations-svg/Master-dashboard-": "c553801cc219ed5869b6d1c810783c99f97353f1",
+      "estibancreations-svg/Master-System-Buildout": "60f4787561dd29671f79bb47687d234fae8eca35",
+      "estibancreations-svg/motive-next-deployment": "42b82ac2b36cd396cc1782a0349effc71e7bdf23",
+      "estibancreations-svg/OSIRIS": "eb664f0f2f4f642143287b9663bccd340a21bb21",
+      "estibancreations-svg/Paypal_Portal": "20c502f56ed40ae22ec5409c4fd3b200711d030c",
+      "estibancreations-svg/reunion-os": "6b65e887f8e1c4e6117764ad85f3680a4c1d786a",
+      "estibancreations-svg/standalone-crm": "2be8547a622531fba60e127c0374dea684837082",
+      "estibancreations-svg/The-Arc": "cd3189ea11f4e901f6d597b0d64e0b962543d9a0",
+      "estibancreations-svg/THELMA-Global-Link-Logistics": "f9146c2ed89decaec18c4c873f9ec29f0777af2b",
+      "estibancreations-svg/This-Is-Your-Life": "5904abce9347460d1ae8feae8f6f6cfe617f67bb",
+      "estibancreations-svg/VisionWeaver": "5a651794dde5cc0de36e2dcd6b105873558fc7d7",
+      "estibancreations-svg/VisionWeaver-Prime": "8302cf28a722b94348859ed92d92162199e6928f"
     },
-    "note": "The pre-audit comparison found no path or blob-SHA changes in any of the 24 main trees since November 2. This PR then added the November 9 CMGIO forensic section to the Master-System-Buildout map; that map is the only changed path in the post-audit snapshot. The inventory file itself is excluded. A previous size-only discrepancy for the map had identical blob SHA and was not a content change; this entry records UTF-8 byte size. The MASTER_CEO_DASHBOARD federal-watch updates are on PR #66, not its main branch, and are therefore not counted as a main-tree change here."
+    "audit_branch": {
+      "repository": "estibancreations-svg/Master-System-Buildout",
+      "branch": "forensics/map-recovery-audit-2026-11-16",
+      "base_main_sha": "60f4787561dd29671f79bb47687d234fae8eca35",
+      "added_paths": [
+        "docs/forensics/addenda/2026-11-16-map-recovery-audit.md"
+      ],
+      "changed_paths": [
+        "docs/forensics/2026-10-23-enterprise-system-map.md"
+      ],
+      "commit_shas": [
+        "7a588a55e1d0b5da5bc959ded072083fd49be237",
+        "2f8d82d357a0a263298971870e06b63db72fc381",
+        "5d98744a9e87f32d4321dd31b67e3407e68d3cfc"
+      ]
+    },
+    "note": "All 24 recursive main-branch trees were complete (truncated=false). Twenty repositories had no path or blob-SHA changes. Four repositories changed: MASTER_CEO_DASHBOARD (two new docs, two changed theme/control files), Master-System-Buildout (two new deployment-trigger docs), VisionWeaver (six review/retirement docs), and VisionWeaver-Prime (two retirement/deployment docs). No main-branch files were removed. The main-tree count is 1,726 excluding this inventory. The audit branch adds one forensic addendum and updates the enterprise map, so the branch inventory count is 1,727 excluding this inventory. The 18 separately governed identities remain unchanged; Paypal_Portal remains a repository, not a nineteenth system. Hash comparison is not full file-content or runtime verification."
   },
   "comparison_history": [
     {
@@ -8909,6 +9043,35 @@
         "estibancreations-svg/Paypal_Portal": "20c502f56ed40ae22ec5409c4fd3b200711d030c"
       },
       "note": "The Master-System-Buildout reference SHA is the base main commit before this audit PR; the current map and inventory blobs are staged on the audit branch. After merge, this inventory records the merged map blob; the inventory file itself is excluded."
+    },
+    {
+      "compared_to": "2026-11-02",
+      "compared_on": "2026-11-09",
+      "repositories_compared": 24,
+      "repositories_without_path_or_blob_changes": 23,
+      "repositories_with_changes": [
+        {
+          "repository": "estibancreations-svg/Master-System-Buildout",
+          "added_paths": [],
+          "removed_paths": [],
+          "changed_paths": [
+            "docs/forensics/2026-10-23-enterprise-system-map.md"
+          ]
+        }
+      ],
+      "baseline_file_count_excluding_inventory_self": 1714,
+      "current_file_count_excluding_inventory_self": 1714,
+      "inventory_self_reference_excluded": true,
+      "changed_paths_in_Master_System_Buildout": [
+        "docs/forensics/2026-10-23-enterprise-system-map.md"
+      ],
+      "reference_shas_at_comparison": {
+        "estibancreations-svg/Master-System-Buildout": "f5441421584c712cafb083024b70eadc39e40624",
+        "estibancreations-svg/MASTER_CEO_DASHBOARD": "cd58a2b83ab3133300c20ab45bb5da2ca6c0d2bc",
+        "estibancreations-svg/VisionWeaver": "48b875415bbd0bdbdc5081dcb3e127bd7b565ef4",
+        "estibancreations-svg/Paypal_Portal": "20c502f56ed40ae22ec5409c4fd3b200711d030c"
+      },
+      "note": "The pre-audit comparison found no path or blob-SHA changes in any of the 24 main trees since November 2. This PR then added the November 9 CMGIO forensic section to the Master-System-Buildout map; that map is the only changed path in the post-audit snapshot. The inventory file itself is excluded. A previous size-only discrepancy for the map had identical blob SHA and was not a content change; this entry records UTF-8 byte size. The MASTER_CEO_DASHBOARD federal-watch updates are on PR #66, not its main branch, and are therefore not counted as a main-tree change here."
     }
   ]
 }
