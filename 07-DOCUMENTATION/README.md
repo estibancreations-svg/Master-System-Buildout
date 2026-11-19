@@ -8,6 +8,7 @@ User guides, administrative documentation, and training materials.
 - **Admin-Guides** - Administrative and operational documentation
 - **Training** - Training materials and resources
 - **Conversation-Capture-Agent** - Operator documentation, package manifests, update reports, and usage guidance for the Conversation Capture and Architect Accountability Agent
+- **Higgsfield-Integration** - Operator guides for manuscript intake, reference-image setup, troubleshooting, cost control, governance, and developer integration
 
 ## Conversation Capture Agent
 
