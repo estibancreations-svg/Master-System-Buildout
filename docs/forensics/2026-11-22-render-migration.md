@@ -164,3 +164,7 @@ The [fixed Render deploy](https://dashboard.render.com/web/srv-dc1qj2l6e07s73e3o
 ### Supabase continuation
 
 The active dashboard schema was matched through a read-only check. The connected Supabase API did not expose Auth redirect edits. Dashboard authentication is required to add the exact staging callback URLs, then verify an authorized user session. CRM restore was attempted and declined by Supabase's active Free project limit. C-Suite and Reunion OS need their intended data projects verified. Existing production Site URLs and data policies were left in place.
+
+## VisionWeaver Prime staging verification · 2026-11-23T01:38:31-06:00
+
+[Staging](https://estiban-visionweaver-prime-staging-86ex.onrender.com) is live on commit `323951e257a0f1dd6611bb0226f461f25c4bc2a2` ([Render deploy](https://dashboard.render.com/static/srv-dc1uksjl550s73fk5du0/deploys/dep-dc1uksrl550s73fk5ejg)). HTTP 200 verified for the home page, app.js and config.js. Content Security Policy, frame denial, MIME sniffing protection, and referrer policy headers were verified. Signed-in Prime workflows and production promotion remain pending.
