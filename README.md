@@ -89,3 +89,9 @@ The [repository integration contract](02-SYSTEM-SPECIFICATIONS/VisionWeaver/AVAT
 ## Enterprise Quality Gates — October 5, 2026
 
 [Rollout inventory and tested-SHA evidence](docs/QUALITY_GATE_ROLLOUT_2026-10-05.md): 16 missing gates installed across all 18 audited repositories; 15 passed and Logistics exposes source recovery blockers. Existing CEO/Design Studio gates retained. Mandatory merge rules remain pending GitHub administration access. Green offline checks do not certify live production.
+
+## Hosting decision and deployment mapping
+
+Estiban Creations selected **Render** for application hosting. Existing Supabase projects continue to provide PostgreSQL, authentication and storage where applicable. This repository's placement is **Governance · no service**. Maintain the enterprise deployment map, evidence ledger and rollback ownership. Preserve the separately governed system identities.
+
+The GrantOS review verified 27 failed Vercel preview checks across nine commit SHAs, a temporary successful preview checkpoint and a separate production availability block. See the [repository mapping and evidence](docs/forensics/2026-11-22-render-migration.md) for context and release requirements.
