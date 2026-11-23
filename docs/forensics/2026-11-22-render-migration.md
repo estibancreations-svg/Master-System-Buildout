@@ -98,3 +98,69 @@ Vercel listed 11 projects in the connected team. These API fields describe proje
 3. For the dashboard pilot, adapt the two [VisionWeaver handlers](https://github.com/estibancreations-svg/MASTER_CEO_DASHBOARD/tree/main/api) to Node, serve the built Vite app and keep the API same-origin. Confirm route rewrites, request and timeout behavior, native FFmpeg, auth callback redirects and protected data paths. Keep runtime credentials in Render secret settings and keep Supabase service keys out of the frontend.
 4. Deploy a staging candidate and record the exact SHA. Run the GitHub Quality Gate, authenticated dashboard and GrantOS checks, repeatable research/update-feed checks, a real continuity run and an assembly run, and project-bound auth/storage checks. Obtain comparable preview evidence before changing the existing provider-specific required check. Leave the federal research schedule intact during documentation and staging.
 5. Get owner approval for paid capacity, production DNS and retirement in the order needed. Cut production traffic only after the candidate meets the release policy. Confirm live HTTP, authenticated behavior and rollback target on the owner-controlled hostname. Record the Render service, deploy and evidence per repository. Retain Vercel deployment history and configuration until the owner authorizes retirement.
+
+## Migration execution evidence · 2026-11-22T21:35:36-06:00
+
+Render accepted the authorized Starter service for the CEO Dashboard. The staging pilot confirmed GitHub-to-Render deploys for five app repositories. The exact checks and remaining scope are listed below. Existing PayPal Portal health was checked separately. The legacy production DNS, auth scope, and release gates still require cutover evidence.
+
+| Repository | State at verification |
+| --- | --- |
+| [Master-dashboard-](https://github.com/estibancreations-svg/Master-dashboard-/tree/docs/render-migration-2026-11-22) | Runtime ownership pending |
+| [Master-System-Buildout](https://github.com/estibancreations-svg/Master-System-Buildout/tree/docs/render-migration-2026-11-22) | Governance repository. Migration evidence indexed |
+| [MASTER_CEO_DASHBOARD](https://github.com/estibancreations-svg/MASTER_CEO_DASHBOARD/tree/docs/render-migration-2026-11-22) | Staging smoke checks passed |
+| [-HisMajesty0225-CEO-Dashboard](https://github.com/estibancreations-svg/-HisMajesty0225-CEO-Dashboard/tree/docs/render-migration-2026-11-22) | Repository mapping verified. No standalone host assigned |
+| [-THELMA-AI](https://github.com/estibancreations-svg/-THELMA-AI/tree/docs/render-migration-2026-11-22) | Enterprise orchestration runtime pending |
+| [reunion-os](https://github.com/estibancreations-svg/reunion-os/tree/docs/render-migration-2026-11-22) | Demo staging smoke checks passed |
+| [VisionWeaver](https://github.com/estibancreations-svg/VisionWeaver/tree/docs/render-migration-2026-11-22) | Runtime ownership pending |
+| [content-that-builds](https://github.com/estibancreations-svg/content-that-builds/tree/docs/render-migration-2026-11-22) | Repository mapping verified. No standalone host assigned |
+| [This-Is-Your-Life](https://github.com/estibancreations-svg/This-Is-Your-Life/tree/docs/render-migration-2026-11-22) | Repository mapping verified. No standalone host assigned |
+| [Crossroads-of-Identity](https://github.com/estibancreations-svg/Crossroads-of-Identity/tree/docs/render-migration-2026-11-22) | Repository mapping verified. No standalone host assigned |
+| [Higgsfield-Integration-Layer](https://github.com/estibancreations-svg/Higgsfield-Integration-Layer/tree/docs/render-migration-2026-11-22) | Provider integration runtime pending |
+| [The-Arc](https://github.com/estibancreations-svg/The-Arc/tree/docs/render-migration-2026-11-22) | Repository mapping verified. No standalone host assigned |
+| [52-Books-in-52-Weeks](https://github.com/estibancreations-svg/52-Books-in-52-Weeks/tree/docs/render-migration-2026-11-22) | Repository mapping verified. No standalone host assigned |
+| [OSIRIS](https://github.com/estibancreations-svg/OSIRIS/tree/docs/render-migration-2026-11-22) | Scheduling and runtime evidence pending |
+| [THELMA-Global-Link-Logistics](https://github.com/estibancreations-svg/THELMA-Global-Link-Logistics/tree/docs/render-migration-2026-11-22) | Runtime transfer blocked by source readiness |
+| [motive-next-deployment](https://github.com/estibancreations-svg/motive-next-deployment/tree/docs/render-migration-2026-11-22) | Legacy Netlify bundle. Ownership pending |
+| [-Five-Stations-Learning-Serie](https://github.com/estibancreations-svg/-Five-Stations-Learning-Serie/tree/docs/render-migration-2026-11-22) | Repository mapping verified. No standalone host assigned |
+| [DESIGN_STUDIO](https://github.com/estibancreations-svg/DESIGN_STUDIO/tree/docs/render-migration-2026-11-22) | Staging smoke checks passed |
+| [VisionWeaver-Prime](https://github.com/estibancreations-svg/VisionWeaver-Prime/tree/docs/render-migration-2026-11-22) | Render plan ready. Approval pending |
+| [standalone-crm](https://github.com/estibancreations-svg/standalone-crm/tree/docs/render-migration-2026-11-22) | Staging login loads. Supabase restore blocked |
+| [crm-tour-deck-build-temp](https://github.com/estibancreations-svg/crm-tour-deck-build-temp/tree/docs/render-migration-2026-11-22) | Repository mapping verified. No standalone host assigned |
+| [Leadstack-Clone](https://github.com/estibancreations-svg/Leadstack-Clone/tree/docs/render-migration-2026-11-22) | Runtime ownership pending |
+| [Archive-HisMajesty0225-Shenry60](https://github.com/estibancreations-svg/Archive-HisMajesty0225-Shenry60/tree/docs/render-migration-2026-11-22) | Repository mapping verified. No standalone host assigned |
+| [Paypal_Portal](https://github.com/estibancreations-svg/Paypal_Portal/tree/docs/render-migration-2026-11-22) | Existing Render service. Health verified |
+| [csuite-command](https://github.com/estibancreations-svg/csuite-command/tree/docs/render-migration-2026-11-22) | Staging HTTP smoke checks passed |
+| [ChatGPT--EstibanCreations](https://github.com/estibancreations-svg/ChatGPT--EstibanCreations/tree/docs/render-migration-2026-11-22) | Repository mapping verified. No standalone host assigned |
+| [VisionWeaver-Research-and-Construct-Outlines-](https://github.com/estibancreations-svg/VisionWeaver-Research-and-Construct-Outlines-/tree/docs/render-migration-2026-11-22) | Consolidated source inventory. Independent runtime unconfirmed |
+
+### MASTER_CEO_DASHBOARD
+
+The [Render staging deploy](https://dashboard.render.com/web/srv-dc1qj3mc6qcc73bives0/deploys/dep-dc1qj46c6qcc73bivg30) is live on `a70a292a98e67d64ed576a96617c45394fd2adec`. [Staging](https://master-ceo-dashboard-staging.onrender.com) returned 200 for health, dashboard, GrantOS and VisionWeaver routes. Both FFmpeg APIs returned 200 and reported binary readiness. Unauthenticated POSTs returned 401. A local synthetic FFmpeg concat and frame extraction succeeded. The exact-commit [GitHub Quality Gate](https://github.com/estibancreations-svg/MASTER_CEO_DASHBOARD/actions/runs/45102714566) failed on three existing VisionWeaver invariants (44/47). Supabase project `Master Dashboard` matched the architecture record and all five checked GrantOS/Video tables. Auth redirect, signed-in workflow, live media jobs and production promotion are pending. [Implementation PR #68](https://github.com/estibancreations-svg/MASTER_CEO_DASHBOARD/pull/68).
+
+### DESIGN_STUDIO
+
+The [fixed Render deploy](https://dashboard.render.com/web/srv-dc1qj2l6e07s73e3o73g/deploys/dep-dc1r80dg1s2s73e5n2d0) is live on `27442ea411507d9ceb7e86ace80ce7ce6a13cdc2`. [Design Studio](https://estiban-design-studio-staging.onrender.com/design-studio) and API config returned 200, config reported cloud enabled, and protected workspace/render requests returned 401 without authentication. The preceding build failed because its Vercel adapter test inherited production Supabase settings. The staging branch now injects an isolated unconfigured test app and the replacement build passed its checks. Authenticated authoring and production promotion are pending. [Implementation PR #1](https://github.com/estibancreations-svg/DESIGN_STUDIO/pull/1).
+
+### reunion-os
+
+[Render staging](https://estiban-reunion-os-staging.onrender.com) is live on `3bf654fb0ebb17a037754e16186df729038a7d8e`. Home and health returned 200. Health reported degraded with no database configured. Existing production database binding and authenticated event workflows need verification before promotion. [Implementation PR #3](https://github.com/estibancreations-svg/reunion-os/pull/3).
+
+### standalone-crm
+
+[Render staging](https://estiban-standalone-crm-staging.onrender.com/login) is live on `a2794f893d973fa40e14839b182e186b84c92f97`. Login returned 200 and API health returned 503 with Supabase unreachable. The legacy binding points to the inactive `standalone-crm-test` project. Supabase refused to restore it because the account already has two active free projects. The other databases were left in service. Auth, tenant isolation and the production gate are pending. [Implementation PR #13](https://github.com/estibancreations-svg/standalone-crm/pull/13).
+
+### csuite-command
+
+[Render staging](https://estiban-csuite-command-staging.onrender.com) is live on `15ea4082a940f7c1c7cd9a5dad077179ad8e04fe`. Home and the VisionWeaver health page returned 200, and the legacy health route redirected. The repository's current Supabase binding is absent from the connected project inventory. Authenticated workflows and deployment-time secret configuration remain pending. [Implementation PR #2](https://github.com/estibancreations-svg/csuite-command/pull/2).
+
+### VisionWeaver-Prime
+
+[Render planned one free static staging service](https://dashboard.render.com/blueprint/exs-dc1qj3ec6qcc73bivdg0/sync/exe-dc1qj3ec6qcc73bivdpg) with current security headers and auto-sync disabled. The plan references `323951e257a0f1dd6611bb0226f461f25c4bc2a2`. The plan is awaiting explicit approval, with GitHub preparation committed and no live deployment observed. [Implementation PR #3](https://github.com/estibancreations-svg/VisionWeaver-Prime/pull/3).
+
+### Paypal_Portal
+
+[Existing Render site](https://paypal-portal.onrender.com) returned 200 for home and `/api/health`, with health reporting `ok: true`. [Existing deploy](https://dashboard.render.com/web/srv-dbju1l0ae00c73f9fv1g/deploys/dep-dbju6l7b9u1s73f2u3o0) on `20c502f56ed40ae22ec5409c4fd3b200711d030c` was already live. No new payment operations were run.
+
+### Supabase continuation
+
+The active dashboard schema was matched through a read-only check. The connected Supabase API did not expose Auth redirect edits. Dashboard authentication is required to add the exact staging callback URLs, then verify an authorized user session. CRM restore was attempted and declined by Supabase's active Free project limit. C-Suite and Reunion OS need their intended data projects verified. Existing production Site URLs and data policies were left in place.
