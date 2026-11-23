@@ -395,3 +395,7 @@ The Monday audit of the independent Master Advertising Platform is recorded in [
 5. Preserve the 18 governed identities; do not promote the 24th repository, `Paypal_Portal`, into a new system identity.
 
 This addendum records source, schema, RLS, Edge Function, auth, provider, CI, deployment, and recovery findings within the accessible evidence boundary. It does not certify MAP, CMGIO, the dashboard, or any of the 18 governed systems for production.
+
+## Mapping update · Render migration
+
+Estiban Creations selected Render for confirmed application runtimes and retained existing Supabase projects. The [dated migration map](2026-11-22-render-migration.md) records current repository coverage, the staged cutover and the GrantOS evidence: 27 failed Vercel preview checks across nine commit SHAs, one intervening successful preview checkpoint and a separately observed production HTTP 402 block. The existing October baseline and the system identity registry remain the historical reference for that audit.
