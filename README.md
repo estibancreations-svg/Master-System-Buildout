@@ -95,3 +95,7 @@ The [repository integration contract](02-SYSTEM-SPECIFICATIONS/VisionWeaver/AVAT
 Estiban Creations selected **Render** for application hosting. Existing Supabase projects continue to provide PostgreSQL, authentication and storage where applicable. This repository's placement is **Governance · no service**. Maintain the enterprise deployment map, evidence ledger and rollback ownership. Preserve the separately governed system identities.
 
 The GrantOS review verified 27 failed Vercel preview checks across nine commit SHAs, a temporary successful preview checkpoint and a separate production availability block. See the [repository mapping and evidence](docs/forensics/2026-11-22-render-migration.md) for context and release requirements.
+
+### Migration verification · 2026-11-22T21:35:36-06:00
+
+**Governance repository. Migration evidence indexed.** See the [timestamped deployment mapping](docs/forensics/2026-11-22-render-migration.md) for evidence and remaining checks.
