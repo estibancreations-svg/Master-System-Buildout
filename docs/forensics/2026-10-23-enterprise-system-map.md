@@ -395,3 +395,20 @@ The Monday audit of the independent Master Advertising Platform is recorded in [
 5. Preserve the 18 governed identities; do not promote the 24th repository, `Paypal_Portal`, into a new system identity.
 
 This addendum records source, schema, RLS, Edge Function, auth, provider, CI, deployment, and recovery findings within the accessible evidence boundary. It does not certify MAP, CMGIO, the dashboard, or any of the 18 governed systems for production.
+
+
+### Forensic addendum — November 23, 2026: SYS-AGENCYFLOW-001 AgencyFlow
+
+The Monday audit of AgencyFlow is recorded in [the November 23 AgencyFlow recovery addendum](addenda/2026-11-23-agencyflow-recovery-audit.md). The reviewed `standalone-crm` and `Leadstack-Clone` trees are unchanged from the November 16 inventory hashes, but deeper inspection found a critical ownership/identity conflict: the implemented CRM capability family is branded as T.H.E.L.M.A. CRM and Leadstack while `SYS-AGENCYFLOW-001` remains a separate `RECOVERY_REQUIRED` identity. The audit also records incomplete provider execution, inactive canonical CI, test/mock production boundaries, missing restore evidence and an authorization-policy contradiction for future external Leadstack actions. Findings F-30 through F-34 and exact blob/commit evidence are in the addendum.
+
+The 18 governed identities remain unchanged. AgencyFlow is not promoted from `RECOVERY_REQUIRED`; no runtime, production or provider certification is claimed.
+
+### Next forensic pass
+
+1. Continue with `SYS-CLIMATE-001` ClimateTrack Pro source, dataset/provenance, route, deployment and runtime recovery.
+2. Resolve the AgencyFlow/Leadstack/T.H.E.L.M.A. ownership contract without merging governed identities.
+3. Encode T.H.E.L.M.A. queueing for external Leadstack actions before adding provider-facing tools.
+4. Activate exact-SHA CI, lock dependencies, establish production database/deployment binding and complete a restore drill before AgencyFlow certification.
+5. Preserve all 18 governed identities and treat repository count separately from system identity count.
+
+This addendum records source, schema/RLS, Edge Function, auth, provider, CI, deployment and recovery evidence within the accessible boundary. It does not certify AgencyFlow, Leadstack, T.H.E.L.M.A. CRM, the dashboard or any other governed system for production.

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "inventory_on": "2026-11-16",
-  "scope": "Tracked file paths and blob hashes on the 24 accessible default-main repositories. Main-branch comparison covers November 9 through November 16, 2026; all recursive trees were complete. The Master-System-Buildout repository entry additionally reflects this PR's November 16 forensic addendum and updated enterprise map. The inventory excludes its own file.",
+  "inventory_on": "2026-11-23",
+  "scope": "Tracked file paths and blob hashes on the 24 accessible repositories. Comparison covers November 16 through November 23, 2026; all recursive trees were complete. Master-System-Buildout reflects the AgencyFlow audit branch, and the inventory excludes its own file.",
   "repositories": [
     {
       "name": "estibancreations-svg/-Five-Stations-Learning-Serie",
@@ -15,6 +15,11 @@
           ".quality-gate.json",
           "013ab509ecfc931a5a86374fa6d1cebc26d548c3",
           461
+        ],
+        [
+          "README.md",
+          "d63c4d91fbdbdbc39a1dba5141c5fccb9872d379",
+          739
         ],
         [
           "docs/BACKUP_NOTICE_2026-10-05.md",
@@ -37,6 +42,16 @@
           13
         ],
         [
+          "projects/creative-ip/five-stations/README.md",
+          "c6bab04f2e743eb26b66dbce09d77f0b355ed5fb",
+          10990
+        ],
+        [
+          "projects/creative-ip/five-stations/assets/character-boards/README.md",
+          "9274c22482f040191c8e812b779b9805701de21d",
+          932
+        ],
+        [
           "projects/creative-ip/five-stations/assets/character-boards/doodle-dreamers-board-v1.png",
           "f22a8b571914e73715f01cc6ab11a5b803ffe74b",
           360063
@@ -50,11 +65,6 @@
           "projects/creative-ip/five-stations/assets/character-boards/power-pals-board-v1.png",
           "71c4639bb2a6cd7e13683056601a99a210772ee9",
           360063
-        ],
-        [
-          "projects/creative-ip/five-stations/assets/character-boards/README.md",
-          "9274c22482f040191c8e812b779b9805701de21d",
-          932
         ],
         [
           "projects/creative-ip/five-stations/assets/character-boards/rocket-rivet-board-v1.png",
@@ -120,11 +130,6 @@
           "projects/creative-ip/five-stations/episodes.json",
           "a9e0335acabf656d216ceb1eb263eea1004bfbb5",
           79215
-        ],
-        [
-          "projects/creative-ip/five-stations/README.md",
-          "c6bab04f2e743eb26b66dbce09d77f0b355ed5fb",
-          10990
         ],
         [
           "projects/creative-ip/five-stations/runway_build_v2.py",
@@ -207,6 +212,11 @@
           6512
         ],
         [
+          "projects/creative-ip/five-stations/test-runs/character-continuity/README.md",
+          "cf04213ba6be77409cc4fdd3e75c03540e296c2a",
+          2829
+        ],
+        [
           "projects/creative-ip/five-stations/test-runs/character-continuity/doodle-test-run-v1.png",
           "a84355273e2081a86fa4350d698663ed0b7c7013",
           360063
@@ -222,11 +232,6 @@
           360064
         ],
         [
-          "projects/creative-ip/five-stations/test-runs/character-continuity/README.md",
-          "cf04213ba6be77409cc4fdd3e75c03540e296c2a",
-          2829
-        ],
-        [
           "projects/creative-ip/five-stations/test-runs/character-continuity/rocket-test-run-v1.png",
           "6154be08a0b5fc5a987cb8949c60e1eac43ad013",
           360063
@@ -240,6 +245,11 @@
           "projects/creative-ip/five-stations/test-runs/character-continuity/yeti-test-run-v1.png",
           "145115a75702d87fe3844171259c2f2b58358a37",
           360063
+        ],
+        [
+          "projects/creative-ip/five-stations/test-runs/continuity-v1/README.md",
+          "36158e352f0f0a7abc8f9a1478854342d8cae166",
+          2285
         ],
         [
           "projects/creative-ip/five-stations/test-runs/continuity-v1/continuity-manifest.json",
@@ -292,11 +302,6 @@
           360064
         ],
         [
-          "projects/creative-ip/five-stations/test-runs/continuity-v1/README.md",
-          "36158e352f0f0a7abc8f9a1478854342d8cae166",
-          2285
-        ],
-        [
           "projects/creative-ip/five-stations/test-runs/continuity-v1/rocket/01-opening.png",
           "4ca4cfc9787004cf6520c561d3a5b3e0f8a2bae0",
           360064
@@ -327,11 +332,6 @@
           360064
         ],
         [
-          "README.md",
-          "d63c4d91fbdbdbc39a1dba5141c5fccb9872d379",
-          739
-        ],
-        [
           "scripts/quality_gate.py",
           "8f65bbdb6eb69582c0b6fc28c3fbf18870b3fec3",
           3358
@@ -357,6 +357,11 @@
           310
         ],
         [
+          "README.md",
+          "9431a0a6d601f6128c8d486ffce42c9d61cadc49",
+          1142
+        ],
+        [
           "docs/BACKUP_NOTICE_2026-10-05.md",
           "8120877774bd52b2307d84e6bb6a8b29a77e240b",
           2806
@@ -370,11 +375,6 @@
           "docs/UI-BOARD-STANDARD-v1.md",
           "2b7d2dc97279f4f854a06044bb35d02cf9037ade",
           1748
-        ],
-        [
-          "README.md",
-          "9431a0a6d601f6128c8d486ffce42c9d61cadc49",
-          1142
         ],
         [
           "scripts/quality_gate.py",
@@ -397,9 +397,34 @@
           354
         ],
         [
+          "LICENSE",
+          "d3906fcbf17822b65e531d28fe07a7cbc06ec40e",
+          1074
+        ],
+        [
+          "README.md",
+          "a31a8060f0f26d2902497f654a5960532e6cfa62",
+          3209
+        ],
+        [
           "docs/BACKUP_NOTICE_2026-10-05.md",
           "340741c6a01853cc48844908e29579ad2cab30fe",
           2787
+        ],
+        [
+          "docs/QUALITY_GATE.md",
+          "24f4b7472ada66beed487540995ba08917c67541",
+          1827
+        ],
+        [
+          "docs/THELMA-CANONICAL-RECOVERY-PACKAGE.md",
+          "8885210f70b1f60bfbb742794a326dccfd71c539",
+          7812
+        ],
+        [
+          "docs/UI-BOARD-STANDARD-v1.md",
+          "95347b92acf6c7f68f7445c5bff0963f8fa39999",
+          1650
         ],
         [
           "docs/integration/CURRENT-WORKSTATE-2026-10-04.md",
@@ -420,31 +445,6 @@
           "docs/operations/REPAIR-REVIEW-WHITE-BLOOD-CELL-PROTOCOL.md",
           "c29e14519b992cb370cf33bc1b52422f1dfd6446",
           6972
-        ],
-        [
-          "docs/QUALITY_GATE.md",
-          "24f4b7472ada66beed487540995ba08917c67541",
-          1827
-        ],
-        [
-          "docs/THELMA-CANONICAL-RECOVERY-PACKAGE.md",
-          "8885210f70b1f60bfbb742794a326dccfd71c539",
-          7812
-        ],
-        [
-          "docs/UI-BOARD-STANDARD-v1.md",
-          "95347b92acf6c7f68f7445c5bff0963f8fa39999",
-          1650
-        ],
-        [
-          "LICENSE",
-          "d3906fcbf17822b65e531d28fe07a7cbc06ec40e",
-          1074
-        ],
-        [
-          "README.md",
-          "a31a8060f0f26d2902497f654a5960532e6cfa62",
-          3209
         ],
         [
           "scripts/quality_gate.py",
@@ -497,6 +497,16 @@
           0
         ],
         [
+          "README.md",
+          "818392cf570019ab775aff3254f471e9be3a33fb",
+          5852
+        ],
+        [
+          "books/TEMPLATE/README.md",
+          "52ba29255b291bca67da9b4d5241692dae724f95",
+          790
+        ],
+        [
           "books/book-01/README.md",
           "cd4b0e424130ad1f1f79e0518920b3f62c750552",
           2650
@@ -505,11 +515,6 @@
           "books/book-01/WEEK-01-PLAN.md",
           "b4ccf24ae58f8d4c84785c75f287103f7c1a3666",
           3025
-        ],
-        [
-          "books/TEMPLATE/README.md",
-          "52ba29255b291bca67da9b4d5241692dae724f95",
-          790
         ],
         [
           "docs/BACKUP_NOTICE_2026-10-05.md",
@@ -527,11 +532,6 @@
           1326
         ],
         [
-          "README.md",
-          "818392cf570019ab775aff3254f471e9be3a33fb",
-          5852
-        ],
-        [
           "scripts/quality_gate.py",
           "8f65bbdb6eb69582c0b6fc28c3fbf18870b3fec3",
           3358
@@ -542,6 +542,11 @@
       "name": "estibancreations-svg/Archive-HisMajesty0225-Shenry60",
       "files": [
         [
+          "README.md",
+          "80f1d57e005aab069f354b7d4d09ff8239bf13ed",
+          2558
+        ],
+        [
           "inventory/estibancreations-comparison.md",
           "ca7b413b59db152bd14445e3601ddcc90db3c7e8",
           2045
@@ -550,11 +555,6 @@
           "inventory/hismajesty0225-inventory.md",
           "e389d7f48281bd0cf416cbcb5e31f2d42c739381",
           7747
-        ],
-        [
-          "README.md",
-          "80f1d57e005aab069f354b7d4d09ff8239bf13ed",
-          2558
         ],
         [
           "shenry60/BingChat-main/.github/workflows/nuget.yml",
@@ -592,6 +592,16 @@
           2496
         ],
         [
+          "shenry60/BingChat-main/LICENSE",
+          "17e0da6a62fa7032dfdf20edc28daa3615bb9d79",
+          1076
+        ],
+        [
+          "shenry60/BingChat-main/README.md",
+          "866b473de1e71e901c5259b0e0b6d7a1132fa780",
+          5401
+        ],
+        [
           "shenry60/BingChat-main/examples/BingChat.Examples/BingChat.Examples.csproj",
           "f94f72ba4abb17e785c74163527237b5b9369195",
           365
@@ -615,16 +625,6 @@
           "shenry60/BingChat-main/examples/BingChat.Examples/WithConversation.cs",
           "2dd67556a02a08c4df04e5d1c99bc2b95cce4868",
           1089
-        ],
-        [
-          "shenry60/BingChat-main/LICENSE",
-          "17e0da6a62fa7032dfdf20edc28daa3615bb9d79",
-          1076
-        ],
-        [
-          "shenry60/BingChat-main/README.md",
-          "866b473de1e71e901c5259b0e0b6d7a1132fa780",
-          5401
         ],
         [
           "shenry60/BingChat-main/src/BingChat/BingChat.csproj",
@@ -702,11 +702,6 @@
           6175
         ],
         [
-          "shenry60/BingChat-main/src/dotnet-bingchat/dotnet-bingchat.csproj",
-          "4ec432b07004a3fc642a14abbc1e446f1c8f2afe",
-          659
-        ],
-        [
           "shenry60/BingChat-main/src/dotnet-bingchat/Program.cs",
           "2ed17f6cb13896de054c35728b10bf3140839cc9",
           204
@@ -715,6 +710,11 @@
           "shenry60/BingChat-main/src/dotnet-bingchat/Utils.cs",
           "9a163ffc94edbadc31022fe4b30bcd39e176e8eb",
           4280
+        ],
+        [
+          "shenry60/BingChat-main/src/dotnet-bingchat/dotnet-bingchat.csproj",
+          "4ec432b07004a3fc642a14abbc1e446f1c8f2afe",
+          659
         ],
         [
           "shenry60/README.md",
@@ -1072,21 +1072,6 @@
           1153
         ],
         [
-          "docs/BACKUP_NOTICE_2026-10-05.md",
-          "276f00ebbd86f874a55a34310849bb1ed3cc3d44",
-          2796
-        ],
-        [
-          "docs/QUALITY_GATE.md",
-          "24f4b7472ada66beed487540995ba08917c67541",
-          1827
-        ],
-        [
-          "docs/UI-BOARD-STANDARD-v1.md",
-          "8938e1bc72879e12d4343f1fe07beb47ed06dc7a",
-          1326
-        ],
-        [
           "LICENSE-NOTICE.md",
           "bf347fc6eb79d469e5f5a1ad7922b4b194fe00fc",
           441
@@ -1102,6 +1087,21 @@
           2118
         ],
         [
+          "docs/BACKUP_NOTICE_2026-10-05.md",
+          "276f00ebbd86f874a55a34310849bb1ed3cc3d44",
+          2796
+        ],
+        [
+          "docs/QUALITY_GATE.md",
+          "24f4b7472ada66beed487540995ba08917c67541",
+          1827
+        ],
+        [
+          "docs/UI-BOARD-STANDARD-v1.md",
+          "8938e1bc72879e12d4343f1fe07beb47ed06dc7a",
+          1326
+        ],
+        [
           "scripts/quality_gate.py",
           "8f65bbdb6eb69582c0b6fc28c3fbf18870b3fec3",
           3358
@@ -1112,6 +1112,11 @@
       "name": "estibancreations-svg/crm-tour-deck-build-temp",
       "files": [
         [
+          "README.md",
+          "27138e24caad2f08bde53149d22ef8709c29b552",
+          103
+        ],
+        [
           "build.mjs",
           "ab9a0924e392d64c31e6e9ece6cd84dcc0ddf4f3",
           10640
@@ -1120,11 +1125,6 @@
           "data.mjs",
           "7b9319b1f7499444696665b0a177caa5379fe47f",
           17823
-        ],
-        [
-          "README.md",
-          "27138e24caad2f08bde53149d22ef8709c29b552",
-          103
         ],
         [
           "shots.mjs",
@@ -1217,6 +1217,11 @@
           589
         ],
         [
+          "README.md",
+          "95f028c7c70d14bb820c7f6069e5390972ae978f",
+          2001
+        ],
+        [
           "docs/BACKUP_NOTICE_2026-10-05.md",
           "08907737c7a8164dbfb0d70f54769da597937164",
           2799
@@ -1240,11 +1245,6 @@
           "docs/VISIONWEAVER-WORLD-MODEL-INTEGRATION.md",
           "826837600f519a60d5a182f7726b03fc32bf13cb",
           780
-        ],
-        [
-          "README.md",
-          "95f028c7c70d14bb820c7f6069e5390972ae978f",
-          2001
         ],
         [
           "scripts/quality_gate.py",
@@ -1277,14 +1277,24 @@
           62
         ],
         [
-          "api/handler.js",
-          "9caf55d6b137bbecf69908f25ec554e6c91bc740",
-          722
-        ],
-        [
           "Dockerfile",
           "1a7dcb1c30b7fdfe100f0b7958110f4756879340",
           290
+        ],
+        [
+          "LICENSE",
+          "d3906fcbf17822b65e531d28fe07a7cbc06ec40e",
+          1074
+        ],
+        [
+          "README.md",
+          "f2233b3858fc6b810965ac08899a50cbf55819a1",
+          16350
+        ],
+        [
+          "api/handler.js",
+          "9caf55d6b137bbecf69908f25ec554e6c91bc740",
+          722
         ],
         [
           "docs/API.md",
@@ -1302,29 +1312,9 @@
           1640
         ],
         [
-          "docs/avatar-catalog-v1.md",
-          "7d60795b691c16c94240785dec138eb02789edb2",
-          14508
-        ],
-        [
-          "docs/avatar-state-board-specification-v1.1.md",
-          "4f954b7f271328bafc07760e384e041ed4be7593",
-          80715
-        ],
-        [
           "docs/BACKUP_NOTICE_2026-10-05.md",
           "904080f468fabf5784ae805d9b03c21e8e214a9b",
           2790
-        ],
-        [
-          "docs/character-board-system-v1.md",
-          "98e53e8b8cf0ac4b0819e98250fe24a23b9e8654",
-          6935
-        ],
-        [
-          "docs/children-animation-production-standard-v1.md",
-          "95252d2ad5e359ca860f4d712891acfc87981c57",
-          31284
         ],
         [
           "docs/COMMERCIALIZATION.md",
@@ -1357,6 +1347,56 @@
           7698
         ],
         [
+          "docs/SAFETY_AND_LEGAL.md",
+          "eb4cff02aba63f924701be4a8e535fba44cbe78c",
+          5457
+        ],
+        [
+          "docs/UI-BOARD-STANDARD-v1.md",
+          "7c90fa1bd5f33a976b530e336584ddceb817e43c",
+          4450
+        ],
+        [
+          "docs/UI_RUNTIME_0.4.02.md",
+          "4cf21a1f6b098a0fc63d903d50e63969f05ef811",
+          3346
+        ],
+        [
+          "docs/UPGRADE_0.2.02.md",
+          "baf245ff98eaf33e63c69287a7db4e6b80355f45",
+          12358
+        ],
+        [
+          "docs/VERIFICATION.md",
+          "4e42dc6382757e76bd4c2686890726d3f645b683",
+          3010
+        ],
+        [
+          "docs/VERIFICATION_0.2.02.md",
+          "1be493eda77632434dea5e12b010a51a3ff240a4",
+          4188
+        ],
+        [
+          "docs/avatar-catalog-v1.md",
+          "7d60795b691c16c94240785dec138eb02789edb2",
+          14508
+        ],
+        [
+          "docs/avatar-state-board-specification-v1.1.md",
+          "4f954b7f271328bafc07760e384e041ed4be7593",
+          80715
+        ],
+        [
+          "docs/character-board-system-v1.md",
+          "98e53e8b8cf0ac4b0819e98250fe24a23b9e8654",
+          6935
+        ],
+        [
+          "docs/children-animation-production-standard-v1.md",
+          "95252d2ad5e359ca860f4d712891acfc87981c57",
+          31284
+        ],
+        [
           "docs/representation-and-place-time-v1.md",
           "7b0c9f06db50df8b2f5dbde41d24a1e4ae002ab7",
           3298
@@ -1370,41 +1410,6 @@
           "docs/runtime-mobile.png",
           "45001bc11343823e05ec67a38b820a077f8b62a7",
           390511
-        ],
-        [
-          "docs/SAFETY_AND_LEGAL.md",
-          "eb4cff02aba63f924701be4a8e535fba44cbe78c",
-          5457
-        ],
-        [
-          "docs/UI_RUNTIME_0.4.02.md",
-          "4cf21a1f6b098a0fc63d903d50e63969f05ef811",
-          3346
-        ],
-        [
-          "docs/UI-BOARD-STANDARD-v1.md",
-          "7c90fa1bd5f33a976b530e336584ddceb817e43c",
-          4450
-        ],
-        [
-          "docs/UPGRADE_0.2.02.md",
-          "baf245ff98eaf33e63c69287a7db4e6b80355f45",
-          12358
-        ],
-        [
-          "docs/VERIFICATION_0.2.02.md",
-          "1be493eda77632434dea5e12b010a51a3ff240a4",
-          4188
-        ],
-        [
-          "docs/VERIFICATION.md",
-          "4e42dc6382757e76bd4c2686890726d3f645b683",
-          3010
-        ],
-        [
-          "LICENSE",
-          "d3906fcbf17822b65e531d28fe07a7cbc06ec40e",
-          1074
         ],
         [
           "package-lock.json",
@@ -1627,11 +1632,6 @@
           1774015
         ],
         [
-          "README.md",
-          "f2233b3858fc6b810965ac08899a50cbf55819a1",
-          16350
-        ],
-        [
           "scripts/build.mjs",
           "cf6dfb1d5213bd4c7acabbd678d77de4bc593895",
           650
@@ -1772,6 +1772,11 @@
           399
         ],
         [
+          "README.md",
+          "708905d3ced6dc4de8df886481114ed7c8c14e1b",
+          2199
+        ],
+        [
           "api/middleware/auth.ts",
           "cec8549393841a32311cf318369e2ca6ad620fe9",
           3962
@@ -1877,11 +1882,6 @@
           639
         ],
         [
-          "README.md",
-          "708905d3ced6dc4de8df886481114ed7c8c14e1b",
-          2199
-        ],
-        [
           "schemas/migrations/001_create_core_tables.sql",
           "212de4bb07e8ec4346814629badd699c6b66401a",
           5804
@@ -1947,6 +1947,11 @@
           81
         ],
         [
+          "README.md",
+          "70f8e6801dbce0335ab4a3eab307ccd7e97255ba",
+          2428
+        ],
+        [
           "docs/ARCHITECTURE.md",
           "c7cca8f7c4ae0234c6df23a345438e9b0624e07e",
           2335
@@ -1995,11 +2000,6 @@
           "package.json",
           "98cf32c68c0a3ca8c3e8a88c0f4162d6aca54043",
           645
-        ],
-        [
-          "README.md",
-          "70f8e6801dbce0335ab4a3eab307ccd7e97255ba",
-          2428
         ],
         [
           "src/adapters/index.ts",
@@ -2117,6 +2117,16 @@
           60
         ],
         [
+          "LICENSE",
+          "4538725bfacf739c2e1b0beaf6c9f0a523937ca7",
+          1077
+        ],
+        [
+          "README.md",
+          "3431b27da1f574898aa165d8fe9a75e984865404",
+          6928
+        ],
+        [
           "api/visionweaver-assemble.js",
           "1222dfd76d42cdcbacbb79251b69c5f8365b5c29",
           7717
@@ -2125,6 +2135,36 @@
           "api/visionweaver-continuity.js",
           "36b13eb0f5ffcebcace5501288479e9e5dcd1bb5",
           6416
+        ],
+        [
+          "docs/API-KEY-AND-PROVIDER-ACTIVATION-GUIDE.md",
+          "c059464aa8eaab3d3f6f191f134ace3aa68dc288",
+          12161
+        ],
+        [
+          "docs/BACKUP_NOTICE_2026-10-05.md",
+          "a46776b936c6fd7e5aca3f5b0bd1f8a6f46a5142",
+          2776
+        ],
+        [
+          "docs/PRE-KEY-BUILD-CHECKPOINT.md",
+          "57129fd071009fedaaa6f1dad7048837a71a2ee7",
+          1063
+        ],
+        [
+          "docs/QC-GATE.md",
+          "9acf71733e746cfbf74a692757657afe0caf6ff4",
+          4690
+        ],
+        [
+          "docs/UI-BOARD-STANDARD-v1.md",
+          "19ae83728170fb3cb5282af6f533f19b3c1819d7",
+          4128
+        ],
+        [
+          "docs/VISIONWEAVER_LONGFORM_RELEASE_2026-08-28.md",
+          "8fd7461fd40d7e7147d2edadfc03b71778cd86a7",
+          3675
         ],
         [
           "docs/analysis/ANALYST-MEMORY-BANK-MONOLITH.md",
@@ -2140,11 +2180,6 @@
           "docs/analysis/EXECUTION-TRUTH-CONTROLS-11-15.md",
           "c1557a41d41838f4fe14df734d9aa05659801833",
           1493
-        ],
-        [
-          "docs/API-KEY-AND-PROVIDER-ACTIVATION-GUIDE.md",
-          "c059464aa8eaab3d3f6f191f134ace3aa68dc288",
-          12161
         ],
         [
           "docs/architecture/615720B1-C61D-4949-9FC9-8306BB6F1826.png",
@@ -2210,11 +2245,6 @@
           "docs/architecture/VISIONWEAVER-WORLD-PHYSICS-INTEGRATION.md",
           "8df6533df7e4e4cd7e2a97ea0413f5074ab60f4c",
           1299
-        ],
-        [
-          "docs/BACKUP_NOTICE_2026-10-05.md",
-          "a46776b936c6fd7e5aca3f5b0bd1f8a6f46a5142",
-          2776
         ],
         [
           "docs/conversations/2026-08-15-buildout-and-api-key-checkpoint.md",
@@ -2292,19 +2322,9 @@
           2578
         ],
         [
-          "docs/PRE-KEY-BUILD-CHECKPOINT.md",
-          "57129fd071009fedaaa6f1dad7048837a71a2ee7",
-          1063
-        ],
-        [
           "docs/provider-activation/KEY-INSTALLATION-MATRIX.md",
           "2605868ee52dbd33f7fa8e830dbc06c0b1efb905",
           7307
-        ],
-        [
-          "docs/QC-GATE.md",
-          "9acf71733e746cfbf74a692757657afe0caf6ff4",
-          4690
         ],
         [
           "docs/releases/2026-08-26-thelma-executor-truth-batch.md",
@@ -2392,11 +2412,6 @@
           4332
         ],
         [
-          "docs/UI-BOARD-STANDARD-v1.md",
-          "19ae83728170fb3cb5282af6f533f19b3c1819d7",
-          4128
-        ],
-        [
           "docs/ui/BOARD-SCREENS.md",
           "7a296b1dea6bbd7fa1be2885f91bb09e27279bf8",
           2417
@@ -2407,6 +2422,11 @@
           8981
         ],
         [
+          "docs/ui/MOCKUP-BOARD-REGISTER.md",
+          "c5a4485a99b7d6d7f4121757e158dc576645d5a7",
+          2380
+        ],
+        [
           "docs/ui/landweaver/LANDWEAVER-PAGE-SPECIFICATION.md",
           "ee82d83d3f3beec6b06a714a3e4770d352045b65",
           9043
@@ -2415,11 +2435,6 @@
           "docs/ui/landweaver/LANDWEAVER-SCREEN-STORYBOARD-REFERENCE.jpeg",
           "de318937b6cb4a2a9451d97b7d31fb516f0744b3",
           564
-        ],
-        [
-          "docs/ui/MOCKUP-BOARD-REGISTER.md",
-          "c5a4485a99b7d6d7f4121757e158dc576645d5a7",
-          2380
         ],
         [
           "docs/vercel-deploy-trigger-2026-11-10.md",
@@ -2437,11 +2452,6 @@
           10352
         ],
         [
-          "docs/VISIONWEAVER_LONGFORM_RELEASE_2026-08-28.md",
-          "8fd7461fd40d7e7147d2edadfc03b71778cd86a7",
-          3675
-        ],
-        [
           "docs/visionweaver/CANONICAL-V3-UI-REFERENCE-2026-10-08.md",
           "5a49c361ff6c58440ea53e58c129b23391f13c44",
           2534
@@ -2452,11 +2462,6 @@
           459
         ],
         [
-          "LICENSE",
-          "4538725bfacf739c2e1b0beaf6c9f0a523937ca7",
-          1077
-        ],
-        [
           "package-lock.json",
           "db6b7a1b0094f9df37972223aa5793aa5c4cbbc8",
           119138
@@ -2465,11 +2470,6 @@
           "package.json",
           "7e78afd4d73113b9e062b35ff11f9ba1d904b300",
           708
-        ],
-        [
-          "README.md",
-          "3431b27da1f574898aa165d8fe9a75e984865404",
-          6928
         ],
         [
           "scripts/create-supabase-backup.sh",
@@ -2492,14 +2492,14 @@
           831
         ],
         [
-          "src/analyst.css",
-          "bdcb9d9492bdafab6ccb8a247677442f2a900d6c",
-          10135
-        ],
-        [
           "src/App.tsx",
           "252b9f6f2602265a8627f107a2603b2529eded86",
           22377
+        ],
+        [
+          "src/analyst.css",
+          "bdcb9d9492bdafab6ccb8a247677442f2a900d6c",
+          10135
         ],
         [
           "src/auth.css",
@@ -3127,14 +3127,29 @@
           474
         ],
         [
+          "FORENSICS_RELAUNCH_PHD_MANIFEST.md",
+          "a2bd1a775a6523113ec7f800a2d61b82cdc6df9a",
+          8478
+        ],
+        [
+          "README.md",
+          "a51df1da3960a3cac8536a74739d7998414f4b3f",
+          1989
+        ],
+        [
+          "RELAUNCH_PROMPT_PHYSICS_PHD.md",
+          "890dc05335423930ac75aa10ded2cc11b06334a4",
+          11928
+        ],
+        [
+          "SYSTEM_FORENSICS_AND_REBUILD_BLUEPRINT.md",
+          "a470cffb1085a373b477054f46a63d9abbd4b522",
+          11484
+        ],
+        [
           "assets/.aistudio/.gitignore",
           "72e8ffc0db8aad71a934dd11e5968bd5109e54b4",
           2
-        ],
-        [
-          "docs/architecture/SYSTEM-BUILD-SCHEMA-REFERENCE.md",
-          "84211347766df9468133a3e50c15f12777aae6c0",
-          495
         ],
         [
           "docs/BACKUP_NOTICE_2026-10-05.md",
@@ -3147,6 +3162,16 @@
           1830
         ],
         [
+          "docs/UI-BOARD-STANDARD-v1.md",
+          "2b7d2dc97279f4f854a06044bb35d02cf9037ade",
+          1748
+        ],
+        [
+          "docs/architecture/SYSTEM-BUILD-SCHEMA-REFERENCE.md",
+          "84211347766df9468133a3e50c15f12777aae6c0",
+          495
+        ],
+        [
           "docs/run-records/2026-08-10-conversation-continuation.md",
           "ed1cf7ea552bc30a06d861eee19cb4c3eacfe657",
           1160
@@ -3155,11 +3180,6 @@
           "docs/run-records/2026-08-10-visionweaver-production-release.md",
           "bd4fec650c541ff2921b1f8f7ee56aef2a7ea8eb",
           2996
-        ],
-        [
-          "docs/UI-BOARD-STANDARD-v1.md",
-          "2b7d2dc97279f4f854a06044bb35d02cf9037ade",
-          1748
         ],
         [
           "firebase-applet-config.json",
@@ -3175,11 +3195,6 @@
           "firestore.rules",
           "e295a6c872794da87d44014c5cba234d8c1aafae",
           1165
-        ],
-        [
-          "FORENSICS_RELAUNCH_PHD_MANIFEST.md",
-          "a2bd1a775a6523113ec7f800a2d61b82cdc6df9a",
-          8478
         ],
         [
           "index.html",
@@ -3202,16 +3217,6 @@
           485
         ],
         [
-          "README.md",
-          "a51df1da3960a3cac8536a74739d7998414f4b3f",
-          1989
-        ],
-        [
-          "RELAUNCH_PROMPT_PHYSICS_PHD.md",
-          "890dc05335423930ac75aa10ded2cc11b06334a4",
-          11928
-        ],
-        [
           "scripts/quality_gate.py",
           "9f60dfd7dc2272ab112482069970ef94afcc203e",
           4297
@@ -3227,14 +3232,19 @@
           25450
         ],
         [
+          "src/components/AIMasteryTab.tsx",
+          "e72869595c7a9ee9a07737396f90a5fca45fac23",
+          24928
+        ],
+        [
           "src/components/AgentHubTab.tsx",
           "e268f49618501e788e83826b7de80acd92d3465d",
           17698
         ],
         [
-          "src/components/AIMasteryTab.tsx",
-          "e72869595c7a9ee9a07737396f90a5fca45fac23",
-          24928
+          "src/components/CRMTab.tsx",
+          "9ef4c5a5e219317e7e50d37826c403845d5d51ff",
+          16238
         ],
         [
           "src/components/CertificatesTab.tsx",
@@ -3255,11 +3265,6 @@
           "src/components/ContentEngineTab.tsx",
           "0c063012250896f2755d422102e836ff3e8a4e40",
           46296
-        ],
-        [
-          "src/components/CRMTab.tsx",
-          "9ef4c5a5e219317e7e50d37826c403845d5d51ff",
-          16238
         ],
         [
           "src/components/DashboardTab.tsx",
@@ -3362,11 +3367,6 @@
           8161
         ],
         [
-          "SYSTEM_FORENSICS_AND_REBUILD_BLUEPRINT.md",
-          "a470cffb1085a373b477054f46a63d9abbd4b522",
-          11484
-        ],
-        [
           "tsconfig.json",
           "765971ad1175021fc1f1f56e5b33c8fa5439646a",
           275
@@ -3410,26 +3410,6 @@
           ".quality-gate.json",
           "f41cae7db02574f5e0bda5fa1fedb570a9c5a8cb",
           405
-        ],
-        [
-          "00_CONTINUITY/00_MASTER_CONTINUITY.md",
-          "6b5216d1bfef503814305ee2adb40afb20dad9ec",
-          3780
-        ],
-        [
-          "00_CONTINUITY/01_CURRENT_BUILD_POSITION.md",
-          "e44ee6d66ecb992abf341af872a3526296199ac3",
-          2697
-        ],
-        [
-          "00_CONTINUITY/02_CHAT_ARCHIVAL_STANDARD.md",
-          "6553a74cbdec43bd10bee449d8a2c5e52d90df3f",
-          3720
-        ],
-        [
-          "00_CONTINUITY/03_RECOVERY_MANIFEST.md",
-          "2c8db73c65992e36b3d567386dd7ead1c66d1dbc",
-          4365
         ],
         [
           "00-CENTRAL-HUB/CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB_HUB-CONTINUITY-RECORD.md",
@@ -3492,14 +3472,14 @@
           31821
         ],
         [
-          "00-CENTRAL-HUB/INBOX/01-08-2026_CHATGPT-Estibancreations-GitHub-folder-upload_ACTIVE-INTAKE.md",
-          "b0b8698981e2d26d2a9845e678f1a3c0c5faba64",
-          917
-        ],
-        [
           "00-CENTRAL-HUB/INBOX/01-08-2026_CHATGPT-ESTIBANCREATIONS-MASTER-SYSTEMS-BUILDOUT-GPT-AND-FIGMA-DASHBOARD_ACTIVE-MEMORY-GEM.md",
           "833b558218cc246acfbe54de3cc8aa8958fdf94d",
           14716
+        ],
+        [
+          "00-CENTRAL-HUB/INBOX/01-08-2026_CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB_ACTIVE_MEMORY-GEM-MANIFEST.md",
+          "f71c8fa52f597d3100f1a9aaff2911c141ca9949",
+          3400
         ],
         [
           "00-CENTRAL-HUB/INBOX/01-08-2026_CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB_ACTIVE_MEMORY-GEM_VOL-05.md",
@@ -3507,9 +3487,9 @@
           9237
         ],
         [
-          "00-CENTRAL-HUB/INBOX/01-08-2026_CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB_ACTIVE_MEMORY-GEM-MANIFEST.md",
-          "f71c8fa52f597d3100f1a9aaff2911c141ca9949",
-          3400
+          "00-CENTRAL-HUB/INBOX/01-08-2026_CHATGPT-Estibancreations-GitHub-folder-upload_ACTIVE-INTAKE.md",
+          "b0b8698981e2d26d2a9845e678f1a3c0c5faba64",
+          917
         ],
         [
           "00-CENTRAL-HUB/INBOX/01-08-2026_GITHUB-CONNECTION-AND-MEMORY-GEM-CAPTURE_ACTIVE_MEMORY-GEM.md",
@@ -3717,6 +3697,11 @@
           7439
         ],
         [
+          "00-CENTRAL-HUB/Memory-Gems/31-07-2026_CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB_MEMORY-GEM-MANIFEST.md",
+          "ecd37e58f381ac863655b656fc8fbd15fb2b1ce3",
+          3546
+        ],
+        [
           "00-CENTRAL-HUB/Memory-Gems/31-07-2026_CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB_MEMORY-GEM_VOL-01.md",
           "a303fe3eb28886019651598418b8e9dc59f1307e",
           4397
@@ -3737,14 +3722,19 @@
           4045
         ],
         [
-          "00-CENTRAL-HUB/Memory-Gems/31-07-2026_CHATGPT-ESTIBANCREATIONS-MD-FILES-FOR-GITHUB_MEMORY-GEM-MANIFEST.md",
-          "ecd37e58f381ac863655b656fc8fbd15fb2b1ce3",
-          3546
-        ],
-        [
           "00-CENTRAL-HUB/Memory-Gems/INDEX.md",
           "488a73eba66a8c29cffd3f1f233571ef022e1b5d",
           1307
+        ],
+        [
+          "00-CENTRAL-HUB/REPOSITORY-MAP.md",
+          "bdefc7eda5436bded1971f5527bb810b14a67303",
+          17663
+        ],
+        [
+          "00-CENTRAL-HUB/REPOSITORY-STRUCTURE-RECONCILIATION.md",
+          "06356c41a07f622b8fdc3a53d9819447968a0787",
+          2917
         ],
         [
           "00-CENTRAL-HUB/Registries/AGENT-CAPABILITY-REGISTRY.json",
@@ -3807,16 +3797,6 @@
           3929
         ],
         [
-          "00-CENTRAL-HUB/REPOSITORY-MAP.md",
-          "bdefc7eda5436bded1971f5527bb810b14a67303",
-          17663
-        ],
-        [
-          "00-CENTRAL-HUB/REPOSITORY-STRUCTURE-RECONCILIATION.md",
-          "06356c41a07f622b8fdc3a53d9819447968a0787",
-          2917
-        ],
-        [
           "00-GOVERNANCE/Agent-Governance/EXTERNAL-CAPABILITY-IMPORT-POLICY.md",
           "3597da6bd567e399e8cf830603a4bdfb2a70c53f",
           5146
@@ -3845,6 +3825,26 @@
           "00-GOVERNANCE/Version-Control-Policy.md",
           "a533770b31bb5369ad6f663e91c0baddf38c7df3",
           272
+        ],
+        [
+          "00_CONTINUITY/00_MASTER_CONTINUITY.md",
+          "6b5216d1bfef503814305ee2adb40afb20dad9ec",
+          3780
+        ],
+        [
+          "00_CONTINUITY/01_CURRENT_BUILD_POSITION.md",
+          "e44ee6d66ecb992abf341af872a3526296199ac3",
+          2697
+        ],
+        [
+          "00_CONTINUITY/02_CHAT_ARCHIVAL_STANDARD.md",
+          "6553a74cbdec43bd10bee449d8a2c5e52d90df3f",
+          3720
+        ],
+        [
+          "00_CONTINUITY/03_RECOVERY_MANIFEST.md",
+          "2c8db73c65992e36b3d567386dd7ead1c66d1dbc",
+          4365
         ],
         [
           "01-ARCHITECTURE/AI-Agent-Architecture.md",
@@ -4037,14 +4037,14 @@
           248
         ],
         [
-          "05-AUTOMATION/n8n-Workflows/README.md",
-          "b085d09df17a91508e35504e5d77aca405accc03",
-          237
-        ],
-        [
           "05-AUTOMATION/README.md",
           "99ba6c5a47fbc86f962ceed1a88145c0ef320090",
           262
+        ],
+        [
+          "05-AUTOMATION/n8n-Workflows/README.md",
+          "b085d09df17a91508e35504e5d77aca405accc03",
+          237
         ],
         [
           "05-GOVERNANCE/Conversation-Records/2026-08-10-VISIONWEAVER-CONTINUATION.md",
@@ -4062,14 +4062,14 @@
           254
         ],
         [
-          "06-DEPLOYMENT/Environment-Setup/README.md",
-          "4d3a2602e0ce3b6965d2e7dbdcfd7718b12bc3b8",
-          265
-        ],
-        [
           "06-DEPLOYMENT/ESTIBANCREATIONS-SYSTEM-MAP.md",
           "e96a74fd5d16f9aeb91dc9bca030ccc1b376f854",
           2674
+        ],
+        [
+          "06-DEPLOYMENT/Environment-Setup/README.md",
+          "4d3a2602e0ce3b6965d2e7dbdcfd7718b12bc3b8",
+          265
         ],
         [
           "06-DEPLOYMENT/README.md",
@@ -4392,14 +4392,14 @@
           3880
         ],
         [
-          "08-CHAT-LOGS/Claude/Estibancreations/Claude-Estibancreations-((Master_Systems_Buildout))-The_Arc_and_52_Books_Buildout.md",
-          "8be660be44df23c873a4a7e5c7c894fa63c053a0",
-          5012
-        ],
-        [
           "08-CHAT-LOGS/Claude/Estibancreations/Claude-Estibancreations-((Master_Systems_Buildout))-THELMA_Source_Mirror_Completion_and_Motive_Next_Recovery.md",
           "5c078cdd65fc35400c3a2575deff8e36b45eb15e",
           4140
+        ],
+        [
+          "08-CHAT-LOGS/Claude/Estibancreations/Claude-Estibancreations-((Master_Systems_Buildout))-The_Arc_and_52_Books_Buildout.md",
+          "8be660be44df23c873a4a7e5c7c894fa63c053a0",
+          5012
         ],
         [
           "08-CHAT-LOGS/README.md",
@@ -4417,19 +4417,44 @@
           177
         ],
         [
+          "README.md",
+          "9086e22d32bf25873f48177cf82994b5f27b59ee",
+          10711
+        ],
+        [
+          "VERCEL-ARCHIVE.md",
+          "abed72a5bdd0347706ed78d7a40e62b80ae2bfe8",
+          1994
+        ],
+        [
           "docs/BACKUP_NOTICE_2026-10-05.md",
           "0e45d45790ad37df39636479fab8fe5f7afcea82",
           2799
         ],
         [
+          "docs/QUALITY_GATE.md",
+          "24f4b7472ada66beed487540995ba08917c67541",
+          1827
+        ],
+        [
+          "docs/QUALITY_GATE_ROLLOUT_2026-10-05.md",
+          "7806f1105df105f438b49f49659034555509681f",
+          8795
+        ],
+        [
           "docs/forensics/2026-10-23-enterprise-system-map.md",
-          "0613526c4f7ab54d6fe13227e7288b304afe07b9",
-          59943
+          "f9ce28ea3bee4ad06f096588fc6b7e706f887a32",
+          61831
         ],
         [
           "docs/forensics/addenda/2026-11-16-map-recovery-audit.md",
           "0d36f499418e69deef6ceae7590f4210497ba933",
           19121
+        ],
+        [
+          "docs/forensics/addenda/2026-11-23-agencyflow-recovery-audit.md",
+          "68d29d7a94fb38e7c35a2865b9420059070ed991",
+          12597
         ],
         [
           "docs/operations/2026-10-01-CROSS-SYSTEM-SESSION-HANDOFF.md",
@@ -4440,16 +4465,6 @@
           "docs/operations/2026-10-02-VISIONWEAVER-DESIGN-REVIEW.md",
           "153a155eece5df0dcb3b4b12a703de5e78399b10",
           1824
-        ],
-        [
-          "docs/QUALITY_GATE_ROLLOUT_2026-10-05.md",
-          "7806f1105df105f438b49f49659034555509681f",
-          8795
-        ],
-        [
-          "docs/QUALITY_GATE.md",
-          "24f4b7472ada66beed487540995ba08917c67541",
-          1827
         ],
         [
           "docs/releases/VISIONWEAVER-v2.02.md",
@@ -4472,30 +4487,15 @@
           340
         ],
         [
-          "README.md",
-          "9086e22d32bf25873f48177cf82994b5f27b59ee",
-          10711
-        ],
-        [
           "scripts/quality_gate.py",
           "8f65bbdb6eb69582c0b6fc28c3fbf18870b3fec3",
           3358
-        ],
-        [
-          "VERCEL-ARCHIVE.md",
-          "abed72a5bdd0347706ed78d7a40e62b80ae2bfe8",
-          1994
         ]
       ]
     },
     {
       "name": "estibancreations-svg/motive-next-deployment",
       "files": [
-        [
-          "_redirects",
-          "0ff08609dd46a4ffb4fb3f7ad13f50c17110a758",
-          38
-        ],
         [
           ".github/workflows/quality-gate.yml",
           "22f7645e634a08014fe4351b68aab07eb988adef",
@@ -4505,6 +4505,21 @@
           ".quality-gate.json",
           "a86045df4f9c2e2a9c364af6e8a61082b1625495",
           303
+        ],
+        [
+          "README.md",
+          "ea90e447cc68f4596f2251d1ec0c2808fe2e61d0",
+          213
+        ],
+        [
+          "SOURCE_MANIFEST.md",
+          "65e5c30eda6fd5d3da8f2e838d55409668cf3259",
+          2792
+        ],
+        [
+          "_redirects",
+          "0ff08609dd46a4ffb4fb3f7ad13f50c17110a758",
+          38
         ],
         [
           "docs/BACKUP_NOTICE_2026-10-05.md",
@@ -4547,11 +4562,6 @@
           431
         ],
         [
-          "README.md",
-          "ea90e447cc68f4596f2251d1ec0c2808fe2e61d0",
-          213
-        ],
-        [
           "robots.txt",
           "eb0536286f3081c6c0646817037faf5446e3547d",
           24
@@ -4560,11 +4570,6 @@
           "scripts/quality_gate.py",
           "8f65bbdb6eb69582c0b6fc28c3fbf18870b3fec3",
           3358
-        ],
-        [
-          "SOURCE_MANIFEST.md",
-          "65e5c30eda6fd5d3da8f2e838d55409668cf3259",
-          2792
         ]
       ]
     },
@@ -4597,6 +4602,11 @@
           11508
         ],
         [
+          "README.md",
+          "9d1296b68dee570ffd0f8d86c679fc302aa983f3",
+          4659
+        ],
+        [
           "docs/BACKUP_NOTICE_2026-10-05.md",
           "515281f78036d69c4aa1bc34104eb59db9647779",
           2783
@@ -4610,11 +4620,6 @@
           "docs/UI-BOARD-STANDARD-v1.md",
           "8938e1bc72879e12d4343f1fe07beb47ed06dc7a",
           1326
-        ],
-        [
-          "README.md",
-          "9d1296b68dee570ffd0f8d86c679fc302aa983f3",
-          4659
         ],
         [
           "scripts/quality_gate.py",
@@ -4655,6 +4660,21 @@
           ".gitignore",
           "e7d4dc0d5b02a871078d30622068f289db3655b3",
           50
+        ],
+        [
+          "LICENSE",
+          "3804a063942669ea1a92efe46c622b62bf17b112",
+          1068
+        ],
+        [
+          "README.md",
+          "2eddc81b0c97873c88074c6b590e697c70fd46f0",
+          3666
+        ],
+        [
+          "SYSTEM-DESCRIPTION.md",
+          "96a37e2be2b0c7d20876d1292f60ab2c3de553f2",
+          11990
         ],
         [
           "docs/api-contract.md",
@@ -4712,11 +4732,6 @@
           3431
         ],
         [
-          "LICENSE",
-          "3804a063942669ea1a92efe46c622b62bf17b112",
-          1068
-        ],
-        [
           "package.json",
           "30f4d251be7591a7e3b350f0c701a129b9bbb444",
           370
@@ -4740,11 +4755,6 @@
           "public/proof.html",
           "ef8482a1c63304090fcb980de9d83f1c32222345",
           3992
-        ],
-        [
-          "README.md",
-          "2eddc81b0c97873c88074c6b590e697c70fd46f0",
-          3666
         ],
         [
           "render.yaml",
@@ -4807,11 +4817,6 @@
           10407
         ],
         [
-          "SYSTEM-DESCRIPTION.md",
-          "96a37e2be2b0c7d20876d1292f60ab2c3de553f2",
-          11990
-        ],
-        [
           "test/paypal.test.js",
           "2d351658e1ffa95cb8ac05c0e3c709365953806b",
           4247
@@ -4850,6 +4855,26 @@
           ".quality-gate.json",
           "4682b3b6f72e890f6d75cd44849b4a5e8adab248",
           386
+        ],
+        [
+          "COMPLETE_SYSTEM_UPLOAD.md",
+          "8970fdf939ceba08eabce5200ce2e833c12eeb0a",
+          1791
+        ],
+        [
+          "DEPLOY.md",
+          "35869d60eeca2564846d6662bad7714cde602e42",
+          1960
+        ],
+        [
+          "GITHUB_UPLOAD.md",
+          "004efb16286ccd7788065ab04e9eaab41c9cbba3",
+          956
+        ],
+        [
+          "README.md",
+          "a6dda1b9cc70a584505defa5d6594696ba09c929",
+          1022
         ],
         [
           "apps/web/.env.example",
@@ -5172,16 +5197,6 @@
           51
         ],
         [
-          "COMPLETE_SYSTEM_UPLOAD.md",
-          "8970fdf939ceba08eabce5200ce2e833c12eeb0a",
-          1791
-        ],
-        [
-          "DEPLOY.md",
-          "35869d60eeca2564846d6662bad7714cde602e42",
-          1960
-        ],
-        [
           "docs/ARCHITECTURE.md",
           "a786c06b7f30569e98661423cc7924082cd44adf",
           830
@@ -5202,11 +5217,6 @@
           1650
         ],
         [
-          "GITHUB_UPLOAD.md",
-          "004efb16286ccd7788065ab04e9eaab41c9cbba3",
-          956
-        ],
-        [
           "package-lock.json",
           "7e811caf260f2c4479f2d2bff278629c65211245",
           62396
@@ -5220,11 +5230,6 @@
           "packages/types/src/index.ts",
           "5c0e6386c149ca0e1a03345785679edc380f9746",
           4444
-        ],
-        [
-          "README.md",
-          "a6dda1b9cc70a584505defa5d6594696ba09c929",
-          1022
         ],
         [
           "scripts/quality_gate.py",
@@ -5252,6 +5257,26 @@
           68
         ],
         [
+          "DEPLOYMENT_HANDBOOK.md",
+          "48723827ad0ea687e081b3b87738474e978b71f3",
+          36969
+        ],
+        [
+          "README.md",
+          "5bfba4ff03b559c769f588622cbf6431a67400e7",
+          3287
+        ],
+        [
+          "START_HERE.md",
+          "ad1236c046ba96b9d08ca3861ac17c25ddcd55b3",
+          4660
+        ],
+        [
+          "ci/README.md",
+          "91c7d351c5578572d4e31098cbd81fb6f294804e",
+          960
+        ],
+        [
           "ci/github-workflows/ci.yml",
           "214ca50d179e1eed291c6c0248ad30293b653d02",
           2250
@@ -5262,59 +5287,14 @@
           1077
         ],
         [
-          "ci/README.md",
-          "91c7d351c5578572d4e31098cbd81fb6f294804e",
-          960
-        ],
-        [
-          "DEPLOYMENT_HANDBOOK.md",
-          "48723827ad0ea687e081b3b87738474e978b71f3",
-          36969
-        ],
-        [
           "docs/AI_HANDOFF_PROMPT.md",
           "f8ba315eb69052a732ce1ee783b05d4f9e832832",
           1785
         ],
         [
-          "docs/archive/README.md",
-          "c526a3ec089b0bde6bb61d3b664e432d4fbe59f8",
-          1514
-        ],
-        [
-          "docs/archive/v3.1/AI_HANDOFF_PROMPT_v3.1.md",
-          "b3258053fb5f81bfd662673ec702d2317c5780f5",
-          2823
-        ],
-        [
-          "docs/archive/v3.1/DEPLOYMENT_HANDBOOK_v3.1.md",
-          "5268d69355847e6262b966dc1a3b220f0942ec92",
-          22916
-        ],
-        [
-          "docs/archive/v3.1/HOW_TO_GUIDE_v3.1.md",
-          "771751aae6be51c076d30c804ddcfd83724b3520",
-          5799
-        ],
-        [
-          "docs/archive/v3.1/README_v3.1.md",
-          "70f22c1448bc2f3488c8e103515bb55a9d9c11d5",
-          2634
-        ],
-        [
           "docs/BUILD_BLUEPRINT.md",
           "d85f918899cc7d0aa5a141df7fee48fecdfa7967",
           2477
-        ],
-        [
-          "docs/conversations/CONVERSATION_HISTORY.md",
-          "afd7b9b3dc1a27663732c4fd177740bea0efa751",
-          2541
-        ],
-        [
-          "docs/decisions/DECISION_LOG.md",
-          "46c24b3ba4edcea4542e445f6c1204c7acd3ab45",
-          3615
         ],
         [
           "docs/DESIGN_SYSTEM.md",
@@ -5352,6 +5332,56 @@
           3215
         ],
         [
+          "docs/V2_1_VERIFICATION_CHECKLIST.md",
+          "1f3762874663d4666c80993cd736f534cadd379b",
+          2796
+        ],
+        [
+          "docs/VERCEL_CLEANUP.md",
+          "c25e6d58f53520261abb09022c7170aaf68fce6e",
+          3213
+        ],
+        [
+          "docs/VERIFICATION_REPORT.md",
+          "4a2d698f571b1b7be4545fbd2e948eb6aafc5f86",
+          4943
+        ],
+        [
+          "docs/archive/README.md",
+          "c526a3ec089b0bde6bb61d3b664e432d4fbe59f8",
+          1514
+        ],
+        [
+          "docs/archive/v3.1/AI_HANDOFF_PROMPT_v3.1.md",
+          "b3258053fb5f81bfd662673ec702d2317c5780f5",
+          2823
+        ],
+        [
+          "docs/archive/v3.1/DEPLOYMENT_HANDBOOK_v3.1.md",
+          "5268d69355847e6262b966dc1a3b220f0942ec92",
+          22916
+        ],
+        [
+          "docs/archive/v3.1/HOW_TO_GUIDE_v3.1.md",
+          "771751aae6be51c076d30c804ddcfd83724b3520",
+          5799
+        ],
+        [
+          "docs/archive/v3.1/README_v3.1.md",
+          "70f22c1448bc2f3488c8e103515bb55a9d9c11d5",
+          2634
+        ],
+        [
+          "docs/conversations/CONVERSATION_HISTORY.md",
+          "afd7b9b3dc1a27663732c4fd177740bea0efa751",
+          2541
+        ],
+        [
+          "docs/decisions/DECISION_LOG.md",
+          "46c24b3ba4edcea4542e445f6c1204c7acd3ab45",
+          3615
+        ],
+        [
           "docs/research/COMPETITOR_AND_PRICING.md",
           "25478cdc0a07f5ea6ec0b6a6a66373f30383cc41",
           3103
@@ -5375,21 +5405,6 @@
           "docs/thelma/THELMA_SOURCES.md",
           "a66240dabe3772898d1f016eaad8f4ec21db1243",
           2995
-        ],
-        [
-          "docs/V2_1_VERIFICATION_CHECKLIST.md",
-          "1f3762874663d4666c80993cd736f534cadd379b",
-          2796
-        ],
-        [
-          "docs/VERCEL_CLEANUP.md",
-          "c25e6d58f53520261abb09022c7170aaf68fce6e",
-          3213
-        ],
-        [
-          "docs/VERIFICATION_REPORT.md",
-          "4a2d698f571b1b7be4545fbd2e948eb6aafc5f86",
-          4943
         ],
         [
           "eslint.config.mjs",
@@ -5430,11 +5445,6 @@
           "public/templates/connections-template.md",
           "90952cf5071bbe05a325e6a7d29c768998dd2cd2",
           1638
-        ],
-        [
-          "README.md",
-          "5bfba4ff03b559c769f588622cbf6431a67400e7",
-          3287
         ],
         [
           "scripts/_common.sh",
@@ -6002,11 +6012,6 @@
           382
         ],
         [
-          "START_HERE.md",
-          "ad1236c046ba96b9d08ca3861ac17c25ddcd55b3",
-          4660
-        ],
-        [
           "supabase/config.toml",
           "efa7023f2c11d253e8928dcd26e9acfeef803e61",
           4480
@@ -6302,6 +6307,16 @@
           454
         ],
         [
+          "README.md",
+          "a8e98643a5ad1adf86b6704b40b431347f9abb5f",
+          5186
+        ],
+        [
+          "STATUS-2026-09-18.md",
+          "a00b4d4b1356cbd79825af2f7cf055949eb049ab",
+          5295
+        ],
+        [
           "docs/BACKUP_NOTICE_2026-10-05.md",
           "d89170032e355653ef9b9aba27365db13d8f4e83",
           2784
@@ -6322,19 +6337,9 @@
           652
         ],
         [
-          "README.md",
-          "a8e98643a5ad1adf86b6704b40b431347f9abb5f",
-          5186
-        ],
-        [
           "scripts/quality_gate.py",
           "8f65bbdb6eb69582c0b6fc28c3fbf18870b3fec3",
           3358
-        ],
-        [
-          "STATUS-2026-09-18.md",
-          "a00b4d4b1356cbd79825af2f7cf055949eb049ab",
-          5295
         ]
       ]
     },
@@ -6367,6 +6372,26 @@
           27393
         ],
         [
+          "MASTER_SYSTEM_PROMPT.md",
+          "bfe82b07f53595b72169f8433eac4891cc774e41",
+          2840
+        ],
+        [
+          "README.md",
+          "2caeca1e6c5ea50ed52110e6f02e4dceb01c681c",
+          9922
+        ],
+        [
+          "ROADMAP.md",
+          "2f8b3aedeb2c8f4826af1c40583233b46dc30b16",
+          2267
+        ],
+        [
+          "SOURCE_MANIFEST.md",
+          "1faadd338354198a6659fe5af7c02f0d1b8e6fd2",
+          4246
+        ],
+        [
           "components/3d/UnitSchematic.tsx",
           "128d5a5c4ad811dfe2e6db8968c1c16ec94344dd",
           14304
@@ -6380,6 +6405,21 @@
           "components/ErrorBoundary.tsx",
           "e253a1011b1428a9825f4003077557544fbdfce4",
           1943
+        ],
+        [
+          "components/Sidebar.tsx",
+          "da0fdd580affb1d7edf0582f29bb0572b75369ad",
+          6356
+        ],
+        [
+          "components/TimeController.tsx",
+          "41ef8c8deb05b0f3f4cd2a3957120b24273cbdf2",
+          5697
+        ],
+        [
+          "components/UnitSetupWizard.tsx",
+          "1726376545d6849a5f7044f1618f72f7c00f73e0",
+          32029
         ],
         [
           "components/modules/AdaptationLayer.tsx",
@@ -6457,6 +6497,11 @@
           5782
         ],
         [
+          "components/modules/ITControlCenter.tsx",
+          "921c4e9daedde98e6d2ca9e012fc9a3718aa9c13",
+          6834
+        ],
+        [
           "components/modules/Insurance.tsx",
           "6d2dd92f98e225ced2cf1ec75a8f03e45f396f41",
           17911
@@ -6465,11 +6510,6 @@
           "components/modules/IntegrationsBuffer.tsx",
           "2b61bbe4e263d9bdb2b6d46774b4ad571557803c",
           12387
-        ],
-        [
-          "components/modules/ITControlCenter.tsx",
-          "921c4e9daedde98e6d2ca9e012fc9a3718aa9c13",
-          6834
         ],
         [
           "components/modules/MainHub.tsx",
@@ -6532,24 +6572,9 @@
           9347
         ],
         [
-          "components/Sidebar.tsx",
-          "da0fdd580affb1d7edf0582f29bb0572b75369ad",
-          6356
-        ],
-        [
-          "components/TimeController.tsx",
-          "41ef8c8deb05b0f3f4cd2a3957120b24273cbdf2",
-          5697
-        ],
-        [
           "components/ui/HoloAvatar.tsx",
           "95abf6ade0aa3481cad0d5f654d7fd6e1255eda6",
           2091
-        ],
-        [
-          "components/UnitSetupWizard.tsx",
-          "1726376545d6849a5f7044f1618f72f7c00f73e0",
-          32029
         ],
         [
           "data/assetCatalog.ts",
@@ -6565,16 +6590,6 @@
           "deploy.sh",
           "af79b86285567037403cbba90eafcf62a495f151",
           2445
-        ],
-        [
-          "docs/architecture/ENVIRONMENTAL-PHYSICS-AND-HAZARD-MODEL.md",
-          "dac89375ae8a64a562c7d5220b43889e38bf538a",
-          2006
-        ],
-        [
-          "docs/architecture/VISIONWEAVER-CAUSAL-STATE-REFERENCE.md",
-          "aef5480f7799e6f79f07eaf083e65dd078643b70",
-          2950
         ],
         [
           "docs/BACKUP_NOTICE_2026-10-05.md",
@@ -6597,14 +6612,14 @@
           1287
         ],
         [
-          "docs/QUALITY_GATE_SOURCE_RECOVERY.md",
-          "281d2752bb512c3fd674f440b46fe7d54e24a2db",
-          1094
-        ],
-        [
           "docs/QUALITY_GATE.md",
           "e73c31ed1c6471cc6ccfe1d49de63757733ab9cf",
           1830
+        ],
+        [
+          "docs/QUALITY_GATE_SOURCE_RECOVERY.md",
+          "281d2752bb512c3fd674f440b46fe7d54e24a2db",
+          1094
         ],
         [
           "docs/THELMA_Audit_and_Phased_Plan_2026-02-28.md",
@@ -6627,6 +6642,16 @@
           1326
         ],
         [
+          "docs/architecture/ENVIRONMENTAL-PHYSICS-AND-HAZARD-MODEL.md",
+          "dac89375ae8a64a562c7d5220b43889e38bf538a",
+          2006
+        ],
+        [
+          "docs/architecture/VISIONWEAVER-CAUSAL-STATE-REFERENCE.md",
+          "aef5480f7799e6f79f07eaf083e65dd078643b70",
+          2950
+        ],
+        [
           "drive-storage.json",
           "83599538a4f572f9b64e60d27edf26615a31f056",
           213
@@ -6647,19 +6672,24 @@
           4261
         ],
         [
-          "MASTER_SYSTEM_PROMPT.md",
-          "bfe82b07f53595b72169f8433eac4891cc774e41",
-          2840
-        ],
-        [
           "metadata.json",
           "08a9c300e85e157f9645fa42b7114099af757f1f",
           295
         ],
         [
+          "mobile/gps-manager.ts",
+          "d485b2dfcfe4c94e0fd27e788ca0f3c620f2d72d",
+          6168
+        ],
+        [
           "mobile_app_v1/.gitignore",
           "d914c328fe1d7c235283f985f1679a330b40b565",
           440
+        ],
+        [
+          "mobile_app_v1/README.md",
+          "7c4cf2614e3d1b07bb6f9dbf67647565fc77aac7",
+          556
         ],
         [
           "mobile_app_v1/app.json",
@@ -6677,19 +6707,9 @@
           460
         ],
         [
-          "mobile_app_v1/README.md",
-          "7c4cf2614e3d1b07bb6f9dbf67647565fc77aac7",
-          556
-        ],
-        [
           "mobile_app_v1/tsconfig.json",
           "b9567f6052d70ca2c9035e33667fded3cc4ed71f",
           85
-        ],
-        [
-          "mobile/gps-manager.ts",
-          "d485b2dfcfe4c94e0fd27e788ca0f3c620f2d72d",
-          6168
         ],
         [
           "n8n_gemini_workflow.json",
@@ -6707,16 +6727,6 @@
           907
         ],
         [
-          "README.md",
-          "2caeca1e6c5ea50ed52110e6f02e4dceb01c681c",
-          9922
-        ],
-        [
-          "ROADMAP.md",
-          "2f8b3aedeb2c8f4826af1c40583233b46dc30b16",
-          2267
-        ],
-        [
           "scripts/quality_gate.py",
           "8f65bbdb6eb69582c0b6fc28c3fbf18870b3fec3",
           3358
@@ -6730,11 +6740,6 @@
           "services/soundEngine.ts",
           "bc3920f188f1de005a74092bfdf7177f078c373b",
           6276
-        ],
-        [
-          "SOURCE_MANIFEST.md",
-          "1faadd338354198a6659fe5af7c02f0d1b8e6fd2",
-          4246
         ],
         [
           "tsconfig.json",
@@ -6832,14 +6837,14 @@
           396
         ],
         [
-          "07-production/VISIONWEAVER_HANDOFF_RULES.md",
-          "f4e14ec751c683f851d1c085053865a9177e712a",
-          1590
-        ],
-        [
           "07-production/VISIONWEAVER-AVATAR-STATE-INTEGRATION.md",
           "954dec012dbcf22c63d08523ac788e260662ba70",
           3060
+        ],
+        [
+          "07-production/VISIONWEAVER_HANDOFF_RULES.md",
+          "f4e14ec751c683f851d1c085053865a9177e712a",
+          1590
         ],
         [
           "08-audio/README.md",
@@ -6855,6 +6860,11 @@
           "99-archive/README.md",
           "e55ee4e605342631bfeff1b5cb68e597339ddc35",
           650
+        ],
+        [
+          "README.md",
+          "cdbb13c6c8107a551c8863e359f7a00347416275",
+          2299
         ],
         [
           "docs/BACKUP_NOTICE_2026-10-05.md",
@@ -6875,11 +6885,6 @@
           "docs/VISIONWEAVER-WORLD-MODEL-INTEGRATION.md",
           "8ff4875b276c03442c72da0e22aab1eb6d8e796a",
           632
-        ],
-        [
-          "README.md",
-          "cdbb13c6c8107a551c8863e359f7a00347416275",
-          2299
         ],
         [
           "scripts/quality_gate.py",
@@ -6905,6 +6910,26 @@
           ".quality-gate.json",
           "eeff5408b255ecbc17504dfb5e3da4b99b588b02",
           586
+        ],
+        [
+          "CANONICAL-SYSTEM.md",
+          "6a2612a7d84de846de4be3d160d7643b8803ded8",
+          1633
+        ],
+        [
+          "README.md",
+          "6dbc346a8320694c738170126e4fe446a950fd9b",
+          16585
+        ],
+        [
+          "ROADMAP.md",
+          "3f610ed79a33a14ecf47bcfb060ee427c24dc093",
+          6798
+        ],
+        [
+          "apps/director-studio/README.md",
+          "f2dd2d92c61df73ada6ae3f12187b85bbf9553b6",
+          11939
         ],
         [
           "apps/director-studio/build.py",
@@ -6940,11 +6965,6 @@
           "apps/director-studio/history/v3-director-control.html",
           "463aa98ef0c448cecd266efc54122eccd73870df",
           36857
-        ],
-        [
-          "apps/director-studio/README.md",
-          "f2dd2d92c61df73ada6ae3f12187b85bbf9553b6",
-          11939
         ],
         [
           "apps/director-studio/src/base.css",
@@ -7077,24 +7097,19 @@
           5939
         ],
         [
-          "CANONICAL-SYSTEM.md",
-          "6a2612a7d84de846de4be3d160d7643b8803ded8",
-          1633
-        ],
-        [
           "connections/.env.example",
           "fd5dccbf1cbc567a279117517ae49283780d00f4",
           935
         ],
         [
-          "connections/mcp.json",
-          "eecce8b7733e7e7f2187e5551e6063a0e703925c",
-          1195
-        ],
-        [
           "connections/README.md",
           "ef5eff116559507d334707d55e2761c56b47b55b",
           8089
+        ],
+        [
+          "connections/mcp.json",
+          "eecce8b7733e7e7f2187e5551e6063a0e703925c",
+          1195
         ],
         [
           "connections/supabase/2026-09-29_ec_connectors_visionweaver_studio.sql",
@@ -7112,11 +7127,6 @@
           5885
         ],
         [
-          "docs/architecture/WORLD-PHYSICS-AND-SCENE-DISSECTION.md",
-          "3d26d3ad662c16c149f8e966d6cfe049aa1e4c06",
-          7047
-        ],
-        [
           "docs/BACKUP_NOTICE_2026-10-05.md",
           "6673ad1f494bd5c4d7bacc5d85a908ef55669951",
           2789
@@ -7125,11 +7135,6 @@
           "docs/CANONICAL-RECOVERY-AND-PHASE-2-ACTIVATION-2026-10-08.md",
           "44d97d76f7bea94210d7b949e1a7ce104d0f864e",
           11707
-        ],
-        [
-          "docs/commercial-runs/2026-10-06-first-run-pepsi-golden-corral.md",
-          "9ee1b1cf9e8f532d1f0f740d22460ba38a403c23",
-          4212
         ],
         [
           "docs/CURRENT-WORKSTATE-2026-10-04.md",
@@ -7150,6 +7155,26 @@
           "docs/DESIGN_STUDIO_INTEGRATION.md",
           "e8b734488f8505bdf7c9373e100f7485aebc3776",
           3063
+        ],
+        [
+          "docs/HOSTED-UI-0.4.02-2026-10-08.md",
+          "f6c77185388933c018cb6cc8e6c699cc15deb89b",
+          1325
+        ],
+        [
+          "docs/QUALITY_GATE.md",
+          "f82081bc5a96786673d16c2b2360713a1a13f4e8",
+          2017
+        ],
+        [
+          "docs/architecture/WORLD-PHYSICS-AND-SCENE-DISSECTION.md",
+          "3d26d3ad662c16c149f8e966d6cfe049aa1e4c06",
+          7047
+        ],
+        [
+          "docs/commercial-runs/2026-10-06-first-run-pepsi-golden-corral.md",
+          "9ee1b1cf9e8f532d1f0f740d22460ba38a403c23",
+          4212
         ],
         [
           "docs/design-decisions/CANONICAL-V3-UI-REFERENCE-2026-10-08.md",
@@ -7185,16 +7210,6 @@
           "docs/evidence/PHASE-2-AVATAR-ACTIVATION-2026-10-08.md",
           "c8c2a6df83f4537c9c288550b94527d574ee7762",
           2752
-        ],
-        [
-          "docs/HOSTED-UI-0.4.02-2026-10-08.md",
-          "f6c77185388933c018cb6cc8e6c699cc15deb89b",
-          1325
-        ],
-        [
-          "docs/QUALITY_GATE.md",
-          "f82081bc5a96786673d16c2b2360713a1a13f4e8",
-          2017
         ],
         [
           "docs/quality-runs/2026-10-06-commercial-station-checkpoint.md",
@@ -7237,21 +7252,6 @@
           1865
         ],
         [
-          "feed/conversations/2026-10-18-to-2026-10-22-fireside-visionweaver-thread.md",
-          "af3ec0ae5bff440b65b1d6588eaa79799c5c68b9",
-          46655
-        ],
-        [
-          "feed/conversations/2026-10-20-to-2026-10-30-system-buildout-thread.md",
-          "d471ab73f1d9a326b4a7e7dfdfd6a6b8dfcefb79",
-          9519
-        ],
-        [
-          "feed/conversations/2026-10-23-visionweaver-prime-audit.md",
-          "8ff203014232f695b0e35bfd4f8771b1b1c82c1d",
-          20709
-        ],
-        [
           "feed/DECISIONS.md",
           "1d715f0ddb5cfab0015deb53207e5d1c32c58e3b",
           5344
@@ -7265,6 +7265,21 @@
           "feed/README.md",
           "58fbb8398f3a1e26ab6c49da659b6e7cba74c14c",
           2727
+        ],
+        [
+          "feed/conversations/2026-10-18-to-2026-10-22-fireside-visionweaver-thread.md",
+          "af3ec0ae5bff440b65b1d6588eaa79799c5c68b9",
+          46655
+        ],
+        [
+          "feed/conversations/2026-10-20-to-2026-10-30-system-buildout-thread.md",
+          "d471ab73f1d9a326b4a7e7dfdfd6a6b8dfcefb79",
+          9519
+        ],
+        [
+          "feed/conversations/2026-10-23-visionweaver-prime-audit.md",
+          "8ff203014232f695b0e35bfd4f8771b1b1c82c1d",
+          20709
         ],
         [
           "fixtures/balloon-world-state.v0.1.json",
@@ -7322,6 +7337,21 @@
           1935
         ],
         [
+          "projects/creative-ip/README.md",
+          "0340ce8317a33d91ef85e480891075736f9f6739",
+          1592
+        ],
+        [
+          "projects/creative-ip/REPOSITORY_SPLIT_PLAN.md",
+          "b54df321d7af41cd62c0bb036e13be6e035caa25",
+          1526
+        ],
+        [
+          "projects/creative-ip/crossroads-of-identity/README.md",
+          "bc2b67de1e0a02e9ef9e6db4962f4fa2a89cacce",
+          3425
+        ],
+        [
           "projects/creative-ip/crossroads-of-identity/automation/chatgpt-master-prompt-v1.md",
           "ed11ac846d522ba70c728a4e04531ac0e5167e09",
           20887
@@ -7330,6 +7360,11 @@
           "projects/creative-ip/crossroads-of-identity/boards/README.md",
           "7cc6c9ffedc9b33218e7b7c9df8c3691ee0b34b4",
           5543
+        ],
+        [
+          "projects/creative-ip/crossroads-of-identity/production/book-01-convergence/README.md",
+          "84918723ed1ff01841018c039bac2c22f76364a8",
+          1373
         ],
         [
           "projects/creative-ip/crossroads-of-identity/production/book-01-convergence/episode-01-the-news/approvals-log.md",
@@ -7497,26 +7532,6 @@
           9643
         ],
         [
-          "projects/creative-ip/crossroads-of-identity/production/book-01-convergence/README.md",
-          "84918723ed1ff01841018c039bac2c22f76364a8",
-          1373
-        ],
-        [
-          "projects/creative-ip/crossroads-of-identity/README.md",
-          "bc2b67de1e0a02e9ef9e6db4962f4fa2a89cacce",
-          3425
-        ],
-        [
-          "projects/creative-ip/README.md",
-          "0340ce8317a33d91ef85e480891075736f9f6739",
-          1592
-        ],
-        [
-          "projects/creative-ip/REPOSITORY_SPLIT_PLAN.md",
-          "b54df321d7af41cd62c0bb036e13be6e035caa25",
-          1526
-        ],
-        [
           "projects/creative-ip/the-arc/GOOGLE_DRIVE_MANIFEST.md",
           "df400039caed04218cfe680de5f57ee010f3ac5e",
           2934
@@ -7572,11 +7587,6 @@
           25839
         ],
         [
-          "README.md",
-          "6dbc346a8320694c738170126e4fe446a950fd9b",
-          16585
-        ],
-        [
           "research/2026-09-29-runway-canva-ui-research.md",
           "ad87230745ab227cbffbe378ad4b8abdb51ed6bf",
           17841
@@ -7622,11 +7632,6 @@
           5837
         ],
         [
-          "ROADMAP.md",
-          "3f610ed79a33a14ecf47bcfb060ee427c24dc093",
-          6798
-        ],
-        [
           "scripts/quality_gate.py",
           "8f65bbdb6eb69582c0b6fc28c3fbf18870b3fec3",
           3358
@@ -7635,6 +7640,16 @@
           "standards/360-view-storyboard.md",
           "32989aaf5ffb9af8571549b1231f550d3eacd136",
           1019
+        ],
+        [
+          "standards/GLOBAL_PLACE_PEOPLE_REFERENCE_CATALOG-v1.md",
+          "62eaff3b5c1c2f88374ad901ca24146dcde12873",
+          11787
+        ],
+        [
+          "standards/UI-BOARD-STANDARD-v1.md",
+          "e1c0bd318e519338473746d171eb6b2ab2380be9",
+          7742
         ],
         [
           "standards/avatar-catalog-v1.md",
@@ -7662,11 +7677,6 @@
           7045
         ],
         [
-          "standards/GLOBAL_PLACE_PEOPLE_REFERENCE_CATALOG-v1.md",
-          "62eaff3b5c1c2f88374ad901ca24146dcde12873",
-          11787
-        ],
-        [
           "standards/representation-and-place-time-v1.md",
           "7b0c9f06db50df8b2f5dbde41d24a1e4ae002ab7",
           3298
@@ -7675,11 +7685,6 @@
           "standards/shot-standard-v1.md",
           "d248d969a1ae8f4e24f43bb2a41871b6ec75d028",
           3802
-        ],
-        [
-          "standards/UI-BOARD-STANDARD-v1.md",
-          "e1c0bd318e519338473746d171eb6b2ab2380be9",
-          7742
         ],
         [
           "strategy/2026-10-02-VISIONWEAVER-FOUNDING-PITCH.md",
@@ -7695,6 +7700,16 @@
           "system/FINISH-REVIEW.md",
           "1e47cff7ab6f9bcd9385c5f442d10385713fb5d6",
           17261
+        ],
+        [
+          "system/OVERNIGHT-REPORT.md",
+          "51a1f1fc4e443b359aaa182e5e75f9671a17ae55",
+          9010
+        ],
+        [
+          "system/SYSTEM.md",
+          "008f1816a687bf9110f5a5af8e6cefcfc108ac50",
+          7336
         ],
         [
           "system/hidden_review/audit-proof-and-stale.md",
@@ -7987,29 +8002,19 @@
           16719
         ],
         [
-          "system/OVERNIGHT-REPORT.md",
-          "51a1f1fc4e443b359aaa182e5e75f9671a17ae55",
-          9010
-        ],
-        [
-          "system/SYSTEM.md",
-          "008f1816a687bf9110f5a5af8e6cefcfc108ac50",
-          7336
-        ],
-        [
           "tests/world-state.test.mjs",
           "ddaac7ba084c33654e2aba11189142b3a4871974",
           2969
         ],
         [
-          "visionweaver-2.0/index.html",
-          "87ba98ce9c09fe143267842386420f6aac58c651",
-          31415
-        ],
-        [
           "visionweaver-2.0/README.md",
           "fb96ab9daa62f70357ebc0080a43f71877d54660",
           2233
+        ],
+        [
+          "visionweaver-2.0/index.html",
+          "87ba98ce9c09fe143267842386420f6aac58c651",
+          31415
         ],
         [
           "visionweaver/archive/v1.0-pre-rebuild/ARCHIVE-INDEX.md",
@@ -8050,6 +8055,16 @@
           ".gitignore",
           "65701bf827c3deacd02fe64560c983ba64c33622",
           47
+        ],
+        [
+          "PRIME-RETIRED-2026-11-09.md",
+          "7f1f1265515063bb06349df02774030eda75a5d7",
+          1865
+        ],
+        [
+          "README.md",
+          "f1996a6a7155edbfe7e2f694f84f35a0a4a1ed36",
+          2773
         ],
         [
           "assets-b64/chunks/feature_create-produce.00.txt",
@@ -8627,16 +8642,6 @@
           362
         ],
         [
-          "PRIME-RETIRED-2026-11-09.md",
-          "7f1f1265515063bb06349df02774030eda75a5d7",
-          1865
-        ],
-        [
-          "README.md",
-          "f1996a6a7155edbfe7e2f694f84f35a0a4a1ed36",
-          2773
-        ],
-        [
           "registry.js",
           "0529673d75a5dc9ac7773e451df94dc009532d62",
           17651
@@ -8760,58 +8765,24 @@
     }
   ],
   "comparison": {
-    "compared_to": "2026-11-09",
-    "compared_on": "2026-11-16",
+    "compared_to": "2026-11-16",
+    "compared_on": "2026-11-23",
     "repositories_compared": 24,
-    "repositories_without_path_or_blob_changes": 20,
+    "repositories_without_path_or_blob_changes": 23,
     "repositories_with_changes": [
-      {
-        "repository": "estibancreations-svg/MASTER_CEO_DASHBOARD",
-        "added_paths": [
-          "docs/reviews-2026-11-09/04-review-advice-2026-11-09.md",
-          "docs/vercel-deploy-trigger-2026-11-10.md"
-        ],
-        "removed_paths": [],
-        "changed_paths": [
-          "src/components/SystemControls.tsx",
-          "src/theme.css"
-        ]
-      },
       {
         "repository": "estibancreations-svg/Master-System-Buildout",
         "added_paths": [
-          "docs/vercel-deploy-trigger-2026-11-10-setting-flip.md",
-          "docs/vercel-deploy-trigger-2026-11-10.md"
+          "docs/forensics/addenda/2026-11-23-agencyflow-recovery-audit.md"
         ],
         "removed_paths": [],
-        "changed_paths": []
-      },
-      {
-        "repository": "estibancreations-svg/VisionWeaver",
-        "added_paths": [
-          "docs/reviews-2026-11-09/01-canonical-build-specification-2026-11-09.md",
-          "docs/reviews-2026-11-09/02-findings-summary-2026-11-09.md",
-          "docs/reviews-2026-11-09/03-consolidated-buildout-review-2026-11-09.md",
-          "docs/reviews-2026-11-09/04-review-advice-2026-11-09.md",
-          "docs/reviews-2026-11-09/05-gate-0-status-2026-11-09.md",
-          "docs/reviews-2026-11-09/RETIREMENT-NOTICE-2026-11-09.md"
+        "changed_paths": [
+          "docs/forensics/2026-10-23-enterprise-system-map.md"
         ],
-        "removed_paths": [],
-        "changed_paths": []
-      },
-      {
-        "repository": "estibancreations-svg/VisionWeaver-Prime",
-        "added_paths": [
-          "PRIME-RETIRED-2026-11-09.md",
-          "docs/vercel-deploy-trigger-2026-11-10.md"
-        ],
-        "removed_paths": [],
-        "changed_paths": []
+        "reference_sha": "0eb299a5205b9bd585ccf86b84612ece364ae550"
       }
     ],
-    "baseline_file_count_excluding_inventory_self": 1714,
-    "current_main_file_count_excluding_inventory_self": 1726,
-    "current_file_count_excluding_inventory_self": 1727,
+    "current_file_count_excluding_inventory_self": 1728,
     "inventory_self_reference_excluded": true,
     "reference_shas_at_comparison": {
       "estibancreations-svg/-Five-Stations-Learning-Serie": "617c4a952f39bdaf939f4cab6a8a7a27ceb980d5",
@@ -8827,7 +8798,7 @@
       "estibancreations-svg/Leadstack-Clone": "13c4f44d0da5bbaa458ae67698b257a70de4af21",
       "estibancreations-svg/MASTER_CEO_DASHBOARD": "5a5d039fb84107db2ecda56489d8193f13cde785",
       "estibancreations-svg/Master-dashboard-": "c553801cc219ed5869b6d1c810783c99f97353f1",
-      "estibancreations-svg/Master-System-Buildout": "60f4787561dd29671f79bb47687d234fae8eca35",
+      "estibancreations-svg/Master-System-Buildout": "0eb299a5205b9bd585ccf86b84612ece364ae550",
       "estibancreations-svg/motive-next-deployment": "42b82ac2b36cd396cc1782a0349effc71e7bdf23",
       "estibancreations-svg/OSIRIS": "eb664f0f2f4f642143287b9663bccd340a21bb21",
       "estibancreations-svg/Paypal_Portal": "20c502f56ed40ae22ec5409c4fd3b200711d030c",
@@ -8841,21 +8812,20 @@
     },
     "audit_branch": {
       "repository": "estibancreations-svg/Master-System-Buildout",
-      "branch": "forensics/map-recovery-audit-2026-11-16",
-      "base_main_sha": "60f4787561dd29671f79bb47687d234fae8eca35",
+      "branch": "forensics/agencyflow-audit-2026-11-23",
+      "base_main_sha": "7204f088526e90f07b023af4a7f72f3509a8d05c",
       "added_paths": [
-        "docs/forensics/addenda/2026-11-16-map-recovery-audit.md"
+        "docs/forensics/addenda/2026-11-23-agencyflow-recovery-audit.md"
       ],
       "changed_paths": [
         "docs/forensics/2026-10-23-enterprise-system-map.md"
       ],
       "commit_shas": [
-        "7a588a55e1d0b5da5bc959ded072083fd49be237",
-        "2f8d82d357a0a263298971870e06b63db72fc381",
-        "5d98744a9e87f32d4321dd31b67e3407e68d3cfc"
+        "5345987cc3abd6d8a7e0c88f3c19ceddbb4c8e3d",
+        "0eb299a5205b9bd585ccf86b84612ece364ae550"
       ]
     },
-    "note": "All 24 recursive main-branch trees were complete (truncated=false). Twenty repositories had no path or blob-SHA changes. Four repositories changed: MASTER_CEO_DASHBOARD (two new docs, two changed theme/control files), Master-System-Buildout (two new deployment-trigger docs), VisionWeaver (six review/retirement docs), and VisionWeaver-Prime (two retirement/deployment docs). No main-branch files were removed. The main-tree count is 1,726 excluding this inventory. The audit branch adds one forensic addendum and updates the enterprise map, so the branch inventory count is 1,727 excluding this inventory. The 18 separately governed identities remain unchanged; Paypal_Portal remains a repository, not a nineteenth system. Hash comparison is not full file-content or runtime verification."
+    "note": "All 24 recursive trees were complete. The standalone-crm and Leadstack-Clone trees remain identical to their November 16 inventory references; AgencyFlow findings result from deeper source inspection. The 18 governed identities remain unchanged. Repository inventory and system identity counts are separate. Tree/hash comparison does not certify file contents or runtime state."
   },
   "comparison_history": [
     {
@@ -9072,6 +9042,104 @@
         "estibancreations-svg/Paypal_Portal": "20c502f56ed40ae22ec5409c4fd3b200711d030c"
       },
       "note": "The pre-audit comparison found no path or blob-SHA changes in any of the 24 main trees since November 2. This PR then added the November 9 CMGIO forensic section to the Master-System-Buildout map; that map is the only changed path in the post-audit snapshot. The inventory file itself is excluded. A previous size-only discrepancy for the map had identical blob SHA and was not a content change; this entry records UTF-8 byte size. The MASTER_CEO_DASHBOARD federal-watch updates are on PR #66, not its main branch, and are therefore not counted as a main-tree change here."
+    },
+    {
+      "compared_to": "2026-11-09",
+      "compared_on": "2026-11-16",
+      "repositories_compared": 24,
+      "repositories_without_path_or_blob_changes": 20,
+      "repositories_with_changes": [
+        {
+          "repository": "estibancreations-svg/MASTER_CEO_DASHBOARD",
+          "added_paths": [
+            "docs/reviews-2026-11-09/04-review-advice-2026-11-09.md",
+            "docs/vercel-deploy-trigger-2026-11-10.md"
+          ],
+          "removed_paths": [],
+          "changed_paths": [
+            "src/components/SystemControls.tsx",
+            "src/theme.css"
+          ]
+        },
+        {
+          "repository": "estibancreations-svg/Master-System-Buildout",
+          "added_paths": [
+            "docs/vercel-deploy-trigger-2026-11-10-setting-flip.md",
+            "docs/vercel-deploy-trigger-2026-11-10.md"
+          ],
+          "removed_paths": [],
+          "changed_paths": []
+        },
+        {
+          "repository": "estibancreations-svg/VisionWeaver",
+          "added_paths": [
+            "docs/reviews-2026-11-09/01-canonical-build-specification-2026-11-09.md",
+            "docs/reviews-2026-11-09/02-findings-summary-2026-11-09.md",
+            "docs/reviews-2026-11-09/03-consolidated-buildout-review-2026-11-09.md",
+            "docs/reviews-2026-11-09/04-review-advice-2026-11-09.md",
+            "docs/reviews-2026-11-09/05-gate-0-status-2026-11-09.md",
+            "docs/reviews-2026-11-09/RETIREMENT-NOTICE-2026-11-09.md"
+          ],
+          "removed_paths": [],
+          "changed_paths": []
+        },
+        {
+          "repository": "estibancreations-svg/VisionWeaver-Prime",
+          "added_paths": [
+            "PRIME-RETIRED-2026-11-09.md",
+            "docs/vercel-deploy-trigger-2026-11-10.md"
+          ],
+          "removed_paths": [],
+          "changed_paths": []
+        }
+      ],
+      "baseline_file_count_excluding_inventory_self": 1714,
+      "current_main_file_count_excluding_inventory_self": 1726,
+      "current_file_count_excluding_inventory_self": 1727,
+      "inventory_self_reference_excluded": true,
+      "reference_shas_at_comparison": {
+        "estibancreations-svg/-Five-Stations-Learning-Serie": "617c4a952f39bdaf939f4cab6a8a7a27ceb980d5",
+        "estibancreations-svg/-HisMajesty0225-CEO-Dashboard": "c9041b3c51cc2a5df623a40a26be4a7f736c6c76",
+        "estibancreations-svg/-THELMA-AI": "731097cebe9ee05616a07f4859dd47a1851f3d60",
+        "estibancreations-svg/52-Books-in-52-Weeks": "45cc10572eb546dae00fbc4237979a1d9be79cbf",
+        "estibancreations-svg/Archive-HisMajesty0225-Shenry60": "8f8295341e289f11202f0aabf06b8b80f8f17eb1",
+        "estibancreations-svg/content-that-builds": "3691788b93f257085a0e4746ba0a3122add48996",
+        "estibancreations-svg/crm-tour-deck-build-temp": "879e467e05b5b4c2d990e98dcf69cb7bb9284cc2",
+        "estibancreations-svg/Crossroads-of-Identity": "2ca81de75c5f3b07f0e8e21dade66636d1214a46",
+        "estibancreations-svg/DESIGN_STUDIO": "c32e0548a290e630177b93741f7cb84340974d33",
+        "estibancreations-svg/Higgsfield-Integration-Layer": "280fd90e8598c340432f415ed0ac5671ff5f5c46",
+        "estibancreations-svg/Leadstack-Clone": "13c4f44d0da5bbaa458ae67698b257a70de4af21",
+        "estibancreations-svg/MASTER_CEO_DASHBOARD": "5a5d039fb84107db2ecda56489d8193f13cde785",
+        "estibancreations-svg/Master-dashboard-": "c553801cc219ed5869b6d1c810783c99f97353f1",
+        "estibancreations-svg/Master-System-Buildout": "60f4787561dd29671f79bb47687d234fae8eca35",
+        "estibancreations-svg/motive-next-deployment": "42b82ac2b36cd396cc1782a0349effc71e7bdf23",
+        "estibancreations-svg/OSIRIS": "eb664f0f2f4f642143287b9663bccd340a21bb21",
+        "estibancreations-svg/Paypal_Portal": "20c502f56ed40ae22ec5409c4fd3b200711d030c",
+        "estibancreations-svg/reunion-os": "6b65e887f8e1c4e6117764ad85f3680a4c1d786a",
+        "estibancreations-svg/standalone-crm": "2be8547a622531fba60e127c0374dea684837082",
+        "estibancreations-svg/The-Arc": "cd3189ea11f4e901f6d597b0d64e0b962543d9a0",
+        "estibancreations-svg/THELMA-Global-Link-Logistics": "f9146c2ed89decaec18c4c873f9ec29f0777af2b",
+        "estibancreations-svg/This-Is-Your-Life": "5904abce9347460d1ae8feae8f6f6cfe617f67bb",
+        "estibancreations-svg/VisionWeaver": "5a651794dde5cc0de36e2dcd6b105873558fc7d7",
+        "estibancreations-svg/VisionWeaver-Prime": "8302cf28a722b94348859ed92d92162199e6928f"
+      },
+      "audit_branch": {
+        "repository": "estibancreations-svg/Master-System-Buildout",
+        "branch": "forensics/map-recovery-audit-2026-11-16",
+        "base_main_sha": "60f4787561dd29671f79bb47687d234fae8eca35",
+        "added_paths": [
+          "docs/forensics/addenda/2026-11-16-map-recovery-audit.md"
+        ],
+        "changed_paths": [
+          "docs/forensics/2026-10-23-enterprise-system-map.md"
+        ],
+        "commit_shas": [
+          "7a588a55e1d0b5da5bc959ded072083fd49be237",
+          "2f8d82d357a0a263298971870e06b63db72fc381",
+          "5d98744a9e87f32d4321dd31b67e3407e68d3cfc"
+        ]
+      },
+      "note": "All 24 recursive main-branch trees were complete (truncated=false). Twenty repositories had no path or blob-SHA changes. Four repositories changed: MASTER_CEO_DASHBOARD (two new docs, two changed theme/control files), Master-System-Buildout (two new deployment-trigger docs), VisionWeaver (six review/retirement docs), and VisionWeaver-Prime (two retirement/deployment docs). No main-branch files were removed. The main-tree count is 1,726 excluding this inventory. The audit branch adds one forensic addendum and updates the enterprise map, so the branch inventory count is 1,727 excluding this inventory. The 18 separately governed identities remain unchanged; Paypal_Portal remains a repository, not a nineteenth system. Hash comparison is not full file-content or runtime verification."
     }
   ]
 }
